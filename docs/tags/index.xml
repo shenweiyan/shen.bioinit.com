@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Chrome</title>
+      <link>https://shen.bioinit.com/tags/chrome/</link>
+      <pubDate>Sat, 18 May 2019 12:29:57 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Conda</title>
       <link>https://shen.bioinit.com/tags/conda/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
@@ -44,15 +53,6 @@
       <pubDate>Wed, 21 Aug 2019 01:54:31 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Chrome</title>
-      <link>https://shen.bioinit.com/tags/google-chrome/</link>
-      <pubDate>Sat, 18 May 2019 12:29:57 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/tags/google-chrome/</guid>
       <description></description>
     </item>
     
@@ -183,11 +183,11 @@
     </item>
     
     <item>
-      <title>Visual Studio Code</title>
-      <link>https://shen.bioinit.com/tags/visual-studio-code/</link>
+      <title>Vscode</title>
+      <link>https://shen.bioinit.com/tags/vscode/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/tags/visual-studio-code/</guid>
+      <guid>https://shen.bioinit.com/tags/vscode/</guid>
       <description></description>
     </item>
     
