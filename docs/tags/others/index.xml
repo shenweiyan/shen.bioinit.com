@@ -26,7 +26,7 @@
       <pubDate>Thu, 08 Aug 2019 09:05:21 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/blog/2019-08-08-build-hugo-blogs/</guid>
-      <description>模仿 R 语言大神谢益辉，搭建了一个 Hugo+rblogdown 的博客：https://blog.bioinit.com 主要记录： .Site.BaseURL 不起作用， relURL 、 absURL 也不起作用时，可参考使</description>
+      <description>模仿 R 语言大神谢益辉，搭建了一个 Hugo+blogdown 的博客：https://shen.bioinit.com 主要记录： .Site.BaseURL 不起作用， relURL 、 absURL 也不起作用时，可参考使</description>
     </item>
     
     <item>

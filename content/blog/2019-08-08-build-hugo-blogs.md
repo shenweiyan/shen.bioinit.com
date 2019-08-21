@@ -7,15 +7,14 @@ category: 开发
 published: true
 ---
 
-模仿 R 语言大神谢益辉，搭建了一个 Hugo+rblogdown 的博客：[https://blog.bioinit.com](https://blog.bioinit.com/)
+模仿 R 语言大神谢益辉，搭建了一个 Hugo+blogdown 的博客：[https://shen.bioinit.com](https://shen.bioinit.com/)
 
-![hugo.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565574651727-e9dc560f-fc43-4758-a227-9b8c343424d0.png#align=left&display=inline&height=660&name=hugo.png&originHeight=660&originWidth=1049&size=121639&status=done&width=1049)
+![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566378409824-633e24bf-75bd-450b-8b87-7d5c0b51d74f.png#align=left&display=inline&height=695&name=image.png&originHeight=695&originWidth=1038&size=138527&status=done&width=1038)
 
 主要记录：
 
 - `.Site.BaseURL` 不起作用， `relURL` 、 `absURL` 也不起作用时，可参考使用 `params` 方法解决。
-- 修复原博客 url 的一些 bug，[blog.bioinit.com](blog.bioinit.com) 部分链接被直接写死，想要复用的需要重新定义。
-
+- 修复原博客 url 的一些 bug，shen.bioinit.com 部分链接被直接写死，想要复用的需要重新定义。
 
 ---
 

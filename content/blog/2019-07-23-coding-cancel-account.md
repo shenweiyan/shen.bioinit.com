@@ -13,14 +13,14 @@ published: true
 
 CODING 个人版有几点不太友好的体检经历：
 
-1. 在同一个产品中过多的嵌套 coding.net 和 dev.tencent.com 两个域名的链接跳转，用着用着就让人有一种分不清楚这个到底是原来的 CODING 还是腾讯云开发者平台！
+- 在同一个产品中过多的嵌套 coding.net 和 dev.tencent.com 两个域名的链接跳转，用着用着就让人有一种分不清楚这个到底是原来的 CODING 还是腾讯云开发者平台！
 
-2. CODING 个人版个人主页，公开的项目却显示的是仓库名称！这样，在仓库中设置项目名称的意义是什么？
+- CODING 个人版个人主页，公开的项目却显示的是仓库名称！这样，在仓库中设置项目名称的意义是什么？
 
 ![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1564793985315-6612949f-73ef-469b-8012-c472298ce266.png#align=left&display=inline&height=401&name=image.png&originHeight=401&originWidth=1085&size=56337&status=done&width=1085)
 
 
-3. 注销账号， CODING 只提供账号锁定功能！！！
+- 注销账号， CODING 只提供账号锁定功能！！！
 
 《电信和互联网用户个人信息保护规定》（工业和信息化部令第24号）第九款第四款规定：“电信业务经营者、互联网信息服务提供者在用户终止使用电信服务或者互联网信息服务后，应当停止对用户个人信息的收集和使用，并为用户提供注销号码或账号的服务。”
 
