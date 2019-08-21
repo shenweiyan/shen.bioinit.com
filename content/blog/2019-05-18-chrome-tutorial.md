@@ -1,7 +1,7 @@
 ---
 title: chrome 超详细使用教程
 type: post
-tags: ["Google Chrome", "软件"]
+tags: ["Chrome", "软件"]
 date: 2019-05-18T12:29:57.000Z
 category: 软件
 published: true
