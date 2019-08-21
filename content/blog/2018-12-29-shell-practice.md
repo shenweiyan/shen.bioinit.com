@@ -8,6 +8,7 @@ published: true
 ---
 
 - linux 下使用命令排除当前行及下一行的内容
+
 ```shell
 sed '/关键字/,+1d' file >file2
 ```

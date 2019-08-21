@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>GitHub 的项目徽章</title>
+      <link>https://shen.bioinit.com/blog/2019-08-21-github-badge/</link>
+      <pubDate>Wed, 21 Aug 2019 01:54:31 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/blog/2019-08-21-github-badge/</guid>
+      <description>GitHub 项目的 README.md 中可以添加徽章（Badge）对项目进行标记和说明，这些好看的小图标不仅简洁美观，而且还包含了清晰易读的信息。 GitHub 徽标的官方网站是 ht</description>
+    </item>
+    
+    <item>
       <title>沉默的大多数</title>
       <link>https://shen.bioinit.com/blog/2019-08-19-moc049/</link>
       <pubDate>Mon, 19 Aug 2019 02:57:02 +0000</pubDate>
@@ -553,10 +562,10 @@
     
     <item>
       <title>VS Code 常见配置与使用技巧总结</title>
-      <link>https://shen.bioinit.com/blog/2019-06-21-ksczr1/</link>
+      <link>https://shen.bioinit.com/blog/2019-06-21-vscode-usage/</link>
       <pubDate>Fri, 21 Jun 2019 03:58:08 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/blog/2019-06-21-ksczr1/</guid>
+      <guid>https://shen.bioinit.com/blog/2019-06-21-vscode-usage/</guid>
       <description>版本: 1.35.1 (user setup) 1. 通过配置文件设置 VS Code 的配置文件默认为：settings.json，我们可以通过下面的方式打开该文件进行自定义配置： { &amp;quot;editor.minimap.enabled&amp;quot;: false, &amp;quot;editor.fontSize&amp;quot;: 12, &amp;quot;workbench.statusBar.feedback.visible&amp;quot;:</description>
     </item>
     
@@ -931,7 +940,7 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 
       <pubDate>Sat, 29 Dec 2018 09:21:11 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/blog/2018-12-29-shell-practice/</guid>
-      <description>linux 下使用命令排除当前行及下一行的内容 shell sed &#39;/关键字/,+1d&#39; file &amp;gt;file2</description>
+      <description>linux 下使用命令排除当前行及下一行的内容 sed &#39;/关键字/,+1d&#39; file &amp;gt;file2</description>
     </item>
     
     <item>

@@ -17,7 +17,7 @@
       <pubDate>Sat, 29 Dec 2018 09:21:11 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/blog/2018-12-29-shell-practice/</guid>
-      <description>linux 下使用命令排除当前行及下一行的内容 shell sed &#39;/关键字/,+1d&#39; file &amp;gt;file2</description>
+      <description>linux 下使用命令排除当前行及下一行的内容 sed &#39;/关键字/,+1d&#39; file &amp;gt;file2</description>
     </item>
     
   </channel>
