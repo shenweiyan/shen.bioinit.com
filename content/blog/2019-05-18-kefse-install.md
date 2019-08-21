@@ -1,7 +1,7 @@
 ---
 title: LEfSe 分析软件安装小记
 type: post
-tags: ["软件", "软件"]
+tags: ["others", "软件"]
 date: 2019-05-18T12:43:17.000Z
 category: 软件
 published: true

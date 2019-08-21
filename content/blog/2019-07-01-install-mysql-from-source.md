@@ -1,7 +1,7 @@
 ---
 title: 从 Blast2GO 到 MySQL 源码编译安装
 type: post
-tags: ["软件", "软件"]
+tags: ["others", "软件"]
 date: 2019-07-01T03:50:35.000Z
 category: 软件
 published: true

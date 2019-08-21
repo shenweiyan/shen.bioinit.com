@@ -1,7 +1,7 @@
 ---
 title: 不提供账号注销等于耍流氓
 type: post
-tags: ["编程", "杂谈"]
+tags: ["others", "杂谈"]
 date: 2019-07-23T03:19:17.000Z
 category: 杂谈
 published: true

@@ -1,7 +1,7 @@
 ---
 title: VSCode 中利用 Remote SSH 连接远程服务器
 type: post
-tags: ["others", "开发"]
+tags: ["Visual Studio Code", "开发"]
 date: 2019-07-01T03:50:35.000Z
 category: 开发
 published: true

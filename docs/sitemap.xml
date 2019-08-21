@@ -600,14 +600,20 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/tags/chrome/</loc>
-    <lastmod>2019-05-18T12:29:57+00:00</lastmod>
+    <loc>https://shen.bioinit.com/tags/conda/</loc>
+    <lastmod>2019-07-01T03:50:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://shen.bioinit.com/tags/github/</loc>
     <lastmod>2019-08-21T01:54:31+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/tags/google-chrome/</loc>
+    <lastmod>2019-05-18T12:29:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -713,6 +719,12 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/tags/visual-studio-code/</loc>
+    <lastmod>2019-07-01T03:50:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/tags/%E5%A8%B1%E4%B9%90/</loc>
     <lastmod>2019-04-29T00:41:03+00:00</lastmod>
     <priority>0</priority>
@@ -747,14 +759,8 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/</loc>
-    <lastmod>2019-05-29T06:12:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2019-07-23T03:19:17+00:00</lastmod>
+    <lastmod>2019-07-01T03:50:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   

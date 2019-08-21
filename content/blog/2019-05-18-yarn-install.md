@@ -1,7 +1,7 @@
 ---
 title: 从 Galaxy Project 用户界面聊聊 Linux 下 Yarn 安装
 type: post
-tags: ["软件", "软件"]
+tags: ["others", "软件"]
 date: 2019-05-18T12:19:29.000Z
 category: 软件
 published: true

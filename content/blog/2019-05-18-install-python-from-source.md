@@ -1,7 +1,7 @@
 ---
 title: Linux 下 Python 源码编译安装
 type: post
-tags: ["软件", "Python", "软件"]
+tags: ["Python", "软件"]
 date: 2019-05-18T12:10:10.000Z
 category: 软件
 published: true

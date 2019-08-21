@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Hugo 博客折腾的一些记录</title>
-      <link>https://shen.bioinit.com/blog/2019-08-08-build-hugo-blogs/</link>
-      <pubDate>Thu, 08 Aug 2019 09:05:21 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-08-08-build-hugo-blogs/</guid>
-      <description>模仿 R 语言大神谢益辉，搭建了一个 Hugo+rblogdown 的博客：https://blog.bioinit.com 主要记录： .Site.BaseURL 不起作用， relURL 、 absURL 也不起作用时，可参考使</description>
-    </item>
-    
-    <item>
       <title>一些好玩又有趣的开源项目</title>
       <link>https://shen.bioinit.com/blog/2019-08-05-rgvbqq/</link>
       <pubDate>Mon, 05 Aug 2019 07:12:52 +0000</pubDate>
@@ -117,24 +108,6 @@
       
       <guid>https://shen.bioinit.com/blog/2019-06-03-jekyll-add-page-view/</guid>
       <description>Google Analysis 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。登录 谷歌分析 并新建一个媒体资源，</description>
-    </item>
-    
-    <item>
-      <title>生物信息学博客与论坛</title>
-      <link>https://shen.bioinit.com/blog/2019-05-29-bio-blogs-forums/</link>
-      <pubDate>Wed, 29 May 2019 06:12:49 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-05-29-bio-blogs-forums/</guid>
-      <description>关于生物信息学的博客与论坛。 国内篇： 谢益辉个人主页：http://yihui.name/ R 语言大神个人主页，基于 Hugo。 leoatchina(leo 陶）的博客：ht</description>
-    </item>
-    
-    <item>
-      <title>一些博客与站点搜集</title>
-      <link>https://shen.bioinit.com/blog/2019-05-29-blogs-and-sites-collected/</link>
-      <pubDate>Wed, 29 May 2019 06:05:40 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-05-29-blogs-and-sites-collected/</guid>
-      <description>搜集的一些简洁、大气优秀的博客客户端、模板，以及相关服务。 客户端 ** Gridea：https://github.com/getgridea 一个</description>
     </item>
     
     <item>

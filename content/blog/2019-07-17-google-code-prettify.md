@@ -1,7 +1,7 @@
 ---
 title: Google Code Prettify 代码高亮使用教程
 type: post
-tags: ["编程", "开发"]
+tags: ["others", "开发"]
 date: 2019-07-17T05:43:07.000Z
 category: 开发
 published: true

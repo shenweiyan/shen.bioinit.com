@@ -1,7 +1,7 @@
 ---
 title: 癌症克隆种群结构分析软件PyClone安装
 type: post
-tags: ["软件", "软件"]
+tags: ["others", "软件"]
 date: 2019-07-01T03:50:35.000Z
 category: 软件
 published: true
