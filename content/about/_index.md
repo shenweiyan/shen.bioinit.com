@@ -40,7 +40,7 @@ disable_comments: true
 
 <br/>
 欢迎关注我的个人微信公众号：**“生信私房菜”**，期待有干货的小伙伴可以和我一起运营，也希望你们的来稿。
-<p style="text-align:center;"><img src="https://blog.bioinit.com/img/bioinit_qcode.png"/></p>
+<p style="text-align:center;"><img src="https://apps-db.oss-cn-shenzhen.aliyuncs.com/logos/bioinit_qcode.png"/></p>
 
 ***
 
