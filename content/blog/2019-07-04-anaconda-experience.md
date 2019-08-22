@@ -7,7 +7,7 @@ category: 软件
 published: true
 ---
 
-<a name="Y60JN"></a>
+
 # 1. channels 使用
 
 需要注意的是做生信分析的童鞋使用 conda 环境时一定要特别注意 conda channels 的设置，滥用 channels 很有可能会导致你的软件升降级（甚至环境）错乱。推荐设置如下（**~/.condarc**）：
@@ -105,7 +105,7 @@ $
 ```
 
 
-<a name="qPgWA"></a>
+
 # 4. 环境导出与恢复
 
 使用 conda 命令安装的包，都可以使用下面的命令导出依赖包/环境并批量恢复：
@@ -144,14 +144,14 @@ R Essentials 软件包包含 IRKernel 和 80 多种最流行的数据科学 R �
 conda 安装 R 有很多种方法，如可以通过 r=3.6.x，或者 r-base、r-irkernel、r-essentials 都可以。需要注意：
 
 如果需要在 Anaconda 的 Jupyter Notebook 中使用 R，建议使用 `conda install -c r r-irkernel` 或者 `conda install -c r r-essentials` 的方式安装，因为 `conda install -c r r=3.6.x/r-base` 默认不会安装 irkernel，而且先安装的 r=3.6.x/r-base 可能与后安装的 r-irkernel/r-essentials 产生冲突。
-<a name="7T9Pd"></a>
+
 ## 
-<a name="rlP8q"></a>
+
 ## 5.2 R 包
 
 通过 conda 安装的 R，在安装 R 包时，最好使用 conda 命令去安装，conda 无法安装的（如 github 的包）再考虑其他的安装方式。
 
-<a name="32p58"></a>
+
 ### 1. install.packages
 
 `install.packages()` 所有 R 包：
@@ -160,9 +160,9 @@ conda 安装 R 有很多种方法，如可以通过 r=3.6.x，或者 r-base、r
 > soft = as.vector(data[,1])
 > install.packages(soft)
 ```
-<a name="EoLVl"></a>
+
 ### 
-<a name="pZbCA"></a>
+
 ### 2. bioconductor 
 
 **Bioconductor 镜像：**
@@ -209,7 +209,7 @@ BiocManager::install()
 ```
 
 
-<a name="uTjG9"></a>
+
 ### 3. github_install
 
 GitHub 上的一些最新 R 包，可以使用 `devtools` 进行安装：
@@ -242,7 +242,7 @@ install_github("jokergoo/ComplexHeatmap")
 我在《[一次"胆战心惊"的真实集群运维经历](https://www.yuque.com/shenweiyan/cookbook/hpc-experience-glibc)》记录了 gblic 的一些集群吐血经历，感兴趣的可以了解一下。
 
 
-<a name="2VR30"></a>
+
 # 7. 什么时候使用 Anaconda
 
 对于 Anaconda(conda) 软件安装以及依赖解决的原理，我对这个黑盒子表示一头雾水。真实的情况是，如果在一个环境中安装了几百个软件(包)，再去新装软件，这时候 Anaconda 常常会卡在 Collecting package metadata 和 Solving environment 过程中，甚至一个晚上都没法解决环境的依赖。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562893289384-0a32c390-b76f-4a4c-bf36-63ed998de07c.png#align=left&display=inline&height=359&name=image.png&originHeight=479&originWidth=856&size=81664&status=done&width=642)

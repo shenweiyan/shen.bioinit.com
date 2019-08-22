@@ -9,7 +9,7 @@ published: true
 
 搜集的一些简洁、大气优秀的博客客户端、模板，以及相关服务。
 
-<a name="u8CF5"></a>
+
 ## 客户端
 **
 
@@ -23,7 +23,7 @@ published: true
 
 
 
-<a name="ZOdWi"></a>
+
 ## 博客站点
 
 - 袁勇的个人主页：[http://yongyuan.name/cn/](http://yongyuan.name/cn/)
@@ -43,7 +43,7 @@ published: true
 达闼科技的深度学习算法工程师，Jekyll+Github Pages 博客。<br />
 <br />
 
-<a name="qigql"></a>
+
 ## 博客服务
 
 - Typecho：[http://typecho.org/](http://typecho.org/)

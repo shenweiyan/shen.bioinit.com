@@ -64,7 +64,7 @@ li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563342577013-d0f4a151-8558-4bf0-aa30-e4853daa64c9.png#align=left&display=inline&height=501&originHeight=501&originWidth=584&size=0&status=done&width=584)
 
-<a name="OJwKp"></a>
+
 ## 3.3. Markdown
 
 如果用 Markdown 来生成 HTML 的话，需事先给相关的标签追加必要的 class；Markdown 产生的代码块必然含义 `<pre>` 元素，那么可以用 jQuery 在 Prettyprinter 运行前处理下 HTML 样式：

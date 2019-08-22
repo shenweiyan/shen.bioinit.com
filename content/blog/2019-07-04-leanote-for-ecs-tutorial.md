@@ -12,7 +12,7 @@ Leanote（中文名 "蚂蚁笔记"），横跨 Windows、MacOS、Android、iOS�
 下面将基于阿里云ECS服务端搭建 Leanote 云笔记服务器的步骤分享出来，给需要使用私人云笔记的筒子们。详细安装请参考官方文档：《[Leanote 源码版详细安装教程 Mac and Linux](https://github.com/leanote/leanote/wiki/Leanote-%E6%BA%90%E7%A0%81%E7%89%88%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B----Mac-and-Linux)》。
 
 
-<a name="FozZO"></a>
+
 ## 1. Golang 安装
 
 ```bash
@@ -27,7 +27,7 @@ $ ln -s /usr/local/software/go-1.10.1/bin/* /data/LeaNote/bin
 
 
 
-<a name="tnWoA"></a>
+
 ## 2. 获取 Revel 和 Leanote 的源码
 
 
@@ -45,7 +45,7 @@ $ go install github.com/revel/cmd/revel
 
 
 
-<a name="ISrEF"></a>
+
 ### 2.2 方法2
 
 该方法使用 Golang 的 go get 来下载包, 这个命令会调用 git, 所以必须先安装 git。
@@ -69,7 +69,7 @@ $> go get github.com/leanote/leanote/app
 
 
 
-<a name="YIYVn"></a>
+
 ## 3. 安装Mongodb
 
 
@@ -95,7 +95,7 @@ export PATH="/usr/local/software/mongodb-3.6.4/bin:$PATH"
 ```
 
 
-<a name="FYujA"></a>
+
 ### 3.2 测试Mongodb安装
 
 ```bash
@@ -116,7 +116,7 @@ Mongodb 安装到此为止, 下面为 Mongodb 导入 Leanote 初始数据。
 
 
 
-<a name="0EOSC"></a>
+
 ## 4. 导入初始数据
 
 leanote 初始数据在 /data/LeaNote/gopackage/src/github.com/leanote/leanote/mongodb_backup/leanote_install_data 中。
@@ -156,7 +156,7 @@ user2 username: demo@leanote.com, password: demo@leanote.com (仅供体验使用
 
 
 
-<a name="5bWo6"></a>
+
 ## 5. 配置Leanote
 
 Leanote 的配置存储在文件 /data/LeaNote/gopackage/src/github.com/leanote/leanote/conf/app.conf 中。
@@ -167,7 +167,7 @@ Leanote 的配置存储在文件 /data/LeaNote/gopackage/src/github.com/leanote/
 
 
 
-<a name="WqQq0"></a>
+
 ## 6. 运行Leanote
 
 注意: 在此之前请确保 Mongodb 已在运行！
@@ -184,13 +184,13 @@ $ nohup revel run github.com/leanote/leanote 2>&1 &
 
 
 
-<a name="peX9N"></a>
+
 ## 7. Leanote 其他配置
 
 按照本教程启动 Mongodb 是没有权限控制的, 如果你的 Leanote 服务器暴露在外网, 任何人都可以访问你的 Mongodb 并修改, 所以这是极其危险的!!!!!!!!!!! 请务必为 Mongodb 添加用户名和密码并以 auth 启动，方法如下。
 
 
-<a name="8bWjM"></a>
+
 ### 7.1 为 mongodb 数据库添加用户
 
 像 mysql 一样有 root 用户, mongodb 初始是没有用户的，这样很不安全，所以要为 leanote 数据库新建一个用户来连接 leanote 数据库(注意，并不是为 leanote 的表 users 里新建用户, 而是新建一个连接 leanote 数据库的用户，类似 mysql 的 root 用户).
@@ -246,7 +246,7 @@ db.password=abc123 # if not exists, please leave blank
 ```
 
 
-<a name="aa68p"></a>
+
 ### 7.2 Mongodb设置后台运行
 
 Mongodb 安装完成后，我们通常通过 `mongod --dbpath /usr/local/mongo/data` 让 mongodb 启动，但是我们关闭 shell，mongodb 就停止运行了。**如果想在后台运行，启动时只需添加 --fork 函数即可。可以在日志路径后面添加 --logappend，防止日志被删除。**
@@ -258,7 +258,7 @@ $ mongod --fork --dbpath=/data/LeaNote/mongodb/data --logpath=/data/LeaNote/mong
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559373749331-aa4b3166-1138-41ae-864d-be9c59a43310.png#align=left&display=inline&height=84&originHeight=84&originWidth=812&size=0&status=done&width=812#align=left&display=inline&height=84&originHeight=84&originWidth=812&status=done&width=812)
 
 
-<a name="IS5bF"></a>
+
 ### 7.3 Mongodb设置开机启动
 
 当我们把服务器关闭，重启之后，发现 mongodb 又停止了，有没有开机就启动的方法呢？我们把上面代码放到 /etc/rc.local，中，就可以了。
@@ -272,7 +272,7 @@ $ mongod --fork --dbpath=/data/LeaNote/mongodb/data --logpath=/data/LeaNote/mong
 下次重启就可以直接运行 mongodb 了！
 
 
-<a name="TBdOf"></a>
+
 ### 7.4 为Leanote配置https
 
 **1. 生成 SSL 证书**
@@ -347,7 +347,7 @@ server {
 最后，执行 `nginx -s reload` 重启 nginx 服务，打开 [https://note.shenweiyan.cn](http://blog.leanote.com/shenweiyan) 即可看到 leanote 的 index 主页。
 
 
-<a name="swByx"></a>
+
 ### 7.5 Leanote配置开机启动
 
 虽然通过命令让 Leanote 进程进入后台运行了，但是一旦重启还是要手动开启，略麻烦，这时可以自己新建 _.sh 脚本文件，将命令写入脚本文件里，然后在 rc.local 配置文件中运行 _.sh 脚本文件就能实现开机启动 Leanote 服务端。
@@ -369,7 +369,7 @@ source /etc/profile
 
 
 
-<a name="qFPI2"></a>
+
 ## 参考资料：
 
 - [https://blog.csdn.net/adrianandroid/article/details/56277347](https://blog.csdn.net/adrianandroid/article/details/56277347)

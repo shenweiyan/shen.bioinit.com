@@ -31,7 +31,7 @@ yum install libffi
 yum install libffi-devel
 ```
 
-<a name="AVtPw"></a>
+
 ### 2.1 ssl
 
 python3 需要引用 openssl 模块，但是 CentOS 需要的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（Centos-6.x 通过 yum 源安装的 openssl 的最高版本是1.0.1），所以需要手动更新 openssl。
@@ -64,7 +64,7 @@ source $HOME/.bashrc
 1. 从 [https://www.openssl.org/source/](https://www.openssl.org/source/) 下载的源码 openssl-1.0.2s、openssl-1.0.2m 目前发现依然会导致 `Could not build the ssl module` ，建议从 [https://www.openssl.org/source/old/](https://www.openssl.org/source/old/) 下载 1.1.1 的源码编译安装。
 
 
-<a name="MtwQq"></a>
+
 ### 2.2 ctypes
 
 在 CentOS 6.x 安装 `libffi-devel` 的时候出现以下问题：
@@ -100,7 +100,7 @@ $ make install
 ```
 
 
-<a name="eE4JC"></a>
+
 ### 2.3 pygraphviz
 
 ```bash
@@ -180,7 +180,7 @@ Successfully installed pygraphviz-1.5
 ```
 
 
-<a name="uB8Mi"></a>
+
 ### 2.4 编译安装
 
 第一，下载 Python 源码，解压。

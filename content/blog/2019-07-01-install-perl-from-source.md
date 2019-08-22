@@ -9,7 +9,7 @@ published: true
 
 Perl 是一种功能丰富的计算机程序语言，运行在超过 100 种计算机平台上，适用广泛，从大型机到便携设备，从快速原型创建到大规模可扩展开发。在生物信息分析领域，Perl 主要是做数据预处理、文本处理和格式转换、对算法效率要求不高的分析软件开发，系统管理和 pipeline 搭建等工作。这里对 Linux（主要是 CentOS）、windows 下 Perl 的安装做一个备忘。
 
-<a name="jgJYZ"></a>
+
 # 一、CentOS 7 下安装 Perl
 
 <a name="4f2b0709"></a>
@@ -145,17 +145,17 @@ Built under linux
     /usr/local/software/Perl-5.26/lib/perl5/5.26.1
 ```
 
-<a name="gGmJF"></a>
+
 # 二、Windows 7 下安装 Perl
 
 windows 下的 Perl 安装推荐使用 ActivePerl（[https://www.activestate.com/products/activeperl/](https://www.activestate.com/products/activeperl/)），安装步骤如下。
 
-<a name="f0jbD"></a>
+
 ## 2.1 安装包下载
 
 在这里我们下载 64-bit 的 [Perl-5.26.3](https://www.activestate.com/products/activeperl/downloads/thank-you/?dl=https://downloads.activestate.com/ActivePerl/releases/5.26.3.2603/ActivePerl-5.26.3.2603-MSWin32-x64-a95bce075.exe)。
 
-<a name="lRCT5"></a>
+
 ## 2.2 安装与设置
 
 ActivePerl-5.26.3.2603-MSWin32-x64-a95bce075.exe 安装包下载完后，我们直接点击进行安装。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1556700512724-bb805074-52d4-4307-be9e-0d8ac20c8b3a.png#align=left&display=inline&height=394&name=image.png&originHeight=394&originWidth=504&size=60550&status=done&width=504)
@@ -170,12 +170,12 @@ Perl 安装完成后，我们在 DOC 命令行输入 perl -V，可以看到详�
 
 如果我们在安装过程中没有勾选把 Perl 添加到系统环境变量，DOC 中直接执行 perl -V 会出现""提示，这时候我们需要手动把 perl 添加到 Windows 的系统环境变量中就可以了。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1556701347137-15b268b6-17fa-455a-878f-adca0ebf9804.png#align=left&display=inline&height=601&name=image.png&originHeight=601&originWidth=852&size=191508&status=done&width=852)
 
-<a name="6g77N"></a>
+
 ## 2.3 配置cpan
 
 为了更好对 Perl 进行扩展，方便以后的模块安装，我们最好配置一下 cpan。ActivePerl 有个好处就是在初始化 cpan 的时候会自动把 dmake、gcc、g++、mingw32-make 等 windows 常用的编译工具一起安装到 "**$Dprefix/site/bin**" 目录下，免去了我们手动安装这些编译器的各种麻烦。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1556702232382-4f856e00-21e8-408e-8cb3-a4023f83ae58.png#align=left&display=inline&height=713&name=image.png&originHeight=713&originWidth=729&size=134813&status=done&width=729)
 
-<a name="SxiRf"></a>
+
 ## 2.4 安装完成
 
 到这里，windows 下的 ActivePerl（perl-5.26）就安装完成了！

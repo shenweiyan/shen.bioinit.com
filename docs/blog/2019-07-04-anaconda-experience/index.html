@@ -199,8 +199,6 @@
 
 
 
-<p><a name="Y60JN"></a></p>
-
 <h1 id="1-channels-使用">1. channels 使用</h1>
 
 <p>需要注意的是做生信分析的童鞋使用 conda 环境时一定要特别注意 conda channels 的设置，滥用 channels 很有可能会导致你的软件升降级（甚至环境）错乱。推荐设置如下（<strong>~/.condarc</strong>）：</p>
@@ -300,8 +298,6 @@ $ conda deactivate
 $
 </code></pre>
 
-<p><a name="qPgWA"></a></p>
-
 <h1 id="4-环境导出与恢复">4. 环境导出与恢复</h1>
 
 <p>使用 conda 命令安装的包，都可以使用下面的命令导出依赖包/环境并批量恢复：</p>
@@ -340,16 +336,11 @@ while read requirement; do conda install --yes $requirement; done &lt; requireme
 
 <p>conda 安装 R 有很多种方法，如可以通过 r=3.6.x，或者 r-base、r-irkernel、r-essentials 都可以。需要注意：</p>
 
-<p>如果需要在 Anaconda 的 Jupyter Notebook 中使用 R，建议使用 <code>conda install -c r r-irkernel</code> 或者 <code>conda install -c r r-essentials</code> 的方式安装，因为 <code>conda install -c r r=3.6.x/r-base</code> 默认不会安装 irkernel，而且先安装的 r=3.6.x/r-base 可能与后安装的 r-irkernel/r-essentials 产生冲突。
-<a name="7T9Pd"></a></p>
-
-<p><a name="rlP8q"></a></p>
+<p>如果需要在 Anaconda 的 Jupyter Notebook 中使用 R，建议使用 <code>conda install -c r r-irkernel</code> 或者 <code>conda install -c r r-essentials</code> 的方式安装，因为 <code>conda install -c r r=3.6.x/r-base</code> 默认不会安装 irkernel，而且先安装的 r=3.6.x/r-base 可能与后安装的 r-irkernel/r-essentials 产生冲突。</p>
 
 <h2 id="5-2-r-包">5.2 R 包</h2>
 
 <p>通过 conda 安装的 R，在安装 R 包时，最好使用 conda 命令去安装，conda 无法安装的（如 github 的包）再考虑其他的安装方式。</p>
-
-<p><a name="32p58"></a></p>
 
 <h3 id="1-install-packages">1. install.packages</h3>
 
@@ -359,10 +350,6 @@ while read requirement; do conda install --yes $requirement; done &lt; requireme
 &gt; soft = as.vector(data[,1])
 &gt; install.packages(soft)
 </code></pre>
-
-<p><a name="EoLVl"></a></p>
-
-<p><a name="pZbCA"></a></p>
 
 <h3 id="2-bioconductor">2. bioconductor </h3>
 
@@ -412,8 +399,6 @@ BiocManager::install()
 </code></pre></li>
 </ul>
 
-<p><a name="uTjG9"></a></p>
-
 <h3 id="3-github-install">3. github_install</h3>
 
 <p>GitHub 上的一些最新 R 包，可以使用 <code>devtools</code> 进行安装：</p>
@@ -447,8 +432,6 @@ install_github(&quot;jokergoo/ComplexHeatmap&quot;)
 <p>有一些软件对于 glibc 的版本会有要求，如 cnvnator-0.3.3 要求 glibc &gt;= 2.14。虽然在 anaconda 中有很多 channel 都提供了 glibc，但<strong>千万注意一定要注意不要轻易去安装</strong>，否则有很大的概率会导致整个环境挂掉，甚至会导致当前环境中的 conda、python 出现动态库混乱错误，恢复起来相当麻烦！</p>
 
 <p>我在《<a href="https://www.yuque.com/shenweiyan/cookbook/hpc-experience-glibc">一次&rdquo;胆战心惊&rdquo;的真实集群运维经历</a>》记录了 gblic 的一些集群吐血经历，感兴趣的可以了解一下。</p>
-
-<p><a name="2VR30"></a></p>
 
 <h1 id="7-什么时候使用-anaconda">7. 什么时候使用 Anaconda</h1>
 

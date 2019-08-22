@@ -18,7 +18,7 @@ published: true
 
 ---
 
-<a name="yKxV0"></a>
+
 ### CentOS 7 安装 Go
 
 ```bash
@@ -36,7 +36,7 @@ $ go env 		# 查看 Go 的一些环境配置
 ```
 
 
-<a name="yhPOe"></a>
+
 ### CentOS 7 安装 Hugo
 
 ```bash
@@ -47,7 +47,7 @@ $ source ~/.bashrc
 ```
 
 
-<a name="IsvZa"></a>
+
 ### 启动 hugo 博客服务
 
 ```bash
@@ -72,7 +72,7 @@ $ hugo server --baseUrl=120.77.xx.xx --bind=0.0.0.0		# 启动本地预览服务
 ```
 
 
-<a name="QdYub"></a>
+
 ### 一些问题
 
 **问题：**<br />hugo-ivy 主题在 0.55 后版本的 Hugo 中 RSS 无法使用，并且在编译时会有如下警告：
@@ -103,7 +103,7 @@ WARN 2019/08/13 09:03:08 Page's .RSSLink is deprecated and will be removed in a 
 {{ end }}
 ```
 
-<a name="CiCYG"></a>
+
 ### 一些资料
 
 记录一下，搭建部署过程中参考的一些资料：

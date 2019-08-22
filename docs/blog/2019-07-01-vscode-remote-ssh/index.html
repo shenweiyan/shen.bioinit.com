@@ -199,8 +199,6 @@
 
 
 
-<p><a name="dN4EE"></a></p>
-
 <h1 id="引言">引言</h1>
 
 <p>北京时间 2019 年 5 月 3 日，在 PyCon 2019 大会上，<a href="https://zhuanlan.zhihu.com/p/64505333">微软发布了 VS Code Remote</a>。这是一个用来实现远程开发的功能插件，对于许多使用 Windows 进行开发，但是需要将程序部署在服务器的用户来说，提供了非常大的便利。这些插件包括了：</p>
@@ -225,8 +223,6 @@
 
 <p>在本文中，将对于基本的 <strong>Remote - SSH</strong> 的使用简单地进行介绍。</p>
 
-<p><a name="6FyhA"></a></p>
-
 <h1 id="安装-remote-ssh-相关插件">安装 <strong>Remote-SSH </strong>相关插件</h1>
 
 <p>截止 2019.06.26，<strong>Remote - SSH</strong>（预览版）已经可以在 VSCode 稳定版本中下载和安装使用了。安装步骤如下。</p>
@@ -234,8 +230,6 @@
 <p>打开安装好的 VSCode，然后在最左边的侧边栏中找到 Extensions 项，即扩展选项卡，并进入，然后再搜索窗口中输入：Remote - SSH（或者 ssh 关键字）。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561516153368-2b8782eb-d03f-4b7e-b5d5-c3a45e6fc021.png#align=left&amp;display=inline&amp;height=288&amp;name=image.png&amp;originHeight=288&amp;originWidth=383&amp;size=32907&amp;status=done&amp;width=383" alt="image.png" /></p>
 
 <p>找到所对应的插件之后，点击绿色的 &ldquo;<strong>Install(安装)</strong>&rdquo; 即可开始安装。稍等片刻，在安装完成之后，在侧边栏中会出现一个 <strong>Remote-SSh</strong> 选项卡，即表示安装成功。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561516456947-44fb6d26-b473-45ed-a231-f9c4e7282142.png#align=left&amp;display=inline&amp;height=355&amp;name=image.png&amp;originHeight=355&amp;originWidth=900&amp;size=76197&amp;status=done&amp;width=900" alt="image.png" /></p>
-
-<p><a name="Al3Ez"></a></p>
 
 <h1 id="利用-remote-ssh-连接服务器">利用 Remote-SSH 连接服务器</h1>
 
@@ -249,8 +243,6 @@
 
 <p><strong>注意：</strong>VSCode 的这个远程连接的插件是基于 OpenSSH 的，因此在本机需要装有 OpenSSH 的客户端，在服务器上也要装有 OpenSSH 的服务端，并且密钥文件已经放置在服务器中，即需要在 <code>cmd</code> 中可以直接通过命令 <code>ssh IP_ADDRESS -l USERNAME -p PORT</code> （其中 IP_ADDRESS、USERNAME、PORT 要修改为所需变量）连接的情况下，才可以通过这个插件连接到服务器。如果前面的这些配置还没有完成，VSCode 会报出以下错误：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561517524359-8682d342-1607-4543-bf47-8693ab372baa.png#align=left&amp;display=inline&amp;height=232&amp;name=image.png&amp;originHeight=232&amp;originWidth=460&amp;size=21155&amp;status=done&amp;width=460" alt="image.png" /></p>
 
-<p><a name="sQPN4"></a></p>
-
 <h2 id="1-安装-openssh-客户端">1. 安装 OpenSSH 客户端</h2>
 
 <p>各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">Installing a supported SSH client</a>》一节的内容。这里以 windows 7 为例，官方推荐：Install <a href="https://git-scm.com/download/win">Git for Windows</a> and select the <strong>Use Git and optional Unix tools from the Command Prompt</strong> option or manually add <code>C:\Program Files\Git\usr\bin</code> into your PATH.</p>
@@ -259,8 +251,6 @@
 <br />其次，git 安装完后， <code>bash</code> 、 <code>ssh</code> 、 <code>ssh-keygen</code> 等一些常用的 linux 命令工具都已经安装到 <code>C:\Program Files\Git\usr\bin</code> 下，我们需要把这个目录添加到 windows 的系统环境变量中（我的电脑→属性→高级系统设置→环境变量→path）。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561520047226-6ec3bf53-032f-4a40-8b09-5df780b9ba74.png#align=left&amp;display=inline&amp;height=449&amp;name=image.png&amp;originHeight=449&amp;originWidth=826&amp;size=42526&amp;status=done&amp;width=826" alt="image.png" /></p>
 
 <p>第三，在 DOC 中测试 ssh 连接到远程服务器成功！<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561531605290-1cb922c3-034a-409d-8521-e239bf97bd22.png#align=left&amp;display=inline&amp;height=331&amp;name=image.png&amp;originHeight=331&amp;originWidth=667&amp;size=48829&amp;status=done&amp;width=667" alt="image.png" /></p>
-
-<p><a name="47kkY"></a></p>
 
 <h2 id="2-ssh-key-配置">2. SSH KEY 配置</h2>
 
@@ -288,8 +278,6 @@ ssh %REMOTEHOST% &ldquo;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; c
 <li>更多详细的 ssh key 设置，请参考官方文档：《<a href="https://code.visualstudio.com/docs/remote/troubleshooting">Remote Development Tips and Tricks</a>》。</li>
 </ol>
 
-<p><a name="fLDES"></a></p>
-
 <h2 id="3-使用-remote-ssh-连接远端服务器">3. 使用 Remote-SSH 连接远端服务器</h2>
 
 <p>回到 VSCode 中 Remote-SSH 选项卡，在 Select SSH configuration file to edit 中将 config 文件修改完成之后，&rdquo;Ctrl+s&rdquo; 保存可以看到，在下面出现了我们所配置的远程连接，这里显示的是我设置的名称：&rdquo;<strong>GalaxyServer</strong>&ldquo;，即 Galaxy 在线生信分析平台的服务器，然后点击 &ldquo;<strong>GalaxyServer</strong>&rdquo; 右侧的连接按钮(图中箭头所指），便会弹出一个新的窗口，在新的窗口中选择打开文件夹，便可以看到，这个窗口中的打开的便是服务器中的文件了，接下来便可以访问服务器中的文件并远程修改了。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561529798038-4c23bcc8-8968-4b8a-b790-968b9b7d27b2.png#align=left&amp;display=inline&amp;height=369&amp;name=image.png&amp;originHeight=369&amp;originWidth=953&amp;size=43759&amp;status=done&amp;width=953" alt="image.png" /></p>
@@ -297,8 +285,6 @@ ssh %REMOTEHOST% &ldquo;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; c
 <p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561529960026-cbd0d4be-d78e-47f7-b8b2-2539b056890b.png#align=left&amp;display=inline&amp;height=407&amp;name=image.png&amp;originHeight=407&amp;originWidth=1102&amp;size=68653&amp;status=done&amp;width=1102" alt="image.png" /></p>
 
 <p>更多详细的 Remote SSH 的说明与使用配置，参考官方文档：《<a href="https://code.visualstudio.com/docs/remote/ssh">Remote Development using SSH</a>》。</p>
-
-<p><a name="BG9g6"></a></p>
 
 <h2 id="4-在-remote-ssh-中使用终端">4. 在 Remote-SSH 中使用终端</h2>
 

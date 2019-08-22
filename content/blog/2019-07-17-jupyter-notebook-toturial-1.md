@@ -36,7 +36,7 @@ iPython Notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 
 
-<a name="I7DKO"></a>
+
 # 安装
 
 正常情况下，Anaconda 安装包中已经自带了 jupyter、jupyter-notebook。对于 Miniconda，或者其他只安装了 python 的机器，需要借助 pip 安装：
@@ -53,7 +53,7 @@ conda install jupyter
 更多安装说明，请参考 [官网](http://jupyter.org/install.html)。
 
 
-<a name="UJFsH"></a>
+
 # 启动
 
 接下来，我们只需要在命令行输入 jupyter notebook 或者 jupyter-notebook 即可。
@@ -90,7 +90,7 @@ Known labextensions:
 
 
 
-<a name="W6UZJ"></a>
+
 # 使用
 
 在 Jupyter Notebook web 页面，我们可以点击 "New" → "Python2" 创建 python2 笔记。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563350203434-e78b0a11-ea24-4634-ab10-29ccd5851a87.png#align=left&display=inline&height=342&originHeight=342&originWidth=807&size=0&status=done&width=807)
@@ -107,7 +107,7 @@ $ cat ~/.jupyter/jupyter_notebook_config.json
   }
 }
 ```
-<a name="AbsTq"></a>
+
 # 
 以上就是本地 Jupyter Notebook 安装与使用的一些简单介绍，下一篇我们介绍一下 Jupyter Notebook 远程服务安装和配置。
 

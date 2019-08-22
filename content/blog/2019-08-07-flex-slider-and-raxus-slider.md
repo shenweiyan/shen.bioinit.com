@@ -7,7 +7,7 @@ category: 开发
 published: true
 ---
 
-<a name="p9gDE"></a>
+
 ## FlexSlider
 
 链接：[http://flexslider.woothemes.com/](http://flexslider.woothemes.com/)
@@ -51,7 +51,7 @@ $(window).load(function() {
 **FAQ01**：[如何使用flexslider设置多个滑块？](http://cn.voidcc.com/question/p-pumryoaf-hm.html)
 
 
-<a name="zWSq9"></a>
+
 ## Raxus Slider
 
 链接：[https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343](https://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343)

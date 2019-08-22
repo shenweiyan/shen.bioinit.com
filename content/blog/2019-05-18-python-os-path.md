@@ -139,7 +139,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ---
 
-<a name="isabs"></a>
+
 ## isabs
 
 > 测试参数是否是绝对路径
@@ -171,7 +171,7 @@ True
 
 ---
 
-<a name="isdir"></a>
+
 ## isdir
 
 > 测试指定参数是否是目录名
@@ -279,7 +279,7 @@ True
 
 ---
 
-<a name="split"></a>
+
 ## split
 
 > 分割目录名，返回由其目录名和基名给成的元组

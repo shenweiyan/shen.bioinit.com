@@ -68,7 +68,7 @@ ipython kernel install --user
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563351954924-9deae7b8-600e-423f-9fce-497337ef6696.png#align=left&display=inline&height=388&originHeight=388&originWidth=626&size=0&status=done&width=626)
 
 
-<a name="jvb8U"></a>
+
 ## 实战
 
 使用 `--prefix` 指定 IPython kernel spec 安装路径：

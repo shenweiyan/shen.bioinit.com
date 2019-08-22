@@ -20,16 +20,16 @@ published: true
 
 下面介绍一下具体的操作。
 
-<a name="zxlMJ"></a>
+
 ## 一、注册，并新建对象存储的存储空间
 
 七牛云注册，实名认证，这里不细说，很简单。新建对象存储的存储空间也很简单：<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565242056691-50655e8f-e816-441a-8247-758f47f90256.png#align=left&display=inline&height=496&name=image.png&originHeight=496&originWidth=1016&size=52609&status=done&width=1016)
-<a name="3a9rq"></a>
+
 ## 二、增加镜像存储的镜像源
 
 在创建好的对象存储空间（note-db）中，选择 "镜像存储"，添加语雀镜像源地址：<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565242263407-a2d8c1cd-ae81-476f-bc31-310e1087b1c5.png#align=left&display=inline&height=428&name=image.png&originHeight=428&originWidth=1037&size=40000&status=done&width=1037)
 
-<a name="ZalRQ"></a>
+
 ## 三、绑定域名
 
 七牛云绑定域名，并且设置 CNAME 的一个重要前提是：域名必须备案成功了才可以使用的！
@@ -38,12 +38,12 @@ published: true
 
 所以我们需要用我们自己的二级域名来绑定七牛云进行访问（最好不用 www 开头的二级域名来绑定，因为 www 开头的域名，我们都是作为主域名的），具体绑定步骤如下。
 
-<a name="pVkMh"></a>
+
 ### 3.1 绑定域名
 
 ![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565243055488-63b61899-032c-4eeb-84d4-a61eb45f0d0a.png#align=left&display=inline&height=371&name=image.png&originHeight=371&originWidth=1026&size=56497&status=done&width=1026)<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565243411951-6cccd7e7-2b8a-4c3c-81b8-1f8617bff7bc.png#align=left&display=inline&height=519&name=image.png&originHeight=519&originWidth=1046&size=66813&status=done&width=1046)
 
-<a name="tt6ol"></a>
+
 ### 3.2 配置 CNAME
 
 **首先**，上面 3.1 步骤，点击 "确认" 完成后，即可看到新增加域名的 CNAME 信息：<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565243547685-99f99f9c-3775-4c63-ad7d-cc04048bb9ef.png#align=left&display=inline&height=333&name=image.png&originHeight=333&originWidth=847&size=39662&status=done&width=847)
@@ -65,7 +65,7 @@ HTTPS 配置中的 SSL 证书可以选择申请七牛与的免费证书；也可
 **最后**，在博客中把博客所有 [https://qiniu.bioinit.com](https://qiniu.bioinit.com/) 的域名都替换成 [https://qiniu.bioinit.com](http://qiniu.bioinit.com/)，并检查图片是否正常显示。
 
 
-<a name="8lwWX"></a>
+
 ## 四、个人博客
 
 参考 R 语言大神谢益辉（[https://yihui.name/](https://yihui.name/)）和 Jekyll 的一些大神，基于 Github Pages 搭建的 hugo+rblowndown、Jekyll 博客，附上首页截图，需要的请拿去。<br />![hugo.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1565419585151-caacf476-acae-440c-b878-2d316fa9bc4a.png#align=left&display=inline&height=660&name=hugo.png&originHeight=660&originWidth=1049&size=121639&status=done&width=1049)
