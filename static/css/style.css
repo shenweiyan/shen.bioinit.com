@@ -324,8 +324,7 @@ thead, tfoot, tr:nth-child(even) {
   .main {
     width: auto;
     padding: 40px 10px;
-    /*margin-left: 0;*/
-    margin-left: 15rem;
+    margin-left: 0;
     border-left: none;
     min-height: auto;
   }
@@ -438,6 +437,12 @@ thead, tfoot, tr:nth-child(even) {
     padding: 0 8px;
   }
 }
+
+
+@media screen and (min-device-width: 481px) and (max-width: 960px) {
+  .main {margin-left: 15rem;}
+}
+
 
 /* Landscape phone screens and smaller */
 
