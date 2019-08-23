@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Mon, 19 Aug 2019 02:57:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 02:38:15 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端移动端适配方案之 rem</title>
+      <link>https://shen.bioinit.com/blog/2019-08-23-css-rem/</link>
+      <pubDate>Fri, 23 Aug 2019 02:38:15 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/blog/2019-08-23-css-rem/</guid>
+      <description>一、前言 这几天在折腾 hugo 博客的时候发现有不少的博客都全面使用了 rem 进行移动端适配处理，相比最长使用的 em，px，pt，这里记录一下对 rem 的一些入门</description>
+    </item>
     
     <item>
       <title>沉默的大多数</title>
