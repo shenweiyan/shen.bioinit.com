@@ -272,14 +272,5 @@
       <description>基于 CentOS Linux release 6.5 源码编译安装 python-2.7.xx(Python-3.x.xx) 的一些步骤，以下为安装记录。 1. 安装环境 os : CentOS Linux release 6.5 (x86_64) gcc: 4.8.5 20150623 2. 安装步骤 如果您拥有 root 权限，请执以下依赖安装： yum install zlib yum install</description>
     </item>
     
-    <item>
-      <title>Git 的一些常用用法笔记</title>
-      <link>https://shen.bioinit.com/blog/2019-05-10-oquebf/</link>
-      <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-05-10-oquebf/</guid>
-      <description>本地创建分支 v-1.2 ```shell $ git branch v-1.2 $ git branch master v-1.2 ``` 切换本地分支 ```shell $ git branch master v-1.2 $ git checkout v-1.2 Switched to branch &amp;lsquo;v-1.2&amp;rsquo; $ git branch master * v-1.2 3. 把本地分支提交到远程分支仓库 ```shell $ git add --all $ git commit -m &amp;quot;ASO design</description>
-    </item>
-    
   </channel>
 </rss>
