@@ -434,6 +434,9 @@ thead, tfoot, tr:nth-child(even) {
     margin-top: 50px;
     margin-bottom: 0;
   }
+  .patterns li {
+    padding: 0 8px;
+  }
 }
 
 /* Landscape phone screens and smaller */
