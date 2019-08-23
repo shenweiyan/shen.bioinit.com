@@ -243,7 +243,7 @@
 
 <h1 id="环境变量文件加载顺序">环境变量文件加载顺序</h1>
 
-<p>正常登录配置文件顺序加载过程，所谓正常登录指用户通过输入用户名和密码登录的状态。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563504946771-94de9db3-ea3f-4db5-9468-bc863fd09be4.png#align=left&amp;display=inline&amp;height=330&amp;name=image.png&amp;originHeight=330&amp;originWidth=960&amp;size=39306&amp;status=done&amp;width=960" alt="image.png" /><br />在 CentOS 7，我们测试一下：</p>
+<p>正常登录配置文件顺序加载过程，所谓正常登录指用户通过输入用户名和密码登录的状态。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566551259962-56a823c2-f6f6-4e64-bd75-4dc0e27f4e28.png#align=left&amp;display=inline&amp;height=244&amp;name=image.png&amp;originHeight=244&amp;originWidth=845&amp;size=19821&amp;status=done&amp;width=845" alt="image.png" /><br />在 CentOS 7，我们测试一下：</p>
 
 <pre><code class="language-bash">$ sudo sed -i '1 iecho &quot;/etc/profile goes start&quot;\n' /etc/profile;head -n 3 /etc/profile
 echo &quot;/etc/profile goes start&quot;
