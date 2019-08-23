@@ -435,7 +435,13 @@ thead, tfoot, tr:nth-child(even) {
   }
 }
 
-@media screen and (min-device-width: 721px) and (max-device-width: 958px){
+/* Landscape phone screens and smaller */
+
+@media screen and (max-width: 720px) {
+}
+
+
+@media screen and (min-device-width: 481px) {
   .main {
     width: auto;
     padding: 40px 10px;
@@ -443,12 +449,6 @@ thead, tfoot, tr:nth-child(even) {
     border-left: none;
     min-height: auto;
   }
-
-}
-
-/* Landscape phone screens and smaller */
-
-@media screen and (max-width: 720px) {
 }
 
 /* Portrait phone screens */
