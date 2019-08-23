@@ -14,8 +14,8 @@
     
     
     
-    <title>国内 GitHub 访问加速 - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="国内 GitHub 访问加速 - Steven Shen | 沈维燕">
+    <title>Git 的一些常用用法笔记 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="Git 的一些常用用法笔记 - Steven Shen | 沈维燕">
     
 
     
@@ -165,7 +165,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/blog/2019-05-09-xpurpl.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/blog/2019-05-10-git-usage.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../blog/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -182,12 +182,12 @@
       <header class="title">
         
 
-<h1>国内 GitHub 访问加速</h1>
+<h1>Git 的一些常用用法笔记</h1>
 
 
 
 <h3>
-2019-05-09</h3> 
+2019-05-10</h3> 
 
 
    
@@ -197,92 +197,115 @@
       </header>
 
 
+<ul>
+<li>本地创建分支 v-1.2</li>
+</ul>
 
-
-<p>GitHub 自从私有库免费后，涌入大批量的开发爱好者，小 S 也将自己的部分代码转为了私库，但是在中国访问 GitHub 的速度不忍直视，那就叫一个慢！下面小 C 就用下面的问题告诉大家中国地区访问 GitHub 为什么很慢以及如何加速访问 GitHub。<br /></p>
-
-<h2 id="中国地区访问-github-为什么-很-慢">*<strong><em>中国地区访问 GitHub 为什么</em></strong>*很*<strong><em>慢</em></strong>*？****</h2>
-
-<p><strong><br /></strong><strong>Q：为什么访问速度会很慢？</strong><strong><br /></strong><strong>A：</strong><strong>GitHub 的 CDN 域名遭到 DNS 污染。GitHub 在中国大陆访问速度慢的问题原因有很多，但最直接和最主要的原因是 GitHub 的分发加速网络的域名遭到 DNS 污染。由于 GitHub 的加速分发 CDN 域名 assets-cdn.github.com 遭到 DNS 污染，导致无法连接使用 GitHub 的加速分发服务器，才使得中国大陆访问速度很慢。<br />
-<br /></strong><strong>Q：如何解决 DNS 污染？</strong><strong><br /></strong><strong>A：</strong>**通过修改 Hosts 解决污染问题。一般的 DNS 问题都可以通过修改 Hosts 文件来解决，GitHub 的 CDN 域名被污染问题也不例外，同样可以通过修改 Hosts 文件解决。将域名解析直接指向 IP 地址来绕过 DNS 的解析，以此解决污染问题。<br /></p>
-
-<h2 id="如何加速访问-github">*<strong><em>如何加速访问</em></strong>*GitHub？****</h2>
-
-<p>**</p>
-
-<ol>
-<li>打开 <a href="https://www.ipaddress.com/">IPAddress.com</a> 网站，查询下面 3 个网址对应的 IP 地址：</li>
-</ol>
-
-<pre><code>github.com，192.30.253.112 192.30.253.113
-assets-cdn.github.com，101.184.133
-global.ssl.fastly.net，151.101.185.194
+<pre><code class="language-shell">$ git branch v-1.2
+$ git branch
+* master
+  v-1.2
 </code></pre>
 
-<ol>
-<li><p>修改本地电脑系统 hosts 文件（PS：路径一般都是 C:\Windows\System32\drivers\etc），在末尾添加三行记录并保存(需管理员权限，注意 IP 地址与域名间需留有空格)。
-```</p>
+<ul>
+<li>切换本地分支</li>
+</ul>
 
-<h1 id="copyright-c-1993-2009-microsoft-corp">Copyright &copy; 1993-2009 Microsoft Corp.</h1>
+<pre><code class="language-shell">$ git branch
+* master
+  v-1.2
 
-<p>#</p>
+$ git checkout v-1.2
+Switched to branch 'v-1.2'
 
-<h1 id="this-is-a-sample-hosts-file-used-by-microsoft-tcp-ip-for-windows">This is a sample HOSTS file used by Microsoft TCP/IP for Windows.</h1>
+$ git branch
+  master
+* v-1.2
+</code></pre>
 
-<p>#</p>
+<ul>
+<li>把本地分支提交到远程分支仓库</li>
+</ul>
 
-<h1 id="this-file-contains-the-mappings-of-ip-addresses-to-host-names-each">This file contains the mappings of IP addresses to host names. Each</h1>
+<pre><code class="language-shell">$ git add --all
 
-<h1 id="entry-should-be-kept-on-an-individual-line-the-ip-address-should">entry should be kept on an individual line. The IP address should</h1>
+$ git commit -m &quot;ASO design for Galaxy version 1.2&quot;
 
-<h1 id="be-placed-in-the-first-column-followed-by-the-corresponding-host-name">be placed in the first column followed by the corresponding host name.</h1>
+$ git push origin v-1.2
+Username for 'https://git.dev.tencent.com': shenweiyan
+Password for 'https://shenweiyan@git.dev.tencent.com':
+Counting objects: 19, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 29.87 KiB | 0 bytes/s, done.
+Total 18 (delta 3), reused 0 (delta 0)
+To https://git.dev.tencent.com/shenweiyan/aso_design.git
+ * [new branch]      v-1.2 -&gt; v-1.2
+</code></pre>
 
-<h1 id="the-ip-address-and-the-host-name-should-be-separated-by-at-least-one">The IP address and the host name should be separated by at least one</h1>
+<ul>
+<li>查看一下远程仓库有几个分支</li>
+</ul>
 
-<h1 id="space">space.</h1>
+<pre><code class="language-shell">$ git branch -a
+  master
+* v-1.2
+  remotes/origin/HEAD -&gt; origin/master
+  remotes/origin/master
+  remotes/origin/v-1.2
+</code></pre>
 
-<p>#</p>
+<ul>
+<li>git 本地回滚到之前某一次的 commit</li>
+</ul>
 
-<h1 id="additionally-comments-such-as-these-may-be-inserted-on-individual">Additionally, comments (such as these) may be inserted on individual</h1>
+<pre><code class="language-bash">$ git log
+commit 610d4417c04ce2c53cfb7b77a0525ddb7695b869
+Author: shenweiyan &lt;ishenweiyan@qq.com&gt;
+Date:   Fri Aug 23 09:08:06 2019 +0800
 
-<h1 id="lines-or-following-the-machine-name-denoted-by-a-symbol">lines or following the machine name denoted by a &lsquo;#&rsquo; symbol.</h1>
+    fix ipad
 
-<p>#</p>
+commit 8938003aa309ab3cd98af43e67ad4f4aaff5e672
+Author: shenweiyan &lt;ishenweiyan@qq.com&gt;
+Date:   Fri Aug 23 09:00:22 2019 +0800
 
-<h1 id="for-example">For example:</h1>
+    add new post at 2019-08-23-09:00:22
 
-<p>#</p>
+commit 31107425b1488b49d7a1a75f183149e40ba81223
+Author: shenweiyan &lt;ishenweiyan@qq.com&gt;
+Date:   Thu Aug 22 15:50:56 2019 +0800
 
-<h1 id="102-54-94-97-rhino-acme-com-source-server">102.54.94.97     rhino.acme.com          # source server</h1>
+    add topic page urls
 
-<h1 id="38-25-63-10-x-acme-com-x-client-host">38.25.63.10     x.acme.com              # x client host</h1></li>
-</ol>
+commit bbf9d6803864dffd7e7965036a638b17be0eeda7
+Author: shenweiyan &lt;ishenweiyan@qq.com&gt;
+Date:   Thu Aug 22 15:47:02 2019 +0800
 
-<h1 id="localhost-name-resolution-is-handled-within-dns-itself">localhost name resolution is handled within DNS itself.</h1>
+    add about page images
+......
 
-<p>#	127.0.0.1       localhost
-#	::1             localhost</p>
+$ git reset --hard 8938003aa309ab3cd98af43e67ad4f4aaff5e672
+HEAD is now at 8938003 add new post at 2019-08-23-09:00:22
+</code></pre>
 
-<p>64.233.183.103 code.google.com</p>
+<ul>
+<li>git 远程回滚到之前某一次的 commit</li>
+</ul>
 
-<h1 id="github-加速">GitHub 加速</h1>
+<pre><code class="language-bash"># 方法一，先 git reset 回滚到本地，然后再强制 push 到远程。
+$ git reset --hard 8938003aa309ab3cd98af43e67ad4f4aaff5e672
 
-<p>192.30.253.112 github.com
-192.30.253.113 github.com
-151.101.184.133 assets-cdn.github.com
-151.101.185.194 github.global.ssl.fastly.net
-```</p>
-
-<ol>
-<li>用 &ldquo;WIN +R&rdquo; 快捷键打开运行窗口，输入命令：cmd 并回车进入命令行窗口，接着输入命令： <code>ipconfig /flushdns</code> 回车后执行刷新本地 DNS 缓存数据即可。</li>
-</ol>
+# 其中，-f：force（谨慎操作，备份预备）
+$ git push -u origin master -f        
+</code></pre>
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev"><a href="../../blog/2019-04-29-xdlz2f/">命名风格</a><br/>&larr;</span>
-  <span class="nav-next"><a href="../../blog/2019-05-10-git-usage/">Git 的一些常用用法笔记</a><br/>&rarr;</span>
+  <span class="nav-prev"><a href="../../blog/2019-05-09-xpurpl/">国内 GitHub 访问加速</a><br/>&larr;</span>
+  <span class="nav-next"><a href="../../blog/2019-05-15-pdf-copy/">扫描版与非扫描版 PDF 文字复制</a><br/>&rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -290,11 +313,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/blog\/2019-04-29-xdlz2f\/';
+    url = '\/blog\/2019-05-09-xpurpl\/';
     
   } else if (e.which == 39) {  
     
-    url = '\/blog\/2019-05-10-git-usage\/';
+    url = '\/blog\/2019-05-15-pdf-copy\/';
     
   }
   if (url) window.location = url;

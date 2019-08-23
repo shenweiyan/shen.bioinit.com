@@ -804,6 +804,15 @@
     </item>
     
     <item>
+      <title>Git 的一些常用用法笔记</title>
+      <link>https://shen.bioinit.com/blog/2019-05-10-git-usage/</link>
+      <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/blog/2019-05-10-git-usage/</guid>
+      <description>本地创建分支 v-1.2 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 把本地分支提交到远程分支仓库 $ git add --all $ git commit -m &amp;quot;ASO design for Galaxy version</description>
+    </item>
+    
+    <item>
       <title>国内 GitHub 访问加速</title>
       <link>https://shen.bioinit.com/blog/2019-05-09-xpurpl/</link>
       <pubDate>Thu, 09 May 2019 00:53:25 +0000</pubDate>
