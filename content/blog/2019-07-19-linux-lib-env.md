@@ -1,7 +1,7 @@
 ---
 title: Linux 下的动态库、静态库与环境变量
 type: post
-tags: ["others", "运维"]
+tags: ["Linux", "运维"]
 date: 2019-07-19T02:22:00.000Z
 category: 运维
 published: true
@@ -56,52 +56,27 @@ Linux 下的库有两种：**静态库**和**动态库**（共享库）。
 
 正常登录配置文件顺序加载过程，所谓正常登录指用户通过输入用户名和密码登录的状态。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566551259962-56a823c2-f6f6-4e64-bd75-4dc0e27f4e28.png#align=left&display=inline&height=244&name=image.png&originHeight=244&originWidth=845&size=19821&status=done&width=845)<br />在 CentOS 7，我们测试一下：
 ```bash
+# /etc/profile
 $ sudo sed -i '1 iecho "/etc/profile goes start"\n' /etc/profile;head -n 3 /etc/profile
 echo "/etc/profile goes start"
 
-# /etc/profile
-shenweiyan@ecs-steven 11:27:58 /home/shenweiyan
+# /etc/bashrc
 $ sudo sed -i '1 iecho "/etc/bashrc goes start"\n' /etc/bashrc;head -n 3 /etc/bashrc
 echo "/etc/bashrc goes start"
 
-# /etc/bashrc
-shenweiyan@ecs-steven 11:28:08 /home/shenweiyan
+# .bash_profile
 $ sed -i '1 iecho "~/.bash_profile goes start"\n' ~/.bash_profile;head -n 3 ~/.bash_profile
 echo "~/.bash_profile goes start"
 
-# .bash_profile
-shenweiyan@ecs-steven 11:28:19 /home/shenweiyan
+# .bashrc
 $ sed -i '1 iecho "~/.bashrc goes start"\n' ~/.bashrc;head -n 3 ~/.bashrc
 echo "~/.bashrc goes start"
 
-# .bashrc
-shenweiyan@ecs-steven 11:28:32 /home/shenweiyan
 $ sudo echo "echo '/etc/profile.d/test.sh goes'" >/etc/profile.d/test.sh;cat /etc/profile.d/test.sh
 echo '/etc/profile.d/test.sh goes'
 
 $ sudo sed -i '1 iecho "/etc/profile goes start"\n' /etc/profile;head -n 3 /etc/profile
 echo "/etc/profile goes start"
-
-# /etc/profile
-shenweiyan@ecs-steven 11:27:58 /home/shenweiyan
-$ sudo sed -i '1 iecho "/etc/bashrc goes start"\n' /etc/bashrc;head -n 3 /etc/bashrc
-echo "/etc/bashrc goes start"
-
-# /etc/bashrc
-shenweiyan@ecs-steven 11:28:08 /home/shenweiyan
-$ sed -i '1 iecho "~/.bash_profile goes start"\n' ~/.bash_profile;head -n 3 ~/.bash_profile
-echo "~/.bash_profile goes start"
-
-# .bash_profile
-shenweiyan@ecs-steven 11:28:19 /home/shenweiyan
-$ sed -i '1 iecho "~/.bashrc goes start"\n' ~/.bashrc;head -n 3 ~/.bashrc
-echo "~/.bashrc goes start"
-
-# .bashrc
-shenweiyan@ecs-steven 11:28:32 /home/shenweiyan
-$ sudo echo "echo '/etc/profile.d/test.sh goes'" >/etc/profile.d/test.sh;cat /etc/profile.d/test.sh
-echo '/etc/profile.d/test.sh goes'
-
 ```
 
 重新登录终端，可以看到各个环境变量文件的启动顺序：<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563507266576-43dcd960-e475-4305-80d6-1c81b023ab4d.png#align=left&display=inline&height=327&name=image.png&originHeight=327&originWidth=772&size=42121&status=done&width=772)

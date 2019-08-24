@@ -84,15 +84,6 @@
     </item>
     
     <item>
-      <title>Linux 下的动态库、静态库与环境变量</title>
-      <link>https://shen.bioinit.com/blog/2019-07-19-cvmlfu/</link>
-      <pubDate>Fri, 19 Jul 2019 02:22:00 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-07-19-cvmlfu/</guid>
-      <description>最近这几天在处理集群软件的过程中，遇到各种各样的库和环境变量的问题，被虐的不清！趁此机会，整理了一下 Linux 下静态库、动态库（共享库）和环境变量的</description>
-    </item>
-    
-    <item>
       <title>Linux 下的进程管理</title>
       <link>https://shen.bioinit.com/blog/2019-07-19-ucig1a/</link>
       <pubDate>Fri, 19 Jul 2019 01:01:22 +0000</pubDate>
