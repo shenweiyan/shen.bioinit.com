@@ -822,15 +822,6 @@
     </item>
     
     <item>
-      <title>推荐一个由 AI 生成 LOGO 的网站</title>
-      <link>https://shen.bioinit.com/blog/2019-05-18-ai-logo-design/</link>
-      <pubDate>Sat, 18 May 2019 12:28:29 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-05-18-ai-logo-design/</guid>
-      <description>在创建项目时，有时需要根据一些文案，设计 LOGO，既要美观大方，又要突出主题。当然，朋友较多的人，去找做 UI 设计的朋友来帮忙，像我这样的&amp;rd</description>
-    </item>
-    
-    <item>
       <title>Clumpify：能使 Fastq 压缩文件再缩小 30% 并加速后续分析流程</title>
       <link>https://shen.bioinit.com/blog/2019-05-18-clumpify-1714585/</link>
       <pubDate>Sat, 18 May 2019 12:26:17 +0000</pubDate>
@@ -846,15 +837,6 @@
       
       <guid>https://shen.bioinit.com/blog/2019-05-18-pyclone-install-1714572/</guid>
       <description>PyClone 是一种用于推断癌症中克隆种群结构的统计模型。 它是一种贝叶斯聚类方法，用于将深度测序的体细胞突变集分组到假定的克隆簇中，同时估计其细胞流行率</description>
-    </item>
-    
-    <item>
-      <title>从 Galaxy Project 用户界面聊聊 Linux 下 Yarn 安装</title>
-      <link>https://shen.bioinit.com/blog/2019-05-18-yarn-install/</link>
-      <pubDate>Sat, 18 May 2019 12:19:29 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/blog/2019-05-18-yarn-install/</guid>
-      <description>Galaxy 从 release 18.01 版本起，为其用户界面提供支持的客户端代码架构已经过了彻底的变更。 基础代码库已经转换为 ES6，同时启用了 Yarn 支持代码的构建和依赖管理，启</description>
     </item>
     
     <item>
