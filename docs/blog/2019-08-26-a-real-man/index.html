@@ -14,8 +14,8 @@
     
     
     
-    <title>前端移动端适配方案之 rem - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="前端移动端适配方案之 rem - Steven Shen | 沈维燕">
+    <title>一个纯粹的人 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="一个纯粹的人 - Steven Shen | 沈维燕">
     
 
     
@@ -165,7 +165,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/blog/2019-08-23-css-rem.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/blog/2019-08-26-a-real-man.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../blog/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -182,12 +182,12 @@
       <header class="title">
         
 
-<h1>前端移动端适配方案之 rem</h1>
+<h1>一个纯粹的人</h1>
 
 
 
 <h3>
-2019-08-23</h3> 
+2019-08-26</h3> 
 
 
    
@@ -197,46 +197,18 @@
       </header>
 
 
+<blockquote>
+<p>我和白求恩同志只见过一面。后来他给我来过许多信。可是因为忙，仅回过他一封信，还不知他收到没有。对于他的死，我是很悲痛的。现在大家纪念他，可见他的精神感人之深。我们大家要学习他毫无自私自利之心的精神。从这点出发，就可以变为大有利于人民的人。一个人能力有大小，但只要有这点精神，就是一个高尚的人，一个纯粹的人，一个有道德的人，一个脱离了低级趣味的人，一个有益于人民的人。</p>
+</blockquote>
 
-
-<h3 id="一-前言">一、前言</h3>
-
-<p>这几天在折腾 hugo 博客的时候发现有不少的博客都全面使用了 rem 进行移动端适配处理，相比最长使用的 em，px，pt，这里记录一下对 rem 的一些入门理解。</p>
-
-<h3 id="二-兼容性">二、兼容性</h3>
-
-<p>rem 目前支持大部分主流浏览器；在移动端 ios-6.1系统以上，android-2.1系统以上都支持。详细的各种设备支持列表可以在 <a href="https://caniuse.com/#search=rem">https://caniuse.com/#search=rem</a> 查看。</p>
-
-<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566529450148-54cc531f-eee0-463f-bd32-7ccc850eae92.png#align=left&amp;display=inline&amp;height=452&amp;name=image.png&amp;originHeight=452&amp;originWidth=942&amp;size=40195&amp;status=done&amp;width=942" alt="image.png" /></p>
-
-<h3 id="三-rem-设置字体大小">三、rem 设置字体大小</h3>
-
-<p>rem是（font size of the root element），意思就是根据网页的根元素来设置字体大小，和 em（font size of the element）的区别是，em 是根据其父元素的字体大小来设置，而 rem 是根据网页的跟元素（html）来设置字体大小的。</p>
-
-<p>举一个简单的例子，现在大部分浏览器 IE9+，Firefox、Chrome、Safari、Opera，如果我们不修改相关的字体配置，都是默认显示 font-size 是 16px 即：</p>
-
-<pre><code class="language-html">html {
-    font-size:16px;
-}
-</code></pre>
-
-<p>那么如果我们想给一个 p 标签设置 12px 字体大小那么用 rem 来写就是：</p>
-
-<pre><code class="language-html">p {
-    font-size: 0.75rem; //12÷16=0.75（rem）
-}
-</code></pre>
-
-<p>基本上使用 rem 这个单位来设置字体大小基本上是这个套路，好处是假如用户自己修改了浏览器的默认字体大小，那么使用 rem 就可以根据用户的调整的大小来显示了。 但是 rem 可以适用于字体，同样可以用于 <code>width</code> , <code>height</code> , <code>margin</code> 这些样式的单位。</p>
-
-<p>原文：<a href="https://gameinstitute.qq.com/community/detail/105566">https://gameinstitute.qq.com/community/detail/105566</a></p>
+<p>这是毛泽东同志在《纪念白求恩》原文中的一句话，时至今天看起来，依然让很多自以为是的那些人汗颜。抛开“有益于人民”的大高度，我见过不少还没有脱离低级趣味的人。</p>
 
 
   <footer>
   
 <nav class="post-nav">
-  <span class="nav-prev"><a href="../../blog/2019-08-21-github-badge/">GitHub 的项目徽章</a><br/>&larr;</span>
-  <span class="nav-next"><a href="../../blog/2019-08-26-a-real-man/">一个纯粹的人</a><br/>&rarr;</span>
+  <span class="nav-prev"><a href="../../blog/2019-08-23-css-rem/">前端移动端适配方案之 rem</a><br/>&larr;</span>
+  <span class="nav-next"></span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -244,11 +216,9 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/blog\/2019-08-21-github-badge\/';
+    url = '\/blog\/2019-08-23-css-rem\/';
     
   } else if (e.which == 39) {  
-    
-    url = '\/blog\/2019-08-26-a-real-man\/';
     
   }
   if (url) window.location = url;
