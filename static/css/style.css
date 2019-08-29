@@ -434,7 +434,7 @@ thead, tfoot, tr:nth-child(even) {
     margin-bottom: 0;
   }
   .patterns li {
-    padding: 0 8px;
+    padding: 0 0;
   }
 }
 
