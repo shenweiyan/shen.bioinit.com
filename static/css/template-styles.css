@@ -1,9 +1,9 @@
-/*html {
+html {
     font-size: calc(1em + 0.33vw);
     line-height: 1.5;
     color: #111;
     background-color: #fefefe;
-}*/
+}
 
 /* Katex math typesetting */
 .katex * {
@@ -259,7 +259,7 @@ h1 svg {
 /*@media screen and (max-width: 45em) {*/
 @media screen and (max-width: 480px) {
     body {
-        font-size: 13px;
+        font-size: 12px;
     }
     body a {
         hyphens: auto;
