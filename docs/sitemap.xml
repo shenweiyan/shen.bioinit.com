@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-08-26-a-real-man/</loc>
+    <lastmod>2019-08-26T05:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-08-23-css-rem/</loc>
     <lastmod>2019-08-23T02:38:15+00:00</lastmod>
   </url>
@@ -19,6 +24,11 @@
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-08-19-moc049/</loc>
+    <lastmod>2019-08-19T02:57:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-08-19-moc049/</loc>
     <lastmod>2019-08-19T02:57:02+00:00</lastmod>
   </url>
   
@@ -48,6 +58,11 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-08-05-rgvbqq/</loc>
+    <lastmod>2019-08-05T07:12:52+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-08-05-nd8gh3/</loc>
     <lastmod>2019-08-05T06:17:11+00:00</lastmod>
   </url>
@@ -59,6 +74,11 @@
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-07-23-coding-cancel-account/</loc>
+    <lastmod>2019-07-23T03:19:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-23-coding-cancel-account/</loc>
     <lastmod>2019-07-23T03:19:17+00:00</lastmod>
   </url>
   
@@ -89,6 +109,11 @@
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-07-17-bugs-of-aliyun-app/</loc>
+    <lastmod>2019-07-17T06:26:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-17-bugs-of-aliyun-app/</loc>
     <lastmod>2019-07-17T06:26:57+00:00</lastmod>
   </url>
   
@@ -128,7 +153,17 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-08-unicom_broadband/</loc>
+    <lastmod>2019-07-08T01:51:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-07-08-to-be-good/</loc>
+    <lastmod>2019-07-08T01:07:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-08-to-be-good/</loc>
     <lastmod>2019-07-08T01:07:48+00:00</lastmod>
   </url>
   
@@ -163,12 +198,22 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-01-pages-view-on-jekyll/</loc>
+    <lastmod>2019-07-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-07-01-vim-skills/</loc>
     <lastmod>2019-07-01T03:57:31+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-07-01-focus-on-writing/</loc>
+    <lastmod>2019-07-01T03:55:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-01-focus-on-writing/</loc>
     <lastmod>2019-07-01T03:55:23+00:00</lastmod>
   </url>
   
@@ -253,6 +298,11 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-01-different-on-bytes/</loc>
+    <lastmod>2019-07-01T03:50:35+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-07-01-install-perl-from-source/</loc>
     <lastmod>2019-07-01T03:50:35+00:00</lastmod>
   </url>
@@ -308,7 +358,17 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-07-01-ai-logo-desig/</loc>
+    <lastmod>2019-07-01T03:47:48+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-06-28-firefox-quantum/</loc>
+    <lastmod>2019-06-28T08:23:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-06-28-firefox-quantum/</loc>
     <lastmod>2019-06-28T08:23:08+00:00</lastmod>
   </url>
   
@@ -358,6 +418,11 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-06-03-jekyll-add-page-view/</loc>
+    <lastmod>2019-06-03T05:57:41+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-06-01-pypiserver-trial/</loc>
     <lastmod>2019-06-01T07:06:47+00:00</lastmod>
   </url>
@@ -389,6 +454,11 @@
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-05-29-blogs-and-sites-collected/</loc>
+    <lastmod>2019-05-29T06:05:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-05-29-blogs-and-sites-collected/</loc>
     <lastmod>2019-05-29T06:05:40+00:00</lastmod>
   </url>
   
@@ -478,6 +548,11 @@
   </url>
   
   <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-05-15-pdf-copy/</loc>
+    <lastmod>2019-05-15T06:13:41+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-05-10-git-usage/</loc>
     <lastmod>2019-05-10T03:54:24+00:00</lastmod>
   </url>
@@ -489,6 +564,11 @@
   
   <url>
     <loc>https://shen.bioinit.com/topic/hello/2019-04-29-xdlz2f/</loc>
+    <lastmod>2019-04-29T00:41:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/life/2019-04-29-xdlz2f/</loc>
     <lastmod>2019-04-29T00:41:03+00:00</lastmod>
   </url>
   
@@ -695,6 +775,12 @@
   <url>
     <loc>https://shen.bioinit.com/tags/%E7%94%9F%E4%BF%A1/</loc>
     <lastmod>2019-08-05T06:17:11+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2019-08-26T05:55:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
