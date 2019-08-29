@@ -44,7 +44,7 @@
       <pubDate>Tue, 11 Jun 2019 09:24:24 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2019-06-11-iddn10/</guid>
-      <description>https://www.jianshu.com/p/560ff3adfee3 Python 读取文件一般可以使用 read()，readlines()，但这两种方法在读取大文件时都会存储内存缺陷。 1. read() 接口的问题 f = open(filename, &#39;rb&#39;) f.read() 我们来读取</description>
+      <description>[https://www.jianshu.com/p/560ff3adfee3](https://www.jianshu.com/p/56 Python 读取文件一般可以使用 read()，``，但这两种方法在读取大文件时都会存储内存缺陷。 1. read() 接口的问题 f = open(filename, &#39;rb&#39;) f.read() 我们来读取 1 个规模为 3Gb 大小的</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Tue, 21 May 2019 03:48:13 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2019-05-21-kzicg7/</guid>
-      <description>subprocess python import subprocess transid = str(subprocess.check_output([&#39;grep&#39; , &#39;-w&#39;, geneid, trans2gene])).strip()</description>
+      <description>subprocess python import subprocess transid = str(subprocess.check_output([&#39;grep&#39; , &#39;-w&#39;, geneid, t).strip()</description>
     </item>
     
     <item>

@@ -84,7 +84,7 @@ True
 
 ```
 >>> os.stat("/root/test.sh")
-os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=1498117696)
+os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=
 >>> os.path.getatime("/root/test.sh")
 1498117664.2808378
 ```
@@ -100,7 +100,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ```
 >>> os.stat("/root/test.sh")
-os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=1498117696)
+os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=
 >>> os.path.getctime("/root/test.sh")
 1498117696.039542
 ```
@@ -116,7 +116,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ```
 >>> os.stat("/root/test.sh")
-os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=1498117696)
+os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=
 >>> os.path.getmtime("/root/test.sh")
 1496629059.9313989
 ```
@@ -132,7 +132,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ```
 >>> os.stat("/root/test.sh")
-os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=1498117696)
+os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=0, st_gid=0, st_size=568, st_atime=1498117664, st_mtime=1496629059, st_ctime=
 >>> os.path.getsize("/root/test.sh")
 568
 ```

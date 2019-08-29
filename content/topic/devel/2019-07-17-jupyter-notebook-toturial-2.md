@@ -67,7 +67,7 @@ $ jupyter notebook
 [I 14:57:17.203 NotebookApp] 0 active kernels
 [I 14:57:17.203 NotebookApp] The Jupyter Notebook is running at:
 [I 14:57:17.203 NotebookApp] http://127.0.0.1:8888/
-[I 14:57:17.203 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:57:17.203 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co.
 ```
 
 这是尚不能打开网页，因为是配置在 127.0.0.1 上的，只有本机可以访问。如果想要通过 ip 预览一下 Jupyter Notebook，可以考虑使用 `--ip` 和 `--port` 启动：
@@ -76,7 +76,7 @@ $ jupyter notebook --ip=0.0.0.0 --port=9000
 [I 16:12:57.449 NotebookApp] Serving notebooks from local directory: /apps/jupyter
 [I 16:12:57.449 NotebookApp] The Jupyter Notebook is running at:
 [I 16:12:57.449 NotebookApp] http://ecs-steven:9000/
-[I 16:12:57.449 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 16:12:57.449 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co.
 
 ```
 

@@ -20,7 +20,7 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 数据分析和传统的 MVC 软件开发的最大区别在于，数据分析存在一个 data flow, 我们是在不断的做计算，并且画图。这里存在一个大致的 "顺序"，比如:
 > 1. 先对数据进行处理，去掉有问题的数据 (Data Wrangling)
-> 1. 从各个角度看一个这个数据各个维度的分布情况 (Data Exploration)
+> 1. 从各个角度看一个这个数据各个维度的分布情况 (Data E
 > 1. 根据自己的想法、要求，做具体的分析，计算
 > 1. 对计算结果做进一部分的分析
 > <br />
@@ -36,7 +36,7 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 > ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988154-c6eef11b-194e-42dc-ac99-e79bd98a2367.jpg#align=left&display=inline&height=387&originHeight=429&originWidth=805&size=0&status=done&width=726)
 > ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988154-c6eef11b-194e-42dc-ac99-e79bd98a2367.jpg#align=left&display=inline&height=387&originHeight=429&originWidth=805&size=0&status=done&width=726)
 > <br />
-参考链接： > [https://www.zhihu.com/question/37490497/answer/212044783]()
+参考链接： > [https://www.zhihu.com/question/37490497/answer/2
 
 <a name="3188ed3c"></a>
 ## 2. Jupyter 优势
@@ -86,7 +86,7 @@ Known labextensions:
 [I 10:47:32.644 NotebookApp] Serving notebooks from local directory: /Bio/home/bi.shenwy/pythonTrain
 [I 10:47:32.644 NotebookApp] 0 active kernels 
 [I 10:47:32.644 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=120a457da88d214270e...22a376d3d4
-[I 10:47:32.644 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 10:47:32.644 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co.
 [C 10:47:32.651 NotebookApp] 
     
     Copy/paste this URL into your browser when you connect for the first time,
@@ -94,7 +94,7 @@ Known labextensions:
         http://localhost:8888/?token=120a457da88d214270e...22a376d3d4
 ```
 
-这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：[http://localhost:8888/?token=120a457da88d214270e...22a376d3d4](http://localhost:8888/?token=120a457da88d214270e...22a376d3d4)，即可进入登陆后的 Jupyter Notebook 页面：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490716-bc205590-2f06-4a0f-bf72-b355ca4b1cb8.png#align=left&display=inline&height=316&originHeight=342&originWidth=807&size=0&status=done&width=746)
+这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：[http://localhost:8888/?token=120a457da88d214270e...22a376d3d4](http://localhost:8888/?token=120a457da88d214270e...，即可进入登陆后的 Jupyter Notebook 页面：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490716-bc205590-2f06-4a0f-bf72-b355ca4b1cb8.png#align=left&display=inline&height=316&originHeight=342&originWidth=807&size=0&status=done&width=746)
 
 <a name="e1ce7125"></a>
 ## 3. 使用
@@ -174,7 +174,7 @@ $ jupyter notebook
 [I 14:57:17.203 NotebookApp] 0 active kernels
 [I 14:57:17.203 NotebookApp] The Jupyter Notebook is running at:
 [I 14:57:17.203 NotebookApp] http://127.0.0.1:8888/
-[I 14:57:17.203 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 14:57:17.203 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co.
 ```
 
 这是尚不能打开网页，因为是配置在 127.0.0.1 上的，只有本机可以访问。

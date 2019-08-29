@@ -222,7 +222,7 @@
 
 <p><a name="2xvqwy"></a></p>
 
-<h1 id="2xvqwy-引言">[](#2xvqwy)引言</h1>
+<h1 id="引言">引言</h1>
 
 <p>使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。</p>
 
@@ -266,7 +266,7 @@ top.mainloop()
 
 <li><p>Python 2.6 Tk 中文亂碼問題解決方法，<a href="http://blogkrogh.blogspot.com/2011/03/python-26-tk.html">http://blogkrogh.blogspot.com/2011/03/python-26-tk.html</a></p></li>
 
-<li><p>tkinter乱码，pyqt4乱码，<a href="http://aboutweb.lofter.com/post/11743e_6f7e4a5">http://aboutweb.lofter.com/post/11743e_6f7e4a5</a></p></li>
+<li><p>tkinter乱码，pyqt4乱码，[<a href="http://aboutweb.lofter.com/post/11743e_6f7e4a5](http://aboutweb.lofter.com/post/1174">http://aboutweb.lofter.com/post/11743e_6f7e4a5](http://aboutweb.lofter.com/post/1174</a></p></li>
 </ul>
 
 <p>上面几种方法测试后，问题依然存在。在 google 上一番搜索和来回测试之后，发现了几点信息：</p>
@@ -285,7 +285,7 @@ top.mainloop()
 
 <p><a name="ut4hbn"></a></p>
 
-<h1 id="ut4hbn-什么是-tcl-tk-tkinter">[](#ut4hbn)什么是 tcl, tk, tkinter</h1>
+<h1 id="什么是-tcl-tk-tkinter">什么是 tcl, tk, tkinter</h1>
 
 <blockquote>
 <p>The <a href="https://docs.python.org/3.6/library/tkinter.html#module-tkinter">tkinter</a> package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit. Both Tk and <a href="https://docs.python.org/3.6/library/tkinter.html#module-tkinter">tkinter</a> are available on most Unix platforms, as well as on Windows systems. (Tk itself is not part of Python; it is maintained at ActiveState.)</p>
@@ -309,7 +309,7 @@ top.mainloop()
 
 <p><a name="ia1frt"></a></p>
 
-<h1 id="ia1frt-activetcl-安装">[](#ia1frt)ActiveTcl 安装</h1>
+<h1 id="activetcl-安装">ActiveTcl 安装</h1>
 
 <p>ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。</p>
 
@@ -386,7 +386,7 @@ Do you want to download a free trial of Komodo IDE? [Y/n]
 
 <p><a name="h36qsw"></a></p>
 
-<h1 id="h36qsw-python-重新编译安装">[](#h36qsw)Python 重新编译安装</h1>
+<h1 id="python-重新编译安装">Python 重新编译安装</h1>
 
 <p>想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 <code>--with-tcltk-includes</code> 和 <code>--with-tcltk-libs</code> 中指定 ActiveTcl 的头文件以及库所在路径。</p>
 
@@ -405,9 +405,9 @@ warning: building with the bundled copy of libffi is deprecated on this platform
 Python build finished successfully!
 The necessary bits to build these optional modules were not found:
 _dbm                  _gdbm
-To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+To find the necessary bits, look in setup.py in detec for the module's name.
 
-The following modules found by detect_modules() in setup.py, have been
+The following modules found by detec in setup.py, have been
 built by the Makefile instead, as configured by the Setup files:
 atexit                pwd                   time
 
@@ -426,7 +426,7 @@ running build_scripts
 
 <p><a name="kxiufd"></a></p>
 
-<h1 id="kxiufd-调用-tkinter">[](#kxiufd)调用 Tkinter</h1>
+<h1 id="调用-tkinter">调用 Tkinter</h1>
 
 <p>Python 2 重新编译完后，执行 <code>python2 -m Tkinter</code> 显示 Tk 的 ui 界面，以及相应的 Tcl/Tk 版本。</p>
 
@@ -440,16 +440,16 @@ running build_scripts
 
 <p><a name="s3apxn"></a></p>
 
-<h1 id="s3apxn-参考资料">[](#s3apxn)参考资料</h1>
+<h1 id="参考资料">参考资料</h1>
 
 <ul>
 <li><p>Download And Install Tcl: ActiveTcl，<a href="https://www.activestate.com/products/activetcl/downloads/">https://www.activestate.com/products/activetcl/downloads/</a></p></li>
 
 <li><p>Installing Tk，<a href="https://tkdocs.com/tutorial/install.html">https://tkdocs.com/tutorial/install.html</a></p></li>
 
-<li><p>Python下&rdquo;No module named _tkinter&rdquo;问题解决过程分析，<a href="https://www.jianshu.com/p/0baa9657377f">https://www.jianshu.com/p/0baa9657377f</a></p></li>
+<li><p>Python下&rdquo;No module named _tkinter&rdquo;问题解决过程分析，[<a href="https://www.jianshu.com/p/0baa9657377f](https://www.jianshu.com/p/0b">https://www.jianshu.com/p/0baa9657377f](https://www.jianshu.com/p/0b</a></p></li>
 
-<li><p>Python GUI编程(Tkinter)文件对话框，<a href="https://my.oschina.net/u/2245781/blog/661533">https://my.oschina.net/u/2245781/blog/661533</a></p></li>
+<li><p>Python GUI文件对话框，<a href="https://my.oschina.net/u/2245781/blog/661533">https://my.oschina.net/u/2245781/blog/661533</a></p></li>
 </ul>
 
 

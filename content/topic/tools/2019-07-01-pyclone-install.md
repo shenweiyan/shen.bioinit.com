@@ -13,7 +13,7 @@ PyClone 是一种用于推断癌症中克隆种群结构的统计模型。 它�
 
 
 <a name="nw1wzf"></a>
-# [](#nw1wzf)简易安装
+# 简易安装
 
 官方推荐使用 [MiniConda](https://conda.io/miniconda.html) 来安装 PyClone。为了保证环境的稳定，可为 PyClone 单独建立一个环境，因为 PyClone 基于 Python2.7。在这里，我们使用 Anaconda3(conda 4.5.11) 来安装 PyClone。
 ```
@@ -101,7 +101,7 @@ conda install numpy==1.14.5 --yes
 ```
 
 <a name="my61mo"></a>
-# [](#my61mo)手动安装
+# 手动安装
 
 要手动安装 PyClone，请确保安装了必要的库（如下所列）。 之后就可以像任何其他 Python 包一样通过 `python setup.py install` 安装 PyClone。
 
@@ -146,7 +146,7 @@ Finished processing dependencies for PyClone==0.13.1
 
 - [aroth85/pyclone](https://github.com/aroth85/pyclone)，GitHub
 
-- YTer，[Pyclone 说明](https://yantinger.com/2018/01/24/pyclone%E8%AF%B4%E6%98%8E/index.html?d=1541053376887)，Hexo 个人博客
+- YTer，[Pyclone 说明](https://yantinger.com/2018/01/24/pyclone%E8%AF%B4%E6%98%8E/index.html?d=154，Hexo 个人博客
 
 - 用户1680321，[安装使用pyclone进行克隆演化推断](https://cloud.tencent.com/developer/article/1111984)，yw的数据分析
 

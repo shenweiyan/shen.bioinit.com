@@ -15,7 +15,7 @@ published: true
 **FlexSlider **是一个非常出色的 jQuery 滑动切换插件，它支持所有主流浏览器，并有淡入淡出效果。适合所有初级和高级网页设计师使用。关键的一点是该工具还是开源的。
 
 ```javascript
-$(window).load(function() {
+$(window).load {
  $('.flexslider').flexslider({
   animation: "fade",              //String: Select your animation type, "fade" or "slide"图片变换方式：淡入淡出或者滑动
   slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"图片设置为滑动式时的滑动方向：左右或者上下
@@ -39,10 +39,10 @@ $(window).load(function() {
   controlsContainer: "",          //Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
   manualControls: "",             //Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.自定义控制导航
   manualControlEvent:"",          //String:自定义导航控制触发事件:默认是click,可以设定hover
-  start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
-  before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
-  after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
-  end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+  start: function(){},            //Callback: funct - Fires when the slider loads the first slide
+  before: function(){},           //Callback: funct - Fires asynchronously with each slider animation
+  after: function(){},            //Callback: funct - Fires after each slider animation completes
+  end: function(){}               //Callback: funct - Fires when the slider reaches the last slide (as
    
  });
 });

@@ -11,8 +11,8 @@ published: true
 
 作为一个有追求的生信人，秉着对科研执着严谨的态度，一款专业而强大的浏览器我们怎么能错过呢！今天我们把从卡饭论坛 Chrome 浏览器专区搜集的一些 Google Chrome 使用教程分享给大家，希望能对喜欢 Chrome 的童鞋有帮助。
 
-- [新手必读区](https://bbs.kafan.cn/forum.php?mod=viewthread&tid=984403&page=1#pid191955358)
-- [各版本下载地址](https://bbs.kafan.cn/forum.php?mod=viewthread&tid=984403&page=1#pid19195543)
+- [新手必读区](https://bbs.kafan.cn/forum.php?mod=viewthread&tid=984403&page=1#pi
+- [各版本下载地址](https://bbs.kafan.cn/forum.php?mod=viewthread&tid=984403&page=1#p
 - 资源收集：**综合篇**
   - [第二弹：谷歌游览器使用索引！Chrome/瞬时搜索/自定义安装目录/插件/设置等等教程](http://bbs.kafan.cn/thread-840991-1-1.html)
   - [放弃speed dial 来这里看看吧 附件数量超过50个 总有你喜欢的 stable](http://bbs.kafan.cn/thread-929554-1-1.html)

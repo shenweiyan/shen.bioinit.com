@@ -84,7 +84,7 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS="-L/B
 <a name="8e1933ba"></a>
 ## bzip2 or libbz2
 
-根据《[R Installation and Administration: A.1 Essential programs and libraries](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries)》官方文档，`libbz2` (version 1.0.6 or later: called **bzip2-libs**/**bzip2-devel** or **libbz2-1.0**/**libbz2-dev** by some Linux distributions)，至少需要 1.0.6 及以上版本。
+根据《[R Installation and Administration: A.1 Essential programs and libraries](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries)》官方文档，`libbz2` (version 1.0.6 or later: called **bzip2-libs**/**bzip2-devel** or **libbz2-1.0**/**libbz2-dev** by some Linux dis，至少需要 1.0.6 及以上版本。
 ```bash
 $ wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 $ tar zvxf bzip2-1.0.6.tar.gz
@@ -125,7 +125,7 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS="-L/B
 
 在《[R Installation and Administration: A.1 Essential programs and libraries](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries)》官方文档中要求，PCRE 版本最好在 8.32 及以上。
 
-> CRE (version 8.32 or later, although versions 8.20–8.31 will be accepted with a deprecation warning) is required (or just its library and headers if packaged separately). Only the '8-bit' interface is used (and only that is built by default when installing from sources). PCRE must be built with UTF-8 support (not the default, and checked by `configure`) and support for Unicode properties is assumed by some R packages. JIT support (optionally available) is desirable for the best performance: support for this and Unicode properties can be checked at run-time by calling `pcre_config()`.
+> CRE (version 8.32 or later, although versions 8.20–8.31 will be accepted with a deprecation warning) is required (or just its library and headers if packaged . Only the '8-bit' interface is used (and only that is built by default when installing from sources). PCRE must be built with UTF-8 support (not the default, and checked by `configure`) and support for Unicode properties is assumed by some R packages. JIT support (optionally available) is desirable for the best performance: support for this and Unicode properties can be checked at run-time by calling `pc`.
 
 
 ```bash
@@ -220,7 +220,7 @@ $ make install
 <a name="libtiff"></a>
 ## libtiff
 
-R shell 中使用 capabilities() 可以查看 R 已经编译支持的功能，对于画图可以增加下面几个参数，使 R 支持对应格式的图片保存，与此同时要确保对应库已经安装。
+R shell 中使用 cap 可以查看 R 已经编译支持的功能，对于画图可以增加下面几个参数，使 R 支持对应格式的图片保存，与此同时要确保对应库已经安装。
 ```bash
 --with-cairo            use cairo (and pango) if available [yes]
 --with-libpng           use libpng library (if available) [yes]
@@ -272,13 +272,13 @@ Save workspace image? [y/n/c]: n
 使用 **ldd** 命令如果看到 libjpeg.so.9、libpng16.so.16 not found，则可以考虑手动安装这两个包：
 ```bash
 $ /Bioinfo/SoftWare/R-3.6.0/bin/R CMD ldd /Bioinfo/SoftWare/R-3.6.0/lib64/R/modules//R_X11.so
-        linux-vdso.so.1 =>  (0x00007fff3c79b000)
-        libtiff.so.5 => /Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib/libtiff.so.5 (0x00007f75369dc000)
+        linux-vdso.so.1 =>  (0x00007f
+        libtiff.so.5 => /Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib/libtiff.so.5 (0x00007f
         libjpeg.so.9 => not found
         libpng16.so.16 => not found
-        libpangocairo-1.0.so.0 => /usr/lib64/libpangocairo-1.0.so.0 (0x00007f75367ba000)
-        libpango-1.0.so.0 => /usr/lib64/libpango-1.0.so.0 (0x00007f753656e000)
-        libgobject-2.0.so.0 => /lib64/libgobject-2.0.so.0 (0x00007f7536322000)
+        libpangocairo-1.0.so.0 => /usr/lib64/libpangocairo-1.0.so.0 (0x00007f
+        libpango-1.0.so.0 => /usr/lib64/libpango-1.0.so.0 (0x00007f
+        libgobject-2.0.so.0 => /lib64/libgobject-2.0.so.0 (0x00007f
         ......
 ```
 
@@ -361,7 +361,7 @@ Error: package or namespace load failed for ‘stats’ in dyn.load(file, DLLpat
   libRlapack.so: cannot open shared object file: No such file or directory
 During startup - Warning message:
 package ‘stats’ in options("defaultPackages") was not found
->>> robjects.r('library(splines)')
+>>> robjects.r('libra')
 Error: package or namespace load failed for ‘splines’ in dyn.load(file, DLLpath = DLLpath, ...):
  unable to load shared object '/Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so':
   libRlapack.so: cannot open shared object file: No such file or directory
@@ -372,7 +372,7 @@ Traceback (most recent call last):
   File "/Bioinfo/SoftWare/Python-2.7.14/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 170, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "/Bioinfo/SoftWare/Python-2.7.14/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 100, in __call__
-    res = super(Function, self).__call__(*new_args, **new_kwargs)
+    res = super(Function, self).__call__(*new_args, **
 rpy2.rinterface.RRuntimeError: Error: package or namespace load failed for ‘splines’ in dyn.load(file, DLLpath = DLLpath, ...):
  unable to load shared object '/Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so':
   libRlapack.so: cannot open shared object file: No such file or directory
@@ -380,18 +380,18 @@ rpy2.rinterface.RRuntimeError: Error: package or namespace load failed for ‘sp
 
 ```bash
 $ ldd /Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so
-        linux-vdso.so.1 =>  (0x00007fffd65ba000)
+        linux-vdso.so.1 =>  (0x00007f
         libRlapack.so => not found
         libRblas.so => not found
-        libgfortran.so.3 => /lib64/libgfortran.so.3 (0x00007fed38cbb000)
-        libm.so.6 => /lib64/libm.so.6 (0x00007fed389b9000)
-        libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00007fed3877c000)
+        libgfortran.so.3 => /lib64/libgfortran.so.3 (0x00007f
+        libm.so.6 => /lib64/libm.so.6 (0x00007f
+        libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00007f
         libR.so => not found
-        libgomp.so.1 => /lib64/libgomp.so.1 (0x00007fed38556000)
-        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fed38339000)
-        libc.so.6 => /lib64/libc.so.6 (0x00007fed37f76000)
-        libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fed37d60000)
-        /lib64/ld-linux-x86-64.so.2 (0x00005561aa2c3000)
+        libgomp.so.1 => /lib64/libgomp.so.1 (0x00007f
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f
+        libc.so.6 => /lib64/libc.so.6 (0x00007f
+        libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f
+        /lib64/ld-linux-x86-64.so.2 (0x000055
 ```
 
 解决方法：
@@ -399,26 +399,26 @@ $ ldd /Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so
 $ export LD_LIBRARY_PATH="/Bioinfo/SoftWare/R-3.6.0/lib64/R/lib:$LD_LIBRARY_PATH"
 
 $ ldd /Bioinfo/SoftWare/R-3.5.0/lib64/R/library/stats/libs/stats.so
-        linux-vdso.so.1 =>  (0x00007ffd0f3af000)
-        libRlapack.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRlapack.so (0x00007f6509c47000)
-        libRblas.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRblas.so (0x00007f6509a19000)
-        libgfortran.so.3 => /lib64/libgfortran.so.3 (0x00007f65096ee000)
-        libm.so.6 => /lib64/libm.so.6 (0x00007f65093ec000)
-        libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00007f65091af000)
-        libR.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libR.so (0x00007f6508b81000)
-        libgomp.so.1 => /lib64/libgomp.so.1 (0x00007f650895b000)
-        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f650873e000)
-        libc.so.6 => /lib64/libc.so.6 (0x00007f650837b000)
-        libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f6508165000)
-        /lib64/ld-linux-x86-64.so.2 (0x000055583c2da000)
-        libreadline.so.6 => /lib64/libreadline.so.6 (0x00007f6507f1e000)
-        libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f6507cbc000)
-        liblzma.so.5 => /lib64/liblzma.so.5 (0x00007f6507a96000)
-        libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f6507885000)
-        libz.so.1 => /lib64/libz.so.1 (0x00007f650766f000)
-        librt.so.1 => /lib64/librt.so.1 (0x00007f6507467000)
-        libdl.so.2 => /lib64/libdl.so.2 (0x00007f6507262000)
-        libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f6507038000)
+        linux-vdso.so.1 =>  (0x00007f
+        libRlapack.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRlapack.so (0x00007f
+        libRblas.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRblas.so (0x00007f
+        libgfortran.so.3 => /lib64/libgfortran.so.3 (0x00007f
+        libm.so.6 => /lib64/libm.so.6 (0x00007f
+        libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00007f
+        libR.so => /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libR.so (0x00007f
+        libgomp.so.1 => /lib64/libgomp.so.1 (0x00007f
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f
+        libc.so.6 => /lib64/libc.so.6 (0x00007f
+        libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f
+        /lib64/ld-linux-x86-64.so.2 (0x000055
+        libreadline.so.6 => /lib64/libreadline.so.6 (0x00007f
+        libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f
+        liblzma.so.5 => /lib64/liblzma.so.5 (0x00007f
+        libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f
+        libz.so.1 => /lib64/libz.so.1 (0x00007f
+        librt.so.1 => /lib64/librt.so.1 (0x00007f
+        libdl.so.2 => /lib64/libdl.so.2 (0x00007f
+        libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f
 ```
 
 

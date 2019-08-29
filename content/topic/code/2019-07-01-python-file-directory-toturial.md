@@ -46,7 +46,7 @@ with open('data.txt', 'r') as f:
 ```python
 with open('data.txt', 'w') as f:
     data = 'some data to be written to the file'
-    f.write(data)
+    f.
 ```
 
 在上面的示例中，`open()` 打开用于读取或写入的文件，并返回文件句柄（在本例中为 `f`），该句柄提供可用于读取或写入文件数据的方法。 更多有关如何读取和写入文件的更多信息，参考：[Working With File I/O in Python ](https://dbader.org/blog/python-file-io)。
@@ -90,11 +90,11 @@ with open('data.txt', 'w') as f:
 ['sub_dir_c', 'file1.py', 'sub_dir_b', 'file3.txt', 'file2.csv', 'sub_dir']
 ```
 
-像这样列出的目录列表不容易阅读。使用循环打印出对`os.listdir()`的调用输出，有助于(后续的目录和文件)清理：
+像这样列出的目录列表不容易阅读。使用循环打印出对`os.listdir()`的调用输出，有助清理：
 ```python
 >>> entries = os.listdir('my_directory/')
 >>> for entry in entries:
-...     print(entry)
+...     p
 ...
 ...
 sub_dir_c
@@ -110,7 +110,7 @@ sub_dir
 
 在现代版本的 Python 中，`os.listdir()`的替代方法是使用`os.scandir()`和`pathlib.Path()`。
 
-`os.scandir()` 是在 Python 3.5 中引入的，并在 [PEP 471](https://www.python.org/dev/peps/pep-0471/) 中有记录。`os.scandir()`在调用时返回一个迭代器(iterator)而不是列表：
+`os.scandir()` 是在 Python 3.5 中引入的，并在 [PEP 471](https://www.python.org/dev/peps/pep-0471/) 中有记录。`os.scandir()`在调用时返回一个迭代而不是列表：
 ```python
 >>> import os
 >>> entries = os.scandir('my_directory/')
@@ -180,9 +180,9 @@ import os
 
 # List all files in a directory using os.listdir
 basepath = 'my_directory/'
-for entry in os.listdir(basepath):
+for entry in os.listdi:
     if os.path.isfile(os.path.join(basepath, entry)):
-        print(entry)
+        p
 ```
 
 在这里，对`os.listdir()`的调用返回了指定路径中的所有内容列表，然后使用`os.path.isfile()`过滤该列表，只打印出文件而不是目录。这会产生以下输出：
@@ -198,7 +198,7 @@ import os
 
 # List all files in a directory using scandir()
 basepath = 'my_directory/'
-with os.scandir(basepath) as entries:
+with os.scandi as entries:
     for entry in entries:
         if entry.is_file():
             print(entry.name)
@@ -229,7 +229,7 @@ file3.txt
 file2.csv
 ```
 
-如果将 for 循环和 if 语句组合成单个生成器表达式，则上面的代码可以更简洁。 Dan Bader 有一篇关于生成器表达式（[generator expressions](https://dbader.org/blog/python-generator-expressions)）和列表推导（list comprehensions）的优秀文章，感兴趣的可以去看一下。
+如果将 for 循环和 if 语句组合成单个生成器表达式，则上面的代码可以更简洁。 Dan Bader 有一篇关于生成器表达式（[generator expressions](https://dbader.org/blog/python-generator-e）和列表推导（list comprehensions）的优秀文章，感兴趣的可以去看一下。
 
 上面的代码，经修改后的版本如下所示：
 ```python
@@ -255,9 +255,9 @@ import os
 
 # List all subdirectories using os.listdir
 basepath = 'my_directory/'
-for entry in os.listdir(basepath):
+for entry in os.listdi:
     if os.path.isdir(os.path.join(basepath, entry)):
-        print(entry)
+        p
 ```
 
 当您多次调用`os.path.join()`时，以这种方式操作文件系统路径很快就会变得很麻烦。在我的计算机上运行它会产生以下输出：
@@ -273,7 +273,7 @@ import os
 
 # List all subdirectories using scandir()
 basepath = 'my_directory/'
-with os.scandir(basepath) as entries:
+with os.scandi as entries:
     for entry in entries:
         if entry.is_dir():
             print(entry.name)
@@ -350,12 +350,12 @@ Python 可以轻松检索文件大小和修改时间等文件属性。这是通�
 from datetime import datetime
 from os import scandir
 
-def convert_date(timestamp):
-    d = datetime.utcfromtimestamp(timestamp)
+def convert_date:
+    d = datetime.utcfromtimestamp
     formated_date = d.strftime('%d %b %Y')
     return formated_date
 
-def get_files():
+def :
     dir_entries = scandir('my_directory/')
     for entry in dir_entries:
         if entry.is_file():
@@ -363,7 +363,7 @@ def get_files():
             print(f'{entry.name}\t Last Modified: {convert_date(info.st_mtime)}')
 ```
 
-这将首先获取 my_directory 中的文件列表及其属性，然后调用`convert_date()`将每个文件的上次修改时间转换为人类可读的形式。 `convert_date()`使用`.strftime()`将时间（以秒为单位）转换为字符串。
+这将首先获取 my_directory 中的文件列表及其属性，然后调用`con`将每个文件的上次修改时间转换为人类可读的形式。 `con`使用`.strftime()`将时间（以秒为单位）转换为字符串。
 
 传递给`.strftime()`的参数如下：
 
@@ -373,7 +373,7 @@ def get_files():
 
 这些指令整合到一起产生如下所示的输出：
 ```python
->>> get_files()
+>>> 
 file1.py        Last modified:  04 Oct 2018
 file3.txt       Last modified:  17 Sep 2018
 file2.txt       Last modified:  17 Sep 2018
@@ -413,7 +413,7 @@ Traceback (most recent call last):
   File '/usr/lib/python3.5/pathlib.py', line 1214, in mkdir
     self._accessor.mkdir(self, mode)
   File '/usr/lib/python3.5/pathlib.py', line 371, in wrapped
-    return strfunc(str(pathobj), *args)
+    return strfunc(s, *args)
 FileExistsError: [Errno 17] File exists: '.'
 [Errno 17] File exists: '.'
 ```
@@ -508,7 +508,7 @@ p.mkdir(parents=True)
 
 这些是可以使用的方法和功能：
 
-- `endswith()` and `startswith()` string methods
+- `endswith()` and `s` string methods
 - `fnmatch.fnmatch()`
 - `glob.glob()`
 - `pathlib.Path.glob()`
@@ -545,14 +545,14 @@ $ touch data_{01..03}.txt data_{01..03}_backup.txt admin.py tests.py
 <a name="47e85df1"></a>
 ## 使用字符串方法
 
-Python 有几种用于修改和操作字符串的内置方法。当您在文件名中使用搜索模式时，其中两个方法`.startswith()` 和`.endswith()`非常有用。为此，首先获取目录列表，然后迭代它：
+Python 有几种用于修改和操作字符串的内置方法。当您在文件名中使用搜索模式时，其中两个方法`.s` 和`.endswith()`非常有用。为此，首先获取目录列表，然后迭代它：
 ```python
 >>> import os
 
 >>> # Get .txt files
 >>> for f_name in os.listdir('some_directory'):
 ...     if f_name.endswith('.txt'):
-...         print(f_name)
+...         pr
 ```
 
 上面的代码找到 `some_directory/`中的所有文件，迭代它们并使用`.endswith()`打印出具有`.txt`文件扩展名的文件名：sh
@@ -575,7 +575,7 @@ data_01_backup.txt
 
 >>> for file_name in os.listdir('some_directory/'):
 ...     if fnmatch.fnmatch(file_name, '*.txt'):
-...         print(file_name)
+...         print
 ```
 
 这将迭代`some_directory`中的文件列表，并使用`.fnmatch()`对具有`.txt`扩展名的文件执行通配符搜索。
@@ -588,7 +588,7 @@ data_01_backup.txt
 ```python
 >>> for filename in os.listdir('.'):
 ...     if fnmatch.fnmatch(filename, 'data_*_backup.txt'):
-...         print(filename)
+...         prin
 ```
 
 在此处，仅打印与数据`_*_ backup.txt`模式匹配的文件的名称。模式中的星号将匹配任何字符，因此运行以上代码将查找其文件名中以单词`data`开头并以`backup.txt`结尾的所有文本文件，如下面的输出所示：
@@ -620,7 +620,7 @@ UNIX 和相关的系统使用 ？ 和 * 通配符来把名称模式转化成文�
 ```python
 >>> import glob
 >>> for name in glob.glob('*[0-9]*.txt'):
-...     print(name)
+...     
 ```
 
 这将查找文件名中包含数字的所有文本（.txt）文件：
@@ -637,7 +637,7 @@ data_01_backup.txt
 ```
 >>> import glob
 >>> for file in glob.iglob('**/*.py', recursive=True):
-...     print(file)
+...     
 ```
 
 此示例使用`glob.iglob()`来搜索当前目录和子目录中的`.py`文件。并通过传递`recursive = True`作为`.iglob()`的参数使其搜索当前目录和任何子目录中的`.py`文件。 其中`glob.iglob()`和`glob.glob()`之间的区别在于`.iglob()`返回迭代器而不是列表。
@@ -655,7 +655,7 @@ sub_dir/file2.py
 >>> from pathlib import Path
 >>> p = Path('.')
 >>> for name in p.glob('*.p*'):
-...     print(name)
+...     
 
 admin.py
 scraper.py
@@ -698,7 +698,7 @@ docs.pdf
 for dirpath, dirnames, files in os.walk('.'):
     print(f'Found directory: {dirpath}')
     for file_name in files:
-        print(file_name)
+        print
 ```
 
 `os.walk()`在每次的循环迭代中返回三个值：
@@ -727,7 +727,7 @@ file6.py
 for dirpath, dirnames, files in os.walk('.', topdown=False):
     print(f'Found directory: {dirpath}')
     for file_name in files:
-        print(file_name)
+        print
 ```
 
 传递`topdown = False`参数将使`os.walk()`首先打印出它在子目录中找到的文件：
@@ -745,7 +745,7 @@ test1.txt
 test2.txt
 ```
 
-如我们所见，程序通过在列出根目录的内容之前列出子目录的内容来启动。 这在我们想要递归删除文件和目录的情况下非常有用(我们将在下面章节部分中学习如何执行此操作)。默认情况下，`os.walk`不会向下走到符号链接文件所指向的目录中。 我们可以通过使用`followlinks = True`参数调用此行为来覆盖此行为
+如我们所见，程序通过在列出根目录的内容之前列出子目录的内容来启动。 这在我们想要递归删除文件和目录的情况下非常有用(我们将在下面章节部分。默认情况下，`os.walk`不会向下走到符号链接文件所指向的目录中。 我们可以通过使用`followlinks = True`参数调用此行为来覆盖此行为
 
 <a name="d2f5c6a6"></a>
 # 创建临时文件和目录
@@ -770,17 +770,17 @@ data = fp.read()
 fp.close()
 ```
 
-第一步是从`tempfile`模块导入`TemporaryFile`。 接下来，使用`TemporaryFile()`方法，并通过传递要打开文件的模式创建一个类似于 object 的文件。这将创建并打开一个可用作临时存储区域的文件。
+第一步是从`tempfile`模块导入`TemporaryFile`。 接下来，使用`Temp`方法，并通过传递要打开文件的模式创建一个类似于 object 的文件。这将创建并打开一个可用作临时存储区域的文件。
 
 在上面的示例中，模式为'w + t'，这使得`tempfile`在写入模式下创建临时文本文件。这里没有必要为临时文件提供文件名，因为在脚本运行完毕后它将被销毁。
 
-写入文件后，我们可以从中读取并在完成处理后将其关闭。文件关闭后，将从文件系统中删除。如果需要命名使用`tempfile`生成的临时文件，请使用`tempfile.NamedTemporaryFile()`。
+写入文件后，我们可以从中读取并在完成处理后将其关闭。文件关闭后，将从文件系统中删除。如果需要命名使用`tempfile`生成的临时文件，请使用`tempfile.NamedTemp`。
 
 使用tempfile创建的临时文件和目录存储在一个特殊的用于存储临时文件的系统目录中。 Python 通过搜索标准目录列表以找到用户可以在其中创建文件的目录。
 
 在 Windows 上，目录按顺序为`C:\TEMP, C:\TMP, \TEMP, and \TMP` 进行搜索。在所有其他平台上，目录按顺序为 `/tmp` ，`/var/tmp` ，以及 `/usr/tmp`。作为最后的手段，`tempfile` 将保存当前目录中的临时文件和目录。
 
-`.TemporaryFile()`也是一个上下文管理器，因此它可以与 with 语句一起使用。使用上下文管理器会在读取文件后自动关闭和删除文件：
+`.Temp`也是一个上下文管理器，因此它可以与 with 语句一起使用。使用上下文管理器会在读取文件后自动关闭和删除文件：
 ```python
 with TemporaryFile('w+t') as fp:
     fp.write('Hello universe!')
@@ -791,12 +791,12 @@ with TemporaryFile('w+t') as fp:
 
 这将创建一个临时文件并从中读取数据。 一旦读取文件的内容，就会关闭临时文件并从文件系统中删除。
 
-`tempfile` 也可用于创建临时目录。 让我们看一下如何使用`tempfile.TemporaryDirectory()`来做到这一点：
+`tempfile` 也可用于创建临时目录。 让我们看一下如何使用`tempfile.Temporary`来做到这一点：
 ```python
 >>> import tempfile
->>> with tempfile.TemporaryDirectory() as tmpdir:
+>>> with tempfile.Temporary as tmpdir:
 ...     print('Created temporary directory ', tmpdir)
-...     os.path.exists(tmpdir)
+...     os.path.exi
 ...
 Created temporary directory  /tmp/tmpoxbkrm6c
 True
@@ -805,13 +805,13 @@ True
 ...
 >>> tmpdir
 '/tmp/tmpoxbkrm6c'
->>> os.path.exists(tmpdir)
+>>> os.path.exi
 False
 ```
 
-调用`tempfile.TemporaryDirectory()`会在文件系统中创建一个临时目录，并返回一个表示该目录的对象。在上面的示例中，使用上下文管理器创建目录，目录的名称存储在`tmpdir`中。第三行打印出临时目录的名称，`os.path.exists(tmpdir)`确认目录是否实际在文件系统中创建。
+调用`tempfile.Temporary`会在文件系统中创建一个临时目录，并返回一个表示该目录的对象。在上面的示例中，使用上下文管理器创建目录，目录的名称存储在`tmpdir`中。第三行打印出临时目录的名称，`os.path.exi`确认目录是否实际在文件系统中创建。
 
-在上下文管理器退出上下文后，临时目录将被删除，并且对`os.path.exists(tmpdir)`的调用将返回 False，这意味着该目录已成功删除。
+在上下文管理器退出上下文后，临时目录将被删除，并且对`os.path.exi`的调用将返回 False，这意味着该目录已成功删除。
 
 <a name="d9143861"></a>
 # 删除文件和目录
@@ -828,7 +828,7 @@ False
 import os
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
-os.remove(data_file)
+os.remove
 ```
 
 使用`os.unlink()`删除文件与使用`os.remove()`的方式类似：
@@ -836,7 +836,7 @@ os.remove(data_file)
 import os
 
 data_file = 'C:\\Users\\vuyisile\\Desktop\\Test\\data.txt'
-os.unlink(data_file)
+os.unlink
 ```
 
 在文件上调用`.unlink()`或`.remove()`会从文件系统中删除该文件。如果传递给它们的路径指向目录而不是文件，这两个函数将抛出`OSError`。为避免这种情况，我们可以：检查确认我们实际想要删除的只是文件，并当且仅当它是文件才执行删除；或者使用异常处理来处理`OSError`：
@@ -846,8 +846,8 @@ import os
 data_file = 'home/data.txt'
 
 # If the file exists, delete it
-if os.path.isfile(data_file):
-    os.remove(data_file)
+if os.path.isfile:
+    os.remove
 else:
     print(f'Error: {data_file} not a valid filename')
 ```
@@ -862,7 +862,7 @@ data_file = 'home/data.txt'
 
 # Use exception handling
 try:
-    os.remove(data_file)
+    os.remove
 except OSError as e:
     print(f'Error: {data_file} : {e.strerror}')
 ```
@@ -899,7 +899,7 @@ import os
 trash_dir = 'my_documents/bad_dir'
 
 try:
-    os.rmdir(trash_dir)
+    os.rmdir
 except OSError as e:
     print(f'Error: {trash_dir} : {e.strerror}')
 ```
@@ -935,7 +935,7 @@ import shutil
 trash_dir = 'my_documents/bad_dir'
 
 try:
-    shutil.rmtree(trash_dir)
+    shutil.rmtree
 except OSError as e:
     print(f'Error: {trash_dir} : {e.strerror}')
 ```
@@ -946,7 +946,7 @@ import os
 
 for dirpath, dirnames, files in os.walk('.', topdown=False):
     try:
-        os.rmdir(dirpath)
+        os.rmd
     except OSError as ex:
         pass
 ```
@@ -1107,7 +1107,7 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 <a name="f1777efa"></a>
 ## 提取 ZIP 归档
 
-`zipfile`模块允许我们通过`.extract()`和`.extractall()`从 ZIP 压缩文件中提取一个或多个文件。
+`zipfile`模块允许我们通过`.extract()`和`.e`从 ZIP 压缩文件中提取一个或多个文件。
 
 默认情况下，这些方法将文件解压缩到当前目录。 它们都采用可选的路径参数，允许我们指定要将文件提取到的其他目录。 如果该目录不存在，则会自动创建该目录。 要从存档中提取文件，请执行以下操作：
 ```python
@@ -1142,12 +1142,12 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 
 接下来，在读取模式下打开`data.zip`并调用`.extract()`从中提取`file1.py`。 `.extract()`返回解压缩文件的完整文件路径。 由于没有指定路径，`.extract()`会将 `file1.py` 提取到当前目录。
 
-下一行代码打印一个目录列表，显示当前目录除原始存档之外的解压缩文件。之后的行显示了如何将整个存档解压缩到`zip_extract`目录中。 `.extractall()` 创建 `extract_dir` 并将 `data.zip` 的内容提取到其中。最后一行关闭 ZIP 存档。
+下一行代码打印一个目录列表，显示当前目录除原始存档之外的解压缩文件。之后的行显示了如何将整个存档解压缩到`zip_extract`目录中。 `.e` 创建 `extract_dir` 并将 `data.zip` 的内容提取到其中。最后一行关闭 ZIP 存档。
 
 <a name="2099a052"></a>
 ## 从受密码保护的归档中提取数据
 
-`zipfile`支持提取受密码保护的 ZIP。要提取受密码保护的 ZIP 文件，请将密码作为参数传递给`.extract()`或`.extractall()`方法：
+`zipfile`支持提取受密码保护的 ZIP。要提取受密码保护的 ZIP 文件，请将密码作为参数传递给`.extract()`或`.e`方法：
 ```python
 >>> import zipfile
 
@@ -1156,7 +1156,7 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 ...     pwd_zip.extractall(path='extract_dir', pwd='Quish3@o')
 ```
 
-这将以读取模式打开 secret.zip 存档。接下来，把密码提供给`.extractall()`，存档内容被提取到`extract_dir`。由于 with 语句，在完成提取后，存档会自动关闭。
+这将以读取模式打开 secret.zip 存档。接下来，把密码提供给`.e`，存档内容被提取到`extract_dir`。由于 with 语句，在完成提取后，存档会自动关闭。
 
 <a name="02b2847c"></a>
 ## 创建新的 ZIP 存档
@@ -1168,7 +1168,7 @@ with zipfile.ZipFile('data.zip', 'r') as zipobj:
 >>> file_list = ['file1.py', 'sub_dir/', 'sub_dir/bar.py', 'sub_dir/foo.py']
 >>> with zipfile.ZipFile('new.zip', 'w') as new_zip:
 ...     for name in file_list:
-...         new_zip.write(name)
+...         new_zip.
 ```
 
 在该示例中，我们以写入模式打开`new_zip`，然后把 `file_list` 中的每个文件都添加到归档中。完成`with`语句套件后，将关闭`new_zip`。以写入模式打开 ZIP 文件会删除存档的内容并创建新存档。
@@ -1214,7 +1214,7 @@ with tarfile.open('example.tar', 'r') as tar_file:
 
 可以使用特殊属性访问存档中每个条目的元数据：
 ```
->>> for entry in tar.getmembers():
+>>> for entry in tar.g:
 ...     print(entry.name)
 ...     print(' Modified:', time.ctime(entry.mtime))
 ...     print(' Size    :', entry.size, 'bytes')
@@ -1232,7 +1232,7 @@ app.py
  Size    : 6218 bytes
 ```
 
-在此示例中，循环遍历`.getmembers()`返回的文件列表，并打印出每个文件的属性。`.getmembers()`返回的对象具有可以通过编程方式访问的属性，例如归档中每个文件的名称，大小和上次修改时间。在读取或写入存档后，我们必须关闭它以释放系统资源。
+在此示例中，循环遍历`.g`返回的文件列表，并打印出每个文件的属性。`.g`返回的对象具有可以通过编程方式访问的属性，例如归档中每个文件的名称，大小和上次修改时间。在读取或写入存档后，我们必须关闭它以释放系统资源。
 
 <a name="f46c2a72"></a>
 ## 从 TAR 存档中提取文件
@@ -1240,8 +1240,8 @@ app.py
 在本节中，我们学习一下如何使用下面的方法从 TAR 存档中提取文件：
 
 - `.extract()`
-- `.extractfile()`
-- `.extractall()`
+- `.ex`
+- `.e`
 
 要从 TAR 存档中提取单个文件，可以使用`extract()`，并传入文件名：
 ```python
@@ -1250,12 +1250,12 @@ app.py
 ['README.md', 'example.tar']
 ```
 
-`README.md`文件从存档中提取到文件系统。然后调用`os.listdir()`确认`README.md`文件已成功提取到当前目录中。要从存档中解压缩或提取所有内容，可以使用`.extractall()`：
+`README.md`文件从存档中提取到文件系统。然后调用`os.listdir()`确认`README.md`文件已成功提取到当前目录中。要从存档中解压缩或提取所有内容，可以使用`.e`：
 ```python
 >>> tar.extractall(path="extracted/")
 ```
 
-`.extractall()`有一个可选的 `path` 参数来指定解压缩文件的去向。这里，存档被解压缩到解压缩的目录中。以下命令显示已成功提取存档：
+`.e`有一个可选的 `path` 参数来指定解压缩文件的去向。这里，存档被解压缩到解压缩的目录中。以下命令显示已成功提取存档：
 ```python
 $ ls
 example.tar  extracted  README.md
@@ -1275,7 +1275,7 @@ $ ls extracted/
 app.py  CONTRIBUTING.rst  README.md
 ```
 
-要提取文件对象以进行读取或写入，可以使用`.extractfile()`，它将文件名或`TarInfo`对象作为参数提取。`.extractfile()`返回一个可以读取和使用的类文件对象：
+要提取文件对象以进行读取或写入，可以使用`.ex`，它将文件名或`TarInfo`对象作为参数提取。`.ex`返回一个可以读取和使用的类文件对象：
 ```python
 >>> f = tar.extractfile('app.py')
 >>> f.read()
@@ -1298,7 +1298,7 @@ app.py  CONTRIBUTING.rst  README.md
 
 >>> # Read the contents of the newly created archive
 >>> with tarfile.open('package.tar', mode='r') as t:
-...     for member in t.getmembers():
+...     for member in t.g:
 ...         print(member.name)
 app.py
 config.py
@@ -1318,7 +1318,7 @@ tests.py
 ...     tar.add('foo.bar')
 
 >>> with tarfile.open('package.tar', mode='r') as tar:
-...     for member in tar.getmembers():
+...     for member in tar.g:
 ...         print(member.name)
 app.py
 config.py
@@ -1343,7 +1343,7 @@ foo.bar
 ...     tar.add('tests.py')
 
 >>> with tarfile.open('packages.tar.gz', mode='r:gz') as t:
-...     for member in t.getmembers():
+...     for member in t.g:
 ...         print(member.name)
 app.py
 config.py
@@ -1358,11 +1358,11 @@ tests.py
 Python 标准库还支持使用`shutil`模块中的高级方法创建 TAR 和 ZIP 存档。`shutil`中的归档实用程序允许我们创建，读取和提取 ZIP 和 TAR 归档文件。这些实用程序依赖于较低级别的`tarfile`和`zipfile`模块。
 
 <a name="535bee38"></a>
-## 使用 `shutil.make_archive()` 处理存档
+## 使用 `shutil.mak` 处理存档
 
-`shutil.make_archive()`至少有两个参数：归档的名称和归档格式。
+`shutil.mak`至少有两个参数：归档的名称和归档格式。
 
-默认情况下，它将当前目录中的所有文件压缩为`format`参数中指定的归档格式。我们也可以传入可选的`root_dir`参数来压缩不同目录中的文件。`.make_archive()`支持 zip，tar，bztar 和 gztar 存档格式。
+默认情况下，它将当前目录中的所有文件压缩为`format`参数中指定的归档格式。我们也可以传入可选的`root_dir`参数来压缩不同目录中的文件。`.mak`支持 zip，tar，bztar 和 gztar 存档格式。
 
 这是使用`shutil`创建 TAR 存档的方法：
 ```python
@@ -1372,12 +1372,12 @@ import shutil
 shutil.make_archive('data/backup', 'tar', 'data/')
 ```
 
-上面程序将复制 `data/` 中的所有内容，并在文件系统中创建名为 `backup.tar` 的存档并返回其名称。要提取存档，我们可以调用 `.unpack_archive()`：
+上面程序将复制 `data/` 中的所有内容，并在文件系统中创建名为 `backup.tar` 的存档并返回其名称。要提取存档，我们可以调用 `.unpac`：
 ```python
 shutil.unpack_archive('backup.tar', 'extract_dir/')
 ```
 
-这行代码调用了`.unpack_archive()`并传入存档名称和目标目录，它会将 `backup.tar` 的内容提取到 `extract_dir/` 中。 ZIP 存档也可以以相同的方式创建和提取。
+这行代码调用了`.unpac`并传入存档名称和目标目录，它会将 `backup.tar` 的内容提取到 `extract_dir/` 中。 ZIP 存档也可以以相同的方式创建和提取。
 
 <a name="12480c08"></a>
 # 读取多个文件
@@ -1386,7 +1386,7 @@ Python 支持通过 `fileinput`  模块从多个输入流或文件列表中读�
 ```python
 import fileinput
 for line in fileinput.input()
-    process(line)
+    pr
 ```
 
 `fileinput` 默认从传递给 `sys.argv` 的命令行参数中获取其输入。
@@ -1402,7 +1402,7 @@ import sys
 
 files = fileinput.input()
 for line in files:
-    if fileinput.isfirstline():
+    if fileinput.is:
         print(f'\n--- Reading {fileinput.filename()} ---')
     print(' -> ' + line, end='')
 print()
@@ -1426,7 +1426,7 @@ $ python3 fileinput-example.py bacon.txt cupcake.txt
  -> Gummies macaroon jujubes jelly beans marzipan.
 ```
 
-`fileinput` 允许我们检索有关每一行的更多信息，例如它是否是第一行(`.isfirstline()`)，行号(`.lineno()`) 和文件名(`.filename()`)。 更多关于 `fileinput` 的内容，我们可以点击[这里](https://docs.python.org/3/library/fileinput.html)查看。
+`fileinput` 允许我们检索有关每一行的更多信息，例如它是否是第一行(`.is`)，行号(`.lineno()`) 和文件名(`.filename()`)。 更多关于 `fileinput` 的内容，我们可以点击[这里](https://docs.python.org/3/library/fileinput.html)查看。
 
 <a name="25f9c7fa"></a>
 # 总结

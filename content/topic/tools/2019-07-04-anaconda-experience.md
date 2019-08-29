@@ -158,7 +158,7 @@ conda 安装 R 有很多种方法，如可以通过 r=3.6.x，或者 r-base、r
 ```r
 > data = read.table("r-packages.txt",  header=T, check.names=F, quote="")
 > soft = as.vector(data[,1])
-> install.packages(soft)
+> install.pac
 ```
 
 ### 
@@ -198,7 +198,7 @@ biocLite("包名")
 5                 digest
 6          AnnotationDbi
 > soft = as.vector(data[,1])
-> biocLite(soft)
+> bio
 ```
 
 - 从 R-3.5(Bioconductor-3.8) 起，Bioconductor 开始使用 **BiocManager** 安装 R 包：
@@ -215,7 +215,7 @@ BiocManager::install()
 GitHub 上的一些最新 R 包，可以使用 `devtools` 进行安装：
 ```r
 install.packages("devtools")
-library(devtools)
+librar
 install_github("jokergoo/ComplexHeatmap")
 ```
 
@@ -245,7 +245,7 @@ install_github("jokergoo/ComplexHeatmap")
 
 # 7. 什么时候使用 Anaconda
 
-对于 Anaconda(conda) 软件安装以及依赖解决的原理，我对这个黑盒子表示一头雾水。真实的情况是，如果在一个环境中安装了几百个软件(包)，再去新装软件，这时候 Anaconda 常常会卡在 Collecting package metadata 和 Solving environment 过程中，甚至一个晚上都没法解决环境的依赖。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562893289384-0a32c390-b76f-4a4c-bf36-63ed998de07c.png#align=left&display=inline&height=359&name=image.png&originHeight=479&originWidth=856&size=81664&status=done&width=642)
+对于 Anac 软件安装以及依赖解决的原理，我对这个黑盒子表示一头雾水。真实的情况是，如果在一个环境中，再去新装软件，这时候 Anaconda 常常会卡在 Collecting package metadata 和 Solving environment 过程中，甚至一个晚上都没法解决环境的依赖。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562893289384-0a32c390-b76f-4a4c-bf36-63ed998de07c.png#align=left&display=inline&height=359&name=image.png&originHeight=479&originWidth=856&size=81664&status=done&width=642)
 
 conda 官方说他们在 conda-4.7 中花了很多的精力去提升了 conda 的速度（参考官方文章：《[How We Made Conda Faster in 4.7](https://www.anaconda.com/how-we-made-conda-faster-4-7/)》），但从 4.6 升级到 4.7 过程很容易导致环境崩溃，修复起来极其麻烦（反正我折腾了一个晚上都没能把我的 base 给恢复回来，吐血的经历）！<br />![image3-768x475.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562894737005-07511220-673c-4ad2-9849-3917b72725ef.png#align=left&display=inline&height=238&name=image3-768x475.png&originHeight=475&originWidth=768&size=14993&status=done&width=384)![i2-768x475.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562894770827-e7dc8bbc-18f8-4fe0-a3e7-d3b2c16a1947.png#align=left&display=inline&height=238&name=i2-768x475.png&originHeight=475&originWidth=768&size=25596&status=done&width=384)
 

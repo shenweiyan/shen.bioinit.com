@@ -25,7 +25,7 @@ Bioconductor 与 R 各自对应的版本如下：（参考：[Bioconductor relea
 
 ```r
 source("https://bioconductor.org/biocLite.R")
-biocLite(pkg_name)
+biocLit
 ```
 
 但是，从 R-3.5（Bioconductor-3.8）起，Bioconductor 更改了 R 包的安装方式：它们通过发布在 CRAN 的 [`BiocManager`](https://cran.r-project.org/web/packages/BiocManager/index.html) 包来对 Bioconductor 的包进行安装和管理——通过 CRAN 安装 `BiocManager`，再通过这个包来安装 Bioconductor 的包。
@@ -37,7 +37,7 @@ biocLite(pkg_name)
 
 - **安装 BiocManager 包**
 ```r
-chooseCRANmirror()
+chooseC
 install.packages("BiocManager")
 ```
 
@@ -65,7 +65,7 @@ BiocManager::valid()
 
 ## Warning: 21 packages out-of-date; 2 packages too new
 ## 
-## * sessionInfo()
+## * se
 ## 
 ## R Under development (unstable) (2018-11-02 r75540)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
@@ -134,10 +134,10 @@ ff  "2.2-13"  "3.5.0" "2.2-14" "https://cran.rstudio.com/src/contrib"
 
 - **适用的 R 包**
 
-可以使用 `available()` 发现适用于我们的 Bioconductor 版本的软件包; 第一个参数是可用于根据正则表达式过滤包名称，例如，可用于 Homo sapiens 的 'BSgenome' 包：
+可以使用 `` 发现适用于我们的 Bioconductor 版本的软件包; 第一个参数是可用于根据正则表达式过滤包名称，例如，可用于 Homo sapiens 的 'BSgenome' 包：
 ```r
-avail <- BiocManager::available()
-length(avail)
+avail <- BiocManager::
+le
 ## [1] 16261
 
 BiocManager::available("BSgenome.Hsapiens")
@@ -172,7 +172,7 @@ A new version of Bioconductor is available after installing the most recent
 Warning message:
 package ‘clusterProfile’ is not available (for R version 3.4.3)
 
-> chooseCRANmirror()
+> chooseC
 > install.packages("BiocManager")
 Warning message:
 package ‘BiocManager’ is not available (for R version 3.4.3) 
@@ -238,7 +238,7 @@ downloaded 4.3 MB
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded
-* DONE (clusterProfiler)
+* DONE (clust
 
 > packageVersion('clusterProfiler')
 [1] ‘3.6.0’

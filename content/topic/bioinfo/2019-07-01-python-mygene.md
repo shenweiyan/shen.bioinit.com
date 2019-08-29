@@ -17,7 +17,7 @@ published: true
 <a name="MyGene.info"></a>
 ## MyGene.info
 
-MyGene.info 是一个由 NIH(美国国立卫生研究院)/NIGMS 资助，用于提供简单易用的 REST Web 服务来查询/检索基因注释数据的 API。 MyGene.info 目前包含了 NCBI Entrez、Ensembl、Uniprot、UCSC 在内的 20 多个数据库，MyGene.info 会每周从这些数据库中进行数据更新。虽然 MyGene.info 中包含的各个数据源可能有数据使用限制，但 MyGene.info 本身的服务是免费的，其源码托管在：[https://github.com/biothings/mygene.info](https://github.com/biothings/mygene.info)。
+MyGene.info 是一个由 NIH/NIGMS 资助，用于提供简单易用的 REST Web 服务来查询/检索基因注释数据的 API。 MyGene.info 目前包含了 NCBI Entrez、Ensembl、Uniprot、UCSC 在内的 20 多个数据库，MyGene.info 会每周从这些数据库中进行数据更新。虽然 MyGene.info 中包含的各个数据源可能有数据使用限制，但 MyGene.info 本身的服务是免费的，其源码托管在：[https://github.com/biothings/mygene.info](https://github.com/biothings/mygene.info)。
 
 MyGene.info 提供两种简单的 Web 服务：一种用于基因查询，另一种用于基因注释检索。两者都以 JSON 格式返回结果。截至 2019 年 3 月 6 日，MyGene.info 最新的 API 为 v3，相比 v1、v2，v3 新增了以下几点内容：
 
@@ -49,7 +49,7 @@ mygene 安装完成后，现在我们只需要导入它并实例化 mygeneinfo �
 ```python
 import mygene
 
-mg = mygene.MyGeneInfo()
+mg = mygene.M
 ```
 
 <a name="be569bd1"></a>

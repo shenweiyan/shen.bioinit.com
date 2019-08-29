@@ -16,7 +16,7 @@ iPython Notebook 是一个基于浏览器的 python 数据分析工具，使用�
 > 数据分析和传统的 MVC 软件开发的最大区别在于，数据分析存在一个 data flow, 我们是在不断的做计算，并且画图。这里存在一个大致的 "顺序"，比如：
 > 
 > 1. 先对数据进行处理，去掉有问题的数据 (Data Wrangling)
-> 1. 从各个角度看一个这个数据各个维度的分布情况 (Data Exploration)
+> 1. 从各个角度看一个这个数据各个维度的分布情况 (Data E
 > 1. 根据自己的想法、要求，做具体的分析，计算
 > 1. 对计算结果做进一部分的分析<br />
 > 
@@ -78,7 +78,7 @@ Known labextensions:
 [I 10:47:32.644 NotebookApp] Serving notebooks from local directory: /Bio/home/bi.shenwy/pythonTrain
 [I 10:47:32.644 NotebookApp] 0 active kernels 
 [I 10:47:32.644 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=120a457da88d214270e...22a376d3d4
-[I 10:47:32.644 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 10:47:32.644 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip co.
 [C 10:47:32.651 NotebookApp] 
     
     Copy/paste this URL into your browser when you connect for the first time,

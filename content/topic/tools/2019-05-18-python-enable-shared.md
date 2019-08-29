@@ -35,7 +35,7 @@ $ make install
 
 > The problem is, that on most Unix systems (with the notable exception of Mac OS X), the path to shared libraries is not an absolute path.  So, if you install Python in a non-standard location, which is the right thing to do so as not to interfere with a system Python of the same version, you will need to configure in the path to the shared library or supply it via an environment variable at run time, like LD_LIBRARY_PATH.  You may be better off avoiding --enable-shared; it's easy to run into problems like this with it.
 > 
-> From Python Issue27685, [https://bugs.python.org/issue27685](https://bugs.python.org/issue27685)
+> From Python Issue27685, [https://bugs.python.org/issue27685](https://bugs.python.org/
 
 
 即是说，在大多数 Unix 系统上（除了 Mac OS X 之外），共享库的路径不是绝对路径。 因此，如果我们在非标准位置安装 Python，为了不和相同版本的系统 Python 产生干扰，我们需要配置非标准位置安装的 Python共享库的路径，或者通过设置运行时的环境变量，如 LD_LIBRARY_PATH。 为了避免这个问题，我们最好避免使用 `--enable-shared`。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558181883079-842115cd-e314-49fa-b6ed-441dde412ce1.png#align=left&display=inline&height=482&originHeight=482&originWidth=730&size=0&status=done&width=730)

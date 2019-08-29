@@ -70,7 +70,7 @@ yum install docker
 systemctl start docker
 ```
 
-如果是国内用户的话可能还需要设置 Docker 加速，可以用阿里的 docker 镜像仓库，不然下国外的资源真的会崩溃。参考：[https://cr.console.aliyun.com/?spm=5176.1971733.2.28.394b9fbdrASJma#/accelerator](https://cr.console.aliyun.com/?spm=5176.1971733.2.28.394b9fbdrASJma#/accelerator)
+如果是国内用户的话可能还需要设置 Docker 加速，可以用阿里的 docker 镜像仓库，不然下国外的资源真的会崩溃。参考：[https://cr.console.aliyun.com/?spm=5176.1971733.2.28.394b9fbdrASJma#/accelerator](https://cr.console.aliyun.com/?spm=5176.1971733.2.28.394b9fbdrASJma#/a
 
 ② 安装 mysql，wordpress 镜像
 
@@ -287,7 +287,7 @@ define('WP_HOME, 'http://要修改的域名');
 define('WP_SITEURL', 'http://要修改的域名');
 ```
 
-第二步：登录后台—设置—常规—重新输入新博客地址（WordPressAddress(URL)）和安装地址（SiteAddress(URL)），修改完毕后删除上面在wp-config.php文件中添加的内容（如何一切正常，不删除也可以，具体情况，具体操作）。
+第二步：登录后台—设置—常规—重新输入新博客地址（WordPressA）和安装地址（SiteA），修改完毕后删除上面在wp-config.php文件中添加的内容（如何一切正常，不删除也可以，具体情况，具体操作）。
 
 ---
 
