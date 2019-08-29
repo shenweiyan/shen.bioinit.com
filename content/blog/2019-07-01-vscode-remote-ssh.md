@@ -19,6 +19,7 @@ published: true
 第一个是基于 SSH 的远程连接主机，第二个用于连接容器，第三个用于连接 WSL，也就是 Linux 子系统。在 **Remote - SSH** 插件的介绍中这样写到：<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561514312290-30de4102-49ee-4f4d-9152-87106ddd9062.png#align=left&display=inline&height=710&name=image.png&originHeight=710&originWidth=902&size=113462&status=done&width=902)
 
 简单翻译一下就是：
+
 > Remote - SSH 扩展允许您使用任何带有 SSH 服务器的远程计算机作为开发环境。由于几乎每个桌面和服务器操作系统都有可配置的 SSH 服务器，因此该扩展可以在各种情况下大大简化开发。
 > 您可以：
 > - 在部署的同一操作系统上进行开发，或者使用比本地计算机更快更专业的硬件。
