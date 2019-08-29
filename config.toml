@@ -20,55 +20,47 @@ publishDir = "docs"
     name = "首页"
     url = "/"
     weight = 1
-
 [[menu.main]]
     name = "关于"
     url = "/about/"
     weight = 2
-
 [[menu.main]]
-    name = "博客"
-    url = "/blog/"
+    name = "文章"
+    url = "/topic/"
     weight = 3
-
-[[menu.main]]
-    name = "研究"
-    url = "/research/"
-    weight = 4
-
-[[menu.main]]
-    name = "读书"
-    url = "/read/"
-    weight = 5
-
 [[menu.main]]
     name = "简历"
     url = "/resume/shenweiyan"
-    weight = 6
-
-[[menu.main]]
-    name = "专栏"
-    url = "/topic/"
-    weight = 7
-
+    weight = 4
 [[menu.main]]
     name = "标签"
     url = "/tags/"
-    weight = 8
-
+    weight = 5
 [[menu.main]]
     name = "归档"
     url = "/archives/"
-    weight = 9
+    weight = 6
 
 [[menu.topic]]
-    name = "Home"
+    name = "首页"
     url = "/"
     weight = 1
 [[menu.topic]]
-    name = "Galaxy"
-    url = "/topic/galaxy/"
+    name = "技术"
+    url = "/topic/tech/"
     weight = 2
+[[menu.topic]]
+    name = "生活"
+    url = "/topic/life/"
+    weight = 3
+[[menu.topic]]
+    name = "读书"
+    url = "/topic/read/"
+    weight = 3
+[[menu.topic]]
+    name = "乱弹"
+    url = "/topic/hello/"
+    weight = 4
 
 [params]
     siteurl = "https://shen.bioinit.com"
