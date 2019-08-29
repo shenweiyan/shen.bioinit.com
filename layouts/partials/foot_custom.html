@@ -1,7 +1,15 @@
 {{ if .Section }}
 <nav class="post-nav">
-  <span class="nav-prev">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><i class="fa fa-arrow-left" aria-hidden="true"></i>{{ .Title }}</a>{{ end }}</span>
-  <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}<i class="fa fa-arrow-right" aria-hidden="true"></i></a>{{ end }}</span>
+  <span class="nav-prev">
+    {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a><br/><i class="fa fa-arrow-left" aria-hidden="true"></i>
+    {{ end }}
+  </span>
+  <span class="nav-next">
+    {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a><br/><i class="fa fa-arrow-right" aria-hidden="true"></i>
+    {{ end }}
+  </span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
