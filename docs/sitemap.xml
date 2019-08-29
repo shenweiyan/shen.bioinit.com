@@ -363,11 +363,6 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/todo/</loc>
-    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/debug/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url>
@@ -508,22 +503,12 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/tools/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/topic/code/2018-12-29-shell-practice/</loc>
     <lastmod>2018-12-29T09:21:11+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://shen.bioinit.com/topic/</loc>
-    <lastmod>2017-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shen.bioinit.com/topic/tech/</loc>
     <lastmod>2017-01-31T00:00:00+00:00</lastmod>
   </url>
   

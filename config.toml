@@ -46,21 +46,49 @@ publishDir = "docs"
     url = "/"
     weight = 1
 [[menu.topic]]
-    name = "技术"
-    url = "/topic/tech/"
+    name = "生信"
+    url = "/topic/bioinfo/"
     weight = 2
+[[menu.topic]]
+    name = "工具"
+    url = "/topic/tools/"
+    weight = 3
+[[menu.topic]]
+    name = "开发"
+    url = "/topic/devel/"
+    weight = 4
+[[menu.topic]]
+    name = "运维"
+    url = "/topic/devops/"
+    weight = 5
+[[menu.topic]]
+    name = "编程"
+    url = "/topic/code/"
+    weight = 5
+[[menu.topic]]
+    name = "编程"
+    url = "/topic/code/"
+    weight = 5
 [[menu.topic]]
     name = "生活"
     url = "/topic/life/"
-    weight = 3
+    weight = 6
 [[menu.topic]]
     name = "读书"
     url = "/topic/read/"
-    weight = 3
+    weight = 7
+[[menu.topic]]
+    name = "成长"
+    url = "/topic/grow/"
+    weight = 8
+[[menu.topic]]
+    name = "娱乐"
+    url = "/topic/fun/"
+    weight = 9
 [[menu.topic]]
     name = "乱弹"
     url = "/topic/hello/"
-    weight = 4
+    weight = 10
 
 [params]
     siteurl = "https://shen.bioinit.com"
