@@ -1,6 +1,7 @@
 {{ if and (not (eq .Site.DisqusShortname "")) (and (not .Params.disable_comments) (or (eq .Kind "404") (and (not .IsHome) .Content))) }}
 <section class="comments">
   <div id="disqus_thread"></div>
+  <script src="/js/disqusloader.min.js"></script>
   <script>
   var disqus_config = function () {
   {{ with .Site.Params.disqusURL }}
