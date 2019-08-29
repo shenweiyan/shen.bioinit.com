@@ -13,10 +13,10 @@
     
     <item>
       <title>让你的 conda &#34;回滚&#34; 到以前版本的环境</title>
-      <link>https://shen.bioinit.com/blog/2019-07-01-conda-env-roll-back/</link>
+      <link>https://shen.bioinit.com/topic/tech/2019-07-01-conda-env-roll-back/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/blog/2019-07-01-conda-env-roll-back/</guid>
+      <guid>https://shen.bioinit.com/topic/tech/2019-07-01-conda-env-roll-back/</guid>
       <description>我现在使用 Anaconda 作为我的主要 Python 发行版，同样，我们公司也将它用于所有开发人员机器以及他们的服务器。然而，前几天我在浏览一些论坛技术文章时遇到了一个</description>
     </item>
     
