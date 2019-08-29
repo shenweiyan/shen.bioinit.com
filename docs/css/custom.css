@@ -1,5 +1,5 @@
 html {
-    font-size: 100%;
+    font-size: 13px;
     line-height: 1.5;
     color: #111;
     background-color: #fefefe;
@@ -232,7 +232,7 @@ button {
     overflow-x: hidden;
 }
 .intro-and-nav {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 15rem;
     height: 100vh;
     position: fixed;
