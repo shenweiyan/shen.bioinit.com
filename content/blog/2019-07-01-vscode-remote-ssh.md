@@ -60,7 +60,10 @@ published: true
 
 ## 1. 安装 OpenSSH 客户端
 
-各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《[Installing a supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)》一节的内容。这里以 windows 7 为例，官方推荐：Install [Git for Windows](https://git-scm.com/download/win) and select the **Use Git and optional Unix tools from the Command Prompt** option or manually add `C:\Program Files\Git\usr\bin` into your PATH.
+各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《[Installing a supported SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)》一节的内容。这里以 windows 7 为例，官方推荐：
+
+> Install [Git for Windows](https://git-scm.com/download/win) and select the **Use Git and optional Unix tools from the Command Prompt** option or manually add `C:\Program Files\Git\usr\bin` into your PATH.
+
 
 首先，安装 [Git for Windows](https://git-scm.com/download/win)，安装过程中注意勾选 "**Use Git and optional Unix tools from the Command Prompt**"。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561519247026-212868d6-7052-41a0-861d-ead39f57b525.png#align=left&display=inline&height=408&name=image.png&originHeight=408&originWidth=521&size=39774&status=done&width=521)<br />
 <br />其次，git 安装完后， `bash` 、 `ssh` 、 `ssh-keygen` 等一些常用的 linux 命令工具都已经安装到 `C:\Program Files\Git\usr\bin` 下，我们需要把这个目录添加到 windows 的系统环境变量中（我的电脑→属性→高级系统设置→环境变量→path）。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561520047226-6ec3bf53-032f-4a40-8b09-5df780b9ba74.png#align=left&display=inline&height=449&name=image.png&originHeight=449&originWidth=826&size=42526&status=done&width=826)
@@ -80,6 +83,7 @@ ssh-keygen -t rsa -b 4096
 <br />    ![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561531815344-46d9589f-f0e6-4e8e-a7ba-f7b9f1e4f027.png#align=left&display=inline&height=443&name=image.png&originHeight=443&originWidth=632&size=47027&status=done&width=632)
 
 2. 把本地公钥拷贝至远程服务器，windows 下执行命令如下：
+
 ```powershell
 SET REMOTEHOST=your-user-name-on-host@host-fqdn-or-ip-goes-here
 

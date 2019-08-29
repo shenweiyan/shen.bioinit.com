@@ -251,7 +251,11 @@
 
 <h2 id="1-安装-openssh-客户端">1. 安装 OpenSSH 客户端</h2>
 
-<p>各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">Installing a supported SSH client</a>》一节的内容。这里以 windows 7 为例，官方推荐：Install <a href="https://git-scm.com/download/win">Git for Windows</a> and select the <strong>Use Git and optional Unix tools from the Command Prompt</strong> option or manually add <code>C:\Program Files\Git\usr\bin</code> into your PATH.</p>
+<p>各个平台下 OpenSSH 客户端的安装参考 VSCode 官方文档《<a href="https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client">Installing a supported SSH client</a>》一节的内容。这里以 windows 7 为例，官方推荐：</p>
+
+<blockquote>
+<p>Install <a href="https://git-scm.com/download/win">Git for Windows</a> and select the <strong>Use Git and optional Unix tools from the Command Prompt</strong> option or manually add <code>C:\Program Files\Git\usr\bin</code> into your PATH.</p>
+</blockquote>
 
 <p>首先，安装 <a href="https://git-scm.com/download/win">Git for Windows</a>，安装过程中注意勾选 &ldquo;<strong>Use Git and optional Unix tools from the Command Prompt</strong>&ldquo;。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561519247026-212868d6-7052-41a0-861d-ead39f57b525.png#align=left&amp;display=inline&amp;height=408&amp;name=image.png&amp;originHeight=408&amp;originWidth=521&amp;size=39774&amp;status=done&amp;width=521" alt="image.png" /><br />
 <br />其次，git 安装完后， <code>bash</code> 、 <code>ssh</code> 、 <code>ssh-keygen</code> 等一些常用的 linux 命令工具都已经安装到 <code>C:\Program Files\Git\usr\bin</code> 下，我们需要把这个目录添加到 windows 的系统环境变量中（我的电脑→属性→高级系统设置→环境变量→path）。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561520047226-6ec3bf53-032f-4a40-8b09-5df780b9ba74.png#align=left&amp;display=inline&amp;height=449&amp;name=image.png&amp;originHeight=449&amp;originWidth=826&amp;size=42526&amp;status=done&amp;width=826" alt="image.png" /></p>
@@ -270,14 +274,14 @@
 <p><br />    <img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561531815344-46d9589f-f0e6-4e8e-a7ba-f7b9f1e4f027.png#align=left&amp;display=inline&amp;height=443&amp;name=image.png&amp;originHeight=443&amp;originWidth=632&amp;size=47027&amp;status=done&amp;width=632" alt="image.png" /></p>
 
 <ol>
-<li>把本地公钥拷贝至远程服务器，windows 下执行命令如下：
-```powershell
-SET REMOTEHOST=your-user-name-on-host@host-fqdn-or-ip-goes-here</li>
+<li>把本地公钥拷贝至远程服务器，windows 下执行命令如下：</li>
 </ol>
 
-<p>scp %USERPROFILE%.ssh\id_rsa.pub %REMOTEHOST%:~/tmp.pub
-ssh %REMOTEHOST% &ldquo;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat ~/tmp.pub &gt;&gt; ~/.ssh/authorized_keys &amp;&amp; chmod 600 ~/.ssh/authorized_keys &amp;&amp; rm -f ~/tmp.pub&rdquo;
-```</p>
+<pre><code class="language-powershell">SET REMOTEHOST=your-user-name-on-host@host-fqdn-or-ip-goes-here
+
+scp %USERPROFILE%\.ssh\id_rsa.pub %REMOTEHOST%:~/tmp.pub
+ssh %REMOTEHOST% &quot;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat ~/tmp.pub &gt;&gt; ~/.ssh/authorized_keys &amp;&amp; chmod 600 ~/.ssh/authorized_keys &amp;&amp; rm -f ~/tmp.pub&quot;
+</code></pre>
 
 <ol>
 <li>配置完成后，在 DOC 中再次执行 <code>ssh IP_ADDRESS -l USERNAME -p PORT</code> 命令，如果可以免密码登陆远程的服务器，说明配置成功。</li>
