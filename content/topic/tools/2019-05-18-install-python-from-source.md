@@ -34,7 +34,8 @@ yum install libffi-devel
 
 ### 2.1 ssl
 
-python3 需要引用 openssl 模块，但是 CentOS 需要的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（Centos-6.x 通过 yum 源安装的 openssl 的最高版本是1.0.1），所以需要手动更新 openssl。
+python3 需要引用 openssl 模块，但是 CentOS 需要的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（CentOS-6.x 通过 `yum`  源安装的 openssl 的最高版本是1.0.1），所以需要手动更新 openssl。
+
 ```bash
 # 下载
 wget http://www.openssl.org/source/openssl-1.1.1.tar.gz
@@ -68,6 +69,7 @@ source $HOME/.bashrc
 ### 2.2 ctypes
 
 在 CentOS 6.x 安装 `libffi-devel` 的时候出现以下问题：
+
 ```bash
 $ yum install -y libffi-devel
 Loaded plugins: product-id, refresh-packagekit, search-disabled-repos, security, subscription-manager
@@ -79,6 +81,7 @@ Error: Nothing to do
 ```
 
 可以使用下面的方法安装：
+
 ```shell
 [root@log01 ~]# rpm -ivh http://mirror.centos.org/centos/6/os/x86_64/Packages/libffi-devel-3.0.5-3.2.el6.x86_64.rpm
 Retrieving http://mirror.centos.org/centos/6/os/x86_64/Packages/libffi-devel-3.0.5-3.2.el6.x86_64.rpm
@@ -91,6 +94,7 @@ libffi-devel-3.0.5-3.2.el6.x86_64
 ```
 
 源码方法安装如下：
+
 ```bash
 $ wget ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
 $ tar zvxf libffi-3.2.1.tar.gz
@@ -159,6 +163,7 @@ $ make && make install
 ```
 
 推荐把安装好的 graphviz 添加到环境变量，这样可以避免运行过程中出现："**pygraphviz/graphviz_wrap.c:2987:29: fatal error: graphviz/cgraph.h: No such file or directory" **无法找到头文件的异常。
+
 ```bash
 export PKG_CONFIG_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib:$LD_LIBRARY_PATH
@@ -168,6 +173,7 @@ export CPLUS_INCLUDE_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:$CP
 
 
 如果 graphviz 添加到环境变量， `pygraphviz` 的 python 包可以参考下面的方法安装：
+
 ```bash
 $ /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3 install --global-option=build_ext --global-option="-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include" --global-option="-L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib" pygraphviz
 /Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
@@ -184,6 +190,7 @@ Successfully installed pygraphviz-1.5
 ### 2.4 编译安装
 
 第一，下载 Python 源码，解压。
+
 ```bash
 # 官网下载地址 https://www.python.org/downloads
 wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
@@ -194,6 +201,7 @@ tar zvxf Python-3.7.3.tgz -C /usr/local/src
 ```
 
 第二，进入解压的源码路径，编译 python 源码。
+
 ```bash
 export PKG_CONFIG_PATH=/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib/pkgconfig:/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib64:/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib:$LD_LIBRARY_PATH
@@ -213,6 +221,7 @@ PKG_CONFIG_PATH="/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib/pkgco
 - `--prefix`  声明安装路径；
 - 安装多个 python 的版本，如果不开启 `--enable-shared`，指定不同路径即可。当开启 `--enable-shared` 时，默认只有一个版本的 python。
 - python 3 编译可以使用 `--with-openssl=DIR` 指定 OpenSSL 安装路径进行编译的方式解决 OpenSSL 依赖，否则 `make` 过程可能出错。 
+
 ```shell
 $ make 
 ......
@@ -238,6 +247,7 @@ LibreSSL 2.6.4 and earlier do not provide the necessary APIs, https://github.com
 ![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562923411627-eb429b96-2ec8-408e-abbb-05f4e8a320f8.png#align=left&display=inline&height=316&name=image.png&originHeight=316&originWidth=581&size=34010&status=done&width=581)
 
 - 如果指定 `--with-openssl=DIR` 依然无法解决 ssl 模块的问题，可以参考修改 Modules/Setup.dist 文件（默认这块是注释的，放开注释即可。这块功能是开启 SSL 模块，不然会出现安装完毕后，提示找不到 ssl 模块的错误）再执行 configure，修改内容如下：
+
 ```bash
 # Socket module helper for SSL support; you must comment out the other
 # socket line above, and possibly edit the SSL variable:
@@ -249,11 +259,13 @@ _ssl _ssl.c \
 
 
 第三，Makefile 生后依次在当前路径执行编译和安装命令。
+
 ```bash
 make && make install
 ```
 
 第四，安装完成。以上命令执行完毕，且无报错的情况下，我们将默认 python 换将切换至 3.7.xx/2.7.xx（一般不建议替换，个人建议把自定义安装的 Python bin 路径添加到 PATH 环境变量即可）：
+
 ```bash
 # 替换系统自带的 python（不建议）
 mv /usr/bin/python /usr/bin/python2
