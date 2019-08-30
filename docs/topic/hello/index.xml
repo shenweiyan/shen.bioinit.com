@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>hugo 博客添加 disqus 评论系统</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-08-28-disqus-for-hugo/</link>
+      <pubDate>Wed, 28 Aug 2019 08:30:50 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/hello/2019-08-28-disqus-for-hugo/</guid>
+      <description>打开 diqus 官网：http://disqus.com，点击 &amp;ldquo;GET STARTED&amp;rdquo; 进入注册页面： 选择 &amp;ldquo;I want to install Disqus on my site&amp;rdquo;，进入&amp;rdquo;Creat</description>
+    </item>
+    
+    <item>
       <title>一些好玩又有趣的开源项目</title>
       <link>https://shen.bioinit.com/topic/hello/2019-08-05-rgvbqq/</link>
       <pubDate>Mon, 05 Aug 2019 07:12:52 +0000</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>https://shen.bioinit.com/topic/hello/2019-07-17-bugs-of-aliyun-app/</guid>
       <description>前几天在华为手机上使用阿里云 APP，从 oss bucket 中下载了一张图片，想要通过微信把它发给一个朋友时，发现在打开微信选择照片时却无法找到新下载的图片。</description>
-    </item>
-    
-    <item>
-      <title>Jekyll 网站添加访问量统计分析</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-pages-view-on-jekyll/</link>
-      <pubDate>Mon, 01 Jul 2019 04:00:00 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-pages-view-on-jekyll/</guid>
-      <description>Google Analysis 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。登录 谷歌分析 并新建一个媒体资源，</description>
     </item>
     
     <item>

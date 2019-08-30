@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Mon, 26 Aug 2019 05:55:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 08:30:50 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo 博客添加 disqus 评论系统</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-08-28-disqus-for-hugo/</link>
+      <pubDate>Wed, 28 Aug 2019 08:30:50 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/hello/2019-08-28-disqus-for-hugo/</guid>
+      <description>打开 diqus 官网：http://disqus.com，点击 &amp;ldquo;GET STARTED&amp;rdquo; 进入注册页面： 选择 &amp;ldquo;I want to install Disqus on my site&amp;rdquo;，进入&amp;rdquo;Creat</description>
+    </item>
     
     <item>
       <title>一个纯粹的人</title>
@@ -198,15 +207,6 @@
       
       <guid>https://shen.bioinit.com/topic/read/2019-07-04-reading-flags/</guid>
       <description>书籍是人类进步的阶梯。 有一段时间已经没有认认真真去看完一本书了，自己看完上一本书《狐狸男孩》还是在 18 年下半年的事情，一晃半年过去，又到了 19 年</description>
-    </item>
-    
-    <item>
-      <title>Jekyll 网站添加访问量统计分析</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-pages-view-on-jekyll/</link>
-      <pubDate>Mon, 01 Jul 2019 04:00:00 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-pages-view-on-jekyll/</guid>
-      <description>Google Analysis 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。登录 谷歌分析 并新建一个媒体资源，</description>
     </item>
     
     <item>
