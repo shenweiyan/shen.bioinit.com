@@ -17,4 +17,4 @@ disable_comments: true
 **关于评论：**
 
 本站所有文章已经开启 Disiqus 评论模块，如果你有任何建议，欢迎留言。由于 Disqus 可能需要翻墙，而导致无法评论的可移步 "[语雀](https://www.yuque.com/shenweiyan)" 写下你的建议，感谢！
-![Disiqus 评论](img/disqus.png)
+![Disiqus 评论](https://shen.bioinit.com/img/disqus.png)
