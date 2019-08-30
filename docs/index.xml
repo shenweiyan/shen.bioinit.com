@@ -300,15 +300,6 @@
     </item>
     
     <item>
-      <title>vim 使用的一些小技巧</title>
-      <link>https://shen.bioinit.com/topic/tools/2019-07-01-vim-skills/</link>
-      <pubDate>Mon, 01 Jul 2019 03:57:31 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-vim-skills/</guid>
-      <description>tab 分隔文件列对齐 :%!column -t vim 字体颜色看不清 # Ubuntu 中设置 vi /etc/vim/vimrc ··· set background=dark ... # CentOS 在 /etc/vimrc 最后一行加入 hi Comment ctermfg = blue //更改vi中注释内容字体颜色，可修改为：whi</description>
-    </item>
-    
-    <item>
       <title>只要能坚持下来就是好博客</title>
       <link>https://shen.bioinit.com/topic/hello/2019-07-01-focus-on-writing/</link>
       <pubDate>Mon, 01 Jul 2019 03:55:23 +0000</pubDate>
@@ -876,11 +867,11 @@
     </item>
     
     <item>
-      <title>命名风格</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-04-29-xdlz2f/</link>
+      <title>一些好玩的命名风格</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-04-29-funny-name/</link>
       <pubDate>Mon, 29 Apr 2019 00:41:03 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-04-29-xdlz2f/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-04-29-funny-name/</guid>
       <description>关于码云 gitee 后缀 ee 附于动词后，表示动作的受动者。与之相应，动作的施动者则由后缀 er/or 表示。gitee 的意思就是“使用git 的群体”，你懂了吗？ 反正</description>
     </item>
     
