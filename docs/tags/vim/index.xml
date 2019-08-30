@@ -26,7 +26,7 @@
       <pubDate>Sat, 18 May 2019 12:47:11 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/tools/2019-05-18-how-to-use-vim/</guid>
-      <description>tab 分隔文件列对齐 :%!column -t vim 字体颜色看不清 # Ubuntu 中设置 vi /etc/vim/vimrc ··· set background=dark ... # CentOS 在 /etc/vimrc 最后一行加入 hi Comment ctermfg = blue //更改vi中注释内容字体颜色，可修改为：whi</description>
+      <description>tab 分隔文件列对齐 :%!column -t vim 字体颜色看不清 # Ubuntu 中设置(在 /etc/vim/vimrc 中加入） set background=dark # CentOS 中设置(在 /etc/vimrc 最后一行加入) hi Comment ctermfg = blue //更改vi中注释内容字体颜色，可修</description>
     </item>
     
   </channel>

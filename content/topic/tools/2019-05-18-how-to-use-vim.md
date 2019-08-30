@@ -16,16 +16,11 @@ published: true
 - vim 字体颜色看不清
 
 ```bash
-# Ubuntu 中设置
-vi /etc/vim/vimrc
-···
+# Ubuntu 中设置(在 /etc/vim/vimrc 中加入）
 set background=dark
-...
-```
 
-```bash
-# CentOS 在 /etc/vimrc 最后一行加入
-hi Comment ctermfg = blue           //更改vi中注释内容字体颜色，可修改为：white、darkyellow、//blue等颜色
+# CentOS 中设置(在 /etc/vimrc 最后一行加入)
+hi Comment ctermfg = blue  //更改vi中注释内容字体颜色，可修改为：white、darkyellow、blue 等
 ```
 
 修改前：<br />![ubuntu_vim_1.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559372667519-27fbd607-668a-423d-8fd4-42e8d427976e.png#align=left&display=inline&height=292&name=ubuntu_vim_1.png&originHeight=292&originWidth=554&size=14789&status=done&width=554)
