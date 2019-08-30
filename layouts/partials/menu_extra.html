@@ -12,5 +12,5 @@
 {{ with .Section }}
 <li class="pattern"><a href="/{{ . }}/index.xml" type="application/rss+xml" title="RSS feed">{{ default "订阅" (index $.Site.Params.lang.subscribe $section) }}</a></li>
 {{ end }}
-<li class="pattern"><a href="/licenses/" title="版权">{{ default "版权" (index $.Site.Params.lang.license $section) }}</a></li>
+<li class="pattern"><a href="/declare/" title="声明">{{ default "声明" (index $.Site.Params.lang.declare $section) }}</a></li>
 {{ end }}
