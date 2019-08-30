@@ -4,7 +4,7 @@ date: "2016-05-05"
 disable_comments: true
 ---
 
-沈维燕，2013 年毕业于南方医科大学（原中国人民解放军第一军医大学）基础医学学院生物信息学。现在在广州，主要从事 Bio IT 的一些相关工作。平时喜欢逛逛技术论坛，玩玩羽毛球，看看电影，瞎折腾一下技术，不务正业之余喜欢记录一些生活中工作中学习中的一些天马行空的想法。喜欢分享，喜欢把事情简单化，程序化。
+沈维燕，2013 年毕业于南方医科大学（原中国人民解放军第一军医大学）基础医学学院生物信息学。现在在广州，主要从事 Bio IT 的一些相关工作。平时喜欢逛逛技术论坛，玩玩羽毛球，看看电影，瞎折腾一下技术，不务正业之余喜欢记录一些生活工作学习中的一些想法。喜欢分享，喜欢把事情简单化，程序化。
 
 <br/>
 
@@ -44,5 +44,5 @@ disable_comments: true
 
 ***
 
-这个个人网站是参考 [ivy-hugo-theme](https://github.com/shenweiyan/ivy-hugo-theme) 和 [cupper-hugo-theme](https://github.com/shenweiyan/cupper-hugo-theme) 构建的，如果读者想搭建一样主题的网站，请移步[GitHub](https://github.com/shenweiyan/ivc-hugo-theme)下载并参考 Hugo 与 Blogdown 的使用方法，然后删改关于我的信息。
+本个人网站是参考 [ivy-hugo-theme](https://github.com/shenweiyan/ivy-hugo-theme) 和 [cupper-hugo-theme](https://github.com/shenweiyan/cupper-hugo-theme) 构建的，如果读者想搭建一样主题的网站，请移步[GitHub](https://github.com/shenweiyan/ivc-hugo-theme)下载并参考 Hugo 与 Blogdown 的使用方法，然后删改关于我的信息。
 
