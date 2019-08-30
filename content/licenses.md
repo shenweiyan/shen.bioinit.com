@@ -1,5 +1,5 @@
 ---
-title: "关于版权"
+title: "版权说明"
 date: "2019-08-30"
 disable_comments: true
 ---
