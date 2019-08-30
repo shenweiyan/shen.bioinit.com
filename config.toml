@@ -64,31 +64,19 @@ publishDir = "docs"
 [[menu.topic]]
     name = "编程"
     url = "/topic/code/"
-    weight = 5
-[[menu.topic]]
-    name = "编程"
-    url = "/topic/code/"
-    weight = 5
+    weight = 6
 [[menu.topic]]
     name = "生活"
     url = "/topic/life/"
-    weight = 6
+    weight = 7
 [[menu.topic]]
     name = "读书"
     url = "/topic/read/"
-    weight = 7
-[[menu.topic]]
-    name = "成长"
-    url = "/topic/grow/"
     weight = 8
-[[menu.topic]]
-    name = "娱乐"
-    url = "/topic/fun/"
-    weight = 9
 [[menu.topic]]
     name = "乱弹"
     url = "/topic/hello/"
-    weight = 10
+    weight = 9
 
 [params]
     siteurl = "https://shen.bioinit.com"
