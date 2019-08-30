@@ -220,28 +220,28 @@
     
     <item>
       <title>Bioconductor 中的 R 包安装方法总结</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-bioconductor-packages/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-bioconductor-packages/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-bioconductor-packages/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-bioconductor-packages/</guid>
       <description>Bioconductor 是一个基于 R 语言的生物信息软件包，主要用于生物数据的注释、分析、统计、以及可视化 （http://www.bioconductor.org ）</description>
     </item>
     
     <item>
       <title>LaTeX 2018 安装与使用教程</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-latex-2018-tutorial/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-latex-2018-tutorial/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-latex-2018-tutorial/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-latex-2018-tutorial/</guid>
       <description>一、背景 前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装： 500 : Internal Server Error 如下： nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex. 另外一点就</description>
     </item>
     
     <item>
       <title>Python 中 tkinter 中文乱码</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-tkinter-unicode-issues/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-tkinter-unicode-issues/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-tkinter-unicode-issues/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-tkinter-unicode-issues/</guid>
       <description>引言 使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。 #-*- coding: utf-8</description>
     </item>
     
@@ -256,10 +256,10 @@
     
     <item>
       <title>Windows 全能终端神器 MobaXterm</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-irf3na/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-irf3na/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-irf3na/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-irf3na/</guid>
       <description>MobaXterm 又名 MobaXVT，是一款增强型终端、X 服务器和 Unix 命令集（GNU/ Cygwin）工具箱。MobaXterm 可以开启多个终端视窗，以最新的 X</description>
     </item>
     
@@ -274,19 +274,19 @@
     
     <item>
       <title>从 Blast2GO 到 MySQL 源码编译安装</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-install-mysql-from-source/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-install-mysql-from-source/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-install-mysql-from-source/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-install-mysql-from-source/</guid>
       <description>Blast2GO 是一个基于序列相似性搜索的 GO 注释和功能分析工具，它可以直接统计分析基因功能信息，并可视化 GO 有向非循环图（DAG）上的相关功能特征，分析 BL</description>
     </item>
     
     <item>
       <title>使用 RSS 打造你的科研资讯头条</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-rss-for-top-news/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-rss-for-top-news/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-rss-for-top-news/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-rss-for-top-news/</guid>
       <description>一、什么是 RSS RSS 是站点用来和其他站点之间共享内容的一种简易方式（也叫聚合内容 Really Simple Syndication）。通常在时效性比较强的内容上使用 RSS 订阅</description>
     </item>
     
@@ -310,19 +310,19 @@
     
     <item>
       <title>癌症克隆种群结构分析软件PyClone安装</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-pyclone-install/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-pyclone-install/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-pyclone-install/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-pyclone-install/</guid>
       <description>PyClone 是一种用于推断癌症中克隆种群结构的统计模型。 它是一种贝叶斯聚类方法，用于将深度测序的体细胞突变集分组到假定的克隆簇中，同时估计其细胞流行率</description>
     </item>
     
     <item>
       <title>非 root 用户手动编译安装 GCC</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-lqc7hd/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-lqc7hd/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-lqc7hd/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-lqc7hd/</guid>
       <description>我们知道，关于 GCC 在 CentOS 下通过 yum 安装默认版本号，CentOS 5 是 4.1.2；CentOS 6 是 4.4.7；CentOS 7 是 4.8.3。很多时候在编</description>
     </item>
     
@@ -346,10 +346,10 @@
     
     <item>
       <title>windows 常用软件合集</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-06-26-phmze3/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-06-26-phmze3/</link>
       <pubDate>Wed, 26 Jun 2019 07:34:03 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-06-26-phmze3/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-06-26-phmze3/</guid>
       <description>Snipaste 截图工具（https://zh.snipaste.com/） Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上！Snipaste 是</description>
     </item>
     
@@ -436,28 +436,28 @@
     
     <item>
       <title>R 软件如何升级</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-25-qznkyp/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-25-qznkyp/</link>
       <pubDate>Sat, 25 May 2019 09:26:05 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-25-qznkyp/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-25-qznkyp/</guid>
       <description>https://www.r-bloggers.com/updating-r/</description>
     </item>
     
     <item>
       <title>R 软件的 &#34;CXX11 is not defined&#34; 解决</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-24-dadyai/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-24-dadyai/</link>
       <pubDate>Fri, 24 May 2019 09:16:56 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-24-dadyai/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-24-dadyai/</guid>
       <description>在 CentOS-6.5 下使用源码安装的 R-3.6.0 在安装包的时候出现 &amp;ldquo;C++11 standard requested but CXX11 is not defined&amp;rdquo; 错误。下面是参考的解决方法。 &amp;gt; install.packages(&amp;quot;pillar&amp;quot;) also installing the dependencies ‘digest’, ‘vctrs’ trying URL &#39;http://mirror.lzu.edu.cn/CRAN/src/contrib/digest_0.6.19.tar.gz&#39; Content type &#39;application/octet-stream&#39;</description>
     </item>
     
     <item>
       <title>R 软件 openssl 包与 libssl.so.1.0.0 的一个坑</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-24-nt820f/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-24-nt820f/</link>
       <pubDate>Fri, 24 May 2019 07:47:26 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-24-nt820f/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-24-nt820f/</guid>
       <description>在使用 enrichplot 包解决 openssl 包依赖的时候，发现提示 libssl.so.1.0.0 动态库找不到： &amp;gt; install.packages(&amp;quot;openssl&amp;quot;) --- Please select a CRAN mirror for use in this session --- trying URL &#39;http://mirrors.tuna.tsinghua.edu.cn/CRAN/src/contrib/openssl_1.3.tar.gz&#39; Content type &#39;application/x-gzip&#39; length 1218896 bytes (1.2 MB) ================================================== downloaded 1.2 MB * installing *source* package ‘openssl’ ...</description>
     </item>
     
@@ -472,28 +472,28 @@
     
     <item>
       <title>LEfSe 分析软件安装小记</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-18-kefse-install/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-18-kefse-install/</link>
       <pubDate>Sat, 18 May 2019 12:43:17 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-18-kefse-install/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-18-kefse-install/</guid>
       <description>问题 源码下载的 LEfSe，或者使用 conda install -c bioconda lefse 安装完成后，执行分析出现报错： $ lefse-format_input.py hmp_aerobiosis_small.txt hmp_aerobiosis_small.in -c 1 -s 2 -u 3 -o 1000000 $ run_lefse.py hmp_aerobiosis_small.in hmp_aerobiosis_small.res Number of significantly discriminative features: 51 ( 131 ) before internal wilcoxon Number of discriminative features with</description>
     </item>
     
     <item>
       <title>Clumpify：能使 Fastq 压缩文件再缩小 30% 并加速后续分析流程</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-18-clumpify-1714585/</link>
       <pubDate>Sat, 18 May 2019 12:26:17 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-18-clumpify-1714585/</guid>
       <description>Clumpify 是 BBMap 工具包中的一个组件，它与其他工具略有不同的是 Clumpify 不会实际更改你的数据，只是重新排序以最大化 gzip 压缩。因此，输出文件仍然是完全兼容的 gzipped fastq 文件</description>
     </item>
     
     <item>
       <title>癌症中克隆种群结构统计推断分析软件PyClone安装小记</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-18-pyclone-install-1714572/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-18-pyclone-install-1714572/</link>
       <pubDate>Sat, 18 May 2019 12:21:13 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-18-pyclone-install-1714572/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-18-pyclone-install-1714572/</guid>
       <description>PyClone 是一种用于推断癌症中克隆种群结构的统计模型。 它是一种贝叶斯聚类方法，用于将深度测序的体细胞突变集分组到假定的克隆簇中，同时估计其细胞流行率</description>
     </item>
     
@@ -508,10 +508,10 @@
     
     <item>
       <title>Git 的一些常用用法笔记</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-10-git-usage/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-10-git-usage/</link>
       <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-10-git-usage/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-10-git-usage/</guid>
       <description>本地创建分支 v-1.2 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 把本地分支提交到远程分支仓库 $ git add --all $ git commit -m &amp;quot;ASO design for Galaxy version</description>
     </item>
     

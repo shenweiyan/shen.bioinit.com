@@ -31,10 +31,10 @@
     
     <item>
       <title>基于 Web 的 Linux 终端 WebTerminal</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-01-webterminal-for-linux/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-01-webterminal-for-linux/</link>
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-01-webterminal-for-linux/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-01-webterminal-for-linux/</guid>
       <description>有时候用公共电脑，或者在没有安装 putty、xshell 之类的终端的电脑上访问或展示服务器上的一些资料数据，甚至是在运维平台开发中想要嵌入 WebTerminal</description>
     </item>
     

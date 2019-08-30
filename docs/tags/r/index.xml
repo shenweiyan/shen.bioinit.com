@@ -13,10 +13,10 @@
     
     <item>
       <title>RamiGO 安装及库依赖解决备忘</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-07-15-r-ramigo/</link>
+      <link>https://shen.bioinit.com/topic/tools/2019-07-15-r-ramigo/</link>
       <pubDate>Mon, 15 Jul 2019 09:24:35 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/hello/2019-07-15-r-ramigo/</guid>
+      <guid>https://shen.bioinit.com/topic/tools/2019-07-15-r-ramigo/</guid>
       <description>一、RamiGO 安装 $ /Bioinfo/Pipeline/SoftWare/R/R-3.6.1/bin/R CMD INSTALL /Bioinfo/Pipeline/SourceCode/pkgs/RamiGO_1.20.0.tar.gz * installing to library ‘/Bioinfo/Pipeline/SoftWare/R/R-3.6.1/lib64/R/libra</description>
     </item>
     
