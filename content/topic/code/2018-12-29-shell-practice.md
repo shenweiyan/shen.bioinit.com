@@ -4,7 +4,7 @@ type: post
 tags: ["Shell", "编程"]
 date: 2018-12-29T09:21:11.000Z
 category: 编程
-published: true
+published: false
 ---
 
 - linux 下使用命令排除当前行及下一行的内容
