@@ -197,6 +197,22 @@
 
 
 <ul>
+<li>shell 示例脚本</li>
+</ul>
+
+<pre><code class="language-bash">#!/bin/sh
+START=$(date +'%Y-%m-%d %H:%M:%S');echo &quot;Start: $START&quot; &gt;/data/database/onekp/nucl-v2/memo/log
+for i in `find /data/database/onekp/nucl-v2/samples/ -name &quot;*.fa&quot;`;
+do
+    dir=`dirname $i`;
+    fa=`basename $i`;
+    cd $dir; makeblastdb -in $fa -dbtype nucl;
+    echo $i &gt;&gt;/data/database/onekp/nucl-v2/memo/log;
+done 
+END=$(date);echo &quot;End: $END&quot; &gt;&gt;/data/database/onekp/nucl-v2/memo/log
+</code></pre>
+
+<ul>
 <li>linux 下使用命令排除当前行及下一行的内容</li>
 </ul>
 

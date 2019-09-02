@@ -17,7 +17,7 @@
       <pubDate>Sat, 29 Dec 2018 09:21:11 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2018-12-29-shell-practice/</guid>
-      <description>linux 下使用命令排除当前行及下一行的内容 sed &#39;/关键字/,+1d&#39; file &amp;gt;file2</description>
+      <description>shell 示例脚本 #!/bin/sh START=$(date +&#39;%Y-%m-%d %H:%M:%S&#39;);echo &amp;quot;Start: $START&amp;quot; &amp;gt;/data/database/onekp/nucl-v2/memo/log for i in `find /data/database/onekp/nucl-v2/samples/ -name &amp;quot;*.fa&amp;quot;`; do dir=`dirname $i`; fa=`basename $i`; cd $dir; makeblastdb -in $fa -dbtype nucl; echo $i &amp;gt;&amp;gt;/data/database/onekp/nucl-v2/memo/log; done END=$(date);echo &amp;quot;End: $END&amp;quot; &amp;gt;&amp;gt;/data/database/onekp/nucl-v2/memo/log linux 下使用命令排除当前行及下一行的内容 sed &#39;/关键字/,+1d&#39; file</description>
     </item>
     
   </channel>
