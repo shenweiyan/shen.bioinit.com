@@ -14,8 +14,8 @@
     
     
     
-    <title>hugo 博客添加 disqus 评论系统 - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="hugo 博客添加 disqus 评论系统 - Steven Shen | 沈维燕">
+    <title>Hugo 博客折腾的一些记录 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="Hugo 博客折腾的一些记录 - Steven Shen | 沈维燕">
     
 
     
@@ -164,7 +164,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-08-28-disqus-for-hugo.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-08-08-build-hugo-blogs.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../../topic/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -181,12 +181,12 @@
       <header class="title">
         
 
-<h1>hugo 博客添加 disqus 评论系统</h1>
+<h1>Hugo 博客折腾的一些记录</h1>
 
 
 
 <h3>
-2019-08-28</h3> 
+2019-08-08</h3> 
 
 
    
@@ -196,59 +196,116 @@
       </header>
 
 
-<p>打开 diqus 官网：<a href="http://disqus.com/">http://disqus.com</a>，点击 &ldquo;GET STARTED&rdquo; 进入注册页面：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567129486337-5a6bb0e9-7ad0-400d-9bbb-6362a44d8bba.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=773&amp;size=87116&amp;status=done&amp;width=773" alt="image.png" /></p>
 
-<p>选择 &ldquo;I want to install Disqus on my site&rdquo;，进入&rdquo;Create&rdquo; 创建页面：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567129711741-33a8fb63-56ca-42b3-80ee-a10626e2e344.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=768&amp;size=174049&amp;status=done&amp;width=768" alt="image.png" /></p>
 
-<p>在创建页面填写网站信息：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567131538176-6f483e24-15d8-4be0-b102-4a22f5ca758d.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=768&amp;size=72813&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p>模仿 R 语言大神谢益辉，搭建了一个 Hugo+blogdown 的博客：<a href="https://shen.bioinit.com/">https://shen.bioinit.com</a></p>
 
-<p>在 &ldquo;Choose a plan&rdquo; 页面，拉到最下面，选择免费的 &ldquo;Basic&rdquo; 版本，点击 &ldquo;Subscribe Now&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567131764891-262017a4-54f7-44c7-9844-38815debc193.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=45567&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566378409824-633e24bf-75bd-450b-8b87-7d5c0b51d74f.png#align=left&amp;display=inline&amp;height=695&amp;name=image.png&amp;originHeight=695&amp;originWidth=1038&amp;size=138527&amp;status=done&amp;width=1038" alt="image.png" /></p>
 
-<p>在 &ldquo;Choose a platform&rdquo; 选择博客的平台类型，对于 hugo 我们选择页面最下面的 &ldquo;Universal Code&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567132017554-2c392abb-bce4-49aa-9ee3-aede20e7e4f3.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=56672&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p>主要记录：</p>
 
-<p>把 &ldquo;Install instructions for Universal Code - Disqus Admin&rdquo; 页面的代码拷贝到 hugo 博客的 layouts/partials/disqus.html 文件：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567132211441-46b9fe46-e2dc-4d89-8f2b-9f729fc8a6e6.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=56370&amp;status=done&amp;width=768" alt="image.png" /></p>
+<ul>
+<li><code>.Site.BaseURL</code> 不起作用， <code>relURL</code> 、 <code>absURL</code> 也不起作用时，可参考使用 <code>params</code> 方法解决。</li>
+<li>修复原博客 url 的一些 bug，shen.bioinit.com 部分链接被直接写死，想要复用的需要重新定义。</li>
+</ul>
 
-<pre><code class="language-html">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
+<hr />
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = &quot;{{ .Permalink }}&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;{{ .Permalink }}&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
- { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://shen-hugo-blog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).app;
-})();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+<h3 id="centos-7-安装-go">CentOS 7 安装 Go</h3>
+
+<pre><code class="language-bash">$ wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+$ tar zvxf go1.12.7.linux-amd64.tar.gz
+$ mv go go-1.12.7
+
+$ vi ~/.bashrc
+# 在文件最后一行加入以下内容
+export GOPATH=/ifs1/go-projects                #这个是你自己开发的GO代码位置，以后开发可以放这个目录下
+export GOROOT=/usr/local/software/go-1.12.7    #这个就是我们安装的位置了。
+export PATH=$PATH:$GOROOT/bin                  #go语言一些常用的命令引入PATH环境变量
+
+$ go env 		# 查看 Go 的一些环境配置
 </code></pre>
 
-<p>最后，在 &ldquo;Install instructions for Universal Code - Disqus Admin&rdquo; 页面拉到最下面，点击 &ldquo;Configure&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133311537-3eac4d8f-8810-4a05-a60e-3137f528a29a.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=52227&amp;status=done&amp;width=768" alt="image.png" /></p>
+<h3 id="centos-7-安装-hugo">CentOS 7 安装 Hugo</h3>
 
-<p>在 &ldquo;Configure&rdquo; 页面填写完善网站的相关信息，点击 &ldquo;Complete Setup&rdquo; 完成设置。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133500623-f9a94853-b118-4afb-b061-0c03b622722c.png#align=left&amp;display=inline&amp;height=728&amp;name=image.png&amp;originHeight=728&amp;originWidth=768&amp;size=86458&amp;status=done&amp;width=768" alt="image.png" /></p>
-
-<p>在 hugo 博客的 config.toml 配置文件中增加 <code>disqusShortname</code> 参数：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133698291-e3f12bf1-5bb9-4dfd-ab81-2702d843e5b6.png#align=left&amp;display=inline&amp;height=307&amp;name=image.png&amp;originHeight=307&amp;originWidth=851&amp;size=36383&amp;status=done&amp;width=851" alt="image.png" /></p>
-
-<p>在 hugo 博客 layouts 目录下的模板中引入 <code>disqus.html</code> 模板：</p>
-
-<pre><code class="language-go">{{ partial &quot;disqus.html&quot; . }}
+<pre><code class="language-bash">$ wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
+$ tar zvxf hugo_0.54.0_Linux-64bit.tar.gz -C /usr/local/software/hugo-0.54.0
+$ echo &quot;export PATH=/usr/local/software/hugo-0.54.0:\$PATH&quot; &gt;&gt;~/.bashrc
+$ source ~/.bashrc
 </code></pre>
 
-<p>最后，执行 hugo，重新渲染生成所有的静态博客文件，push 到 github pages，完成所有操作。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567134788302-d07a70d3-dc3a-4102-a408-f88e2cffff08.png#align=left&amp;display=inline&amp;height=379&amp;name=image.png&amp;originHeight=379&amp;originWidth=682&amp;size=30797&amp;status=done&amp;width=682" alt="image.png" /></p>
+<h3 id="启动-hugo-博客服务">启动 hugo 博客服务</h3>
+
+<pre><code class="language-bash">shenweiyan@ecs-steven 15:04:06 ~/shenweiyan/home
+$ hugo		# 渲染生成静态站点文件
+
+                   | ZH
++------------------+-----+
+  Pages            | 159
+  Paginator pages  |   0
+  Non-page files   |   2
+  Static files     |  44
+  Processed images |   0
+  Aliases          |   0
+  Sitemaps         |   1
+  Cleaned          |   0
+
+Total in 203 ms
+
+
+$ hugo server --baseUrl=120.77.xx.xx --bind=0.0.0.0		# 启动本地预览服务
+</code></pre>
+
+<h3 id="一些问题">一些问题</h3>
+
+<p><strong>问题：</strong><br />hugo-ivy 主题在 0.55 后版本的 Hugo 中 RSS 无法使用，并且在编译时会有如下警告：</p>
+
+<pre><code class="language-bash">Building sites … 
+WARN 2019/08/13 09:03:08 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2019/08/13 09:03:08 Page's .RSSLink is deprecated and will be removed in a future release. Use the Output Format's link, e.g. something like:
+    {{ with .OutputFormats.Get &quot;RSS&quot; }}{{ .RelPermalink }}{{ end }}.
+</code></pre>
+
+<p><strong>方法：</strong></p>
+
+<ol>
+<li><p>网络部分关于将 <code>.URL</code> 相关的文件中 <code>.URL</code> 改成 <code>.Permalink</code> 以解决 <code>.URL</code> 的上述报错的做法（参考：《<a href="https://blog.hgtweb.com/2019/%E4%BF%AE%E5%A4%8Dleaveit%E4%BB%A5%E6%94%AF%E6%8C%81%E6%9C%80%E6%96%B0%E7%89%88hugo/">LeaveIt以支持最新版Hugo</a>》），经测试如果针对 Menu 级别的 html 模板会引发其他错误；而且虽然 hugo 更新到了 0.56.3，但官方文档示例还在使用 <code>.URL</code> ，参考 <a href="https://github.com/gohugoio/hugo/issues/5835">https://github.com/gohugoio/hugo/issues/5835</a>。</p></li>
+
+<li><p>修改包含 <code>.RSSLink</code> 相关的文件，如下：</p></li>
+</ol>
+
+<pre><code class="language-go">&lt;!-- 修改前 --&gt;
+{{ if .RSSLink }}
+    &lt;link href=&quot;{{ .RSSLink | relURL }}&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;{{ .Site.Title }}&quot; /&gt;
+{{ end }}
+
+&lt;!-- 修改后 --&gt;
+{{ with .OutputFormats.Get &quot;RSS&quot; }}
+    &lt;link href=&quot;{{ .RelPermalink | relURL }}&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;{{ $.Title }}&quot; /&gt;
+{{ end }}
+</code></pre>
+
+<h3 id="一些资料">一些资料</h3>
+
+<p>记录一下，搭建部署过程中参考的一些资料：</p>
+
+<ul>
+<li>钟浩光，《<a href="https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/">用 R 语言的 blogdown+hugo+netlify+github 建博客</a>》，统计之都</li>
+<li>Hash_Borgir, rdwatters, etc.《<a href="https://discourse.gohugo.io/t/solved-what-should-be-used-for-the-value-of-site-baseurl/5896">What should be used for the value of .Site.BaseURL?</a>》，Hugo forums</li>
+<li>chaomifan，《[Hugo+GitHub 静态博客折腾笔记](<a href="https://www.jianshu.com/p/07》，简书">https://www.jianshu.com/p/07》，简书</a></li>
+<li>Mogeko，《<a href="https://mogeko.me/2018/024/">链接为 Hugo 添加谈笑风生区 (Gitalk)</a>》，Mogeko`s Blog</li>
+<li>ByQiu，《[为博客添加 Gitalk 评论插件](<a href="https://www.jianshu.com/p/78》，简书">https://www.jianshu.com/p/78》，简书</a></li>
+<li>Parsia，《<a href="https://parsiya.net/blog/2016-02-14-archive-page-in-hugo/">Archive Page in Hugo</a>》，Hackerman&rsquo;s Hacking Tutorials</li>
+<li>olOwOlo desu，《<a href="https://blog.olowolo.com/post/hugo-quick-start/">Hugo 从入门到会用</a>》，olOwOlo&rsquo;s Blog</li>
+<li>小龙虾，《<a href="https://cray.vip/post/blog/">用hugo创建自己的博客</a>》，小龙虾的博客</li>
+</ul>
 
 
   <footer>
   
 <nav class="post-nav">
-  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/hello/2019-08-08-build-hugo-blogs/">Hugo 博客折腾的一些记录</a></span>
-  <span class="nav-next"></span> &nbsp;&rarr;
+  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/hello/2019-08-05-rgvbqq/">一些好玩又有趣的开源项目</a></span>
+  <span class="nav-next"><a href="../../../topic/hello/2019-08-28-disqus-for-hugo/">hugo 博客添加 disqus 评论系统</a></span> &nbsp;&rarr;
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -256,9 +313,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/topic\/hello\/2019-08-08-build-hugo-blogs\/';
+    url = '\/topic\/hello\/2019-08-05-rgvbqq\/';
     
   } else if (e.which == 39) {  
+    
+    url = '\/topic\/hello\/2019-08-28-disqus-for-hugo\/';
     
   }
   if (url) window.location = url;

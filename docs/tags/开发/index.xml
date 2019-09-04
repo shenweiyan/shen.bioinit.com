@@ -30,15 +30,6 @@
     </item>
     
     <item>
-      <title>Hugo 博客折腾的一些记录</title>
-      <link>https://shen.bioinit.com/topic/devel/2019-08-08-build-hugo-blogs/</link>
-      <pubDate>Thu, 08 Aug 2019 09:05:21 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/devel/2019-08-08-build-hugo-blogs/</guid>
-      <description>模仿 R 语言大神谢益辉，搭建了一个 Hugo+blogdown 的博客：https://shen.bioinit.com 主要记录： .Site.BaseURL 不起作用， relURL 、 absURL 也不起作用时，可参考使</description>
-    </item>
-    
-    <item>
       <title>语雀图片与七牛云之间的迁移同步</title>
       <link>https://shen.bioinit.com/topic/devel/2019-08-08-sync-from-yuque-to-qiniu/</link>
       <pubDate>Thu, 08 Aug 2019 03:44:11 +0000</pubDate>
