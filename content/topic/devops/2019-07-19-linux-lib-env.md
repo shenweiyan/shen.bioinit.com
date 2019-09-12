@@ -144,7 +144,7 @@ export
 命令：用于/bin/bash shell类型
 
 
-## 示例
+## 用户级别 .bashrc 示例
 
 ```bash
 # User Specific Alias

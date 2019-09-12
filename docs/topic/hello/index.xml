@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Gitbook 安装与使用笔记</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-09-06-ga7bft/</link>
+      <pubDate>Fri, 06 Sep 2019 03:16:17 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/hello/2019-09-06-ga7bft/</guid>
+      <description>Gitbook 是基于 Node.js 的命令行工具，用来创建漂亮的电子书，它使用 Markdown 或 AsciiDoc 语法来撰写内容，用 Git 进行版本控制，且可以托管在 Github 上。Gitbook 可以将作品编译成</description>
+    </item>
+    
+    <item>
       <title>hugo 博客添加 disqus 评论系统</title>
       <link>https://shen.bioinit.com/topic/hello/2019-08-28-disqus-for-hugo/</link>
       <pubDate>Wed, 28 Aug 2019 08:30:50 +0000</pubDate>

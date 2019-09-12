@@ -251,7 +251,7 @@
       <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/tools/2019-05-10-git-usage/</guid>
-      <description>本地创建分支 v-1.2 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 把本地分支提交到远程分支仓库 $ git add --all $ git commit -m &amp;quot;ASO design for Galaxy version</description>
+      <description>本地创建分支 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 删除本地分支 $ git branch -D v-1.2 把本地分支提交到远程分支仓库 $ git add</description>
     </item>
     
   </channel>

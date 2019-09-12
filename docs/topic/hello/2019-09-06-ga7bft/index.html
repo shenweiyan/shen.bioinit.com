@@ -14,8 +14,8 @@
     
     
     
-    <title>hugo 博客添加 disqus 评论系统 - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="hugo 博客添加 disqus 评论系统 - Steven Shen | 沈维燕">
+    <title>Gitbook 安装与使用笔记 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="Gitbook 安装与使用笔记 - Steven Shen | 沈维燕">
     
 
     
@@ -164,7 +164,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-08-28-disqus-for-hugo.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-09-06-ga7bft.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../../topic/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -181,12 +181,12 @@
       <header class="title">
         
 
-<h1>hugo 博客添加 disqus 评论系统</h1>
+<h1>Gitbook 安装与使用笔记</h1>
 
 
 
 <h3>
-2019-08-28</h3> 
+2019-09-06</h3> 
 
 
    
@@ -196,59 +196,140 @@
       </header>
 
 
-<p>打开 diqus 官网：<a href="http://disqus.com/">http://disqus.com</a>，点击 &ldquo;GET STARTED&rdquo; 进入注册页面：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567129486337-5a6bb0e9-7ad0-400d-9bbb-6362a44d8bba.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=773&amp;size=87116&amp;status=done&amp;width=773" alt="image.png" /></p>
 
-<p>选择 &ldquo;I want to install Disqus on my site&rdquo;，进入&rdquo;Create&rdquo; 创建页面：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567129711741-33a8fb63-56ca-42b3-80ee-a10626e2e344.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=768&amp;size=174049&amp;status=done&amp;width=768" alt="image.png" /></p>
 
-<p>在创建页面填写网站信息：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567131538176-6f483e24-15d8-4be0-b102-4a22f5ca758d.png#align=left&amp;display=inline&amp;height=544&amp;name=image.png&amp;originHeight=544&amp;originWidth=768&amp;size=72813&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p><a href="https://github.com/GitbookIO/gitbook">Gitbook</a> 是基于 Node.js 的命令行工具，用来创建漂亮的电子书，它使用 Markdown 或 AsciiDoc 语法来撰写内容，用 Git 进行版本控制，且可以托管在 Github 上。Gitbook 可以将作品编译成网站、 PDF、 ePub 和 MOBI 等多重格式。</p>
 
-<p>在 &ldquo;Choose a plan&rdquo; 页面，拉到最下面，选择免费的 &ldquo;Basic&rdquo; 版本，点击 &ldquo;Subscribe Now&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567131764891-262017a4-54f7-44c7-9844-38815debc193.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=45567&amp;status=done&amp;width=768" alt="image.png" /></p>
+<h3 id="1-安装">1. 安装</h3>
 
-<p>在 &ldquo;Choose a platform&rdquo; 选择博客的平台类型，对于 hugo 我们选择页面最下面的 &ldquo;Universal Code&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567132017554-2c392abb-bce4-49aa-9ee3-aede20e7e4f3.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=56672&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p>首先，安装 Node.js。GitBook 依赖 Node.js 环境。如果您的系统中还未安装 Node.js，请到 <a href="https://nodejs.org/en/">Node.js官方网站</a>，根据你所使用的系统下载对应的版本。如果已安装则略过本步骤。</p>
 
-<p>把 &ldquo;Install instructions for Universal Code - Disqus Admin&rdquo; 页面的代码拷贝到 hugo 博客的 layouts/partials/disqus.html 文件：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567132211441-46b9fe46-e2dc-4d89-8f2b-9f729fc8a6e6.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=56370&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p>第二，安装 GitBook 命令行工具。</p>
 
-<pre><code class="language-html">&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script&gt;
+<pre><code class="language-bash">$ npm install gitbook -g
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = &quot;{{ .Permalink }}&quot;;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = &quot;{{ .Permalink }}&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
- { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://shen-hugo-blog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).app;
-})();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+$ ll /usr/local/software/node-v6.12.0/bin/gitbook
+lrwxrwxrwx 1 shenweiyan bioinfo 42 Sep  6 10:39 /usr/local/software/node-v6.12.0/bin/gitbook -&gt; ../lib/node_modules/gitbook/bin/gitbook.js
+
+$ gitbook -h
+You need to install &quot;gitbook-cli&quot; to have access to the gitbook command anywhere on your system.
+If you've installed this package globally, you need to uninstall it.
+&gt;&gt; Run &quot;npm uninstall -g gitbook&quot; then &quot;npm install -g gitbook-cli&quot;
+shenweiyan@ecs-steven 11:15:01 /ifs1
+
+# gitbook-cli 是 gitbook 的一个命令行工具, 通过它可以在电脑上安装和管理 gitbook 的多个版本.
+$ npm install -g gitbook-cli 
+
+$ gitbook -h
+
+  Usage: gitbook [options] [command]
+
+
+  Options:
+
+    -v, --gitbook [version]  specify GitBook version to use
+    -d, --debug              enable verbose error
+    -V, --version            Display running versions of gitbook and gitbook-cli
+    -h, --help               output usage information
+
+
+  Commands:
+
+    ls                        List versions installed locally
+    current                   Display currently activated version
+    ls-remote                 List remote versions available for install
+    fetch [version]           Download and install a &lt;version&gt;
+    alias [folder] [version]  Set an alias named &lt;version&gt; pointing to &lt;folder&gt;
+    uninstall [version]       Uninstall a version
+    update [tag]              Update to the latest version of GitBook
+    help                      List commands for GitBook
+    *                         run a command with a specific gitbook version
 </code></pre>
 
-<p>最后，在 &ldquo;Install instructions for Universal Code - Disqus Admin&rdquo; 页面拉到最下面，点击 &ldquo;Configure&rdquo;：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133311537-3eac4d8f-8810-4a05-a60e-3137f528a29a.png#align=left&amp;display=inline&amp;height=436&amp;name=image.png&amp;originHeight=436&amp;originWidth=768&amp;size=52227&amp;status=done&amp;width=768" alt="image.png" /></p>
+<h3 id="2-制作文档步骤">2. 制作文档步骤</h3>
 
-<p>在 &ldquo;Configure&rdquo; 页面填写完善网站的相关信息，点击 &ldquo;Complete Setup&rdquo; 完成设置。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133500623-f9a94853-b118-4afb-b061-0c03b622722c.png#align=left&amp;display=inline&amp;height=728&amp;name=image.png&amp;originHeight=728&amp;originWidth=768&amp;size=86458&amp;status=done&amp;width=768" alt="image.png" /></p>
+<p>使用 GitBook命令行工具制作文档的步骤，如下：</p>
 
-<p>在 hugo 博客的 config.toml 配置文件中增加 <code>disqusShortname</code> 参数：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567133698291-e3f12bf1-5bb9-4dfd-ab81-2702d843e5b6.png#align=left&amp;display=inline&amp;height=307&amp;name=image.png&amp;originHeight=307&amp;originWidth=851&amp;size=36383&amp;status=done&amp;width=851" alt="image.png" /></p>
+<h4 id="2-1-新建-gitbook-项目">2.1 新建 GitBook 项目</h4>
 
-<p>在 hugo 博客 layouts 目录下的模板中引入 <code>disqus.html</code> 模板：</p>
+<p>新建一个目录，并进入该目录使用 gitbook 命令初始化电子书项目。举个例子，现在要创建一个名为“MyBook”的空白电子书项目，如下所示：</p>
 
-<pre><code class="language-go">{{ partial &quot;disqus.html&quot; . }}
+<pre><code class="language-bash">mkdir MyBook 	#新建目录
+cd MyBook    	#进入目录
+gitbook init 	#初始化目录
 </code></pre>
 
-<p>最后，执行 hugo，重新渲染生成所有的静态博客文件，push 到 github pages，完成所有操作。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1567134788302-d07a70d3-dc3a-4102-a408-f88e2cffff08.png#align=left&amp;display=inline&amp;height=379&amp;name=image.png&amp;originHeight=379&amp;originWidth=682&amp;size=30797&amp;status=done&amp;width=682" alt="image.png" /></p>
+<p>初始化后的目录中会出现“README.md”和“SUMMARY.md”两个基本文件。每个作品目录中这两个文件都是必须的。README.md 是作品的介绍，SUMMARY.md 是作品的目录结构，里面要包含一个章节标题和文件索引的列表</p>
+
+<h4 id="2-2-编辑电子书内容">2.2 编辑电子书内容</h4>
+
+<p>首先，GitBook 使用 <code>SUMMARY.md</code> 文件组织整个内容的目录，如：</p>
+
+<pre><code class="language-bash"># Summary
+
+* [简介](README.md)
+* [常见问题](Faq.md)
+</code></pre>
+
+<p>如上面目录中“常见问题”章节的内容，就存放在名为 <code>Faq.md</code> 的纯文本文件中，md 文件使用 <a href="http://wowubuntu.com/markdown/">markdown 语法</a> 编辑，规则非常简单，几分钟就可以学会。</p>
+
+<h4 id="2-3-预览电子书">2.3 预览电子书</h4>
+
+<p>当内容书写完毕后，可以在终端中输入如下命令，实现实时预览：</p>
+
+<pre><code class="language-bash">gitbook serve
+</code></pre>
+
+<p><code>gitbook serve</code> 命令实际上会首先调用 <code>gitbook build</code> 编译书籍，完成以后会打开一个 web 服务器，监听本地 4000 端口，在浏览器中输入 <code>http://localhost:4000</code>，即可打开电子书。</p>
+
+<h4 id="2-4-发布电子书">2.4 发布电子书</h4>
+
+<p>当电子书内容制作好后，可以使用如下命令，生成 html 版本的电子书：</p>
+
+<pre><code class="language-bash">gitbook build
+</code></pre>
+
+<p>该命令会在当前文件夹中生成 <code>_book</code> 文件夹，用户可以将这个文件夹内容托管到网上，从而实现内容的发布。</p>
+
+<h3 id="3-制作多级目录">3. 制作多级目录</h3>
+
+<p>GitBook 使用 <code>SUMMURY.md</code> 文件实现目录结构的设定，在该文件中，可以通过缩进实现多级目录的效果，如：</p>
+
+<pre><code class="language-bash">* [第一章](section1/README.md)
+    * [第一节](section1/example1.md)
+    * [第二节](section1/example2.md)
+* [第二章](section2/README.md)
+    * [第一节](section2/example1.md)
+</code></pre>
+
+<p>如上所示，章节的 md 文件，还可以存放在子文件夹中。另外，GitBook 的目录，限定为三级。</p>
+
+<p>用户还可以通过使用标题或者水平分割线标识将 GitBook 目录分为几个不同的部分：</p>
+
+<pre><code class="language-bash"># Summary
+
+### Part I
+
+* [Introduction](README.md)
+* [Writing is nice](part1/writing.md)
+* [GitBook is nice](part1/gitbook.md)
+
+### Part II
+
+* [We love feedback](part2/feedback_please.md)
+* [Better tools for authors](part2/better_tools.md)
+
+----
+
+* [Last part without title](part3/title.md)
+</code></pre>
 
 
   <footer>
   
 <nav class="post-nav">
-  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/hello/2019-08-08-build-hugo-blogs/">Hugo 博客折腾的一些记录</a></span>
-  <span class="nav-next"><a href="../../../topic/hello/2019-09-06-ga7bft/">Gitbook 安装与使用笔记</a></span> &nbsp;&rarr;
+  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/hello/2019-08-28-disqus-for-hugo/">hugo 博客添加 disqus 评论系统</a></span>
+  <span class="nav-next"></span> &nbsp;&rarr;
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -256,11 +337,9 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/topic\/hello\/2019-08-08-build-hugo-blogs\/';
+    url = '\/topic\/hello\/2019-08-28-disqus-for-hugo\/';
     
   } else if (e.which == 39) {  
-    
-    url = '\/topic\/hello\/2019-09-06-ga7bft\/';
     
   }
   if (url) window.location = url;

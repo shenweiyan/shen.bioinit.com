@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>如何同步更新 Github 上 Fork 的项目？</title>
+      <link>https://shen.bioinit.com/topic/devel/2019-09-12-github-fork-update/</link>
+      <pubDate>Thu, 12 Sep 2019 02:05:22 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/devel/2019-09-12-github-fork-update/</guid>
+      <description>Github Fork 过程概述 在 Github 上有很多优秀的开源项目，相信每一位热衷于技术的朋友都会在 Github 上 Fork 一些感兴趣的项目，然后在本地修改并提交。本文以 Galaxy Project 下的 galaxy 仓库为</description>
+    </item>
+    
+    <item>
+      <title>Gitbook 安装与使用笔记</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-09-06-ga7bft/</link>
+      <pubDate>Fri, 06 Sep 2019 03:16:17 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/hello/2019-09-06-ga7bft/</guid>
+      <description>Gitbook 是基于 Node.js 的命令行工具，用来创建漂亮的电子书，它使用 Markdown 或 AsciiDoc 语法来撰写内容，用 Git 进行版本控制，且可以托管在 Github 上。Gitbook 可以将作品编译成</description>
+    </item>
+    
+    <item>
       <title>修养</title>
       <link>https://shen.bioinit.com/topic/life/2019-09-04-marriage-art/</link>
       <pubDate>Wed, 04 Sep 2019 01:30:05 +0000</pubDate>
@@ -863,7 +881,7 @@
       <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/tools/2019-05-10-git-usage/</guid>
-      <description>本地创建分支 v-1.2 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 把本地分支提交到远程分支仓库 $ git add --all $ git commit -m &amp;quot;ASO design for Galaxy version</description>
+      <description>本地创建分支 $ git branch v-1.2 $ git branch * master v-1.2 切换本地分支 $ git branch * master v-1.2 $ git checkout v-1.2 Switched to branch &#39;v-1.2&#39; $ git branch master * v-1.2 删除本地分支 $ git branch -D v-1.2 把本地分支提交到远程分支仓库 $ git add</description>
     </item>
     
     <item>
