@@ -1,5 +1,5 @@
 ---
-title: 手把手教你如何在 Linux 源码安装最新版本的 R
+title: 手把手教你在 Linux 源码安装最新版本的 R
 type: post
 tags: ["R", "运维"]
 date: 2019-07-01T03:50:35.000Z
@@ -15,6 +15,7 @@ published: true
 | :---: | --- |
 | 系统 | Red Hat Enterprise Linux Server release 6.5 (Santiago), x86_64 |
 | gcc | gcc version 4.4.7 20120313 (Red Hat 4.4.7-4) (GCC) |
+
 
 
 

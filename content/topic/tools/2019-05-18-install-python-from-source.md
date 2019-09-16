@@ -4,10 +4,12 @@ type: post
 tags: ["Python", "工具"]
 date: 2019-05-18T12:10:10.000Z
 category: 工具
-published: false
+published: true
 ---
 
-基于 CentOS Linux release 6.5 源码编译安装 python-2.7.xx(Python-3.x.xx) 的一些步骤，以下为安装记录。
+编程，作为生物信息学的一个基础性技能，是任何一个生信工程师都无法绕开话题。也许有些人还在纠结 Perl 和 Python 到底应该学习哪一个，但作为目前最火最流行的编程语言 Python 还是非常值得尝试的。它不但可以进行文本处理，在统计分析、网站、游戏开发、爬虫、数据可视化等方面也有非常强大的应用，比起曾经的 Perl 真的强大和全面很多。不管从长远发展，还是短期需要，学会 Python，看懂 Perl 应该是每一个生信工程必备的基础技能之一。
+
+工欲善其事，必先利其器。关于 Python 安装教程在网上一搜一大把，但总感觉不够全面，尤其对于中间出现的一些问题的解决方法不尽如人意。鉴于此，本文基于 CentOS Linux release 6.5 对 python-3.7.3 的源码编译安装进行了一下简单的总结，记录如下。
 
 <a name="d635bbce"></a>
 ## 1. 安装环境
@@ -31,10 +33,12 @@ yum install libffi
 yum install libffi-devel
 ```
 
+如果您没有 root 权限，可以参考《[手把手教你在 Linux 源码安装最新版本的 R](https://www.yuque.com/shenweiyan/cookbook/install-latest-r-from-source)》一文，手动一个个去解决以上的依赖。
+
 
 ### 2.1 ssl
 
-python3 需要引用 openssl 模块，但是 CentOS 需要的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（CentOS-6.x 通过 `yum`  源安装的 openssl 的最高版本是1.0.1），所以需要手动更新 openssl。
+python3 需要引用 `openssl` 模块，但是 CentOS 需要的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（CentOS-6.x 通过 `yum` 源安装的 openssl 的最高版本是 1.0.1），所以需要手动更新 openssl。
 
 ```bash
 # 下载
@@ -62,7 +66,7 @@ source $HOME/.bashrc
 **请注意：**
 
 1. **openssl **编译（config）的时候 **必须要加上 shared 参数**，否者源码安装 Python 即使添加了 `--with-openssl` 的自定义路径，依然会导致 `Could not build the ssl module!` 报错！
-1. 从 [https://www.openssl.org/source/](https://www.openssl.org/source/) 下载的源码 openssl-1.0.2s、openssl-1.0.2m 目前发现依然会导致 `Could not build the ssl module` ，建议从 [https://www.openssl.org/source/old/](https://www.openssl.org/source/old/) 下载 1.1.1 的源码编译安装。
+1. 从 [https://www.openssl.org/source/](https://www.openssl.org/source/) 下载的源码 openssl-1.0.2s、openssl-1.0.2m，包括 CentOS-7.5 使用 `yum` 安装的最高版本的 openssl-1.0.2k 目前发现依然会导致 `Could not build the ssl module` ，建议从 [https://www.openssl.org/source/old/](https://www.openssl.org/source/old/) 下载 1.1.1 的源码编译安装。
 
 
 
@@ -94,7 +98,6 @@ libffi-devel-3.0.5-3.2.el6.x86_64
 ```
 
 源码方法安装如下：
-
 ```bash
 $ wget ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
 $ tar zvxf libffi-3.2.1.tar.gz
@@ -211,13 +214,13 @@ $ ./configure \
 --prefix=/Bioinfo/Pipeline/SoftWare/Python-3.7.3 \
 --with-openssl=/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1 \
 CC=/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/gcc \
-CXX=/RiboBio/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/c++ \
+CXX=/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/c++ \
 LDFLAGS="-L/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib64 -L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib" \
 CPPFLAGS="-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include" \
 PKG_CONFIG_PATH="/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib/pkgconfig:/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig" 
 ```
 
-- `--enable-optimizations` 是优化选项（LTO,PGO 等）加上这个 flag 编译后，性能有 10% 左右的优化，但是这会明显的增加编译时间。建议使用这个参数；
+- `--enable-optimizations` 是优化选项（LTO，PGO 等）加上这个 flag 编译后，性能有 10% 左右的优化，但是这会明显的增加编译时间。建议使用这个参数；
 - `--prefix`  声明安装路径；
 - 安装多个 python 的版本，如果不开启 `--enable-shared`，指定不同路径即可。当开启 `--enable-shared` 时，默认只有一个版本的 python。
 - python 3 编译可以使用 `--with-openssl=DIR` 指定 OpenSSL 安装路径进行编译的方式解决 OpenSSL 依赖，否则 `make` 过程可能出错。 
@@ -264,8 +267,7 @@ _ssl _ssl.c \
 make && make install
 ```
 
-第四，安装完成。以上命令执行完毕，且无报错的情况下，我们将默认 python 换将切换至 3.7.xx/2.7.xx（一般不建议替换，个人建议把自定义安装的 Python bin 路径添加到 PATH 环境变量即可）：
-
+第四，安装完成。以上命令执行完毕，且无报错的情况下，我们将默认 python 换将切换至 3.7.3（一般不建议替换，个人建议把自定义安装的 Python bin 路径添加到 PATH 环境变量即可）：
 ```bash
 # 替换系统自带的 python（不建议）
 mv /usr/bin/python /usr/bin/python2
@@ -276,7 +278,7 @@ echo "export PATH=/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin:$PATH" >>~/.bashrc
 source ~/.bashrc
 ```
 
-运行命令 `python -V` ，查看是否出现 3.7.xx（2.7.xx）的版本，出现即为安装成功。
+运行命令 `python -V` ，查看是否出现 3.7.3 的版本，出现即为安装成功。
 
 
 <a name="b9acf683"></a>
@@ -288,11 +290,11 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 
-至此，python 全部安装完成。
+至此，CentOS Linux release 6.5 下的 python-3.7.3 全部安装完成。如果在安装过程中出现其他的报错，建议把 error 关键信息直接复制到 Google 进行检索，参考其他人的解决方法。
 
 
 <a name="a6a2ae93"></a>
 ## 4. 参考资料
 
-1. 行者无疆-ITer,《[python2.7源码编译安装](https://www.cnblogs.com/ITer-jack/p/8305912.html)》, 博客园
+1. 行者无疆-ITer,《[python2.7 源码编译安装](https://www.cnblogs.com/ITer-jack/p/8305912.html)》, 博客园
 1. Scott Frazer,《[How do I compile Python 3.4 with custom OpenSSL?](https://stackoverflow.com/questions/23548188/how-do-i-compile-python-3-4-with-custom-openssl)》, Stack Overflow

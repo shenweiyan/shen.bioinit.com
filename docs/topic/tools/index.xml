@@ -237,6 +237,15 @@
     </item>
     
     <item>
+      <title>生物信息学 Python 入门之源码安装</title>
+      <link>https://shen.bioinit.com/topic/tools/2019-05-18-install-python-from-source/</link>
+      <pubDate>Sat, 18 May 2019 12:10:10 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tools/2019-05-18-install-python-from-source/</guid>
+      <description>编程，作为生物信息学的一个基础性技能，是任何一个生信工程师都无法绕开话题。也许有些人还在纠结 Perl 和 Python 到底应该学习哪一个，但作为目前最火最流行的</description>
+    </item>
+    
+    <item>
       <title>Git 的一些常用用法笔记</title>
       <link>https://shen.bioinit.com/topic/tools/2019-05-10-git-usage/</link>
       <pubDate>Fri, 10 May 2019 03:54:24 +0000</pubDate>
