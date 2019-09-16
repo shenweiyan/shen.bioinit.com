@@ -1,10 +1,10 @@
 ---
-title: Linux 下 Python 源码编译安装
+title: 生物信息学 Python 入门之源码安装
 type: post
 tags: ["Python", "工具"]
 date: 2019-05-18T12:10:10.000Z
 category: 工具
-published: true
+published: false
 ---
 
 基于 CentOS Linux release 6.5 源码编译安装 python-2.7.xx(Python-3.x.xx) 的一些步骤，以下为安装记录。
