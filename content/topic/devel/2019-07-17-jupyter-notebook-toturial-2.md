@@ -1,5 +1,5 @@
 ---
-title: 数据科学工具 Jupyter Notebook 教程(二)
+title: Jupyter Notebook 教程(二)：服务器搭建
 type: post
 tags: ["Jupyter", "开发"]
 date: 2019-07-17T07:48:42.000Z
@@ -7,7 +7,7 @@ category: 开发
 published: true
 ---
 
-上一篇文章中，我们介绍了 Jupyter Notebook 在本地的一些安装和使用，今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。
+今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。
 
 网上搜了一下 jupyter 服务器的搭建，官方给出了很好的多用户服务端 jupyterhub，但我的需求就是在 VPS 搭建好一个 jupyter 服务网页，完全自己用，所以搭建 jupyterhub 有些浪费资源，转而去寻找简单的 jupyter 服务搭建方案，别说，官网也写好文档给我们用了，但文档是用英文写的，看的不舒服，这里把要点写出来，供参考。
 
@@ -154,3 +154,24 @@ server{
 ![jupyter_server.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563341527122-326cddb2-b2b2-4ccf-8b01-f2c03cca27e2.png#align=left&display=inline&height=577&name=jupyter_server.png&originHeight=577&originWidth=829&size=27393&status=done&width=829)
 
 以上就是远程 Jupter Notebook 服务安装与配置的全部内容，下一篇我们介绍一下如何在  Jupyter Notebook  中使用不同内核（Kernel）实现支持包括 python2、python3、R 在的多种不同编程环境。
+
+
+
+## 6. 其他问题
+
+- **missing react-dom js to package data**
+
+Jupyter Notebook 在启动该过程中出现空白页面，后台 log 提示 404 错误：
+```
+[W 15:18:20.967 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.49ms referer=https://jupyter.bioinit.com/tree?
+```
+
+解决方法：
+> As a workaround I grabbed the file from: [https://unpkg.com/react-dom@16/umd/react-dom.production.min.js](https://unpkg.com/react-dom@16/umd/react-dom.production.min.js) and copied it into the jupyter static package tree .../site_packages/notebook/static/components/react
+
+
+```bash
+$ cd $miniconda3/lib/python3.7/site-packages/notebook/static/components/react
+$ wget https://unpkg.com/react-dom@16/umd/react-dom.production.min.js
+```
+

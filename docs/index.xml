@@ -183,7 +183,7 @@
     </item>
     
     <item>
-      <title>数据科学工具 Jupyter Notebook 教程(三)</title>
+      <title>Jupyter Notebook 教程(三)：多语言编程环境配置</title>
       <link>https://shen.bioinit.com/topic/devel/2019-07-17-jupyter-notebook-toturial-3/</link>
       <pubDate>Wed, 17 Jul 2019 08:25:34 +0000</pubDate>
       
@@ -192,12 +192,12 @@
     </item>
     
     <item>
-      <title>数据科学工具 Jupyter Notebook 教程(二)</title>
+      <title>Jupyter Notebook 教程(二)：服务器搭建</title>
       <link>https://shen.bioinit.com/topic/devel/2019-07-17-jupyter-notebook-toturial-2/</link>
       <pubDate>Wed, 17 Jul 2019 07:48:42 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/devel/2019-07-17-jupyter-notebook-toturial-2/</guid>
-      <description>上一篇文章中，我们介绍了 Jupyter Notebook 在本地的一些安装和使用，今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。 网上搜了一下 jupyter 服务器的搭</description>
+      <description>今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。 网上搜了一下 jupyter 服务器的搭建，官方给出了很好的多用户服务端 jupyterhub</description>
     </item>
     
     <item>
@@ -219,7 +219,7 @@
     </item>
     
     <item>
-      <title>数据科学工具 Jupyter Notebook 教程(一)</title>
+      <title>Jupyter Notebook 教程(一)：本地安装与使用</title>
       <link>https://shen.bioinit.com/topic/devel/2019-07-17-jupyter-notebook-toturial-1/</link>
       <pubDate>Wed, 17 Jul 2019 03:38:57 +0000</pubDate>
       

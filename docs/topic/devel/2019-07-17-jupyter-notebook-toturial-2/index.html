@@ -14,8 +14,8 @@
     
     
     
-    <title>数据科学工具 Jupyter Notebook 教程(二) - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="数据科学工具 Jupyter Notebook 教程(二) - Steven Shen | 沈维燕">
+    <title>Jupyter Notebook 教程(二)：服务器搭建 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="Jupyter Notebook 教程(二)：服务器搭建 - Steven Shen | 沈维燕">
     
 
     
@@ -86,7 +86,7 @@
           
           
           
-            <a href="../../../topic/tools/" aria-current="page">
+            <a href="../../../topic/tools/" >
               
               工具
             </a>
@@ -181,7 +181,7 @@
       <header class="title">
         
 
-<h1>数据科学工具 Jupyter Notebook 教程(二)</h1>
+<h1>Jupyter Notebook 教程(二)：服务器搭建</h1>
 
 
 
@@ -198,7 +198,7 @@
 
 
 
-<p>上一篇文章中，我们介绍了 Jupyter Notebook 在本地的一些安装和使用，今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。</p>
+<p>今天我们介绍一下 Python3+Nginx+SSL 下的 Jupyter Notebook 服务部署，也就是 Jupyter 服务器的搭建与配置。</p>
 
 <p>网上搜了一下 jupyter 服务器的搭建，官方给出了很好的多用户服务端 jupyterhub，但我的需求就是在 VPS 搭建好一个 jupyter 服务网页，完全自己用，所以搭建 jupyterhub 有些浪费资源，转而去寻找简单的 jupyter 服务搭建方案，别说，官网也写好文档给我们用了，但文档是用英文写的，看的不舒服，这里把要点写出来，供参考。</p>
 
@@ -347,12 +347,30 @@ server{
 
 <p>以上就是远程 Jupter Notebook 服务安装与配置的全部内容，下一篇我们介绍一下如何在  Jupyter Notebook  中使用不同内核（Kernel）实现支持包括 python2、python3、R 在的多种不同编程环境。</p>
 
+<h2 id="6-其他问题">6. 其他问题</h2>
+
+<ul>
+<li><strong>missing react-dom js to package data</strong></li>
+</ul>
+
+<p>Jupyter Notebook 在启动该过程中出现空白页面，后台 log 提示 404 错误：</p>
+
+<pre><code>[W 15:18:20.967 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 2.49ms referer=https://jupyter.bioinit.com/tree?
+</code></pre>
+
+<p>解决方法：
+&gt; As a workaround I grabbed the file from: <a href="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js">https://unpkg.com/react-dom@16/umd/react-dom.production.min.js</a> and copied it into the jupyter static package tree &hellip;/site_packages/notebook/static/components/react</p>
+
+<pre><code class="language-bash">$ cd $miniconda3/lib/python3.7/site-packages/notebook/static/components/react
+$ wget https://unpkg.com/react-dom@16/umd/react-dom.production.min.js
+</code></pre>
+
 
   <footer>
   
 <nav class="post-nav">
   &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/devel/2019-07-17-google-code-prettify/">Google Code Prettify 代码高亮使用教程</a></span>
-  <span class="nav-next"><a href="../../../topic/devel/2019-07-17-jupyter-notebook-toturial-3/">数据科学工具 Jupyter Notebook 教程(三)</a></span> &nbsp;&rarr;
+  <span class="nav-next"><a href="../../../topic/devel/2019-07-17-jupyter-notebook-toturial-3/">Jupyter Notebook 教程(三)：多语言编程环境配置</a></span> &nbsp;&rarr;
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
