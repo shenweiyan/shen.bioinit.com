@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>GO 学习资料</title>
+      <link>https://shen.bioinit.com/topic/code/2019-09-18-ygzmzn/</link>
+      <pubDate>Wed, 18 Sep 2019 01:12:39 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/code/2019-09-18-ygzmzn/</guid>
+      <description>Python 程序员的 Golang 学习指南（I）: Go 之初体验 Go 零基础编程入门教程 跟煎鱼学 Go</description>
+    </item>
+    
+    <item>
       <title>如何同步更新 Github 上 Fork 的项目？</title>
       <link>https://shen.bioinit.com/topic/devel/2019-09-12-github-fork-update/</link>
       <pubDate>Thu, 12 Sep 2019 02:05:22 +0000</pubDate>

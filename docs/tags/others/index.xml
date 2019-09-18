@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Fri, 06 Sep 2019 03:16:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2019 01:12:39 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GO 学习资料</title>
+      <link>https://shen.bioinit.com/topic/code/2019-09-18-ygzmzn/</link>
+      <pubDate>Wed, 18 Sep 2019 01:12:39 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/code/2019-09-18-ygzmzn/</guid>
+      <description>Python 程序员的 Golang 学习指南（I）: Go 之初体验 Go 零基础编程入门教程 跟煎鱼学 Go</description>
+    </item>
     
     <item>
       <title>Gitbook 安装与使用笔记</title>
