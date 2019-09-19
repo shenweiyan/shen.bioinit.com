@@ -14,8 +14,8 @@
     
     
     
-    <title>GO 学习资料 - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="GO 学习资料 - Steven Shen | 沈维燕">
+    <title>Python 文件下载并显示下载进度条 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="Python 文件下载并显示下载进度条 - Steven Shen | 沈维燕">
     
 
     
@@ -164,7 +164,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/code/2019-09-18-ygzmzn.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/code/2019-09-19-xu2eg5.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../../topic/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -181,12 +181,12 @@
       <header class="title">
         
 
-<h1>GO 学习资料</h1>
+<h1>Python 文件下载并显示下载进度条</h1>
 
 
 
 <h3>
-2019-09-18</h3> 
+2019-09-19</h3> 
 
 
    
@@ -196,18 +196,130 @@
       </header>
 
 
+
+
+<p>先上代码，后面有空再整理细节：</p>
+
+<pre><code class="language-python"># -*- coding:utf-8 -*-
+# vim:et:ts=4:sw=4:
+#!/usr/bin/env python
+
+######################################################################
+__author__  = 'ishenweiyan@qq.com'
+__create__  = '2019-09-19'
+__file__    = 'download_demo.py'
+__license__ = '2019 All rights reserved.'
+__doc__     = 'The test script.'
+#####################################################################
+
+import os
+from urllib.request import urlopen
+
+import requests
+from tqdm import tqdm
+from contextlib import closing
+
+
+class Progress:
+
+    def __init__(self, title,
+                 count=0.0,
+                 run_status=None,
+                 fin_status=None,
+                 total=100.0,
+                 unit='', sep='/',
+                 chunk_size=1.0):
+        super(ProgressBar, self).__init__()
+        self.info = &quot;[%s] %s %.2f %s %s %.2f %s&quot;
+        self.title = title
+        self.total = total
+        self.count = count
+        self.chunk_size = chunk_size
+        self.status = run_status or &quot;&quot;
+        self.fin_status = fin_status or &quot; &quot; * len(self.status)
+        self.unit = unit
+        self.seq = sep
+
+    def __get:
+        # [名称] 状态 进度 单位 分割线 总数 单位
+        _info = self.info % (self.title, self.status,
+                             self.count/self.chunk_size, self.unit, self.seq, self.total/self.chunk_size, self.unit)
+        return _info
+
+    def refresh(self, count=1, status=None):
+        self.count += count
+        # if status is not None:
+        self.status = status or self.status
+        end_str = &quot;\r&quot;
+        if self.count &gt;= self.total:
+            end_str = '\n'
+            self.status = status or self.fin_status
+        print(self._, end=end_str)
+
+
+def download_from_url(url, dst):
+    &quot;&quot;&quot;
+    @param: url to download file
+    @param: dst place to put the file
+    &quot;&quot;&quot;
+    file_size = int(u.info().get('Content-Length', -1))
+
+    if os.path.:
+        first_byte = os.path.g
+    else:
+        first_byte = 0
+    if first_byte &gt;= file_size:
+        return file_size
+    header = {&quot;Range&quot;: &quot;bytes=%s-%s&quot; % (first_byte, file_size)}
+    pbar = tqdm(
+        total=file_size, initial=first_byte,
+        unit='B', unit_scale=True, desc=url.split('/')[-1])
+    req = requests.get(url, headers=header, stream=True)
+    with(open(dst, 'ab')) as f:
+        for chunk in req.iter_content(chunk_size=1024):
+            if chunk:
+                f.w
+                pbar.u
+    pbar.close()
+    return file_size
+
+def __main__():
+
+    url = 'http://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz'
+    file_name = 'gene2ensembl.gz'
+
+    '''
+    with closing(requests.get(url, stream=True)) as response:
+        chunk_size = 1024 # 单次请求最大值
+        content_size = int(response.headers['content-length']) # 内容体总大小
+        progress = ProgressBar(file_name, total=content_size,
+                                     unit=&quot;KB&quot;, chunk_size=chunk_size, run_status=&quot;正在下载&quot;, fin_status=&quot;下载完成&quot;)
+        with open(file_name, &quot;wb&quot;) as file:
+            for data in response.iter_content(chunk_size=:
+                file.
+                progress.refresh(count=len(data))
+    '''
+    download_from_url(url, file_name)
+
+if __name__ == &quot;__main__&quot;:
+    __main__()
+</code></pre>
+
+<h2 id="参考资料">参考资料</h2>
+
 <ul>
-<li><a href="https://gocn.vip/article/36">Python 程序员的 Golang 学习指南（I）: Go 之初体验</a></li>
-<li><a href="https://gocn.vip/question/1615">Go 零基础编程入门教程</a></li>
-<li><a href="https://eddycjy.gitbook.io/golang/">跟煎鱼学 Go</a></li>
+<li>Python玩家，《<a href="https://blog.csdn.net/programmer_yf/article/details/80512428">自制一个python下载文件的进度条模块！</a>》，CSDN</li>
+<li>微寒Super，《<a href="https://blog.csdn.net/supercooly/article/details/51046561">Python3使用requests模块显示下载进度</a>》，CSDN</li>
+<li>Kenneth Reitz，《<a href="http://cn.python-requests.org/en/latest/user/advanced.html">高级用法 — Requests 2.18.1 文档</a>》，Requests 2.18.1 文档</li>
+<li>昊天 seo，《<a href="https://www.168seo.cn/python/24286.html">Python3 使用requests模块显示下载视频并且显示进度</a>》，WordPress 博客</li>
 </ul>
 
 
   <footer>
   
 <nav class="post-nav">
-  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/code/2019-07-01-python-file-directory-toturial/">Python 文件与目录操作方法总结</a></span>
-  <span class="nav-next"><a href="../../../topic/code/2019-09-19-xu2eg5/">Python 文件下载并显示下载进度条</a></span> &nbsp;&rarr;
+  &larr;&nbsp; <span class="nav-prev"><a href="../../../topic/code/2019-09-18-ygzmzn/">GO 学习资料</a></span>
+  <span class="nav-next"></span> &nbsp;&rarr;
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -215,11 +327,9 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/topic\/code\/2019-07-01-python-file-directory-toturial\/';
+    url = '\/topic\/code\/2019-09-18-ygzmzn\/';
     
   } else if (e.which == 39) {  
-    
-    url = '\/topic\/code\/2019-09-19-xu2eg5\/';
     
   }
   if (url) window.location = url;
