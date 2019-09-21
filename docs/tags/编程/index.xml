@@ -6,10 +6,19 @@
     <description>Recent content in 编程 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Thu, 19 Sep 2019 08:03:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2019 23:20:19 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python 日期和时间函数使用指南</title>
+      <link>https://shen.bioinit.com/topic/code/2019-09-20-myt8bp/</link>
+      <pubDate>Fri, 20 Sep 2019 23:20:19 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/code/2019-09-20-myt8bp/</guid>
+      <description>作者：[Deepanshu Bhalla](https://www.linkedin.com/in/deepa 编译：[Steven Shen](https://www.yuque.com/ 标题：A Complete Guide to Date and Time Functions 在本教程中，我们将介绍 python 的 datetime 模块以及如何使用它来处理日期、时间，以及</description>
+    </item>
     
     <item>
       <title>Python 文件下载并显示下载进度条</title>
