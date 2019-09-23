@@ -7,7 +7,7 @@ category: 编程
 published: true
 ---
 
-作者：[Deepanshu Bhalla](https://www.linkedin.com/in/deepa<br />编译：[Steven Shen](https://www.yuque.com/<br />标题：[A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
+作者：[Deepanshu Bhalla](https://www.linkedin.com/in/deepa     <br />编译：[Steven Shen](https://www.yuque.com/      <br />标题：[A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
 
 ---
 
