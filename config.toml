@@ -25,7 +25,7 @@ publishDir = "docs"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "文章"
+    name = "专栏"
     url = "/topic/"
     weight = 3
 [[menu.main]]
@@ -77,6 +77,11 @@ publishDir = "docs"
     name = "乱弹"
     url = "/topic/hello/"
     weight = 9
+[[menu.topic]]
+    name = "归档"
+    url = "/archives/"
+    weight = 10
+
 
 [params]
     siteurl = "https://shen.bioinit.com"
