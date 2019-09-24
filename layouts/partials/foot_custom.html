@@ -2,12 +2,14 @@
 <nav class="post-nav">
   <span class="nav-prev">
       {{ with .PrevInSection }}
-      &larr;&nbsp;<span class="nav-prev-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <br/>&larr;&nbsp;
       {{ end }}
   </span>
   <span class="nav-next">
       {{ with .NextInSection }}
-      <span class="nav-next-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>&nbsp;&rarr;
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <br/>&nbsp;&rarr;
       {{ end }}
   </span>
 </nav>
