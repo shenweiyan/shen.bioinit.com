@@ -136,7 +136,7 @@ hr {
   font-weight: bold;
 }
 
-.nav-next {
+.nav-next-title {
   width: 60%;
   margin-left: 1em;
   text-align: right;
@@ -145,7 +145,7 @@ hr {
   text-overflow: ellipsis;
 }
 
-.nav-prev {
+.nav-prev-title {
   margin-right: 1em;
   width: 60%;
   overflow: hidden;
