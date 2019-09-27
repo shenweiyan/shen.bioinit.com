@@ -7,7 +7,7 @@ category: 编程
 published: true
 ---
 
-作者： [Deepanshu Bhalla](https://www.linkedin.com/in/deepa     <br />编译： [Steven Shen](https://www.yuque.com/      <br />标题： [A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
+作者： Deepanshu Bhalla     <br />编译： Steven Shen      <br />标题： [A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
 
 ---
 
@@ -351,7 +351,7 @@ from dateutil.relativedelta import *
 
 #### 8.1 如何计算两个日期之间的月数
 
-一种方法是计算天数，然后除以 30 得到月数。但它并不总是正确的，因为有些月份有 31 天。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568085011856-f1944dbf-86b7-46f2-8b07-e25101a3e496.png#align=left&display=inline&height=175&name=image.png&originHeight=175&originWidth=857&size=11214&status=done&width=857)
+一种方法是计算天数，然后除以 30 得到月数。但它并不总是正确的，因为有些月份有 31 天。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568085011856-f1944dbf-86b7-46f2-8b07-e25101a3e496.png#align=left&display=inline&height=175&name=image.png&originHeight=175&originWidth=857&search=&size=11214&status=done&width=857)
 
 **它是怎么起作用的呢？**
 
