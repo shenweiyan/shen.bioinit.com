@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>在 Linux 上给用户赋予指定目录的读写权限</title>
+      <link>https://shen.bioinit.com/topic/devops/2019-09-29-linux-acl-permission/</link>
+      <pubDate>Sun, 29 Sep 2019 08:28:52 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/devops/2019-09-29-linux-acl-permission/</guid>
+      <description>在 Linux 上指定目录的读写权限赋予用户，有两种方法可以实现这个目标：第一种是使用 ACL (访问控制列表)，第二种是创建用户组来管理文件权限，下面会一一介</description>
+    </item>
+    
+    <item>
       <title>阿里云 ECS 更换操作系统</title>
       <link>https://shen.bioinit.com/topic/devops/2019-09-23-alyun-change-os/</link>
       <pubDate>Mon, 23 Sep 2019 07:04:36 +0000</pubDate>
