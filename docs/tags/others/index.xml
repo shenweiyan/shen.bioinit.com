@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Mon, 23 Sep 2019 07:04:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 08:39:14 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PostgreSQL 常用命令</title>
+      <link>https://shen.bioinit.com/topic/devops/2019-09-30-pdag4c/</link>
+      <pubDate>Mon, 30 Sep 2019 08:39:14 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/devops/2019-09-30-pdag4c/</guid>
+      <description>关于 PostgreSQL 的基本用法，供初次使用者上手。以下内容基于 CentOS 操作系统，其他操作系统实在没有精力兼顾，但是大部分内容应该普遍适用。 1. 常规操作 重启： /etc/init.d/postgresql restart 登</description>
+    </item>
     
     <item>
       <title>阿里云 ECS 更换操作系统</title>
