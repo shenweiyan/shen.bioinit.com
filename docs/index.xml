@@ -696,15 +696,6 @@
     </item>
     
     <item>
-      <title>基于 Linux 集群环境上 GPFS 的问题诊断</title>
-      <link>https://shen.bioinit.com/topic/devops/2019-06-12-onzp1v/</link>
-      <pubDate>Wed, 12 Jun 2019 03:49:10 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/devops/2019-06-12-onzp1v/</guid>
-      <description>原文：https://www.ibm.com/developerworks/cn/analytics/library/tensorflow-</description>
-    </item>
-    
-    <item>
       <title>Spectrum LSF：高效的集群管理系统</title>
       <link>https://shen.bioinit.com/topic/devops/2019-06-12-spectrum-lsf/</link>
       <pubDate>Wed, 12 Jun 2019 03:29:50 +0000</pubDate>
