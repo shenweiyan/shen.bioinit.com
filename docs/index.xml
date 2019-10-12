@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>基于 Dash Bio 的生物信息学数据可视化</title>
+      <link>https://shen.bioinit.com/topic/bioinfo/2019-10-12-tp85x1/</link>
+      <pubDate>Sat, 12 Oct 2019 06:33:14 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/bioinfo/2019-10-12-tp85x1/</guid>
+      <description>Dash 是用于搭建响应式 Web 应用的 Python 开源库。Dash Bio 是面向生物信息学，且与 Dash 兼容的组件，它可以将生物信息学领域中常见的数据整合到 Dash 应用程序，以实现</description>
+    </item>
+    
+    <item>
       <title>PostgreSQL 常用命令</title>
       <link>https://shen.bioinit.com/topic/devops/2019-09-30-pdag4c/</link>
       <pubDate>Mon, 30 Sep 2019 08:39:14 +0000</pubDate>
