@@ -132,17 +132,17 @@ Installing collected packages: pygraphviz
       File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
         return distutils.core.setup(**attrs)
       File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/core.py", line 148, in setup
-        dist.run
+        dist.run_commands()
       File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py", line 966, in run_commands
-        self.run_c
+        self.run_command(cmd)
       File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py", line 985, in run_command
         cmd_obj.run()
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_commands.py", line 44, in modified_run
-        self.include_path, self.library_path = get_grap
+        self.include_path, self.library_path = get_graphviz_dirs()
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_extra.py", line 162, in get_graphviz_dirs
-        include_dirs, library_dirs = _try_configure(include_dirs, library_dirs, _
+        include_dirs, library_dirs = _try_configure(include_dirs, library_dirs, _pkg_config)
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_extra.py", line 117, in _try_configure
-        i, l = try
+        i, l = try_function()
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_extra.py", line 72, in _pkg_config
         output = S.check_output(['pkg-config', '--libs-only-L', 'libcgraph'])
       File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/subprocess.py", line 395, in check_output
@@ -180,7 +180,7 @@ export CPLUS_INCLUDE_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:$CP
 ```bash
 $ /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3 install --global-option=build_ext --global-option="-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include" --global-option="-L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib" pygraphviz
 /Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
-  cmdoptions.check_install_build_glob
+  cmdoptions.check_install_build_global(options)
 Collecting pygraphviz
   Using cached https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip
 Installing collected packages: pygraphviz
@@ -228,7 +228,7 @@ PKG_CONFIG_PATH="/Bioinfo/Pipeline/SoftWare/LibDependence/libffi-3.2.1/lib/pkgco
 ```shell
 $ make 
 ......
-The following modules found by detec in setup.py, have been
+The following modules found by detect_modules() in setup.py, have been
 built by the Makefile instead, as configured by the Setup files:
 _abc                  atexit                pwd
 time
@@ -239,7 +239,7 @@ _ctypes               _hashlib              _ssl
 
 
 Could not build the ssl module!
-Python requires an OpenSSL 1.0.2 or 1.1 compatible libssl with X509_VERIFY_PARAM_.
+Python requires an OpenSSL 1.0.2 or 1.1 compatible libssl with X509_VERIFY_PARAM_set1_host().
 LibreSSL 2.6.4 and earlier do not provide the necessary APIs, https://github.com/libressl-portable/portable/issues/381
 
 ......

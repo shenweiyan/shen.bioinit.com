@@ -110,9 +110,9 @@ WARN 2019/08/13 09:03:08 Page's .RSSLink is deprecated and will be removed in a 
 
 - 钟浩光，《[用 R 语言的 blogdown+hugo+netlify+github 建博客](https://cosx.org/2018/01/build-blog-with-blogdown-hugo-netlify-github/)》，统计之都
 - Hash_Borgir, rdwatters, etc.《[What should be used for the value of .Site.BaseURL?](https://discourse.gohugo.io/t/solved-what-should-be-used-for-the-value-of-site-baseurl/5896)》，Hugo forums
-- chaomifan，《[Hugo+GitHub 静态博客折腾笔记](https://www.jianshu.com/p/07》，简书
+- chaomifan，《[Hugo+GitHub 静态博客折腾笔记](https://www.jianshu.com/p/076279c9ceea)》，简书
 - Mogeko，《[链接为 Hugo 添加谈笑风生区 (Gitalk)](https://mogeko.me/2018/024/)》，Mogeko`s Blog
-- ByQiu，《[为博客添加 Gitalk 评论插件](https://www.jianshu.com/p/78》，简书
+- ByQiu，《[为博客添加 Gitalk 评论插件](https://www.jianshu.com/p/78c64d07124d)》，简书
 - Parsia，《[Archive Page in Hugo](https://parsiya.net/blog/2016-02-14-archive-page-in-hugo/)》，Hackerman's Hacking Tutorials
 - olOwOlo desu，《[Hugo 从入门到会用](https://blog.olowolo.com/post/hugo-quick-start/)》，olOwOlo's Blog
 - 小龙虾，《[用hugo创建自己的博客](https://cray.vip/post/blog/)》，小龙虾的博客

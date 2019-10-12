@@ -7,7 +7,7 @@ category: 工具
 published: true
 ---
 
-**目的：** RedHat 6.5 HPC 环境下安装生物信息 [STAMP](http://kiwi.cs.dal.ca/Software/Quick_installation_instructions 软件。
+**目的：** RedHat 6.5 HPC 环境下安装生物信息 [STAMP](http://kiwi.cs.dal.ca/Software/Quick_installation_instructions_for_STAMP) 软件。
 
 
 <a name="52307b95"></a>

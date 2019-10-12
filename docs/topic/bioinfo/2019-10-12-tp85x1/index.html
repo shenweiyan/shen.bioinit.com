@@ -219,10 +219,10 @@
 <p>截止 2019.09.25，dash-bio 在 PyPI 的最新版本为 0.1.3，dash 的最新版本为 1.3.1。</p>
 
 <pre><code class="language-python">&gt;&gt;&gt; import dash,dash_bio
-&gt;&gt;&gt; print(dash._
+&gt;&gt;&gt; print(dash.__version__)
 1.3.1
 
-&gt;&gt;&gt; print(dash_bio._
+&gt;&gt;&gt; print(dash_bio.__version__)
 0.1.4
 </code></pre>
 
@@ -239,7 +239,7 @@ app = dash.Dash()
 app.layout = html.Div('Hello, world!')
 
 # 只能 localhost 内部访问
-app.r				
+app.run_server()				
 
 # 开启外网访问
 #app.run_server(host=&quot;0.0.0.0&quot;)	
@@ -309,7 +309,7 @@ app.r
 <h2 id="参考资料">参考资料</h2>
 
 <ol>
-<li>Plotly，[Announcing Dash Bio](<a href="https://medium.com/plotly/announcing-dash-bio-ed，Medium">https://medium.com/plotly/announcing-dash-bio-ed，Medium</a></li>
+<li>Plotly，<a href="https://medium.com/plotly/announcing-dash-bio-ed8835d5da0c">Announcing Dash Bio</a>，Medium</li>
 <li>Dash by Plotly，《<a href="https://dashr.plot.ly/?source=post_page">Dash for R User Guide</a>》，dashr.plot.ly</li>
 <li>dash-bio，<a href="https://dash.plot.ly/dash-bio">Dash User Guide and Documentation - Dash by Plotly</a>，dashr.plot.ly</li>
 </ol>

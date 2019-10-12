@@ -7,7 +7,7 @@ category: 开发
 published: true
 ---
 
-**作者：**[](https://twitter.com/j[Kevin Markham](https://twitter.com/j<br />**编译：**Steven Shen<br />**原文：**[https://www.dataschool.io/cloud-services-for-jupyter-notebook/](https://www.dataschool.io/cloud-services-for-jupyter-notebook/)
+**作者：**[](https://twitter.com/justmarkham)[Kevin Markham](https://twitter.com/justmarkham)<br />**编译：**Steven Shen<br />**原文：**[https://www.dataschool.io/cloud-services-for-jupyter-notebook/](https://www.dataschool.io/cloud-services-for-jupyter-notebook/)
 
 ![1_oj36TMqOkHmi6u3kCSsr7Q.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561014512583-882c390f-13af-4823-821e-1f8f991ab433.png#align=left&display=inline&height=615&name=1_oj36TMqOkHmi6u3kCSsr7Q.png&originHeight=615&originWidth=999&size=64145&status=done&width=999)
 
@@ -115,7 +115,7 @@ published: true
 
 **保证工作私密性：**支持。
 
-**公开分享：** <br />支持。如果您选择[公开您的内核](https://www.kaggle.com/justmarkham/tutorial)，则任何人都可以在不创建 Kaggle 帐户的情况下访问它，任何拥有 Kaggle 帐户的人都可以对您的内核发表评论或将其复制到自己的帐户。此外，Kaggle 还为您提供了一个[公共的  profile page](https://www.kaggle.com/j，其中显示了所有公共内核和数据集。
+**公开分享：** <br />支持。如果您选择[公开您的内核](https://www.kaggle.com/justmarkham/tutorial)，则任何人都可以在不创建 Kaggle 帐户的情况下访问它，任何拥有 Kaggle 帐户的人都可以对您的内核发表评论或将其复制到自己的帐户。此外，Kaggle 还为您提供了一个[公共的  profile page](https://www.kaggle.com/justmarkham)，其中显示了所有公共内核和数据集。
 
 **协作能力：** <br />支持。您可以保持内核私有，但可以邀请特定的 Kaggle 用户查看或编辑它。没有实时协作：它更像是在单独的内核副本上工作，除了所有提交都添加到相同的版本历史记录中。
 
@@ -173,7 +173,7 @@ published: true
 
 **性能升级：** <br />不允许。但是，您可以选择连接到 [a local runtime](https://research.google.com/colaboratory/local-runtimes.html)，这允许您在本地硬件上执行代码并访问本地文件系统。
 
-**文档和技术支持：**<br />Colab 拥有很少的文档，这些文档都包含在 [FAQ 页面](https://research.google.com/colaboratory/faq.html)和各种[示例笔记本](https://colab.research.google.com/notebooks/welcome.ipynb)中。用户可通过 [GitHub issues](https://github.com/googlecolab/colabtools/issues)，或者 [Stack Overflow](https://stackoverflow.com/questions/tagged/google-co 社区获取支持。
+**文档和技术支持：**<br />Colab 拥有很少的文档，这些文档都包含在 [FAQ 页面](https://research.google.com/colaboratory/faq.html)和各种[示例笔记本](https://colab.research.google.com/notebooks/welcome.ipynb)中。用户可通过 [GitHub issues](https://github.com/googlecolab/colabtools/issues)，或者 [Stack Overflow](https://stackoverflow.com/questions/tagged/google-colaboratory) 社区获取支持。
 
 **结论：**<br />Colab 的最大优势在于它易于上手，因为大多数人已经拥有 Google 帐户，并且共享笔记本很容易，因为共享功能与 Google Docs 相同。然而，繁琐的键盘快捷键和使用数据集的困难是显著的缺点。在同一笔记本上进行协作的能力很有用，但由于您没有共享环境，因此协作能力的作用也会有所降低。
 
@@ -187,7 +187,7 @@ published: true
 
 **支持的语言：** Python (2 and 3), R, and F#.
 
-**安装软件包：**<br />预先安装了数百个软件包，您可以使用 `pip` 或 `conda` [安装其他软件包](https://docs.microsoft.com/en-us/azure/notebooks/install-packages-jupyter-notebook)，并且可以使用[配置文件](https://docs.microsoft.com/en-us/azure/notebooks/quickstart-create-jupyter-notebook-project-e（例如 `environment.yml` 或 `requirements.txt` ）指定明确的软件包要求。
+**安装软件包：**<br />预先安装了数百个软件包，您可以使用 `pip` 或 `conda` [安装其他软件包](https://docs.microsoft.com/en-us/azure/notebooks/install-packages-jupyter-notebook)，并且可以使用[配置文件](https://docs.microsoft.com/en-us/azure/notebooks/quickstart-create-jupyter-notebook-project-environment)（例如 `environment.yml` 或 `requirements.txt` ）指定明确的软件包要求。
 
 **界面相似度：**<br />Azure 使用原生的 Jupyter Notebook 界面。
 
@@ -206,7 +206,7 @@ published: true
 
 **保证工作私密性的能力：**支持。
 
-**公开分享的能力：**<br />支持。如果您选择[公开您的项目](https://notebooks.azure.com/justmarkham/projects/pycon-2018-tutorial)，则任何人都可以在不创建 Microsoft 帐户的情况下访问它，任何拥有 Microsoft 帐户的人都可以将其复制到自己的帐户。此外，Azure 还为您提供了一个[公共配置文件页面](https://notebooks.azure.com/j（非常类似于 GitHub 配置文件），它显示了所有公共项目。
+**公开分享的能力：**<br />支持。如果您选择[公开您的项目](https://notebooks.azure.com/justmarkham/projects/pycon-2018-tutorial)，则任何人都可以在不创建 Microsoft 帐户的情况下访问它，任何拥有 Microsoft 帐户的人都可以将其复制到自己的帐户。此外，Azure 还为您提供了一个[公共配置文件页面](https://notebooks.azure.com/justmarkham)（非常类似于 GitHub 配置文件），它显示了所有公共项目。
 
 **协作能力：**暂不支持，虽然这是一个[计划中的功能](https://github.com/Microsoft/AzureNotebooks/issues/6)。
 
@@ -238,7 +238,7 @@ published: true
 
 **新增的功能：**
 
-- CoCalc 包含一个称为[时间旅行](https://cocalc.com/doc/jupyter-notebook.html#a-的强大版本控制功能，可以精确记录笔记本中的所有更改，并允许您使用直观的滑块控件浏览这些更改。
+- CoCalc 包含一个称为[时间旅行](https://cocalc.com/doc/jupyter-notebook.html#a-timetravel)的强大版本控制功能，可以精确记录笔记本中的所有更改，并允许您使用直观的滑块控件浏览这些更改。
 - CoCalc 每隔几分钟就会保存所有项目文件的备份，这意味着您可以根据需要恢复旧版本的文件。
 - CoCalc 包括[教学的一些其他功能](https://doc.cocalc.com/teaching-instructors.html)，例如分发和评分作业的能力，以及在学生工作和与学生分交流享任务时观察学生的能力。
 
@@ -266,7 +266,7 @@ published: true
 
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562212092356-94a5aab3-a5c7-46a9-b2a8-db8d26c5b4c8.png#align=left&display=inline&height=587&originHeight=587&originWidth=746&size=0&status=done&width=746)
 
-[Datalore](https://datalore.io/) 是由 JetBrains，一个制作 PyCharm（一种流行的 Python IDE）的公司创建的。它的入门就像创建帐户或使用 Google 或 JetBrains 帐户登录一样简单。您可以创建新的 Datalore "工作" 或上传现有的 Jupyter Notebook。 Datalore 工作簿以专有格式存储，但它支持导入和导出标准 `.ipynb` 文件格式。
+[Datalore](https://datalore.io/) 是由 JetBrains，一个制作 PyCharm（一种流行的 Python IDE）的公司创建的。它的入门就像创建帐户或使用 Google 或 JetBrains 帐户登录一样简单。您可以创建新的 Datalore "工作簿(workbook)" 或上传现有的 Jupyter Notebook。 Datalore 工作簿以专有格式存储，但它支持导入和导出标准 `.ipynb` 文件格式。
 
 **支持的语言：**只支持 Python 3。
 
@@ -295,7 +295,7 @@ published: true
 - 由于单元格将始终按其排列顺序运行，因此 Datalor e可以跟踪单元格依赖性。这意味着当编辑给定单元格时，Datalore 将确定其下面的哪些单元可能受到影响，并将立即重新运行这些单元格（假设启用了实时计算）。如果编辑在从属单元格中导致错误，则会立即标记这些错误。
 - Datalore 允许您按顺序显示单元格输入和输出（就像在 Jupyter 中一样）或 "拆分视图(split view)"，在这种情况下，输入和输出位于两个单独的窗格中。使用顺序视图时，Datalore 还可以轻松隐藏所有输入或隐藏所有输出。
 - 在代码完成中，Datalore 包含比 Jupyter 更多的"智能"。
-- 在编写代码时，Datalore 会为您可能想要采取的操作提供上下文感知建议（称为"意图("）。例如，在键入 DataFrame 的名称之后，意图可能包括 "drop string columns"、"histogram" 和 "train test split"。当您单击意图时，Datalore 实际上会为您生成代码，这可能是学习某些任务背后的代码的有用方法。
+- 在编写代码时，Datalore 会为您可能想要采取的操作提供上下文感知建议（称为"意图(intentions)"）。例如，在键入 DataFrame 的名称之后，意图可能包括 "drop string columns"、"histogram" 和 "train test split"。当您单击意图时，Datalore 实际上会为您生成代码，这可能是学习某些任务背后的代码的有用方法。
 - Datalore 包括一个精心设计的版本控制系统。它常用于保存工作簿的当前状态，您可以快速浏览当前版本和任何过去版本之间的差异。您还可以选择在保存工作簿时添加消息，然后可以在版本列表筛选仅包含带消息的那些版本。
 - 通过 Datalore，您可以访问名为 `datalore.plot` 的绘图库，它与 R 的 `ggplot2` 非常相似，但您只能在 Datalore 中使用它。
 

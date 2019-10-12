@@ -344,7 +344,7 @@ server {
 }
 ```
 
-最后，执行 `nginx -s reload` 重启 nginx 服务，打开 [https://note.shenweiyan.cn](http://blog.leanote.com/ 即可看到 leanote 的 index 主页。
+最后，执行 `nginx -s reload` 重启 nginx 服务，打开 [https://note.shenweiyan.cn](http://blog.leanote.com/shenweiyan) 即可看到 leanote 的 index 主页。
 
 
 

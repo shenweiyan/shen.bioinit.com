@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/tools/2019-07-01-tkinter-unicode-issues/</guid>
-      <description>引言 使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。 #-*- coding: utf-8</description>
+      <description>[](#2xvqwy)引言 使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@
       <pubDate>Sat, 18 May 2019 12:39:52 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/tools/2019-05-18-redhat-install-pyqt-4/</guid>
-      <description>目的： RedHat 6.5 HPC 环境下安装生物信息 [STAMP](http://kiwi.cs.dal.ca/Software/Quick_installation_instructions 软件。 服务器环境 系统： Red Hat Enterprise 6.5 gcc version 4.8.5 (GCC) Anaconda 2.5： conda 4.4.4 x86_64-conda_cos6-linux-gnu-</description>
+      <description>目的： RedHat 6.5 HPC 环境下安装生物信息 STAMP 软件。 服务器环境 系统： Red Hat Enterprise 6.5 gcc version 4.8.5 (GCC) Anaconda 2.5： conda 4.4.4 x86_64-conda_cos6-linux-gnu-</description>
     </item>
     
     <item>

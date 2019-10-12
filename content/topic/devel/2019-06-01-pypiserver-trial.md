@@ -61,7 +61,7 @@ trusted-host= mirrors.aliyun.com
 EOF
 ```
 
-这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 [PyPiImplementations](http://wiki.python.org/moin/PyPiImple 说明中列出了几个比较成熟的实现方案：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559372822643-02a74b05-1151-4f09-846d-7244b79a8a23.png#align=left&display=inline&height=423&originHeight=423&originWidth=525&size=0&status=done&width=525)##
+这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 [PyPiImplementations](http://wiki.python.org/moin/PyPiImplementations) 说明中列出了几个比较成熟的实现方案：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559372822643-02a74b05-1151-4f09-846d-7244b79a8a23.png#align=left&display=inline&height=423&originHeight=423&originWidth=525&size=0&status=done&width=525)##
 
 这里选择 pypiserver，除了 Galaxy 的原因外，最重要的是因为它最小而且使用简单。
 
@@ -202,5 +202,5 @@ pypiserver 的一些高级用法，如基于 systemd 和 supervisor 的自动化
 1. [如何搭建自己的pypi私有源服务器](https://www.aliyun.com/jiaocheng/439913.html)，阿里云教程中心
 1. [使用 pypiserver 快速搭建内网离线 pypi 仓库实践](https://wsgzao.github.io/post/pypiserver/)，HelloDog 博客
 1. [pypi 镜像使用帮助](https://mirror.tuna.tsinghua.edu.cn/help/pypi/)，清华大学开源软件镜像站
-1. [wiki：PyPiImplementations](https://wiki.python.org/moin/PyPiImple，wiki.python.org
-1. [https://github.com/pypiserver/pypiserver](https://github.com/pypiserver/，GitHub
+1. [wiki：PyPiImplementations](https://wiki.python.org/moin/PyPiImplementations)，wiki.python.org
+1. [https://github.com/pypiserver/pypiserver](https://github.com/pypiserver/pypiserver)，GitHub

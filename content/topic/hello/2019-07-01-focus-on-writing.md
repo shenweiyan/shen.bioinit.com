@@ -58,7 +58,7 @@ Leanote 的体验是非常好的，尤其是它附带的博客系统具有非常
 
 我个人的大部分文档目前都保存在语雀，部分公开文档也和本人托管在 Gihub 的 Jekyll 博客进行了自动同步，有兴趣的可以关注交流一下！
 
-- 语雀：[https://www.yuque.com/shenweiyan](https://www.yuque.com/
+- 语雀：[https://www.yuque.com/shenweiyan](https://www.yuque.com/shenweiyan)
 - 博客：[http://www.bioinit.com](http://www.bioinit.com/)
 
 

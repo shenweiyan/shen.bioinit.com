@@ -8,7 +8,7 @@ published: true
 ---
 
 <a name="2xvqwy"></a>
-# 引言
+# [](#2xvqwy)引言
 
 使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。
 ```python
@@ -51,7 +51,7 @@ top.mainloop()
 
 - Python 2.6 Tk 中文亂碼問題解決方法，[http://blogkrogh.blogspot.com/2011/03/python-26-tk.html](http://blogkrogh.blogspot.com/2011/03/python-26-tk.html)
 
-- tkinter乱码，pyqt4乱码，[http://aboutweb.lofter.com/post/11743e_6f7e4a5](http://aboutweb.lofter.com/post/1174
+- tkinter乱码，pyqt4乱码，[http://aboutweb.lofter.com/post/11743e_6f7e4a5](http://aboutweb.lofter.com/post/11743e_6f7e4a5)
 
 
 上面几种方法测试后，问题依然存在。在 google 上一番搜索和来回测试之后，发现了几点信息：
@@ -69,7 +69,7 @@ top.mainloop()
 
 
 <a name="ut4hbn"></a>
-# 什么是 tcl, tk, tkinter
+# [](#ut4hbn)什么是 tcl, tk, tkinter
 
 > The [tkinter](https://docs.python.org/3.6/library/tkinter.html#module-tkinter) package (“Tk interface”) is the standard Python interface to the Tk GUI toolkit. Both Tk and [tkinter](https://docs.python.org/3.6/library/tkinter.html#module-tkinter) are available on most Unix platforms, as well as on Windows systems. (Tk itself is not part of Python; it is maintained at ActiveState.)
 > 
@@ -91,7 +91,7 @@ tkinter 包（"Tk 接口"）是 Tk GUI 工具包的标准 Python 接口。 Tk �
 接下来我们将尝试在 Python 2 中安装 Tcl/Tk，并重新编译 python 2，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ?）。<br />
 
 <a name="ia1frt"></a>
-# ActiveTcl 安装
+# [](#ia1frt)ActiveTcl 安装
 
 ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。
 
@@ -169,7 +169,7 @@ export PATH="/usr/local/software/ActiveTcl-8.6/bin:$PATH"
 
 
 <a name="h36qsw"></a>
-# Python 重新编译安装
+# [](#h36qsw)Python 重新编译安装
 
 想要在 Python 2.7 安装 Tkinter，需要在编译过程中通过 `--with-tcltk-includes` 和 `--with-tcltk-libs` 中指定 ActiveTcl 的头文件以及库所在路径。
 
@@ -189,9 +189,9 @@ warning: building with the bundled copy of libffi is deprecated on this platform
 Python build finished successfully!
 The necessary bits to build these optional modules were not found:
 _dbm                  _gdbm
-To find the necessary bits, look in setup.py in detec for the module's name.
+To find the necessary bits, look in setup.py in detect_modules() for the module's name.
 
-The following modules found by detec in setup.py, have been
+The following modules found by detect_modules() in setup.py, have been
 built by the Makefile instead, as configured by the Setup files:
 atexit                pwd                   time
 
@@ -211,7 +211,7 @@ $ sudo yum install libXScrnSaver libXScrnSaver-devel
 
 
 <a name="kxiufd"></a>
-# 调用 Tkinter
+# [](#kxiufd)调用 Tkinter
 
 Python 2 重新编译完后，执行 `python2 -m Tkinter` 显示 Tk 的 ui 界面，以及相应的 Tcl/Tk 版本。
 
@@ -225,14 +225,14 @@ Python 2 重新编译完后，执行 `python2 -m Tkinter` 显示 Tk 的 ui 界�
 
 
 <a name="s3apxn"></a>
-# 参考资料
+# [](#s3apxn)参考资料
 
 - Download And Install Tcl: ActiveTcl，[https://www.activestate.com/products/activetcl/downloads/](https://www.activestate.com/products/activetcl/downloads/)
 
 - Installing Tk，[https://tkdocs.com/tutorial/install.html](https://tkdocs.com/tutorial/install.html)
 
-- Python下"No module named _tkinter"问题解决过程分析，[https://www.jianshu.com/p/0baa9657377f](https://www.jianshu.com/p/0b
+- Python下"No module named _tkinter"问题解决过程分析，[https://www.jianshu.com/p/0baa9657377f](https://www.jianshu.com/p/0baa9657377f)
 
-- Python GUI文件对话框，[https://my.oschina.net/u/2245781/blog/661533](https://my.oschina.net/u/2245781/blog/661533)
+- Python GUI编程(Tkinter)文件对话框，[https://my.oschina.net/u/2245781/blog/661533](https://my.oschina.net/u/2245781/blog/661533)
 
 

@@ -84,7 +84,7 @@ $ sudo ./install-tl
 Loading ./tlpkg/texlive.tlpdb
 Installing TeX Live 2018 from: . (verified)
 Platform: x86_64-linux => 'GNU/Linux on x86_64'
-Distribution: inst (
+Distribution: inst (compressed)
 Directory for temporary files: /tmp/j3dA84tbet
 ======================> TeX Live installation procedure <=====================
 ======>   Letters/digits in  indicate   <=======
@@ -197,7 +197,7 @@ Error message from loading Tk:
   Can't locate Tk.pm in @INC (@INC contains: ./tlpkg /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at ./install-tl line 398.
 ```
 
-在线安装 Tk 的 perl 模块(通过 [CPAN](https://metacpan.org/pod/distribution/Tk/Tk.pod)手动安装，这里不详述，有：
+在线安装 Tk 的 perl 模块(通过 [CPAN](https://metacpan.org/pod/distribution/Tk/Tk.pod)手动安装，这里不详述，有兴趣的可自行谷歌一下)：
 ```
 $ sudo yum install perl-Tk
 ```

@@ -40,7 +40,7 @@ published: true
 
 打开安装好的 VSCode，然后在最左边的侧边栏中找到 Extensions 项，即扩展选项卡，并进入，然后再搜索窗口中输入：Remote - SSH（或者 ssh 关键字）。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561516153368-2b8782eb-d03f-4b7e-b5d5-c3a45e6fc021.png#align=left&display=inline&height=288&name=image.png&originHeight=288&originWidth=383&size=32907&status=done&width=383)
 
-找到所对应的插件之后，点击绿色的 "****" 即可开始安装。稍等片刻，在安装完成之后，在侧边栏中会出现一个 **Remote-SSh** 选项卡，即表示安装成功。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561516456947-44fb6d26-b473-45ed-a231-f9c4e7282142.png#align=left&display=inline&height=355&name=image.png&originHeight=355&originWidth=900&size=76197&status=done&width=900)
+找到所对应的插件之后，点击绿色的 "**Install(安装)**" 即可开始安装。稍等片刻，在安装完成之后，在侧边栏中会出现一个 **Remote-SSh** 选项卡，即表示安装成功。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561516456947-44fb6d26-b473-45ed-a231-f9c4e7282142.png#align=left&display=inline&height=355&name=image.png&originHeight=355&originWidth=900&size=76197&status=done&width=900)
 
 
 
@@ -92,7 +92,7 @@ ssh %REMOTEHOST% "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/tmp.pub >> ~/.ssh
 ```
 
 3. 配置完成后，在 DOC 中再次执行 `ssh IP_ADDRESS -l USERNAME -p PORT` 命令，如果可以免密码登陆远程的服务器，说明配置成功。
-3. 更多详细的 ssh key 设置，请参考官方文档：《[Remote Development Tips and Tricks](https://code.visualstudio.com/docs/remote/troub》。
+3. 更多详细的 ssh key 设置，请参考官方文档：《[Remote Development Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting)》。
 
 
 

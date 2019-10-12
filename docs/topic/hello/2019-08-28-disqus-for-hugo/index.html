@@ -231,11 +231,11 @@ this.page.url = &quot;{{ .Permalink }}&quot;;  // Replace PAGE_URL with your pag
 this.page.identifier = &quot;{{ .Permalink }}&quot;; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
- { // DON'T EDIT BELOW THIS LINE
+(function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://shen-hugo-blog.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).app;
+(d.head || d.body).appendChild(s);
 })();
 &lt;/script&gt;
 &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;

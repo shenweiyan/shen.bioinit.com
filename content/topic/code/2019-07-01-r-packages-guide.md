@@ -27,13 +27,13 @@ R 包是由社区开发（developed by the community）的功能（functions）�
 如果您是一位经验丰富的用户，您可以随时学习新内容（例如我在前一段中提到的三个软件包的名称）。 无论如何，欢迎阅读 R 包的介绍以及如何使用它们！
 
 <a name="uhwxzd"></a>
-# 1. 什么是包
+# [](#uhwxzd)1. 什么是包
 
 让我们从一些定义开始。 包是用于组织您自己工作的一种合适方式（a suitable way），如果您愿意，也可以与他人分享。 通常，包将包含代码（不仅仅 是 R 代码！），包及内部函数相关的文档，一些以检查一切是否正常工作的测试（some tests to check everything works as it should），以及数据集。
 
 [DESCRIPTION 文件](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file) 提供了有关包的基本信息，您可以在其中找到包的功能，作者是谁，文档所属的版本，日期，使用的许可类型以及包依赖性。
 
-请注意，您也可以单击 [此处](https://stat.ethz.ch/R-manual/R-devel/library/stats/D 查看 DESCRIPTION 文件。
+请注意，您也可以单击 [此处](https://stat.ethz.ch/R-manual/R-devel/library/stats/DESCRIPTION) 查看 DESCRIPTION 文件。
 
 除了查找诸如 [cran.r-project.org](http://cran.r-project.org) 或 [stat.ethz.ch](http://stat.ethz.ch) 之类的 DESCRIPTION 文件之外，您还可以使用命令 `packageDescription("package")` 通过包帮助文档访问 R 中的描述文件 `help(package = "package")`，或在线访问存储库（repository）中 R 包。
 
@@ -44,7 +44,7 @@ help(package = "stats")
 ```
 
 <a name="a6kcqx"></a>
-# 2. 什么是存储库
+# [](#a6kcqx)2. 什么是存储库
 
 存储库（repository）是包所在的位置，因此您可以从存储库中安装 R 包。 虽然您或您的组织可能拥有本地存储库，但通常它们是在线并且可供所有人访问的。 R 软件包最受欢迎的三个存储库是：
 
@@ -56,10 +56,10 @@ help(package = "stats")
 
 
 <a name="58todc"></a>
-# 3. 如何安装 R 包
+# [](#58todc)3. 如何安装 R 包
 
 <a name="s2h1uk"></a>
-## 从 CRAN 安装
+## [](#s2h1uk)从 CRAN 安装
 
 如何安装软件包取决于它的位置。 因此，对于公开可用的包，这意味着它属于哪个存储库。 最常见的方法是使用 CRAN 存储库，然后只需要包的名称并使用命令 `install.packages（"package"）`。
 
@@ -77,7 +77,7 @@ install.packages("vioplot")
 让我们深入了解一下 vioplot 安装的输出，你可能得到的一些消息是：
 ```
 Installing package into ‘/home/username/R/x86_64-pc-linux-gnu-library/3.3’
-(as ‘lib’ is u
+(as ‘lib’ is unspecified)
 ```
 这表示您的计算机上安装了软件包的位置，您可以使用 lib 参数提供不同的文件夹位置。
 
@@ -114,11 +114,11 @@ install.packages(c("vioplot", "MASS"))
 ```
 
 <a name="nce7lw"></a>
-## 从 CRAN 镜像中安装
+## [](#nce7lw)从 CRAN 镜像中安装
 
 请记住，CRAN 是一个服务器网络（每个服务器称为"镜像（mirror）"），因此您可以指定要使用的服务器。 如果您通过 RGui 接口使用 R，则可以通过从使用 `install.packages()`命令后出现的列表中选择它来完成。 在 RStudio 上，默认情况下已选择镜像。
 
-您还可以使用 `chooseC` 选择镜像，或使用 `repo` 参数直接在 `install.packages()` 函数内选择镜像。 您可以使用`getCR` 或直接在此 [链接](https://cran.r-project.org/mirrors.html) 上查看可用镜像列表。
+您还可以使用 `chooseCRANmirror()` 选择镜像，或使用 `repo` 参数直接在 `install.packages()` 函数内选择镜像。 您可以使用`getCRANmirrors()` 或直接在此 [链接](https://cran.r-project.org/mirrors.html) 上查看可用镜像列表。
 
 示例：要使用 Ghent University Library 镜像（比利时）安装 vioplot 软件包，您可以运行以下命令：
 ```
@@ -126,7 +126,7 @@ install.packages("vioplot", repo = "https://lib.ugent.be/CRAN/")
 ```
 
 <a name="1b4gaz"></a>
-## 安装 Bioconductor 包
+## [](#1b4gaz)安装 Bioconductor 包
 
 对于 Bioconductor，安装包的标准方法是首先执行以下脚本：
 ```
@@ -144,7 +144,7 @@ biocLite(c("GenomicFeatures", "AnnotationDbi"))
 ```
 
 <a name="yrehtn"></a>
-## 通过 devtools 安装
+## [](#yrehtn)通过 devtools 安装
 
 如上所述，每个存储库都有自己的方法安装各自对应的包，因此，如果您经常使用来自不同来源的包，这可能会有点令人沮丧。 更有效的方法可能是使用 devtools 包来简化此过程，因为它包含了每个存储库的特定功能，包括 CRAN。
 
@@ -152,23 +152,23 @@ biocLite(c("GenomicFeatures", "AnnotationDbi"))
 
 安装 devtools后，您将能够使用实用程序功能来安装另一个软件包。 选项是：
 
-- `ins` from [Bioconductor](https://www.bioconductor.org/)
+- `install_bioc()` from [Bioconductor](https://www.bioconductor.org/)
 
-- `install_` from [Bitbucket](https://bitbucket.org/),
+- `install_bitbucket()` from [Bitbucket](https://bitbucket.org/),
 
-- `ins` from [CRAN](https://cran.r-project.org/index.html),
+- `install_cran()` from [CRAN](https://cran.r-project.org/index.html),
 
-- `in` from a [git](https://git-scm.com/) repository,
+- `install_git()` from a [git](https://git-scm.com/) repository,
 
-- `insta` from [GitHub](https://github.com/),
+- `install_github()` from [GitHub](https://github.com/),
 
-- `inst` from a local file,
+- `install_local()` from a local file,
 
-- `in` from a [SVN repository](https://subversion.apache.org/),
+- `install_svn()` from a [SVN repository](https://subversion.apache.org/),
 
-- `in` from a URL, and
+- `install_url()` from a URL, and
 
-- `instal` from a specific version of a CRAN package.
+- `install_version()` from a specific version of a CRAN package.
 
 
 例如，要从其 github 存储库安装 [babynames 包](https://github.com/hadley/babynames)，您可以使用：
@@ -177,7 +177,7 @@ devtools::install_github("hadley/babynames")
 ```
 
 <a name="07q9vk"></a>
-# 4. 如何更新，删除和检查已安装的软件包
+# [](#07q9vk)4. 如何更新，删除和检查已安装的软件包
 
 在你花费更多时间使用 R 之后，你每周甚至每天都会使用`install.packages()` 几次是正常的，考虑到 R 软件包的开发速度，你可能需要更新或者更换你心爱的 R 包。 在本节中，您将找到一些可以帮助您管理集合的功能。
 
@@ -212,16 +212,16 @@ install.packages("vioplot")
 ```
 
 <a name="etazlx"></a>
-# 5. 是否有用于安装包的用户界面
+# [](#etazlx)5. 是否有用于安装包的用户界面
 
 如果您更喜欢图形用户界面来安装包，则 RStudio 和 RGui 都包含它们。 在 RStudio 中，您可以在"工具" -> "安装包"中找到它，然后您将在弹出窗口中键入要安装的包：<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rstudio1.png/bioinit#width=)
 
 在 RGui 中，您将在"包（Packages）"菜单下找到实用程序。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rgui1.png/bioinit#width=)
 
 <a name="pcgfgn"></a>
-# 6. 如何加载程序包
+# [](#pcgfgn)6. 如何加载程序包
 
-安装软件包后，您就可以使用其功能了。 如果您只需要在包中偶尔使用一些函数或数据，则可以使用符号 `packagename::fun` 来访问它们。 例如，由于您已安装 `babynames` 包，因此可以浏览其中一个数据集。
+安装软件包后，您就可以使用其功能了。 如果您只需要在包中偶尔使用一些函数或数据，则可以使用符号 `packagename::functionname()` 来访问它们。 例如，由于您已安装 `babynames` 包，因此可以浏览其中一个数据集。
 
 您还记得如何查看包中包含哪些功能和数据的概述？是的，`help(package = "babynames")` 可以告诉你这个。
 
@@ -250,7 +250,7 @@ install.packages("vioplot")
 
 在此之后，您不再需要 `package::function()` 表示法，并且您可以像其他任何 R 基本函数或数据一样直接访问其功能：
 ```
-> library
+> library(babynames)
 > births
 # A tibble: 119 x 2
     year  births
@@ -273,7 +273,7 @@ install.packages("vioplot")
 提示：[这里](https://yihui.name/en/2014/07/library-vs-require/) 强烈推荐一篇关于此主题的文章。
 
 <a name="ihglta"></a>
-# 7. Package 和 Library 的区别
+# [](#ihglta)7. Package 和 Library 的区别
 
 说到 `library()` 函数，有时候包和库之间会有混淆，有时候你可以返现人们会把库（libraries）也叫成包（packages）。
 
@@ -283,7 +283,7 @@ install.packages("vioplot")
 
 > @ijlyttle a package is a like a book, a library is like a library; you use library() to check a package out of the library #rsats
 > 
-> — Hadley Wickham (@had December 8, 2014
+> — Hadley Wickham (@hadleywickham) December 8, 2014
 
 
 关于这两者之间的区别，一个更好的例子是运行不带参数的 `library()`。它将为您提供计算机上不同库中安装的软件包列表：
@@ -292,14 +292,14 @@ library()
 ```
 
 <a name="zm31fp"></a>
-# 8. 如何一次加载多个包
+# [](#zm31fp)8. 如何一次加载多个包
 
 虽然您可以在 `install.packages()` 函数中输入一组名称向量来同时安装多个包，但在 `library()` 函数的情况下，这是不可能的。 您可以一次加载一组软件包，或者如果您愿意，可以使用 R 用户开发的众多解决方法之一。
 
 您可以在 [this Stack Overflow discussion](https://stackoverflow.com/questions/8175912/load-multiple-packages-at-once)，[this R package](https://cran.r-project.org/web/packages/easypackages/README.html) 和 [this GitHub repository](https://gist.github.com/stevenworthington/3178163) 中找到示例。
 
 <a name="l6rsql"></a>
-# 9. 如何卸除已加载的包
+# [](#l6rsql)9. 如何卸除已加载的包
 
 要卸除已加载的包，可以使用 `detach()` 函数。
 ```
@@ -307,12 +307,12 @@ detach("package:babynames", unload=TRUE)
 ```
 
 <a name="spzumg"></a>
-# 10. 有什么文档和帮助的替代来源
+# [](#spzumg)10. 有什么文档和帮助的替代来源
 
 正如您在上面的部分中所读到的那样，DESCRIPTION 文件包含有关包的基本信息，即使该信息非常有用，也无法帮助您使用此包进行分析。 然后，您将需要另外两个文档源：帮助文件和小品文（vignettes）。
 
 <a name="66gxus"></a>
-## Help Files
+## [](#66gxus)Help Files
 
 与基础的 R一样，命令 `?()` 和 `help()` 是开始使用软件包时的第一个文档源。 你可能记得你可以使用 `help(package = "packagename") 来获得包的一般概述，但是如果尚未加载包得情况下，每个函数都可以通过`help("name of the function")`或`help(function, package = "package")` 来单独探讨，您通常会在其中找到函数及其参数的描述以及应用程序示例。
 
@@ -323,17 +323,17 @@ help(vioplot, package = "vioplot")
 
 **提示：**您还可以使用其他方式查看已加载包中的内容。 如使用 `ls()` 命令：
 ```
-> library
+> library(babynames)
 > ls("package:babynames")
 [1] "applicants" "babynames"  "births"     "lifetables"
 ```
 
 <a name="w43xae"></a>
-## Vignettes
+## [](#w43xae)Vignettes
 
 大多数软件包中包含的另一个非常有用的帮助来源是小品文（Vignettes），这些小文件是作者以更详细的方式显示其软件包的一些功能的文档。跟随着小品文是一个可以让你手把手去熟悉 R 包常见用途的好方法，所以在做您自己的分析之前，这是一个开始使用它的完美方法。
 
-您可能还记得，给定包中包含的 vignettes 信息也可以在本地或在线的 DOCUMENTATION 文件中找到，但您也可以使用函数 `browse` 获取已安装包中包含的所有 vignettes 列表。对于想要获取某一个特定 package 的 vignettes，我们只需要输入一个该包的名称作为参数即可：`browseVignettes(package ="packagename")。上面的这两种情况下，都会打开一个浏览器窗口，以便您可以轻松地浏览或者点击您喜欢的 vignette 进去查看。
+您可能还记得，给定包中包含的 vignettes 信息也可以在本地或在线的 DOCUMENTATION 文件中找到，但您也可以使用函数 `browseVignettes()` 获取已安装包中包含的所有 vignettes 列表。对于想要获取某一个特定 package 的 vignettes，我们只需要输入一个该包的名称作为参数即可：`browseVignettes(package ="packagename")。上面的这两种情况下，都会打开一个浏览器窗口，以便您可以轻松地浏览或者点击您喜欢的 vignette 进去查看。
 
 如果您希望留在命令行中，则可以使用 `vignette()` 命令显示所有的 vignettes 列表，`vignette(package = "packagename")` 命令可以查看某一个指定包中包含的 vignettes 内容。找到所需的内容后探索，只需使用`vignette("vignettename") 命令，即可查看该 vignettename 的详细信息 。
 
@@ -360,7 +360,7 @@ vignette("ggplot2-specs")
 在 [此链接](https://www.r-project.org/help.html) 上，您可以找到更多有关从 R 获得帮助的选项。
 
 <a name="es7tlg"></a>
-# 11. 如何选择合适的 R 包
+# [](#es7tlg)11. 如何选择合适的 R 包
 
 此时，你应该可以安装并从你的 R 包中获得最大的收益，但仍然有一个最后的问题：你在哪里找到你需要的软件包？
 
@@ -405,11 +405,11 @@ vignette("ggplot2-specs")
 
 RDocumentation 不仅是一个搜索引擎，它还为您提供了一些更好的选择来发现和了解 R 包和函数：
 
-- 就像 CRAN 任务视图一样，RDocumentation 也提供了 [任务视图](https://www.rdocumentation.org/taskview：正如你上面读到的那样，它是按主题探索 R 包的另一种方式。 例如，您可以获得与 Graphics，Finance 或 Time Series 相关的包列表。
+- 就像 CRAN 任务视图一样，RDocumentation 也提供了 [任务视图](https://www.rdocumentation.org/taskviews#Bayesian)：正如你上面读到的那样，它是按主题探索 R 包的另一种方式。 例如，您可以获得与 Graphics，Finance 或 Time Series 相关的包列表。
 
 - [排行榜（Leaderboard）](https://www.rdocumentation.org/trends)。此模式提供关于以下内容的一个概览：最受欢迎的软件包和开发人员，最新的软件包和更新，以及关于下载分布（Downloads distribution）、最常用关键词（Most used keywords）、Top packages dependency graph 相关的 3 个图形，您可以在其中查看最受欢迎的软件包相互之间的关联性，你也可以找到不同分组的包（用不同的颜色标识）。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation_trends.png/bioinit#width=)
 
-- [RDocumentation package](https://github.com/datacamp/Rdoc。 `RDocumentation` 不仅是一个网站，也是一个 R 包。 它会覆盖帮助功能，因此您可以将 `RDocumentation` 的功能整合到您的工作流程中。 加载此包后，`help()` 函数将打开一个浏览器窗口或带有 `RDocumentation` 访问权限的 RStudio 帮助面板。
+- [RDocumentation package](https://github.com/datacamp/Rdocumentation)。 `RDocumentation` 不仅是一个网站，也是一个 R 包。 它会覆盖帮助功能，因此您可以将 `RDocumentation` 的功能整合到您的工作流程中。 加载此包后，`help()` 函数将打开一个浏览器窗口或带有 `RDocumentation` 访问权限的 RStudio 帮助面板。
 
 
 ---
@@ -421,7 +421,7 @@ RDocumentation 不仅是一个搜索引擎，它还为您提供了一些更好�
 
 ```
 install.packages("RDocumentation")
-library(RDoc
+library(RDocumentation)
 help(package = "vioplot")
 ```
 
@@ -437,7 +437,7 @@ help(package = "vioplot")
 
 ```
 install.packages("vioplot")
-he
+help(vioplot)
 ```
 ![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/topics_vioplot.png/bioinit#width=)
 
@@ -445,7 +445,7 @@ he
 
 
 <a name="hlaibw"></a>
-# 总结
+# [](#hlaibw)总结
 
 本文章涵盖了广泛的通过使用包来从 R 中获得最大收益的相关技术（techniques）和功能（functions）。 像往常一样，在 R 中执行某项任务的方法不止一种，管理包也不例外。
 
@@ -453,7 +453,7 @@ he
 
 我知道这篇文章没有详细介绍有关包的内部结构或如何创建自己的包。 请继续关注 DataCamp 的博客以及这些和其他主题相关的课程，但与此同时，您可以在 [这里](http://r-pkgs.had.co.nz/) 找到一本很好的 "R packages" 参考书。
 
-我差点忘了，如果你通过搜索 RDocumentation 还没有发现什么东西，我可以告诉你，使用 [weatherData](https://www.rdocumentation.org/packages/w 你可以从互联网上提取天气数据，如果你对蒸发蒸腾感兴趣，也许你应该看看 [Evapotranspiration](https://www.rdocumentation.org/packages/Evapotranspiration/versions/1.10)， [water](https://www.rdocumentation.org/packages/water/versions/0.5) 或 [SPEI](https://www.rdocumentation.org/packages/SPEI/versions/1.6) 包。
+我差点忘了，如果你通过搜索 RDocumentation 还没有发现什么东西，我可以告诉你，使用 [weatherData](https://www.rdocumentation.org/packages/weatherData) 你可以从互联网上提取天气数据，如果你对蒸发蒸腾感兴趣，也许你应该看看 [Evapotranspiration](https://www.rdocumentation.org/packages/Evapotranspiration/versions/1.10)， [water](https://www.rdocumentation.org/packages/water/versions/0.5) 或 [SPEI](https://www.rdocumentation.org/packages/SPEI/versions/1.6) 包。
 
 ---
 

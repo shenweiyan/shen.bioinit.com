@@ -316,7 +316,7 @@ datetime.date(2019, 9, 10)
 
 <h3 id="3-time">3. Time</h3>
 
-<p>时间值使用 <code>datetime.time</code> 类定义。它遵循如下所示的语法：<br /><code>_datetime.time(hour, minute, second, mi_</code> </p>
+<p>时间值使用 <code>datetime.time</code> 类定义。它遵循如下所示的语法：<br /><code>_datetime.time(hour, minute, second, microseconds)_</code> </p>
 
 <pre><code class="language-python">&gt;&gt;&gt; t = datetime.time(21, 2, 3)
 &gt;&gt;&gt; print(t)
@@ -380,7 +380,7 @@ datetime.date(2019, 9, 10)
 
 <h4 id="4-1-创建-datetime-对象">4.1 创建 datetime 对象</h4>
 
-<p><code>datetime</code> 类的语法如下：<br /><code>_datetime(year, month, day, hour, minute, second, m_</code> </p>
+<p><code>datetime</code> 类的语法如下：<br /><code>_datetime(year, month, day, hour, minute, second, microsecond)_</code> </p>
 
 <pre><code class="language-python">&gt;&gt;&gt; dt = datetime.datetime(2019, 7, 20, 10, 51, 0)
 &gt;&gt;&gt; print(dt)
@@ -412,7 +412,7 @@ datetime.date(2019, 9, 10)
 &gt;&gt;&gt; dt.strftime(&quot;%A %B %d %H:%M&quot;)
 'Tuesday September 10 10:58'
 
-&gt;&gt;&gt; dt.i
+&gt;&gt;&gt; dt.isoweekday()
 2
 </code></pre>
 

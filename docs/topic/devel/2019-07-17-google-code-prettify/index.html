@@ -237,8 +237,8 @@
 
 <p>考虑到加载速度，最好 js 写到文档末尾，body 闭合标签之前，css 写到头部之后，还需要在合适位置（如：$(document).ready）添加如下代码，用于识别并高亮代码块，这个需要使用 jQuery：</p>
 
-<pre><code class="language-javascript">$ {
-    window.prettyPrint &amp;&amp; pr;
+<pre><code class="language-javascript">$(function() {
+    window.prettyPrint &amp;&amp; prettyPrint();
 });
 </code></pre>
 
@@ -270,7 +270,7 @@
 
 <p>如果用 Markdown 来生成 HTML 的话，需事先给相关的标签追加必要的 class；Markdown 产生的代码块必然含义 <code>&lt;pre&gt;</code> 元素，那么可以用 jQuery 在 Prettyprinter 运行前处理下 HTML 样式：</p>
 
-<pre><code class="language-javascript">$ {
+<pre><code class="language-javascript">$(function() {
     $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
 });
 </code></pre>
@@ -331,7 +331,7 @@ code.prettyprint .linenums, pre.prettyprint .linenums{
 }
 </code></pre>
 
-<p>最后，清空浏览器缓存，就可以看到 [leanote 博客](<a href="http://blog.leanote.com/代码框左右滚动的效果。">http://blog.leanote.com/代码框左右滚动的效果。</a></p>
+<p>最后，清空浏览器缓存，就可以看到 <a href="http://blog.leanote.com/shenweiyan">leanote 博客</a>代码框左右滚动的效果。</p>
 
 <p><a name="729d440e"></a></p>
 

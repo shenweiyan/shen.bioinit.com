@@ -17,8 +17,8 @@ published: true
 <script>
 if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push},i[r].l=1*new Date();a=s.creat,
-  m=s.getElementsB[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
@@ -31,7 +31,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 下面的代码片段增加了对预加载的支持，在现代浏览器上提供较小的性能提升，但在 IE9 和较旧的移动浏览器上可能会同步加载和执行，因为这些浏览器不识别 async 属性。如果你的网站访客主要使用现代浏览器，请仅使用以下跟踪代码段。
 ```javascript
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push};ga.l=+new Date;
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', '{{ site.google_analytics }}', 'auto');
 ga('send', 'pageview');
 </script>
@@ -58,11 +58,11 @@ google_analytics: UA—XXXXXXXX-X
 
 问题来了，中国大陆不能正常访问谷歌啊，如果添加了谷歌分析，访客打开网页时，加载跟踪代码会导致网页速度下降。
 
-幸运的是 [jsDelivr CDN works in China](https://www.jsdelivr.com/net，如此一来，我们仅仅添加以下代码即可：
+幸运的是 [jsDelivr CDN works in China](https://www.jsdelivr.com/network#china)，如此一来，我们仅仅添加以下代码即可：
 ```javascript
 <script>
-(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push}
-;a=t.creat;c=t.getElementsB[0];a.async=true;a.src=s
+(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
 ;c.parentNode.insertBefore(a,c)
 })(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
 galite('create', '{{ site.google_analytics }}', 'auto');

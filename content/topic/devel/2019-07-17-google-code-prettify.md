@@ -35,8 +35,8 @@ google-code-prettify 需要两个文件，prettify.js 和 prettify.css，去官�
 
 考虑到加载速度，最好 js 写到文档末尾，body 闭合标签之前，css 写到头部之后，还需要在合适位置（如：$(document).ready）添加如下代码，用于识别并高亮代码块，这个需要使用 jQuery：
 ```javascript
-$ {
-    window.prettyPrint && pr;
+$(function() {
+    window.prettyPrint && prettyPrint();
 });
 ```
 
@@ -69,7 +69,7 @@ li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 
 如果用 Markdown 来生成 HTML 的话，需事先给相关的标签追加必要的 class；Markdown 产生的代码块必然含义 `<pre>` 元素，那么可以用 jQuery 在 Prettyprinter 运行前处理下 HTML 样式：
 ```javascript
-$ {
+$(function() {
     $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
 });
 ```
@@ -128,7 +128,7 @@ code.prettyprint .linenums, pre.prettyprint .linenums{
 	overflow:auto;
 }
 ```
-最后，清空浏览器缓存，就可以看到 [leanote 博客](http://blog.leanote.com/代码框左右滚动的效果。
+最后，清空浏览器缓存，就可以看到 [leanote 博客](http://blog.leanote.com/shenweiyan)代码框左右滚动的效果。
 
 
 <a name="729d440e"></a>

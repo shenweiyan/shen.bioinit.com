@@ -224,7 +224,7 @@ downloaded 136 KB
 ** using staged installation
 ** libs
 
-Error in .shlib_int :
+Error in .shlib_internal(args) :
   C++11 standard requested but CXX11 is not defined
 * removing ‘/RiboBio/Bioinfo/Pipeline/SoftWare/R/R-3.6.0/lib64/R/library/digest’
 ERROR: dependency ‘digest’ is not available for package ‘vctrs’
@@ -246,12 +246,12 @@ Warning messages:
 &gt; 
 </code></pre>
 
-<p>解决方法：《<a href="https://medium.com/the-artificial-impostor/cxx11-is-not-defined-problem-in-mro-3-4-e5》
+<p>解决方法：《<a href="https://medium.com/the-artificial-impostor/cxx11-is-not-defined-problem-in-mro-3-4-e51f1d27da15">&ldquo;CXX11 is not defined&rdquo; problem in MRO 3.4</a>》
 &gt; (Actually I vaguely remember encountering the same problem in MRO 3.3, and solved it using similar method. Unfortunately I didn’t write it down.)
-&gt; 
-&gt; _Note: MRO means _**_Microsoft R Open_**_ (previously _**_Revolution R)_**
+&gt;
+&gt; <em>Note: MRO means </em><strong><em>Microsoft R Open</em></strong><em> (previously </em><strong><em>Revolution R)</em></strong>
 &gt; **Recently I tried to set up the R development environment on a fresh Linux system, every thing went well until I hit this error installing xgboost:
-&gt; **Package installation error: &quot;C++11 standard requested but CXX11 is not defined&quot;**After some Googling I found &gt; [this Github issue](https://github.com/Microsoft/microsoft-r-open/issues/26">&ldquo;CXX11 is not defined&rdquo; problem in MRO 3.4</a>. It appears to be a MRO-specific problem, and &gt; <a href="https://github.com/mjmg">mjmg</a> provided a working solution.&gt; The gist is, replacing every &ldquo;CXX1X&rdquo; with &ldquo;CXX11&rdquo; in R compiler configuration files (System wide: <code>${R_HOME}/etc/Makeconf</code> Per-user: <code>~/.R/Makevars</code>) and fill in some values:
+&gt; <strong>Package installation error: &ldquo;C++11 standard requested but CXX11 is not defined&rdquo;</strong>After some Googling I found &gt; <a href="https://github.com/Microsoft/microsoft-r-open/issues/26">this Github issue</a>. It appears to be a MRO-specific problem, and &gt; <a href="https://github.com/mjmg">mjmg</a> provided a working solution.&gt; The gist is, replacing every &ldquo;CXX1X&rdquo; with &ldquo;CXX11&rdquo; in R compiler configuration files (System wide: <code>${R_HOME}/etc/Makeconf</code> Per-user: <code>~/.R/Makevars</code>) and fill in some values:
 &gt; ```yaml
 CXX11 = g++
 CXX11FLAGS = -O2 -g $(LTO)

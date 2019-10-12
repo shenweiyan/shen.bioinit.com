@@ -22,7 +22,7 @@ $ chmod 0400 /etc/gshadow
 
 2. 确保 SSH LogLevel 设置为 INFO，记录登录和注销活动。
 ```bash
-# 编辑 /etc/ssh/sshd_config 文件以按如下方:
+# 编辑 /etc/ssh/sshd_config 文件以按如下方式设置参数(取消注释):
 LogLevel INFO
 ```
 
@@ -53,7 +53,7 @@ PASS_MIN_DAYS 7
 chage --mindays 7 root
 ```
 
-7. 设置密码失效时间，强制定期修改密码，减少密码被泄漏和猜测风险，使用非密请忽略此项。
+7. 设置密码失效时间，强制定期修改密码，减少密码被泄漏和猜测风险，使用非密码登陆方式(如密钥对)请忽略此项。
 ```
 # 使用非密码登陆方式如密钥对，请忽略此项。
 
@@ -88,7 +88,7 @@ chage --warndays 7 root
 
 11. 确保 root 是唯一的 UID 为 0 的帐户，除 root 以外其他 UID 为 0 的用户都应该删除，或者为其分配新的 UID。
 ```bash
-# 除 root 以外其他 UID 为 0 都应该删除，或者为其分配新的 UID。
+# 除 root 以外其他 UID 为 0 的用户(查看命令如下)都应该删除，或者为其分配新的 UID。
 cat /etc/passwd | awk -F: '($3 == 0) { print $1 }'|grep -v '^root$' 
 ```
 

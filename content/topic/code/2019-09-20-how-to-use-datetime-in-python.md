@@ -132,7 +132,7 @@ datetime.date(2019, 9, 10)
 
 ### 3. Time
 
-时间值使用 `datetime.time` 类定义。它遵循如下所示的语法：<br />`_datetime.time(hour, minute, second, mi_` 
+时间值使用 `datetime.time` 类定义。它遵循如下所示的语法：<br />`_datetime.time(hour, minute, second, microseconds)_` 
 
 ```python
 >>> t = datetime.time(21, 2, 3)
@@ -207,7 +207,7 @@ datetime.date(2019, 9, 10)
 
 #### 4.1 创建 datetime 对象
 
-`datetime` 类的语法如下：<br />`_datetime(year, month, day, hour, minute, second, m_` 
+`datetime` 类的语法如下：<br />`_datetime(year, month, day, hour, minute, second, microsecond)_` 
 
 ```python
 >>> dt = datetime.datetime(2019, 7, 20, 10, 51, 0)
@@ -251,7 +251,7 @@ print(dt.time())
 >>> dt.strftime("%A %B %d %H:%M")
 'Tuesday September 10 10:58'
 
->>> dt.i
+>>> dt.isoweekday()
 2
 ```
 

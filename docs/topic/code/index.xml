@@ -26,7 +26,7 @@
       <pubDate>Thu, 19 Sep 2019 08:03:19 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2019-09-19-xu2eg5/</guid>
-      <description>先上代码，后面有空再整理细节： # -*- coding:utf-8 -*- # vim:et:ts=4:sw=4: #!/usr/bin/env python ###################################################################### __author__ = &#39;ishenweiyan@qq.com&#39; __create__ = &#39;2019-09-19&#39; __file__ = &#39;download_demo.py&#39; __license__ = &#39;2019 All rights reserved.&#39; __doc__ = &#39;The test script.&#39; ##################################################################### import os from urllib.request import urlopen import requests from tqdm import tqdm from contextlib import closing class Progress: def __init__(self, title, count=0.0, run_status=None, fin_status=None, total=100.0,</description>
+      <description>先上代码，后面有空再整理细节： # -*- coding:utf-8 -*- # vim:et:ts=4:sw=4: #!/usr/bin/env python ###################################################################### __author__ = &#39;ishenweiyan@qq.com&#39; __create__ = &#39;2019-09-19&#39; __file__ = &#39;download_demo.py&#39; __license__ = &#39;2019 All rights reserved.&#39; __doc__ = &#39;The test script.&#39; ##################################################################### import os from urllib.request import urlopen import requests from tqdm import tqdm from contextlib import closing class ProgressBar(object): def __init__(self, title, count=0.0, run_status=None, fin_status=None, total=100.0,</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Tue, 11 Jun 2019 09:24:24 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2019-06-11-iddn10/</guid>
-      <description>[https://www.jianshu.com/p/560ff3adfee3](https://www.jianshu.com/p/56 Python 读取文件一般可以使用 read()，``，但这两种方法在读取大文件时都会存储内存缺陷。 1. read() 接口的问题 f = open(filename, &#39;rb&#39;) f.read() 我们来读取 1 个规模为 3Gb 大小的</description>
+      <description>https://www.jianshu.com/p/560ff3adfee3 Python 读取文件一般可以使用 read()，readlines()，但这两种方法在读取大文件时都会存储内存缺陷。 1. read() 接口的问题 f = open(filename, &#39;rb&#39;) f.read() 我们来读取</description>
     </item>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 21 May 2019 03:48:13 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/code/2019-05-21-kzicg7/</guid>
-      <description>subprocess python import subprocess transid = str(subprocess.check_output([&#39;grep&#39; , &#39;-w&#39;, geneid, t).strip()</description>
+      <description>subprocess python import subprocess transid = str(subprocess.check_output([&#39;grep&#39; , &#39;-w&#39;, geneid, trans2gene])).strip()</description>
     </item>
     
     <item>

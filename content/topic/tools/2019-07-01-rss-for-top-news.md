@@ -86,7 +86,7 @@ Inoreader 支持知乎专栏的 URL 搜索，比如我们要把知乎的 "R语�
 
 简书默认是没有提供 RSS 输出的。因此我们想要添加简书专题、文集或者作者的订阅，需要借助简书 RSS 生成器，这里推荐一个神器：JianshuRSS（链接：http://jianshu.milkythinking.com/）。
 
-首先，我们把简书的 "生物信息" 专题链接 "[https://www.jianshu.com/c/2e21055ceb0e](https://www.jianshu.com/c/2e" 粘贴到 JianshuRSS：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1554873854093-00a3a8e7-4699-4dfb-8be7-3bfde7b071ea.png#align=left&display=inline&height=246&originHeight=275&originWidth=835&size=0&status=done&width=746)
+首先，我们把简书的 "生物信息" 专题链接 "[https://www.jianshu.com/c/2e21055ceb0e](https://www.jianshu.com/c/2e21055ceb0e)" 粘贴到 JianshuRSS：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1554873854093-00a3a8e7-4699-4dfb-8be7-3bfde7b071ea.png#align=left&display=inline&height=246&originHeight=275&originWidth=835&size=0&status=done&width=746)
 
 关于 Inoreader 的 RSS 源就写到这里了。对于普通大众而言，RSS 的上手门槛高确实有点高，需要自己找链接，也缺少互动，但是在知识爆炸的今天却很实用。
 
@@ -110,7 +110,7 @@ Inoreader 支持知乎专栏的 URL 搜索，比如我们要把知乎的 "R语�
 - 阮一峰，《如何使用RSS》，阮一峰的网络日志，[http://www.ruanyifeng.com/blog/2006/01/rss.html](http://www.ruanyifeng.com/blog/2006/01/rss.html)
 - 哈尔滨工业大学学报编辑部，《RSS订阅》，[http://swxxx.alljournals.cn/ch/reader/rss.aspx](http://swxxx.alljournals.cn/ch/reader/rss.aspx)
 - 程引，Alpha，等，《你必读的 RSS 订阅源有哪些》，知乎，[https://www.zhihu.com/question/19580096/answer/20490041](https://www.zhihu.com/question/19580096/answer/20490041)
-- 爱因斯没有坦，《科研利--inoreader 同步世界的资讯》，简书，[https://www.jianshu.com/p/66acd42a1fff](https://www.jianshu.com/p/66
+- 爱因斯没有坦，《科研利--inoreader 同步世界的资讯》，简书，[https://www.jianshu.com/p/66acd42a1fff](https://www.jianshu.com/p/66acd42a1fff)
 
 ![默认标题_横版二维码_2019.06.01.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559799109918-d70a3bab-503c-4cda-8e59-31f03a24ae6d.png#align=left&display=inline&height=500&name=%E9%BB%98%E8%AE%A4%E6%A0%87%E9%A2%98_%E6%A8%AA%E7%89%88%E4%BA%8C%E7%BB%B4%E7%A0%81_2019.06.01.png&originHeight=500&originWidth=900&size=67641&status=done&width=900)
 

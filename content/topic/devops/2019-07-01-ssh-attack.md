@@ -95,6 +95,6 @@ crontab -e
 
 除此之外，简单的办法就是改端口，ssh 攻击大部分都是批量扫 22 的，改了端口再改个不常用用户名和密码基本就没问题了，不知道大神还有没有更好的方式了！
 
-**原文**：昵称又重复，《SSH 攻击》，[https://www.jianshu.com/p/84d38d396629](https://www.jianshu.com/p/84，简书
+**原文**：昵称又重复，《SSH 攻击》，[https://www.jianshu.com/p/84d38d396629](https://www.jianshu.com/p/84d38d396629)，简书
 
 ![默认标题_横版二维码_2019.06.01.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559721270519-19eba475-c1f2-4202-9d88-aac92c38b623.png#align=left&display=inline&height=500&name=%E9%BB%98%E8%AE%A4%E6%A0%87%E9%A2%98_%E6%A8%AA%E7%89%88%E4%BA%8C%E7%BB%B4%E7%A0%81_2019.06.01.png&originHeight=500&originWidth=900&size=67641&status=done&width=900)

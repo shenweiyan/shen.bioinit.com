@@ -105,7 +105,7 @@ Starting spawn-fcgi (via systemctl):  Job for spawn-fcgi.service failed because 
 ● spawn-fcgi.service - LSB: Start and stop FastCGI processes
    Loaded: loaded (/etc/rc.d/init.d/spawn-fcgi; bad; vendor preset: disabled)
    Active: failed (Result: exit-code) since Fri 2019-04-26 08:31:51 CST; 9min ago
-     Docs: man:systemd-sysv-g
+     Docs: man:systemd-sysv-generator(8)
   Process: 7069 ExecStart=/etc/rc.d/init.d/spawn-fcgi start (code=exited, status=1/FAILURE)
 
 Apr 26 08:31:51 ecs-steven systemd[1]: Starting LSB: Start and stop FastCGI processes...

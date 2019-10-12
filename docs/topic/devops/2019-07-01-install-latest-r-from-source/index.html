@@ -301,7 +301,7 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS=&quot
 
 <h2 id="bzip2-or-libbz2">bzip2 or libbz2</h2>
 
-<p>根据《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》官方文档，<code>libbz2</code> (version 1.0.6 or later: called <strong>bzip2-libs</strong>/<strong>bzip2-devel</strong> or <strong>libbz2-1.0</strong>/<strong>libbz2-dev</strong> by some Linux dis，至少需要 1.0.6 及以上版本。</p>
+<p>根据《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》官方文档，<code>libbz2</code> (version 1.0.6 or later: called <strong>bzip2-libs</strong>/<strong>bzip2-devel</strong> or <strong>libbz2-1.0</strong>/<strong>libbz2-dev</strong> by some Linux distributions)，至少需要 1.0.6 及以上版本。</p>
 
 <pre><code class="language-bash">$ wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 $ tar zvxf bzip2-1.0.6.tar.gz
@@ -343,7 +343,7 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS=&quot
 <p>在《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》官方文档中要求，PCRE 版本最好在 8.32 及以上。</p>
 
 <blockquote>
-<p>CRE (version 8.32 or later, although versions 8.20–8.31 will be accepted with a deprecation warning) is required (or just its library and headers if packaged . Only the &lsquo;8-bit&rsquo; interface is used (and only that is built by default when installing from sources). PCRE must be built with UTF-8 support (not the default, and checked by <code>configure</code>) and support for Unicode properties is assumed by some R packages. JIT support (optionally available) is desirable for the best performance: support for this and Unicode properties can be checked at run-time by calling <code>pc</code>.</p>
+<p>CRE (version 8.32 or later, although versions 8.20–8.31 will be accepted with a deprecation warning) is required (or just its library and headers if packaged separately). Only the &lsquo;8-bit&rsquo; interface is used (and only that is built by default when installing from sources). PCRE must be built with UTF-8 support (not the default, and checked by <code>configure</code>) and support for Unicode properties is assumed by some R packages. JIT support (optionally available) is desirable for the best performance: support for this and Unicode properties can be checked at run-time by calling <code>pcre_config()</code>.</p>
 </blockquote>
 
 <pre><code class="language-bash">$ wget https://ftp.pcre.org/pub/pcre/pcre-8.40.tar.gz --no-check-certificate
@@ -437,7 +437,7 @@ $ make install
 
 <h2 id="libtiff">libtiff</h2>
 
-<p>R shell 中使用 cap 可以查看 R 已经编译支持的功能，对于画图可以增加下面几个参数，使 R 支持对应格式的图片保存，与此同时要确保对应库已经安装。</p>
+<p>R shell 中使用 capabilities() 可以查看 R 已经编译支持的功能，对于画图可以增加下面几个参数，使 R 支持对应格式的图片保存，与此同时要确保对应库已经安装。</p>
 
 <pre><code class="language-bash">--with-cairo            use cairo (and pango) if available [yes]
 --with-libpng           use libpng library (if available) [yes]
@@ -487,13 +487,13 @@ Save workspace image? [y/n/c]: n
 <p>使用 <strong>ldd</strong> 命令如果看到 libjpeg.so.9、libpng16.so.16 not found，则可以考虑手动安装这两个包：</p>
 
 <pre><code class="language-bash">$ /Bioinfo/SoftWare/R-3.6.0/bin/R CMD ldd /Bioinfo/SoftWare/R-3.6.0/lib64/R/modules//R_X11.so
-        linux-vdso.so.1 =&gt;  (0x00007f
-        libtiff.so.5 =&gt; /Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib/libtiff.so.5 (0x00007f
+        linux-vdso.so.1 =&gt;  (0x00007fff3c79b000)
+        libtiff.so.5 =&gt; /Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib/libtiff.so.5 (0x00007f75369dc000)
         libjpeg.so.9 =&gt; not found
         libpng16.so.16 =&gt; not found
-        libpangocairo-1.0.so.0 =&gt; /usr/lib64/libpangocairo-1.0.so.0 (0x00007f
-        libpango-1.0.so.0 =&gt; /usr/lib64/libpango-1.0.so.0 (0x00007f
-        libgobject-2.0.so.0 =&gt; /lib64/libgobject-2.0.so.0 (0x00007f
+        libpangocairo-1.0.so.0 =&gt; /usr/lib64/libpangocairo-1.0.so.0 (0x00007f75367ba000)
+        libpango-1.0.so.0 =&gt; /usr/lib64/libpango-1.0.so.0 (0x00007f753656e000)
+        libgobject-2.0.so.0 =&gt; /lib64/libgobject-2.0.so.0 (0x00007f7536322000)
         ......
 </code></pre>
 
@@ -578,7 +578,7 @@ unable to load shared object '/Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/li
 libRlapack.so: cannot open shared object file: No such file or directory
 During startup - Warning message:
 package ‘stats’ in options(&quot;defaultPackages&quot;) was not found
-&gt;&gt;&gt; robjects.r('libra')
+&gt;&gt;&gt; robjects.r('library(splines)')
 Error: package or namespace load failed for ‘splines’ in dyn.load(file, DLLpath = DLLpath, ...):
 unable to load shared object '/Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so':
 libRlapack.so: cannot open shared object file: No such file or directory
@@ -589,7 +589,7 @@ res = self.eval(p)
 File &quot;/Bioinfo/SoftWare/Python-2.7.14/lib/python2.7/site-packages/rpy2/robjects/functions.py&quot;, line 170, in __call__
 return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
 File &quot;/Bioinfo/SoftWare/Python-2.7.14/lib/python2.7/site-packages/rpy2/robjects/functions.py&quot;, line 100, in __call__
-res = super(Function, self).__call__(*new_args, **
+res = super(Function, self).__call__(*new_args, **new_kwargs)
 rpy2.rinterface.RRuntimeError: Error: package or namespace load failed for ‘splines’ in dyn.load(file, DLLpath = DLLpath, ...):
 unable to load shared object '/Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so':
 libRlapack.so: cannot open shared object file: No such file or directory
@@ -597,18 +597,18 @@ libRlapack.so: cannot open shared object file: No such file or directory
 </ul>
 
 <pre><code class="language-bash">$ ldd /Bioinfo/SoftWare/R-3.6.0/lib64/R/library/stats/libs/stats.so
-        linux-vdso.so.1 =&gt;  (0x00007f
+        linux-vdso.so.1 =&gt;  (0x00007fffd65ba000)
         libRlapack.so =&gt; not found
         libRblas.so =&gt; not found
-        libgfortran.so.3 =&gt; /lib64/libgfortran.so.3 (0x00007f
-        libm.so.6 =&gt; /lib64/libm.so.6 (0x00007f
-        libquadmath.so.0 =&gt; /lib64/libquadmath.so.0 (0x00007f
+        libgfortran.so.3 =&gt; /lib64/libgfortran.so.3 (0x00007fed38cbb000)
+        libm.so.6 =&gt; /lib64/libm.so.6 (0x00007fed389b9000)
+        libquadmath.so.0 =&gt; /lib64/libquadmath.so.0 (0x00007fed3877c000)
         libR.so =&gt; not found
-        libgomp.so.1 =&gt; /lib64/libgomp.so.1 (0x00007f
-        libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007f
-        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f
-        libgcc_s.so.1 =&gt; /lib64/libgcc_s.so.1 (0x00007f
-        /lib64/ld-linux-x86-64.so.2 (0x000055
+        libgomp.so.1 =&gt; /lib64/libgomp.so.1 (0x00007fed38556000)
+        libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007fed38339000)
+        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007fed37f76000)
+        libgcc_s.so.1 =&gt; /lib64/libgcc_s.so.1 (0x00007fed37d60000)
+        /lib64/ld-linux-x86-64.so.2 (0x00005561aa2c3000)
 </code></pre>
 
 <p>解决方法：</p>
@@ -616,26 +616,26 @@ libRlapack.so: cannot open shared object file: No such file or directory
 <pre><code class="language-bash">$ export LD_LIBRARY_PATH=&quot;/Bioinfo/SoftWare/R-3.6.0/lib64/R/lib:$LD_LIBRARY_PATH&quot;
 
 $ ldd /Bioinfo/SoftWare/R-3.5.0/lib64/R/library/stats/libs/stats.so
-        linux-vdso.so.1 =&gt;  (0x00007f
-        libRlapack.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRlapack.so (0x00007f
-        libRblas.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRblas.so (0x00007f
-        libgfortran.so.3 =&gt; /lib64/libgfortran.so.3 (0x00007f
-        libm.so.6 =&gt; /lib64/libm.so.6 (0x00007f
-        libquadmath.so.0 =&gt; /lib64/libquadmath.so.0 (0x00007f
-        libR.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libR.so (0x00007f
-        libgomp.so.1 =&gt; /lib64/libgomp.so.1 (0x00007f
-        libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007f
-        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f
-        libgcc_s.so.1 =&gt; /lib64/libgcc_s.so.1 (0x00007f
-        /lib64/ld-linux-x86-64.so.2 (0x000055
-        libreadline.so.6 =&gt; /lib64/libreadline.so.6 (0x00007f
-        libpcre.so.1 =&gt; /lib64/libpcre.so.1 (0x00007f
-        liblzma.so.5 =&gt; /lib64/liblzma.so.5 (0x00007f
-        libbz2.so.1 =&gt; /lib64/libbz2.so.1 (0x00007f
-        libz.so.1 =&gt; /lib64/libz.so.1 (0x00007f
-        librt.so.1 =&gt; /lib64/librt.so.1 (0x00007f
-        libdl.so.2 =&gt; /lib64/libdl.so.2 (0x00007f
-        libtinfo.so.5 =&gt; /lib64/libtinfo.so.5 (0x00007f
+        linux-vdso.so.1 =&gt;  (0x00007ffd0f3af000)
+        libRlapack.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRlapack.so (0x00007f6509c47000)
+        libRblas.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libRblas.so (0x00007f6509a19000)
+        libgfortran.so.3 =&gt; /lib64/libgfortran.so.3 (0x00007f65096ee000)
+        libm.so.6 =&gt; /lib64/libm.so.6 (0x00007f65093ec000)
+        libquadmath.so.0 =&gt; /lib64/libquadmath.so.0 (0x00007f65091af000)
+        libR.so =&gt; /Bioinfo/SoftWare/R-3.6.0/lib64/R/lib/libR.so (0x00007f6508b81000)
+        libgomp.so.1 =&gt; /lib64/libgomp.so.1 (0x00007f650895b000)
+        libpthread.so.0 =&gt; /lib64/libpthread.so.0 (0x00007f650873e000)
+        libc.so.6 =&gt; /lib64/libc.so.6 (0x00007f650837b000)
+        libgcc_s.so.1 =&gt; /lib64/libgcc_s.so.1 (0x00007f6508165000)
+        /lib64/ld-linux-x86-64.so.2 (0x000055583c2da000)
+        libreadline.so.6 =&gt; /lib64/libreadline.so.6 (0x00007f6507f1e000)
+        libpcre.so.1 =&gt; /lib64/libpcre.so.1 (0x00007f6507cbc000)
+        liblzma.so.5 =&gt; /lib64/liblzma.so.5 (0x00007f6507a96000)
+        libbz2.so.1 =&gt; /lib64/libbz2.so.1 (0x00007f6507885000)
+        libz.so.1 =&gt; /lib64/libz.so.1 (0x00007f650766f000)
+        librt.so.1 =&gt; /lib64/librt.so.1 (0x00007f6507467000)
+        libdl.so.2 =&gt; /lib64/libdl.so.2 (0x00007f6507262000)
+        libtinfo.so.5 =&gt; /lib64/libtinfo.so.5 (0x00007f6507038000)
 </code></pre>
 
 <p>以上就是普通用户源码编译安装最新版本 R 的全部内容，总的一句话就是缺什么安装什么，从最基本的 gcc 编译器开始到 R 所需要的各种依赖库，直至最终安装完成。</p>

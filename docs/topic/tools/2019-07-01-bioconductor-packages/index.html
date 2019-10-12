@@ -227,7 +227,7 @@
 <p>在 R-3.5（Bioconductor-3.7） 前，Bioconductor 都是通过 biocLite 安装相关的 R 包：</p>
 
 <pre><code class="language-r">source(&quot;https://bioconductor.org/biocLite.R&quot;)
-biocLit
+biocLite(pkg_name)
 </code></pre>
 
 <p>但是，从 R-3.5（Bioconductor-3.8）起，Bioconductor 更改了 R 包的安装方式：它们通过发布在 CRAN 的 <a href="https://cran.r-project.org/web/packages/BiocManager/index.html"><code>BiocManager</code></a> 包来对 Bioconductor 的包进行安装和管理——通过 CRAN 安装 <code>BiocManager</code>，再通过这个包来安装 Bioconductor 的包。</p>
@@ -241,7 +241,7 @@ biocLit
 <ul>
 <li><p><strong>安装 BiocManager 包</strong></p>
 
-<pre><code class="language-r">chooseC
+<pre><code class="language-r">chooseCRANmirror()
 install.packages(&quot;BiocManager&quot;)
 </code></pre></li>
 
@@ -270,7 +270,7 @@ install.packages(&quot;BiocManager&quot;)
 
 ## Warning: 21 packages out-of-date; 2 packages too new
 ## 
-## * se
+## * sessionInfo()
 ## 
 ## R Under development (unstable) (2018-11-02 r75540)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
@@ -341,10 +341,10 @@ ff  &quot;2.2-13&quot;  &quot;3.5.0&quot; &quot;2.2-14&quot; &quot;https://cran.
 <li><strong>适用的 R 包</strong></li>
 </ul>
 
-<p>可以使用 `` 发现适用于我们的 Bioconductor 版本的软件包; 第一个参数是可用于根据正则表达式过滤包名称，例如，可用于 Homo sapiens 的 &lsquo;BSgenome&rsquo; 包：</p>
+<p>可以使用 <code>available()</code> 发现适用于我们的 Bioconductor 版本的软件包; 第一个参数是可用于根据正则表达式过滤包名称，例如，可用于 Homo sapiens 的 &lsquo;BSgenome&rsquo; 包：</p>
 
-<pre><code class="language-r">avail &lt;- BiocManager::
-le
+<pre><code class="language-r">avail &lt;- BiocManager::available()
+length(avail)
 ## [1] 16261
 
 BiocManager::available(&quot;BSgenome.Hsapiens&quot;)
@@ -380,7 +380,7 @@ A new version of Bioconductor is available after installing the most recent
 Warning message:
 package ‘clusterProfile’ is not available (for R version 3.4.3)
 
-&gt; chooseC
+&gt; chooseCRANmirror()
 &gt; install.packages(&quot;BiocManager&quot;)
 Warning message:
 package ‘BiocManager’ is not available (for R version 3.4.3) 
@@ -446,7 +446,7 @@ downloaded 4.3 MB
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded
-* DONE (clust
+* DONE (clusterProfiler)
 
 &gt; packageVersion('clusterProfiler')
 [1] ‘3.6.0’

@@ -231,7 +231,7 @@ from tqdm import tqdm
 from contextlib import closing
 
 
-class Progress:
+class ProgressBar(object):
 
     def __init__(self, title,
                  count=0.0,
@@ -251,7 +251,7 @@ class Progress:
         self.unit = unit
         self.seq = sep
 
-    def __get:
+    def __get_info(self):
         # [名称] 状态 进度 单位 分割线 总数 单位
         _info = self.info % (self.title, self.status,
                              self.count/self.chunk_size, self.unit, self.seq, self.total/self.chunk_size, self.unit)
@@ -265,7 +265,7 @@ class Progress:
         if self.count &gt;= self.total:
             end_str = '\n'
             self.status = status or self.fin_status
-        print(self._, end=end_str)
+        print(self.__get_info(), end=end_str)
 
 
 def download_from_url(url, dst):
@@ -273,10 +273,10 @@ def download_from_url(url, dst):
     @param: url to download file
     @param: dst place to put the file
     &quot;&quot;&quot;
-    file_size = int(u.info().get('Content-Length', -1))
+    file_size = int(urlopen(url).info().get('Content-Length', -1))
 
-    if os.path.:
-        first_byte = os.path.g
+    if os.path.exists(dst):
+        first_byte = os.path.getsize(dst)
     else:
         first_byte = 0
     if first_byte &gt;= file_size:
@@ -289,8 +289,8 @@ def download_from_url(url, dst):
     with(open(dst, 'ab')) as f:
         for chunk in req.iter_content(chunk_size=1024):
             if chunk:
-                f.w
-                pbar.u
+                f.write(chunk)
+                pbar.update(1024)
     pbar.close()
     return file_size
 
@@ -306,8 +306,8 @@ def __main__():
         progress = ProgressBar(file_name, total=content_size,
                                      unit=&quot;KB&quot;, chunk_size=chunk_size, run_status=&quot;正在下载&quot;, fin_status=&quot;下载完成&quot;)
         with open(file_name, &quot;wb&quot;) as file:
-            for data in response.iter_content(chunk_size=:
-                file.
+            for data in response.iter_content(chunk_size=chunk_size):
+                file.write(data)
                 progress.refresh(count=len(data))
     '''
     download_from_url(url, file_name)

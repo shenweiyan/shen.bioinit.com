@@ -353,9 +353,9 @@ postgres=# grant all on database galaxydb to shenweiyan;
 </ul>
 
 <pre><code># 创建 user_table 新表 
-CREATE TABLE user_table(name , signup_date DATE);
+CREATE TABLE user_table(name VARCHAR(20), signup_date DATE);
 # 在 user_table 表中插入数据 
-INSERT INTO user_table(name, s VALUES('张三', '2013-12-22');
+INSERT INTO user_table(name, signup_date) VALUES('张三', '2013-12-22');
 # 查找 user_table 表记录 
 SELECT * FROM user_table;
 # 更新数据 
@@ -363,7 +363,7 @@ UPDATE user_table set name = '李四' WHERE name = '张三';
 # 删除记录 
 DELETE FROM user_table WHERE name = '李四' ;
 # 添加 email 字段
-ALTER TABLE user_table ADD email ;
+ALTER TABLE user_table ADD email VARCHAR(40);
 # 更新结构 
 ALTER TABLE user_table ALTER COLUMN signup_date SET NOT NULL;
 # 重命名 signup_date 字段  
