@@ -10,7 +10,7 @@ published: true
 **目的：** RedHat 6.5 HPC 环境下安装生物信息 [STAMP](http://kiwi.cs.dal.ca/Software/Quick_installation_instructions_for_STAMP) 软件。
 
 
-<a name="52307b95"></a>
+
 ## 服务器环境
 
 ```
@@ -26,10 +26,10 @@ x86_64-conda_cos6-linux-gnu-c++：gcc version 7.2.0
 
 
 
-<a name="699fb63f"></a>
+
 ## 安装步骤
 
-<a name="89d897cf"></a>
+
 ### 1、使用 conda 直接安装
 
 ```
@@ -49,7 +49,7 @@ Traceback (most recent call last):
 ImportError: No module named PyQt4
 ```
 
-<a name="cbfd9959"></a>
+
 ### 2、安装 PyQt4
 
 ```
@@ -60,7 +60,7 @@ $ python configure.py
 Error: This version of PyQt requires SIP v4.19.1 or later
 ```
 
-<a name="7ee03f23"></a>
+
 ### 3、安装依赖一：SIP
 
 虽然在 PyPI 可以找到 sip-4.19.8，但是安装的时候却会提示版本错误：
@@ -90,7 +90,7 @@ $ make install
 
 最后，在 python 中 `import sip` 查看是否安装成功。
 
-<a name="44f240e0"></a>
+
 ### 4、第二次安装 PyQt4
 
 ```
@@ -110,7 +110,7 @@ Error: Failed to determine the layout of your Qt installation. Try again using
 the --verbose flag to see more detail about the problem.
 ```
 
-<a name="d4afacf7"></a>
+
 ### 5、安装依赖二：QT
 
 使用 conda 安装的 qt >= 5.6.2：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183262081-192b5c4b-7fb9-4dcd-b09d-d4ac540baaae.png#align=left&display=inline&height=330&originHeight=330&originWidth=674&size=0&status=done&width=674)
@@ -143,7 +143,7 @@ $ ./configure -prefix /Bio/Bioinfo/Pipeline/SoftWare/Qt-5.6.0  # 报错信息如
 ② 在 Qt 4.8 中实现多媒体播放图形界面主要依赖于 phonon 框架，通常情况下，**Qt 基本库已经安装好，默认 phonon 是没有被安装的**，我们需要 configure 后加好参数，然后单独进入 phonon 的文件夹进行编译。
 
 
-<a name="d479cf8f"></a>
+
 ### 6、第三次安装 PyQt4
 
 ```
@@ -171,7 +171,7 @@ make install
 
 3、成功运行命令后，PYQT 安装成功.你可以在 python 解析器下，运行`import PyQt4` 来检测是否安装成功。
 
-<a name="25f9c7fa"></a>
+
 ## 总结
 
 Qt 是一个跨平台的 C++ 图形用户界面应用程序框架。它提供给应用程序开发者建立艺术级的图形用户界面所需的所用功能。PyQt 是一个创建 GUI 应用程序的工具包（PyQt 的实现被视作 Python 的一个模块），它是 Python 编程语言和 Qt 库的成功融合，由 300 多个类和接近 6000 个函数与方法构成。
@@ -180,7 +180,7 @@ PyQt4 在 Linux 下安装，尤其是源码编译安装，需要特别注意：
 
 1、要解决 `xcb*`、`libxcb`必须库依赖。<br />2、确保满足 sip 依赖。<br />3、确保 QT 安装，QT 安装过程中确保 phonon 库被编译安装。<br />4、PyQt4 在执行 configure 过程中可以通过指定 qmake，从而选择 Qt 版本。
 
-<a name="35808e79"></a>
+
 ## 参考资料
 
 - 博客园. 叶念西风.《[Qt 学习笔记-安装 phonon 模块](http://www.cnblogs.com/ynxf/p/6394801.html)》. 2017-02-13

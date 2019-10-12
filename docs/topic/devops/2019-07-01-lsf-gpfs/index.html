@@ -211,13 +211,9 @@
 
 <p><strong>作者：</strong>谷珊，帅炜，陈志阳<br /><strong>来源：</strong>IBM Developer </p>
 
-<p><a name="major1"></a></p>
-
 <h2 id="gpfs-的概述">GPFS 的概述</h2>
 
 <p>GPFS 是 IBM 公司提供的一个共享文件系统，它允许所有的集群节点可以并行访问整个文件系统。GPFS 允许客户共享文件，这些文件分布在不同节点的不同硬盘上，GPFS 还提供了 UNIX 文件系统接口并且支持 UNIX 文件系统的工具，用户可以在 Linux 集群中像使用普通文件系统一样使用 GPFS 文件系统，能够很好地应用在 Linux/UNIX 集群中。<br />在 GPFS 的长期运行中可能会出现一些问题，本文主要针对在使用 GPFS 中常见问题的一些诊断方法进行探讨。</p>
-
-<p><a name="major2"></a></p>
 
 <h2 id="问题诊断步骤与方法">问题诊断步骤与方法</h2>
 
@@ -437,8 +433,6 @@ node1:~ # mmchconfig trace=DEFAULT -i
 <pre><code class="language-bash">mmchconfig traceGenDump=yes -i
 </code></pre>
 
-<p><a name="major3"></a></p>
-
 <h2 id="案例分析">案例分析</h2>
 
 <p>在基于 Linux 操作系统平台、GPFS 文件系统的集群运行过程中，出现了问题。该集群环境信息如下：</p>
@@ -448,8 +442,6 @@ node1:~ # mmchconfig trace=DEFAULT -i
 <li>有 3 个 GPFS 文件系统，分别命名为：/col1, /col2, /col3；</li>
 <li>在 CNFS 客户机上有 9 个挂载点，NFS 客户端通过 CNFS IP 同时往 3 个 GPFS 文件系统中传送数据；</li>
 </ul>
-
-<p><a name="major4"></a></p>
 
 <h2 id="诊断过程">诊断过程</h2>
 
@@ -580,8 +572,6 @@ Mon Aug  9 21:13:21.929 2010: rax    0x0000000000000000
 </ol>
 
 <p>重新把系统运行起来直到 GPFS 再次遇到问题。此时在节点上执行 <code>mmtrace stop</code> 命令，这样就可以捕获到当问题发生时的详细的跟踪信息。</p>
-
-<p><a name="major5"></a></p>
 
 <h2 id="结束语">结束语</h2>
 

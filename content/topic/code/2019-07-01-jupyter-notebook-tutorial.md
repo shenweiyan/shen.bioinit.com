@@ -7,12 +7,12 @@ category: 编程
 published: true
 ---
 
-<a name="6ddda5c2"></a>
+
 # 一、简介
 
 ipython notebook 是一个基于浏览器的 python 数据分析工具，使用起来非常方便，具有极强的交互方式和富文本的展示效果。jupyter 是它的升级版，它的安装也非常方便，一般 Anaconda 安装包中会自带。安装好以后直接输入 jupyter notebook 便可以在浏览器中使用。
 
-<a name="199fedec"></a>
+
 ## 1. 为什么使用 Jupyter
 关于为什么使用 jupyter 进行分析，而不是用 python 脚本或仅仅利用 excel，这里列举知乎中的两点回答：
 > **1、基于过程**
@@ -38,7 +38,7 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 > <br />
 参考链接： > [https://www.zhihu.com/question/37490497/answer/212044783]()
 
-<a name="3188ed3c"></a>
+
 ## 2. Jupyter 优势
 
 - 并行计算支持。jupyter notebook 支持并行计算，而且很全面，像 MPI，OpenMP 等，支持部署在集群上，具体可以参考[文档](https://ipyparallel.readthedocs.io/en/latest/)。
@@ -48,10 +48,10 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 
 ---
 
-<a name="a0ff161a"></a>
+
 # 二、本地安装与使用
 
-<a name="7758e477"></a>
+
 ## 1. 安装
 
 正常情况下，Anaconda 安装包中已经自带了 jupyter、jupyter-notebook。对于 miniconda，或者其他只安装了 python 的机器，需要借助 pip 安装：
@@ -67,7 +67,7 @@ conda install jupyter
 
 更多安装说明，请参考 [官网](http://jupyter.org/install.html)。
 
-<a name="7007ea3e"></a>
+
 ## 2. 启动
 
 接下来，我们只需要在命令行输入 **jupyter notebook** 或者 **jupyter-notebook** 即可。
@@ -96,7 +96,7 @@ Known labextensions:
 
 这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：[http://localhost:8888/?token=120a457da88d214270e...22a376d3d4](http://localhost:8888/?token=120a457da88d214270e...22a376d3d4)，即可进入登陆后的 Jupyter Notebook 页面：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490716-bc205590-2f06-4a0f-bf72-b355ca4b1cb8.png#align=left&display=inline&height=316&originHeight=342&originWidth=807&size=0&status=done&width=746)
 
-<a name="e1ce7125"></a>
+
 ## 3. 使用
 在 jupyter notebook web 页面，我们可以点击 " **New**" → "**Python2**" 创建 python2 笔记。我们可以在这两个笔记中使用 markdown 语法进行编辑，也可以交互执行 python 代码。<br />
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490593-8a243554-28e0-4375-a740-fff312e641b3.png#align=left&display=inline&height=329&originHeight=356&originWidth=806&size=0&status=done&width=746)
@@ -112,12 +112,12 @@ $ cat ~/.jupyter/jupyter_notebook_config.json
 ```
 
 
-<a name="074bf28f"></a>
+
 # 三、远程服务器部署与配置
 
 网上搜了一下 Jupyter 服务器的搭建，官方给出了很好的多用户服务端 Jupyterhub，但我的需求就是在 VPS/Linux 服务器搭建好一个 Jupyter 服务网页，完全自己用，所以搭建 Jupyterhub 有些浪费资源，因此我们需要一个更加简单的 Jupyter 服务搭建方案。当然，官网也写好文档（参考：[Running a notebook server](https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)）给我们用了，但文档是用英文写的，有需要的也可以参考实现。
 
-<a name="c2c37aff"></a>
+
 ## 1. 配置基于 IP 访问
 
 Jupyter Notebook 可以通过命令行参数指定 IP，也可以通过配置文件实现基于服务器公网 IP 下的远程访问。<br />通过命令行实现基于服务器公网 IP 访问，只需要执行以下命令即可：
@@ -125,9 +125,9 @@ Jupyter Notebook 可以通过命令行参数指定 IP，也可以通过配置文
 $ jupyter notebook --ip=0.0.0.0 --port=8080 
 ```
 
-<a name="fc123457"></a>
+
 ## 2. 基于域名访问
-<a name="d3c74755"></a>
+
 ### 1) 配置
 下面的命令会在 `~/.jupyter` 自动创建一个配置文件  jupyter_notebook_config.py。
 ```shell
@@ -158,7 +158,7 @@ c.NotebookApp.port = 8888
 
 如此这般之后，配置完成咯！
 
-<a name="14f7dd8c"></a>
+
 ### 2) 运行
 
 执行命令：
@@ -179,7 +179,7 @@ $ jupyter notebook
 
 这是尚不能打开网页，因为是配置在 127.0.0.1 上的，只有本机可以访问。
 
-<a name="7b6e7e4c"></a>
+
 ### 3) 域名解析
 
 配置 nginx 前需要把你已经申请的域名跟 Jupyter Notebook 的服务器 ip 进行绑定解析。
@@ -188,7 +188,7 @@ $ jupyter notebook
 
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550818257362-0ad05190-ca4b-47a0-9378-cbcc57ed23cb.png#align=left&display=inline&height=398&originHeight=398&originWidth=736&size=0&status=done&width=736)
 
-<a name="54c376cc"></a>
+
 ### 4) 配置 nginx
 
 nginx 是一个高效的服务器，是著名的 LNMP 中的 N，相信很多搭建过网站的小伙伴一定不陌生。这里，假设我们已经安装好了 nginx，如果不会安装可以自行谷歌或者百度。
@@ -244,7 +244,7 @@ server{
 
 至此，大功告成，打开你的网址 xxx.xxx.com 就可以看到熟悉的 Jupyter 了。<br />![jupyter_server.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550818784544-baff8855-ffb5-4efe-9bb7-081913177746.png#align=left&display=inline&height=519&name=jupyter_server.png&originHeight=577&originWidth=829&size=27393&status=done&width=746)
 
-<a name="16f85647"></a>
+
 ## 3. 后台模式运行
 基于远程服务部署完成 Jupyter Notebook，我们想要实现让它一直在后台运行，可以使用后台进程：
 ```shell
@@ -256,14 +256,14 @@ $ sh run.sh
 
 ---
 
-<a name="bc9b9924"></a>
+
 # 四、实现多语言环境
 
 Jupyter Notebook 作为一个把代码、图像、注释、公式和作图集于一处，从而实现可读性分析的交互式笔记本工具，借助所谓的内核（Kernel）的概念，Jupyter Notebook 可以同时支持包括 python2、python3、R、Ruby 在内超过 50 多种不同编程环境。基于Kernel，Jupyter Notebook 可以支持的编程语言可以参考[列表](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)。
 
 下面我们在 Jupyter Notebook 中实现 python2 与 python3 自由切换。
 
-<a name="12f20be5"></a>
+
 ## 1. 参考教程
 > The idea here is to install multiple `ipython` kernels. Here are instructions for anaconda. If you are not using anaconda, I recently added [instructions](https://stackoverflow.com/a/34464003/2272172) using pure virtualenvs.
 
@@ -308,7 +308,7 @@ ipython kernel install --user
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550823171682-80206c72-17c9-4b35-91a0-205405db5f6a.png#align=left&display=inline&height=388&originHeight=388&originWidth=626&size=0&status=done&width=626)
 
 
-<a name="f7154805"></a>
+
 ## 2. 实际操作
 
 使用 `--prefix` 指定 IPython kernel spec 安装路径：

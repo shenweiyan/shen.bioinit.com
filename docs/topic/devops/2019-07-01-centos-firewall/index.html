@@ -211,14 +211,10 @@
 
 <p>Centos7 默认安装了 firewalld，如果没有安装的话，则需要 YUM 命令安装；firewalld 真的用不习惯，与之前的 iptable 防火墙区别太大，但毕竟是未来主流讲究慢慢磨合它的设置规则。</p>
 
-<p><a name="4aaf5d24"></a></p>
-
 <h2 id="安装-firewall-命令">安装 Firewall 命令</h2>
 
 <pre><code class="language-shell">yum install firewalld firewalld-config
 </code></pre>
-
-<p><a name="e49f88df"></a></p>
 
 <h2 id="firewall-开启常见端口命令">Firewall 开启常见端口命令</h2>
 
@@ -229,8 +225,6 @@ firewall-cmd --zone=public --add-port=21/tcp --permanent
 firewall-cmd --zone=public --add-port=53/udp --permanent
 </code></pre>
 
-<p><a name="96bfd945"></a></p>
-
 <h2 id="firewall-关闭常见端口命令">Firewall 关闭常见端口命令</h2>
 
 <pre><code class="language-shell">firewall-cmd --zone=public --remove-port=80/tcp --permanent
@@ -240,57 +234,41 @@ firewall-cmd --zone=public --remove-port=21/tcp --permanent
 firewall-cmd --zone=public --remove-port=53/udp --permanent
 </code></pre>
 
-<p><a name="c9769260"></a></p>
-
 <h2 id="批量添加区间端口">批量添加区间端口</h2>
 
 <pre><code class="language-shell">firewall-cmd --zone=public --add-port=4400-4600/udp --permanent
 firewall-cmd --zone=public --add-port=4400-4600/tcp --permanent
 </code></pre>
 
-<p><a name="d4b16b51"></a></p>
-
 <h2 id="开启防火墙命令">开启防火墙命令</h2>
 
 <pre><code class="language-shell">systemctl start firewalld.service
 </code></pre>
-
-<p><a name="3f64273c"></a></p>
 
 <h2 id="重启防火墙命令">重启防火墙命令</h2>
 
 <pre><code class="language-shell">firewall-cmd --reload  或者   service firewalld restart
 </code></pre>
 
-<p><a name="b9750533"></a></p>
-
 <h2 id="查看端口列表">查看端口列表</h2>
 
 <pre><code class="language-shell">firewall-cmd --permanent --list-port
 </code></pre>
-
-<p><a name="880fde70"></a></p>
 
 <h2 id="禁用防火墙">禁用防火墙</h2>
 
 <pre><code class="language-shell">systemctl stop firewalld
 </code></pre>
 
-<p><a name="4b9f9f02"></a></p>
-
 <h2 id="设置开机启动">设置开机启动</h2>
 
 <pre><code class="language-shell">systemctl enable firewalld
 </code></pre>
 
-<p><a name="8070c2ee"></a></p>
-
 <h2 id="停止并禁用开机启动">停止并禁用开机启动</h2>
 
 <pre><code class="language-shell">sytemctl disable firewalld
 </code></pre>
-
-<p><a name="45d9d51f"></a></p>
 
 <h2 id="查看防火墙状态">查看防火墙状态</h2>
 

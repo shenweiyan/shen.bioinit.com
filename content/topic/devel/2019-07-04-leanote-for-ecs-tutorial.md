@@ -32,7 +32,7 @@ $ ln -s /usr/local/software/go-1.10.1/bin/* /data/LeaNote/bin
 
 
 
-<a name="8a2c7b86"></a>
+
 ## 2.1 方法1 （推荐方法）:
 
 请下载 [leante-all-master.zip](https://github.com/leanote/leanote-all/archive/master.zip)。解压后，将 src 文件夹复制到 /data/LeaNote/gopackage/。
@@ -73,7 +73,7 @@ $> go get github.com/leanote/leanote/app
 ## 3. 安装Mongodb
 
 
-<a name="56161b8d"></a>
+
 ## 3.1 安装Mongodb
 
 到 [Mongodb 官网](http://www.mongodb.org/downloads) 下载相应系统的最新版安装包，或者从以下链接下载旧版本：

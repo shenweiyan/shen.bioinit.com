@@ -211,17 +211,15 @@
 
 <p>LVM （ <strong>L</strong>ogical <strong>V</strong> olume <strong>M</strong>anager, 逻辑卷管理器） 是 Linux 环境下对硬盘分区进行管理的一种机制，开创这项技术的初衷是为了解决传统硬盘分区创建后不易更改其大小的弱点。对于传统硬盘分区进行强制扩容和缩小技术理论上虽然是可行的，但却有可能造成数据的丢失，LVM 逻辑卷管理器技术能够将多块硬盘进行卷组合并，让用户不必关心设备底层的架构和布局，拿来即用。</p>
 
-<p><img src="https://qiniu.bioinit.com/yuque/0/2019/jpeg/126032/1563516463579-cb8b7ed2-60f8-4f07-b91d-583ab1cf0bfe.jpeg#align=left&amp;display=inline&amp;height=360&amp;originHeight=360&amp;originWidth=640&amp;size=0&amp;status=done&amp;width=640" alt="" /></p>
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/jpeg/126032/1563516463579-cb8b7ed2-60f8-4f07-b91d-583ab1cf0bfe.jpeg#align=left&amp;display=inline&amp;height=360&amp;originHeight=360&amp;originWidth=640&amp;search=&amp;size=0&amp;status=done&amp;width=640" alt="" /></p>
 
 <p>LVM 逻辑卷管理器是在磁盘分区和文件系统之间添加的逻辑层，它提供了一个抽象的卷组，可以使得多块硬盘进行卷组合并，让用户不必关心物理硬盘设备的底层结构，从而实现对分区的灵活动态调整。</p>
 
 <blockquote>
 <p>LVM 逻辑卷管理器的技术结构如图2 所示，刘遄老师来举个吃货的例子帮助同学们理解吧，比如家里想吃馒头但面粉不够了，妈妈分别从隔壁老王家、老李家、老张家借来一些面粉，蒸出馒头后大家一起来吃，首先咱们需要将这些面粉（<strong>物理卷 PV</strong>，Physical Volume）合并成一个大面团（<strong>卷组 VG</strong>，Volume Group），然后把这一大团面再分割成一个个小馒头（<strong>逻辑卷 LV</strong>，Logical Volume），每个小馒头的重量必须是每勺面粉（<strong>基本单元 PE</strong>，Physical Extent）的倍数。物理卷是处于逻辑卷管理器中最底层的资源，可以理解成是物理硬盘、硬盘分区或者RAID磁盘阵列组都可以，而卷组是建立在物理卷之上的，一个卷组中可以包含多个物理卷，当然在卷组创建之后也可以继续向其中添加新的物理卷，而逻辑卷是建立于卷组之上的，将卷组中空闲的资源建立出新的逻辑卷，并且逻辑卷建立后可以动态的扩展或缩小空间，这也就是 LVM 逻辑卷管理器的核心理念。（<a href="http://www.linuxprobe.com/chapter-07.html">第7章 使用RAID与LVM磁盘阵列技术。</a>）</p>
 
-<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563516463553-518b3ab0-cb47-4ae3-9b9f-fe2ac6b56a7f.png#align=left&amp;display=inline&amp;height=155&amp;originHeight=155&amp;originWidth=544&amp;size=0&amp;status=done&amp;width=544" alt="" /></p>
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563516463553-518b3ab0-cb47-4ae3-9b9f-fe2ac6b56a7f.png#align=left&amp;display=inline&amp;height=155&amp;originHeight=155&amp;originWidth=544&amp;search=&amp;size=0&amp;status=done&amp;width=544" alt="" /></p>
 </blockquote>
-
-<p><a name="0dfbe902"></a></p>
 
 <h2 id="常用命令">常用命令</h2>
 
@@ -282,8 +280,6 @@
 </tbody>
 </table>
 
-<p><a name="418a7908"></a></p>
-
 <h2 id="实战展示">实战展示</h2>
 
 <p>阿里云 ECS 扩充 4T 磁盘，并挂载。</p>
@@ -318,7 +314,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x00000000
 </code></pre>
 
-<p><strong>2. 对添加的物理硬盘（/dev/vdc）进行分区。</strong><br />**</p>
+<p><strong>2. 对添加的物理硬盘（/dev/vdc）进行分区。</strong></p>
 
 <pre><code>[root@iZ88qg9l425Z ~]# fdisk /dev/vdc
 Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
@@ -385,7 +381,7 @@ Syncing disks.
 [root@iZ88qg9l425Z ~]#
 </code></pre>
 
-<p><strong>3. 在新建的分区上创建PV</strong></p>
+<p><strong>3. 在新建的分区上创建 PV。</strong></p>
 
 <pre><code>[root@iZ88qg9l425Z ~]# pvcreate /dev/vdc1
   Physical volume &quot;/dev/vdc1&quot; successfully created
@@ -460,7 +456,7 @@ Disk identifier: 0x4613ad5e
   PV UUID               83IQY3-Z7O0-kicK-xIbJ-ZmUW-AlOF-ENUAp6
 </code></pre>
 
-<p><strong>4. 将所有的新建的 PV 加入 vgdate</strong></p>
+<p><strong>4. 将所有的新建的 PV 加入 vgdate。</strong></p>
 
 <pre><code>[root@iZ88qg9l425Z ~]# vgcreate vgdata /dev/vdb1 /dev/vdc1
   Volume group &quot;vgdata&quot; successfully created
@@ -493,7 +489,7 @@ Disk identifier: 0x4613ad5e
   Logical volume &quot;lvdata&quot; created
 </code></pre>
 
-<p><strong>5. 格式化并挂载</strong></p>
+<p><strong>5. 格式化并挂载。</strong></p>
 
 <pre><code>[root@iZ88qg9l425Z ~]# mkfs.ext4 -c /dev/vgdata/lvdata   # 对分区使用 ext4 格式化，-c 参数要先检测磁盘坏道
 mke2fs 1.41.12 (17-May-2010)

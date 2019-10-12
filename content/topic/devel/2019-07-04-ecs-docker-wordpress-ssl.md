@@ -22,7 +22,7 @@ published: true
 
 
 
-<a name="939b63ae"></a>
+
 # 1. 购买ECS主机
 
 如果只用来做简单的个人博客，1核1G足够，当然后面也可以根据需求自己扩容。本人用的阿里的主机，平时工作需要搭其他环境，用的2核4G，价钱就不说了，如果经济紧张，或只是搭个玩的，可以入搬瓦工或者腾讯云，具体价格可以去各自的官网查看。
@@ -33,7 +33,7 @@ published: true
 
 
 
-<a name="36fde6e0"></a>
+
 # 2. 购买域名
 
 这个没什么说的，直接进网站找自己喜欢域名，支付就 OK。
@@ -42,7 +42,7 @@ published: true
 
 
 
-<a name="e9e8c389"></a>
+
 # 3. 申请备案
 
 阿里云网站备案：[https://beian.aliyun.com/](https://beian.aliyun.com/)
@@ -53,7 +53,7 @@ published: true
 
 
 
-<a name="12e164a2"></a>
+
 # 4. 环境配置
 
 WordPress 是一个非常著名的 PHP 编写的博客平台，发展到目前为止已经形成了一个庞大的网站平台系统。在 WP 上有规模庞大的插件和主题，可以帮助我们快速建立一个博客甚至网站。
@@ -93,11 +93,11 @@ docker run -itd --name wordpress -p 127.0.0.1:8090:80 --link mysql:mysql -v /hom
 
 
 
-<a name="f2fa3e8b"></a>
+
 # 5. 域名解析
 
 
-<a name="aebd8bde"></a>
+
 ## 5.1 安装并启动 nginx
 
 ```
@@ -106,7 +106,7 @@ systemctl start nginx
 ```
 
 
-<a name="8d1eb5ee"></a>
+
 ## 5.2 配置 nginx.conf
 
 进入服务器 nginx 安装路径，进入 conf 文件夹，编辑 nginx.conf，加入一行 `include sites-available/*.conf`。
@@ -130,7 +130,7 @@ http {
 ```
 
 
-<a name="52673922"></a>
+
 ## 5.3 配置 wordpress.conf
 
 ```
@@ -151,33 +151,33 @@ server {
 ```
 
 
-<a name="e1fee0dd"></a>
+
 ## 5.4 添加域名解析
 
 登入阿里域名解析：https://netcn.console.aliyun.com/core/domain/list，点击相应域名的 "解析" 链接，根据提示添加域名的 A 记录，解析到你的服务器 ip 下。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559373255882-d5b2c908-7053-4474-bd71-4aa011f41e6b.png#align=left&display=inline&height=384&originHeight=384&originWidth=713&size=0&status=done&width=713#align=left&display=inline&height=384&originHeight=384&originWidth=713&status=done&width=713)
 
 
-<a name="1213502c"></a>
+
 ## 5.5 安装 wordpress
 
 添加完域名解析后，打开浏览器，输入 http://youdomain.com，然后就可以看到 WordPress 了。按照提示输入用户名等信息，然后安装 WordPress。等到它提示安装完成，那么 WordPress 的安装就算大功告成了。
 
 
 
-<a name="651ec9a7"></a>
+
 # 6. 安装 SSL 证书开启 https 访问
 
-<a name="5d1f4211"></a>
+
 ## 6.1 单域名免费证书申请
 
 登入阿里域名解析：https://netcn.console.aliyun.com/core/domain/list，点击相应域名的 "SSL证书" 链接，设置单域名免费证书。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559373255815-7ac27782-8249-43a6-9e7d-98a053b6eee2.png#align=left&display=inline&height=336&originHeight=336&originWidth=729&size=0&status=done&width=729#align=left&display=inline&height=336&originHeight=336&originWidth=729&status=done&width=729)
 
 
-<a name="4cd29f34"></a>
+
 ## 6.2 SSL 证书下载
 
 单域名免费证书提交申请后，一般十分钟就会审批下来。这时候，我们登陆 "[CA证书服务（数据安全）](https://yundun.console.aliyun.com/?spm=5176.2020520163.aliyun_sidebar.24.4eb62b7auFTPPK&p=cas#/cas/home)"，在 "我的订单" 中找到已经签发的域名证书，点击 "下载" 链接，通过 "下载证书for Nginx" 下载证书。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559373255775-88b7ae35-3ef8-4737-a5c4-ff1997f36fa2.png#align=left&display=inline&height=453&originHeight=453&originWidth=835&size=0&status=done&width=835#align=left&display=inline&height=453&originHeight=453&originWidth=835&status=done&width=835)<br />
-<a name="015f2df9"></a>
+
 ## 6.3 SSL 证书安装
 
 ( 1 ) 在 Nginx 的安装目录下创建 cert 目录，并且将下载的全部文件拷贝到 cert 目录中。<br />( 2 ) 将 wordpress.conf 修改为：
@@ -227,7 +227,7 @@ systemctl restart nginx
 请按照 6.4 方法修改，本人亲测，wordpress4.9.1-4.9.2 完美解决。
 
 
-<a name="8a0f4f53"></a>
+
 ## 6.4 全站开启 https
 
 **1、系统文件修改**
@@ -269,11 +269,11 @@ https://wordpress.org/plugins/really-simple-ssl/
 
 
 
-<a name="355b78f2"></a>
+
 # 7. 填坑总结
 
 
-<a name="e38fbc5e"></a>
+
 ## 7.1. 更换域名无法登陆后台
 
 在后台—设置—常规—WordPress 地址或者网站域名处设置了别的域名，结果导致后台无法登录了，这是一种情况；还有一种情况就是网站搬家了，或者是换域名了，也会出现这类问题，那么就需要重新配置下当前域名才能使得网站正常运行。

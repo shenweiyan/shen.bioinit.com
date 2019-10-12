@@ -12,13 +12,13 @@ Perl 是一种功能丰富的计算机程序语言，运行在超过 100 种计�
 
 # 一、CentOS 7 下安装 Perl
 
-<a name="4f2b0709"></a>
+
 ## 1. 源码包下载
 
 在官方网站下载新版本的源码包：[http://www.perl.org/get.html](http://www.perl.org/get.html)，我下载的是 [perl-5.26.1.tar.gz](http://www.cpan.org/src/5.0/perl-5.26.1.tar.gz)。
 
 
-<a name="a598c68f"></a>
+
 ## 2. 解压，设置源码
 
 ```bash
@@ -71,7 +71,7 @@ $ ./Configure -des -Dprefix=/usr/local/software/Perl-5.26 -Dusethreads -Uversion
 ```
 
 
-<a name="be70d80d"></a>
+
 ## 3. 编译安装
 
 ```bash
@@ -98,7 +98,7 @@ $ make install   # 命令完成后，基本安装就完成了
 ```
 
 
-<a name="781fbe87"></a>
+
 ## 4. 调整环境变量
 
 在 ~/.bashrc 中把 perl 添加到 PATH 中，然后 source ~/.bashrc 刷新。
@@ -108,7 +108,7 @@ export PATH="/usr/local/software/Perl-5.26/bin:$PATH"
 ```
 
 
-<a name="a9bdca2c"></a>
+
 ## 5. 安装完成
 
 ```bash

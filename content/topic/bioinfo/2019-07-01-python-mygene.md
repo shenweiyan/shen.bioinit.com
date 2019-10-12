@@ -7,7 +7,7 @@ category: 生信
 published: true
 ---
 
-<a name="2e2d5a8d"></a>
+
 # 一、背景
 
 对于每个生物信息分析的人来说，ID 匹配（映射）是一项非常常见，但又很繁琐的任务。假设，我们有一个来自上游分析的 gene symbol 或报告的 ID 列表，然后我们的下一个分析却需要使用基因 ID（例如 Entrez gene id 或 Ensembl gene id）。这时候，我们就希望将基因符号或报告的 ID 的列表转换为相应的基因 ID。
@@ -34,10 +34,10 @@ MyGene.info 提供两种简单的 Web 服务：一种用于基因查询，另一
 
 在这里，我们简单展示如何在 Python 中使用 **mygene** 模块来快速轻松地进行类似的 ID 匹配（映射）。**mygene**  本质上是一个方便的 Python 模块，通过这个模块我们可以访问 [MyGene.info](MyGene.info) 的基因查询 Web 服务。
 
-<a name="263d0691"></a>
+
 # 二、mygene 安装与使用
 
-<a name="291be7c8"></a>
+
 ## 1. 安装 mygene
 
 在 Python 中 mygene 的安装非常简单，直接使用 pip 就可以安装。
@@ -52,7 +52,7 @@ import mygene
 mg = mygene.MyGeneInfo()
 ```
 
-<a name="be569bd1"></a>
+
 ## 2. 把 gene symbols 转换成 Entrez gene ids
 假设 xli 是我们要转换为 entrez gene id 的 gene symbol 列表：
 ```python
@@ -88,7 +88,7 @@ Finished.
 
 上面程序的匹配（映射）结果作为字典列表返回。每个字典都包含我们要求返回的字段，在本例中为 "entrezgene" 字段。 每个字典还返回匹配的查询词 "query" 和内部 id("**_id**")，大部分时间与 "entrezgene" 相同（如果基因仅来自 Ensembl，则为 ensembl 基因 id）。
 
-<a name="7fa51b80"></a>
+
 ## 3. 把 gene symbols 转换成 Ensembl gene ids
 如果我们只需要返回 Ensembl gene ids 时，只需要把 fields 参数值改成 'ensembl.gene' 即可：
 
@@ -111,7 +111,7 @@ Finished.
 {u'ensembl': {u'gene': u'ENSG00000101473'}, u'query': u'ACOT8', u'_id': u'10005', u'_score': 83.99602}
 ```
 
-<a name="b02446a6"></a>
+
 ## 4. ID 与基因不匹配
 如果输入 id 没有匹配的基因，mygene 将在屏幕输出中打印相关的通知。此查询条目返回的字典中将包含 "notfound" 值为 True 的关键字。
 ```python
@@ -133,7 +133,7 @@ Pass "returnall=True" to return complete lists of duplicate or missing query ter
 {u'query': u'Gm10494', u'notfound': True}
 ```
 
-<a name="eded8793"></a>
+
 ## 5. 输入 ID 不仅仅是符号
 
 ```
@@ -162,7 +162,7 @@ Pass "returnall=True" to return complete lists of duplicate or missing query ter
 ]
 ```
 
-<a name="0679e648"></a>
+
 ## 6. ID 匹配多个基因
 从上一个结果中，你可能已经注意到查询词 "1007_s_at" 与两个基因匹配。在这种情况下，我们将从输出中收到通知，返回的结果将包括两个匹配的基因。
 

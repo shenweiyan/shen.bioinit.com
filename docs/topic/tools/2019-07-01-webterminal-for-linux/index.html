@@ -222,14 +222,10 @@
 <li>适用于 Python 2.7-3.6。</li>
 </ul>
 
-<p><a name="7758e477"></a></p>
-
 <h1 id="1-安装">1. 安装</h1>
 
 <pre><code class="language-bash">pip install webssh
 </code></pre>
-
-<p><a name="7007ea3e"></a></p>
 
 <h1 id="2-启动">2. 启动</h1>
 
@@ -251,8 +247,6 @@
 
 <p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1557796855288-8e6be73e-0d6d-4771-8eef-d30b387bd673.png#align=left&amp;display=inline&amp;height=395&amp;name=webt-2.png&amp;originHeight=395&amp;originWidth=784&amp;size=77127&amp;status=done&amp;width=784" alt="webt-2.png" /></p>
 
-<p><a name="d22b21b0"></a></p>
-
 <h1 id="3-参数">3. 参数</h1>
 
 <p>wssh 的一些主要参数如下</p>
@@ -272,8 +266,6 @@ wssh --log-file-prefix=main.log
 #更多参数说明
 wssh --help
 </code></pre>
-
-<p><a name="4b82d43d"></a></p>
 
 <h1 id="4-nginx">4. Nginx</h1>
 
@@ -295,8 +287,6 @@ wssh --help
 <li>使用 Nginx 作为后台代理，并启用 SSL 访问，可以避免你的 ssh 证书被暴露。此外，你的浏览器和 Web 服务器之间的通信将使用安全的 Websockets 进行加密。</li>
 <li>尝试使用 reject policy 作为缺少主机密钥时的策略，以及经过验证的 known_hosts，可以防止中间人的攻击。其思路是，webssh 会依次检查系统主机密钥文件（&rdquo;~/.ssh/known_hosts&rdquo;）和应用程序主机密钥文件（&rdquo;./known_hosts&rdquo;），如果 ssh 服务器的主机名（hostname）没有被发现或者密钥不匹配，连接将被中止。</li>
 </ul>
-
-<p><a name="729d440e"></a></p>
 
 <h1 id="5-参考资料">5. 参考资料</h1>
 

@@ -9,7 +9,7 @@ published: true
 
 os.path：常见的路径名操作模块。原文文档链接：[https://docs.python.org/3.6/library/os.path.html](https://docs.python.org/3.6/library/os.path.html)
 
-<a name="abspath"></a>
+
 ## abspath
 
 > 返回一个目录的绝对路径
@@ -25,7 +25,7 @@ os.path：常见的路径名操作模块。原文文档链接：[https://docs.py
 '/root/python_modu'
 ```
 
-<a name="basename"></a>
+
 ## basename
 
 > 返回一个路径名的最终名称
@@ -41,7 +41,7 @@ os.path：常见的路径名操作模块。原文文档链接：[https://docs.py
 
 ---
 
-<a name="dirname"></a>
+
 ## dirname
 
 > 返回一个目录的目录名
@@ -57,7 +57,7 @@ os.path：常见的路径名操作模块。原文文档链接：[https://docs.py
 
 ---
 
-<a name="exists"></a>
+
 ## exists
 
 > 测试指定文件是否存在
@@ -75,7 +75,7 @@ True
 
 ---
 
-<a name="getatime"></a>
+
 ## getatime
 
 > 得到指定文件最后一次的访问时间
@@ -91,7 +91,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ---
 
-<a name="getctime"></a>
+
 ## getctime
 
 > 得到指定文件最后一次的改变时间
@@ -107,7 +107,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ---
 
-<a name="getmtime"></a>
+
 ## getmtime
 
 > 得到指定文件最后一次的修改时间
@@ -123,7 +123,7 @@ os.stat_result(st_mode=33261, st_ino=100684935, st_dev=2050, st_nlink=1, st_uid=
 
 ---
 
-<a name="getsize"></a>
+
 ## getsize
 
 > 得到得到文件的大小
@@ -155,7 +155,7 @@ True
 
 ---
 
-<a name="isfile"></a>
+
 ## isfile
 
 > 测试指定参数是否是一个文件
@@ -187,7 +187,7 @@ True
 
 ---
 
-<a name="islink"></a>
+
 ## islink
 
 > 测试指定参数是否是一个软链接
@@ -203,7 +203,7 @@ False
 
 ---
 
-<a name="ismount"></a>
+
 ## ismount
 
 > 测试指定参数是否是挂载点
@@ -237,7 +237,7 @@ True
 
 ---
 
-<a name="realpath"></a>
+
 ## realpath
 
 > 返回指定文件的标准路径，而非软链接所在的路径
@@ -253,7 +253,7 @@ True
 
 ---
 
-<a name="samefile"></a>
+
 ## samefile
 
 > 测试两个路径是否指向同一个文件
@@ -266,7 +266,7 @@ True
 
 ---
 
-<a name="sameopenfile"></a>
+
 ## sameopenfile
 
 > 测试两个打开的文件是否指向同一个文件
@@ -295,7 +295,7 @@ True
 
 ---
 
-<a name="splitext"></a>
+
 ## splitext
 
 > 分割文件名，返回由文件名和扩展名组成的元组

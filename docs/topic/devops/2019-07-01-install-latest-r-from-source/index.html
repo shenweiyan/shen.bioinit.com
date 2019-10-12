@@ -234,8 +234,6 @@
 </tbody>
 </table>
 
-<p><a name="6dc08beb"></a></p>
-
 <h1 id="一-centos-安装-r-3-6-0">一、CentOS 安装 R-3.6.0</h1>
 
 <pre><code class="language-bash"># Rpy：--enable-R-shlib
@@ -259,8 +257,6 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib --enable-BLAS
 <li>同时，确保同目录下 <code>libRblas.so</code>、<code>libRlapack.so</code> 两个链接库也被正确生成，这两个库默认会生成，如果没有，需要添加参数：<code>--enable-BLAS-shlib</code> <code>--with-blas</code> <code>--with-lapack</code>；</li>
 <li>如果不编译生成 <code>libR.so</code>，在安装 rpy2（python 中的 R 语言接口模块） 时就无法正确编译。</li>
 </ul>
-
-<p><a name="c85c3849"></a></p>
 
 <h1 id="二-各种库和依赖解决">二、各种库和依赖解决</h1>
 
@@ -296,8 +292,6 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS=&quot
     checking whether bzip2 support suffices... configure: error: bzip2 library and headers are required
     ## zlib 版本已经符合要求，bzip2 版本要求 &gt;= 1.0.6
 </code></pre>
-
-<p><a name="8e1933ba"></a></p>
 
 <h2 id="bzip2-or-libbz2">bzip2 or libbz2</h2>
 
@@ -369,8 +363,6 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0  --enable-R-shlib LDFLAGS=&quot
     # 需要安装 curl &gt;= 7.28.0
 </code></pre>
 
-<p><a name="eaf997ff"></a></p>
-
 <h2 id="curl-or-libcurl">curl or libcurl</h2>
 
 <p>在《<a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Essential-programs-and-libraries">R Installation and Administration: A.1 Essential programs and libraries</a>》要求，libcurl 大于或等于 7.22.0 版本。Library <code>libcurl</code> (version 7.22.0 or later) is required, with at least 7.28.0 being desirable.</p>
@@ -419,8 +411,6 @@ $ make
 $ make install PREFIX=/Bioinfo/SoftWare/NewLibs/bzip2-1.0.6
 </code></pre>
 
-<p><a name="liblzma"></a></p>
-
 <h2 id="liblzma">liblzma</h2>
 
 <p>在编译过程中发现：&rdquo;<strong>configure: error: &ldquo;liblzma library and headers are required&rdquo;</strong>&ldquo;，需要安装 <strong>xz</strong>，对应主页：<a href="https://tukaani.org/xz/">https://tukaani.org/xz/</a>，安装如下：</p>
@@ -432,8 +422,6 @@ $ ./configure --prefix=/Bioinfo/SoftWare/NewLibs/xz-5.2.3
 $ make -j3
 $ make install
 </code></pre>
-
-<p><a name="libtiff"></a></p>
 
 <h2 id="libtiff">libtiff</h2>
 
@@ -466,8 +454,6 @@ $ make install
 <pre><code class="language-bash">export LD_LIBRARY_PATH=/Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/Bioinfo/SoftWare/NewLibs/tiff-4.0.9/lib/pkgconfig:$PKG_CONFIG_PATH
 </code></pre>
-
-<p><a name="872f855c"></a></p>
 
 <h2 id="libjpeg-and-libpng16">libjpeg and libpng16</h2>
 
@@ -518,8 +504,6 @@ $ make install
 <li><a href="http://libjpeg.sourceforge.net/">http://libjpeg.sourceforge.net/</a></li>
 </ul>
 
-<p><a name="514fe040"></a></p>
-
 <h1 id="三-完整编译安装命令">三、完整编译安装命令</h1>
 
 <p>如果使用了自定义安装的 gcc/c++ 进行编译，需要在 configure 时候使用 CC/CXX 进行指定，否则使用系统默认的 gcc/c++。由于 CentOS-6.5 默认的 gcc==4.4.7，该版本的 gcc 会导致 R&gt;=3.5.0 编译出现各种错误，非 root 用户手动升级 gcc 可以参考：<a href="https://www.yuque.com/shenweiyan/cookbook/r-centos-update-gcc">https://www.yuque.com/shenweiyan/cookbook/r-centos-update-gcc</a>。</p>
@@ -549,8 +533,6 @@ $ ./configure --prefix=/Bioinfo/SoftWare/R-3.6.0 \
 $ make
 $ make install
 </code></pre>
-
-<p><a name="63d567f6"></a></p>
 
 <h1 id="四-设置环境变量">四、设置环境变量</h1>
 
@@ -639,8 +621,6 @@ $ ldd /Bioinfo/SoftWare/R-3.5.0/lib64/R/library/stats/libs/stats.so
 </code></pre>
 
 <p>以上就是普通用户源码编译安装最新版本 R 的全部内容，总的一句话就是缺什么安装什么，从最基本的 gcc 编译器开始到 R 所需要的各种依赖库，直至最终安装完成。</p>
-
-<p><a name="3342f2dc"></a></p>
 
 <h1 id="五-参考资料">五、参考资料</h1>
 

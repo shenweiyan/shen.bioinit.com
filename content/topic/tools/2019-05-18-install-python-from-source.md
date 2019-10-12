@@ -11,7 +11,7 @@ published: true
 
 工欲善其事，必先利其器。关于 Python 安装教程在网上一搜一大把，但总感觉不够全面，尤其对于中间出现的一些问题的解决方法不尽如人意。鉴于此，本文基于 CentOS Linux release 6.5 对 python-3.7.3 的源码编译安装进行了一下简单的总结，记录如下。
 
-<a name="d635bbce"></a>
+
 ## 1. 安装环境
 
 ```bash
@@ -20,7 +20,7 @@ gcc: 4.8.5 20150623
 ```
 
 
-<a name="5590e8c9"></a>
+
 ## 2. 安装步骤
 
 如果您拥有 root 权限，请执以下依赖安装：
@@ -281,7 +281,7 @@ source ~/.bashrc
 运行命令 `python -V` ，查看是否出现 3.7.3 的版本，出现即为安装成功。
 
 
-<a name="b9acf683"></a>
+
 ## 3. 安装 pip+setuptools
 
 ```bash
@@ -293,7 +293,7 @@ python get-pip.py
 至此，CentOS Linux release 6.5 下的 python-3.7.3 全部安装完成。如果在安装过程中出现其他的报错，建议把 error 关键信息直接复制到 Google 进行检索，参考其他人的解决方法。
 
 
-<a name="a6a2ae93"></a>
+
 ## 4. 参考资料
 
 1. 行者无疆-ITer,《[python2.7 源码编译安装](https://www.cnblogs.com/ITer-jack/p/8305912.html)》, 博客园

@@ -209,8 +209,6 @@
 
 
 
-<p><a name="be2f0f66"></a></p>
-
 <h1 id="一-引言">一、引言</h1>
 
 <p>Jupyter（以前叫 iPython）已经被数据科学家，研究人员和分析师广泛采用。Jupyter 的笔记本用户界面可以将可执行代码与叙述性文本，方程式，交互式可视化和图像混合在一起，以加强团队合作，并推动可重复的研究和培训向前发展。Jupyter 开始于 Python 语言，现在拥有50种不同语言的内核，而 IRKernel 是用于 Jupyter 的本地 R 内核。</p>
@@ -219,11 +217,7 @@
 
 <p>接下来，让我们使用 conda 和 Jupyter 在 R 中开始一个数据科学项目。</p>
 
-<p><a name="9db04840"></a></p>
-
 <h1 id="二-安装">二、安装</h1>
-
-<p><a name="7ad68552"></a></p>
 
 <h2 id="1-创建-r-essentials">1. 创建&rdquo;R Essentials&rdquo;</h2>
 
@@ -240,8 +234,6 @@
 
 <pre><code>conda create -n my-r-env -c r r-essentials
 </code></pre>
-
-<p><a name="3305e88b"></a></p>
 
 <h2 id="2-常见问题与解决">2. 常见问题与解决</h2>
 
@@ -277,8 +269,6 @@ In doTryCatch(return(expr), name, parentenv, handler) :
 <pre><code>conda install -c clinicalgraphics libxdmcp
 </code></pre>
 
-<p><a name="ff544aba"></a></p>
-
 <h1 id="三-在-jupyter-notebook-中使用-r">三、在 Jupyter Notebook 中使用 R</h1>
 
 <p>Jupyter 提供了一个强大的笔记本交互界面来写你的分析，并与同行分享。打开一个 shell 并运行下面这个命令来启动浏览器中的 Jupyter 笔记本界面：</p>
@@ -289,8 +279,6 @@ In doTryCatch(return(expr), name, parentenv, handler) :
 <p>创建一个新的 R 笔记：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805308-29f4cb72-8d64-48ec-9e20-66aa93138faa.png#align=left&amp;display=inline&amp;height=513&amp;originHeight=513&amp;originWidth=1920&amp;size=0&amp;status=done&amp;width=1920" alt="" /></p>
 
 <p>接下来，你就可以在 notebook cells 中编写和运行你的 R 代码了。</p>
-
-<p><a name="616dc521"></a></p>
 
 <h2 id="1-jupyter-notebook-r-笔记示例">1. Jupyter Notebook R 笔记示例</h2>
 
@@ -359,7 +347,7 @@ Jupyter 可以把笔记转换为在线幻灯片，供讲座和教程使用。
 最后，打开浏览器展示幻灯片：&lt;br /&gt;![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805328-9b7d497c-f0c6-433a-b6b3-dc0423629596.png#align=left&amp;display=inline&amp;height=1013&amp;originHeight=1013&amp;originWidth=1920&amp;size=0&amp;status=done&amp;width=1920)
 
 
-&lt;a name=&quot;6333a7cf&quot;&gt;&lt;/a&gt;
+
 ## 3. 常见问题与解决
 
 ① jupyter notebook 中 R 画图，不显示文字、标签。&lt;br /&gt;![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805329-bb7033ad-aa24-4178-b488-1df27ad98684.png#align=left&amp;display=inline&amp;height=840&amp;originHeight=840&amp;originWidth=840&amp;size=0&amp;status=done&amp;width=840)
@@ -375,7 +363,7 @@ Jupyter 可以把笔记转换为在线幻灯片，供讲座和教程使用。
 参考：[https://github.com/ContinuumIO/anaconda-issues/issues/7455](https://github.com/ContinuumIO/anaconda-issues/issues/7455)
 
 
-&lt;a name=&quot;947cb77a&quot;&gt;&lt;/a&gt;
+
 # 四、创建自定义 R 包
 
 出于用户使用方便考虑，Anaconda 已经在 “R Essentials” 中打包了一些最常用的数据科学 R 包。使用 `conda metapackage` 命令创建您自己的 R 软件包以便与同行共享也非常容易。例如，提供一个只包含在我们的示例笔记本中使用的库，名字为 custom-r-bundle 的下载程序，只需创建 metapackage 即可：
@@ -397,8 +385,6 @@ anaconda upload path/to/custom-r-bundle-0.1.0-0.tar.bz2</p>
 
 <p>conda install -c <your anaconda.org username> custom-r-bundle
 ```</p>
-
-<p><a name="f5e882ad"></a></p>
 
 <h1 id="五-总结">五、总结</h1>
 

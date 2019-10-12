@@ -18,7 +18,7 @@ webSSH 是 Python 语言写的一个基于 tornado 和 paramiko 包的 web 应�
 - 自动检测系统默认编码；
 - 适用于 Python 2.7-3.6。
 
-<a name="7758e477"></a>
+
 # 1. 安装
 
 ```bash
@@ -27,7 +27,7 @@ pip install webssh
 
 
 
-<a name="7007ea3e"></a>
+
 # 2. 启动
 
 webssh 安装完成，我们可以通过 wssh 命令进行启动
@@ -50,7 +50,7 @@ $ wssh --address='0.0.0.0' --port=8000
 
 
 
-<a name="d22b21b0"></a>
+
 # 3. 参数
 
 wssh 的一些主要参数如下
@@ -73,7 +73,7 @@ wssh --help
 
 
 
-<a name="4b82d43d"></a>
+
 # 4. Nginx
 
 wssh 可以使用 Nginx 作为后台代理，以及启用 SSL 访问，参考配置文件
@@ -93,7 +93,7 @@ location / {
 - 使用 Nginx 作为后台代理，并启用 SSL 访问，可以避免你的 ssh 证书被暴露。此外，你的浏览器和 Web 服务器之间的通信将使用安全的 Websockets 进行加密。
 - 尝试使用 reject policy 作为缺少主机密钥时的策略，以及经过验证的 known_hosts，可以防止中间人的攻击。其思路是，webssh 会依次检查系统主机密钥文件（"~/.ssh/known_hosts"）和应用程序主机密钥文件（"./known_hosts"），如果 ssh 服务器的主机名（hostname）没有被发现或者密钥不匹配，连接将被中止。
 
-<a name="729d440e"></a>
+
 # 5. 参考资料
 
 - [https://www.oschina.net/p/webterminal](https://www.oschina.net/p/webterminal)

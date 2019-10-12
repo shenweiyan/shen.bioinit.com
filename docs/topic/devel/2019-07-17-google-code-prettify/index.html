@@ -215,13 +215,9 @@
 
 <p>GitHub 地址：<a href="https://github.com/google/code-prettify">https://github.com/google/code-prettify</a></p>
 
-<p><a name="b32edaa9"></a></p>
-
 <h1 id="1-主题"><strong>1、主题</strong></h1>
 
 <p>google-code-prettify 提供了 5 个 css 主题可供选择，而且支持自定义 style。相关的 demo 及 style 文件参见：<a href="https://rawgit.com/google/code-prettify/master/styles/index.html">https://rawgit.com/google/code-prettify/master/styles/index.html</a>。</p>
-
-<p><a name="5eb83854"></a></p>
 
 <h1 id="2-文件"><strong>2、文件</strong></h1>
 
@@ -230,8 +226,6 @@
 <pre><code class="language-html">&lt;link href=&quot;http://alfred-sun.github.io/assets/google-code-prettify/prettify.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot;&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://alfred-sun.github.io/assets/google-code-prettify/prettify.js&quot;&gt;&lt;/script&gt;
 </code></pre>
-
-<p><a name="d75b554c"></a></p>
 
 <h1 id="3-使用"><strong>3、使用</strong></h1>
 
@@ -244,8 +238,6 @@
 
 <p>到这里，我们就可以使用 <code>&lt;pre&gt;&lt;/pre&gt;</code> 标签进行高亮了。</p>
 
-<p><a name="9521b68e"></a></p>
-
 <h2 id="3-1-基本用法">3.1. 基本用法</h2>
 
 <p>Google 的高亮插件使用比较方便，只需要在 <code>&lt;pre&gt;</code> 的标签上加入 <code>prettyprint</code> 即可。</p>
@@ -254,8 +246,6 @@
     // code here
 &lt;/pre&gt;
 </code></pre>
-
-<p><a name="5676777f"></a></p>
 
 <h2 id="3-2-行号设置">3.2. 行号设置</h2>
 
@@ -277,8 +267,6 @@
 
 <p>这样就没有问题了，可以直接用 markdown 的前置 4 空格来写代码了。其中 <code>addClass('prettyprint linenums')</code> 的 linenums 是添加行号的意思。默认只显示第 5、10、15&hellip; 行，可以在 css 文件中 li 的格式添加 <code>list-style-type: decimal;</code> ，以显示全部行号。</p>
 
-<p><a name="436636a7"></a></p>
-
 <h2 id="3-4-bootstrap-代码框滚动">3.4. Bootstrap 代码框滚动</h2>
 
 <p>如果博客中有用 Bootstrap，其中对 pre 有如下几句：</p>
@@ -293,13 +281,9 @@ word-wrap:break-word;
 
 <p>如果是滚动条，默认的滚动太难看而且还有个 Bug（stripe 的高亮背景色无法固定，随着滚动条位置改变而改变，可以考虑去掉 stripe，或者禁用横向滚动条），可以修改一下样式，看一下：<a href="http://ju.outofmemory.cn/entry/149458">CSS自定义浏览器滚动条样式</a>。</p>
 
-<p><a name="f7adf042"></a></p>
-
 <h1 id="4-leanote-博客"><strong>4、Leanote 博客</strong></h1>
 
 <p>这里主要讲一下如何在 leanote 博客中使用 Google Code Prettify，并实现代码框左右滚动的效果。</p>
-
-<p><a name="cbf56ae8"></a></p>
 
 <h2 id="4-1-bootstrap-文件">4.1. bootstrap 文件</h2>
 
@@ -332,8 +316,6 @@ code.prettyprint .linenums, pre.prettyprint .linenums{
 </code></pre>
 
 <p>最后，清空浏览器缓存，就可以看到 <a href="http://blog.leanote.com/shenweiyan">leanote 博客</a>代码框左右滚动的效果。</p>
-
-<p><a name="729d440e"></a></p>
 
 <h1 id="5-参考资料">5. 参考资料</h1>
 

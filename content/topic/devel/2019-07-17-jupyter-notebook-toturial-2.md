@@ -14,13 +14,13 @@ published: true
 [英文文档地址在此](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)，英文好的小伙伴可以直接去实施。
 
 
-<a name="96b470cf"></a>
+
 ## 1. 安装
 
 Jupyter Notebook 的安装参考《[数据科学工具 Jupyter Notebook 教程(一)](https://www.yuque.com/shenweiyan/cookbook/jupyter-notebook-toturial-1)》。
 
 
-<a name="da8f18ee"></a>
+
 ## 2. 配置
 
 下面的命令会在 `~/.jupyter` 自动创建一个配置文件 ** jupyter_notebook_config.py**。
@@ -55,7 +55,7 @@ c.NotebookApp.port = 8888
 如此这般之后，配置完成咯！
 
 
-<a name="4c763bb6"></a>
+
 ## 3. 运行
 
 执行命令，就可以看到 jupyter notebook 执行的日志信息：
@@ -88,14 +88,14 @@ jupyter notebook --ip=0.0.0.0 --no-browser --allow-root
 ```
 
 
-<a name="5d50cc51"></a>
+
 ## 4. 域名解析
 
 配置 nginx 前需要把你已经申请的域名跟 Jupyter Notebook 的服务器 ip 进行绑定解析。打开阿里云域名管理，增加 A 记录解析：
 
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563334760254-00323543-edb8-4b95-8d6a-fb88595aef5a.png#align=left&display=inline&height=398&originHeight=398&originWidth=736&size=0&status=done&width=736)
 
-<a name="5f33f177"></a>
+
 ## 5. 配置 nginx
 
 Nginx 是一个高效的服务器，著名的 LNMP 中的 N，相信很多在 VPS 搭建过网站的小伙伴一定不陌生。我假设你已经安装好了 nginx，如果不会安装可以自行百度。

@@ -7,19 +7,19 @@ category: 开发
 published: true
 ---
 
-<a name="df368884"></a>
+
 ## 前言
 
 Jupyter Notebook 作为一个把代码、图像、注释、公式和作图集于一处，从而实现可读性分析的交互式笔记本工具，借助所谓的内核（Kernel）的概念，Jupyter Notebook 可以同时支持包括 python2、python3、R、Ruby 在内超过50多种不同编程环境。基于Kernel，Jupyter Notebook 可以支持的编程语言可以参考[列表](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)。
 
 
-<a name="d994d598"></a>
+
 ## 目的
 
 在 Jupyter Notebook 中实现 python2 与 python3 自由切换。
 
 
-<a name="52b36576"></a>
+
 ## 步骤
 
 参考：[https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook](https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook)

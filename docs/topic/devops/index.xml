@@ -71,7 +71,7 @@
       <pubDate>Fri, 19 Jul 2019 01:01:22 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/devops/2019-07-19-ucig1a/</guid>
-      <description>找出 username 用户所有进程包括子进程并全部kill掉： ps -ef | grep ^username | cut -c 10-15 | xargs kill -9 找出所有与 username 相关的进程，然后 grep -v 过滤掉 PID 只剩下进程信息，然后逐行 kill 掉</description>
+      <description>找出 username 用户所有进程包括子进程并全部 kill 掉： ps -ef | grep ^username | cut -c 10-15 | xargs kill -9 找出所有与 username 相关的进程，然后 grep -v 过滤掉 PID 只剩下进程信息，然后逐行 kill 掉，如下</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@
       <pubDate>Mon, 01 Jul 2019 03:50:35 +0000</pubDate>
       
       <guid>https://shen.bioinit.com/topic/devops/2019-07-01-windows-ports/</guid>
-      <description>1. 问题 将项目部署到 Windows server 2008 服务器上，开启了 http/https 之后，在用服务器本身的浏览器访问：[http://domain.com]() ([https://domain.com](https://domain.com)) 就可以访问，可是在外</description>
+      <description>1. 问题 将项目部署到 Windows server 2008 服务器上，开启了 http/https 之后，在用服务器本身的浏览器访问：http://domain.com 就可以访问，可是在外用其他电脑</description>
     </item>
     
     <item>

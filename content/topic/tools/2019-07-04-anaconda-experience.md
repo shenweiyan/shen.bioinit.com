@@ -45,11 +45,11 @@ show_channels_urls: true
 更多 Anaconda channels，可以参考：[https://repo.continuum.io/pkgs/](https://repo.continuum.io/pkgs/)。
 
 
-<a name="6e008e24"></a>
+
 # 2. 软件安装使用
 
 conda 环境下的软件尽量使用 conda、pip 命令去安装。但同时也产生了一个问题，即 conda 中安装了 R，有些使用了 `install.packages()` , `install_github` , `biocLite` 等方式安装的 R 包，在环境迁移的时候，这些包如何迁移？<br /><br />
-<a name="31326bda"></a>
+
 # 3. 环境激活
 
 conda 4.6.x 切换环境使用的是：
@@ -134,11 +134,11 @@ while read requirement; do conda install --yes $requirement; done < requirements
 ```
 
 
-<a name="71a62493"></a>
+
 # 5. R 与 R 包安装
 
 R Essentials 软件包包含 IRKernel 和 80 多种最流行的数据科学 R 软件包，包括 dplyr，shiny，ggplot2，tidyr，caret 和 nnet 等。<br />
-<a name="d46d2538"></a>
+
 ## 5.1 R 软件
 
 conda 安装 R 有很多种方法，如可以通过 r=3.6.x，或者 r-base、r-irkernel、r-essentials 都可以。需要注意：
@@ -220,10 +220,10 @@ install_github("jokergoo/ComplexHeatmap")
 ```
 
 
-<a name="c3806f74"></a>
+
 # 6. 特别注意的软件
 
-<a name="18cd0dcd"></a>
+
 ## 6.1 gcc
 
 对于使用 `conda install --yes --file requirements.txt` 重装某一个环境的所有软件时，如果软件中包含了 gcc，安装了 R 后，在使用 R 时会可能会引发错误：
@@ -232,7 +232,7 @@ install_github("jokergoo/ComplexHeatmap")
 ```
 
 
-<a name="8b17553d"></a>
+
 ## 6.2 glibc
 
 > glibc 是 GNU 发布的 libc 库，即 c 运行库。glibc 是 linux 系统中最底层的 api，几乎其它任何运行库都会依赖于 glibc。glibc 除了封装 linux 操作系统所提供的系统服务外，它本身也提供了许多其它一些必要功能服务的实现。由于 glibc 囊括了几乎所有的 UNIX 通行的标准，可以想见其内容包罗万象。而就像其他的 UNIX 系统一样，其内含的档案群分散于系统的树状目录结构中，像一个支架一般撑起整个作业系统。在 GNU/Linux 系统中，其 C 函式库发展史点出了 GNU/Linux 演进的几个重要里程碑，用 glibc 作为系统的 C 函式库，是 GNU/Linux 演进的一个重要里程碑。
