@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Sat, 12 Oct 2019 06:33:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 02:39:15 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>输入法</title>
+      <link>https://shen.bioinit.com/topic/life/2019-10-16-input/</link>
+      <pubDate>Wed, 16 Oct 2019 02:39:15 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/life/2019-10-16-input/</guid>
+      <description>现在移动端电脑端的输入法有很多。但有一个问题：安卓手机上哪个输入法可以左右滑动键盘来移动光标？ 我用的是华为手机，目前搜狗输入法是可以的。 第二</description>
+    </item>
     
     <item>
       <title>基于 Dash Bio 的生物信息学数据可视化</title>
