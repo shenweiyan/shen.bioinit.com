@@ -7,7 +7,7 @@ category: 开发
 published: true
 ---
 
-**作者：**[](https://twitter.com/justmarkham)[Kevin Markham](https://twitter.com/justmarkham)<br />**编译：**Steven Shen<br />**原文：**[https://www.dataschool.io/cloud-services-for-jupyter-notebook/](https://www.dataschool.io/cloud-services-for-jupyter-notebook/)
+**作者：**[Kevin Markham](https://twitter.com/justmarkham)<br />**编译：**Steven Shen<br />**原文：**[https://www.dataschool.io/cloud-services-for-jupyter-notebook/](https://www.dataschool.io/cloud-services-for-jupyter-notebook/)
 
 ![1_oj36TMqOkHmi6u3kCSsr7Q.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1561014512583-882c390f-13af-4823-821e-1f8f991ab433.png#align=left&display=inline&height=615&name=1_oj36TMqOkHmi6u3kCSsr7Q.png&originHeight=615&originWidth=999&size=64145&status=done&width=999)
 

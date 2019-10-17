@@ -48,7 +48,8 @@ show_channels_urls: true
 
 # 2. 软件安装使用
 
-conda 环境下的软件尽量使用 conda、pip 命令去安装。但同时也产生了一个问题，即 conda 中安装了 R，有些使用了 `install.packages()` , `install_github` , `biocLite` 等方式安装的 R 包，在环境迁移的时候，这些包如何迁移？<br /><br />
+conda 环境下的软件尽量使用 conda、pip 命令去安装。但同时也产生了一个问题，即 conda 中安装了 R，有些使用了 `install.packages()` , `install_github` , `biocLite` 等方式安装的 R 包，在环境迁移的时候，这些包如何迁移？
+
 
 # 3. 环境激活
 
