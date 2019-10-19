@@ -17,7 +17,9 @@ published: true
 
 正则表达式并不是 Python 的一部分。正则表达式是用于处理字符串的强大工具，拥有自己独特的语法以及一个独立的处理引擎，效率上可能不如 str 自带的方法，但功能十分强大。得益于这一点，在提供了正则表达式的语言里，正则表达式的语法都是一样的，区别只在于不同的编程语言实现支持的语法数量不同；但不用担心，不被支持的语法通常是不常用的部分。
 
-下图展示了使用正则表达式进行匹配的流程：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183748458-b30abed3-8df3-4b3a-af8a-6384f7ee1b22.png#align=left&display=inline&height=177&originHeight=177&originWidth=431&size=0&status=done&width=431)
+下图展示了使用正则表达式进行匹配的流程：
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183748458-b30abed3-8df3-4b3a-af8a-6384f7ee1b22.png#align=left&display=inline&height=177&originHeight=177&originWidth=431&size=0&status=done&width=431)
 
 正则表达式的大致匹配过程是：依次拿出表达式和文本中的字符比较，如果每一个字符都能匹配，则匹配成功；一旦有匹配不成功的字符则匹配失败。
 
@@ -49,4 +51,6 @@ published: true
 |  |  |  |
 
 
-[https://www.cnblogs.com/wxshi/p/6827056.html](https://www.cnblogs.com/wxshi/p/6827056.html)<br />[http://www.runoob.com/python/python-reg-expressions.html](http://www.runoob.com/python/python-reg-expressions.html)
+[https://www.cnblogs.com/wxshi/p/6827056.html](https://www.cnblogs.com/wxshi/p/6827056.html)
+
+[http://www.runoob.com/python/python-reg-expressions.html](http://www.runoob.com/python/python-reg-expressions.html)

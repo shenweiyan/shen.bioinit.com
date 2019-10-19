@@ -17,12 +17,18 @@ published: true
 
 **/var/log/btmp** 文件是记录错误登录的日志，就是说有很多人试图使用密码字典登录 ssh 服务，此日志需要使用 lastb 程序打开。
 
-`lastb` 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；<br />`last` 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558494813715-1f830322-dafc-423d-9bf6-8c0c1923ddb3.png#align=left&display=inline&height=517&name=image.png&originHeight=517&originWidth=706&size=78294&status=done&width=706#align=left&display=inline&height=517&originHeight=517&originWidth=706&search=&status=done&width=706)
+`lastb` 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；
+
+`last` 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；
+
+![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558494813715-1f830322-dafc-423d-9bf6-8c0c1923ddb3.png#align=left&display=inline&height=517&name=image.png&originHeight=517&originWidth=706&size=78294&status=done&width=706#align=left&display=inline&height=517&originHeight=517&originWidth=706&search=&status=done&width=706)
 
 东北大学收集的发动 SSH 攻击的 IP 地址列表：[http://antivirus.neu.edu.cn/scan/ssh.php](http://antivirus.neu.edu.cn/scan/ssh.php)
 
 
-我们可以简单统计 ip 出现的次数，然后针对这些 ip 进行处理：<br />`blastb | awk '{print $3}' |sort |uniq -c |sort -k 1 -n -r |head -20`
+我们可以简单统计 ip 出现的次数，然后针对这些 ip 进行处理：
+
+`blastb | awk '{print $3}' |sort |uniq -c |sort -k 1 -n -r |head -20`
 
 
 
@@ -52,7 +58,9 @@ cat /var/log/secure | grep 'Failed password'
 - **/etc/hosts.allow**，这个文件是存放允许访问服务器的所有 IP 的内容，可以简单理解为白名单；
 - **/etc/hosts.deny**，这个文件存放的是不允许访问服务器的 IP 内容，简单理解为黑名单。
 
-① 创建存放实施攻击的 ip 的文本，命名为：denyhosts.txt（`/root/denyhosts/denyhosts.txt`）。<br />② 创建定时脚本文件，命名为：denyhosts.sh（`/root/denyhosts/denyhosts.sh`）。
+① 创建存放实施攻击的 ip 的文本，命名为：denyhosts.txt（`/root/denyhosts/denyhosts.txt`）。
+
+② 创建定时脚本文件，命名为：denyhosts.sh（`/root/denyhosts/denyhosts.sh`）。
 
 ```bash
 #!/bin/bash
@@ -74,7 +82,9 @@ do
 done
 ```
 
-③ 脚本创建好之后，将脚本的权限更改为可执行权限： `chmod a+x denyhosts.sh` 。<br />④ SSH 攻击是每时每刻都在发动攻击的，所以我们需要将脚本添加到定时任务中，定时的执行：
+③ 脚本创建好之后，将脚本的权限更改为可执行权限： `chmod a+x denyhosts.sh` 。
+
+④ SSH 攻击是每时每刻都在发动攻击的，所以我们需要将脚本添加到定时任务中，定时的执行：
 ```bash
 cat /etc/crontab # 这个文本是存放定时脚本的文本
 ```

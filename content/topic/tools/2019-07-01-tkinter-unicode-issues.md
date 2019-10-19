@@ -88,14 +88,20 @@ tkinter 包（"Tk 接口"）是 Tk GUI 工具包的标准 Python 接口。 Tk �
 
 ![](https://qiniu.bioinit.com/yuque/0/2018/png/126032/1543216935547-c6324ffc-7042-4076-82a0-759565c4b258.png#width=687)
 
-接下来我们将尝试在 Python 2 中安装 Tcl/Tk，并重新编译 python 2，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ?）。<br />
+接下来我们将尝试在 Python 2 中安装 Tcl/Tk，并重新编译 python 2，已完成 Tkinter 安装（tkinter 为 Python 的标准库，标准库的安装需要重新编译 Python ?）。
+
+
 
 
 # ActiveTcl 安装
 
 ActiveTcl 是 ActiveState 发布的关于 Tcl/Tk 的发行版本，该发行版本包含了最新版本的 Tk 和 Tcl 程序，我们下载其免费的社区版本进行安装即可。
 
-参考下载链接：[https://www.activestate.com/products/activetcl/downloads/](https://www.activestate.com/products/activetcl/downloads/)<br />参考安装教程：[https://tkdocs.com/tutorial/install.html](https://tkdocs.com/tutorial/install.html)<br />
+参考下载链接：[https://www.activestate.com/products/activetcl/downloads/](https://www.activestate.com/products/activetcl/downloads/)
+
+参考安装教程：[https://tkdocs.com/tutorial/install.html](https://tkdocs.com/tutorial/install.html)
+
+
 
 以下为 CentOS 7 下 **ActiveTcl-8.6.8.0 **的一些安装记录，仅作参考。
 

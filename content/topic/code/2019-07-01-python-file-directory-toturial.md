@@ -11,23 +11,41 @@ Python 有很多内置的模块和函数可用于文件的操作处理，这些�
 
 通过本教程，你可以：
 
-- 检索文件属性<br />
+- 检索文件属性
+
+
 Retrieve file properties
-- 创建目录<br />
+- 创建目录
+
+
 Create directories
-- 基于文件名的模式匹配<br />
+- 基于文件名的模式匹配
+
+
 Match patterns in filenames
-- 遍历目录树<br />
+- 遍历目录树
+
+
 Traverse directory trees
-- 创建临时文件和目录<br />
+- 创建临时文件和目录
+
+
 Make temporary files and directories
-- 删除文件和目录<br />
+- 删除文件和目录
+
+
 Delete files and directories
-- 拷贝、转移、重命名文件和目录<br />
+- 拷贝、转移、重命名文件和目录
+
+
 Copy, move, or rename files and directories
-- 创建和提取 ZI P和 TAR 打包<br />
+- 创建和提取 ZI P和 TAR 打包
+
+
 Create and extract ZIP and TAR archives
-- 使用 `fileinput` 模块打开多个文件<br />
+- 使用 `fileinput` 模块打开多个文件
+
+
 Open multiple files using the fileinput module
 
 ---
@@ -166,7 +184,9 @@ sub_dir
 
 使用`pathlib.Path()`或`os.scandir()`而不是`os.listdir()`是获取目录列表的首选方法，尤其是在处理需要文件类型和文件属性信息的代码时。 `pathlib.Path()`提供了`os`和`shutil`中的大部分文件和路径处理功能，它的方法比这些模块中的方法更有效。 接下来我们将讨论如何快速获取文件属性。
 
-以下是目录列表功能：<br />
+以下是目录列表功能：
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550397843454-63fde9bf-a1b5-485f-8460-6ba588c98ee2.png#align=left&display=inline&height=154&originHeight=154&originWidth=647&size=0&width=647)
 
 这些函数返回了一个包含了目录中所有内容的列表，包括子目录。这些操作可能并不总是您想要的。下一节我们将介绍如何从目录列表中进行结果过滤。
@@ -384,7 +404,9 @@ file2.txt       Last modified:  17 Sep 2018
 
 # 创建目录
 
-我们编写的程序需要创建目录以便在其中存储数据时，可以参考`os`和`pathlib`中包含用于创建目录的函数。<br />
+我们编写的程序需要创建目录以便在其中存储数据时，可以参考`os`和`pathlib`中包含用于创建目录的函数。
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550397843470-77c25738-ab61-4cba-869f-ad50bf258665.png#align=left&display=inline&height=160&originHeight=160&originWidth=606&size=0&width=606)
 
 
@@ -666,7 +688,9 @@ docs.pdf
 
 `Path.glob()`类似于上面讨论的`os.glob()`。 正如我们所看到的，`pathlib`将`os`，`os.path`和`glob`模块的许多最佳功能组合到一个模块中，这使得使用起来非常愉快。
 
-回顾一下，这是我们在本节中介绍的功能表：<br />
+回顾一下，这是我们在本节中介绍的功能表：
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550397843462-b90098df-da27-41a2-b1b3-f5e7ce9d796e.png#align=left&display=inline&height=448&originHeight=539&originWidth=897&size=0&width=746)
 
 
@@ -953,7 +977,9 @@ for dirpath, dirnames, files in os.walk('.', topdown=False):
 
 这将遍历目录树并尝试删除它找到的每个目录。如果目录不为空，则引发`OSError`并跳过该目录。
 
-下表列出了本节中涉及的功能：<br />
+下表列出了本节中涉及的功能：
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550397843476-f90912e9-33a2-4041-b686-30cbfb2c4b56.png#align=left&display=inline&height=427&originHeight=502&originWidth=878&size=0&width=746)
 
 
@@ -1198,7 +1224,9 @@ with tarfile.open('example.tar', 'r') as tar_file:
 
 `tarfile`对象的打开方式跟大多数类似文件对象的打开方式一样。它们有一个`open()`函数，并采用一种模式来确定文件的打开方式。
 
-使用 "r"，"w" 或 "a" 模式分别打开未压缩的 TAR 文件以进行读取，写入和追加。要打开压缩的 TAR 文件，需要将模式参数传递给`tarfile.open()`，其格式为`filemode [:compression]`。下表列出了可以打开 TAR 文件的可能模式：<br />
+使用 "r"，"w" 或 "a" 模式分别打开未压缩的 TAR 文件以进行读取，写入和追加。要打开压缩的 TAR 文件，需要将模式参数传递给`tarfile.open()`，其格式为`filemode [:compression]`。下表列出了可以打开 TAR 文件的可能模式：
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550397843495-6df8d21a-b14c-4afd-baf1-5257f3aa2afa.png#align=left&display=inline&height=483&originHeight=566&originWidth=875&size=0&width=746)
 
 `.open()` 默认以 'r' 模式打开文件。要读取未压缩的 TAR 文件并检索其中的文件名，可以使用`.getnames()`：

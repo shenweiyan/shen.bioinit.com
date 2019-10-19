@@ -221,19 +221,26 @@
 <li>登录<a href="https://ecs.console.aliyun.com/">ECS管理控制台</a>。</li>
 <li>在左侧导航栏，选择**<strong>实例与镜像</strong> &gt; <strong>实例</strong>**。</li>
 <li>在顶部状态栏处，选择地域。</li>
-<li>找到需要更换系统盘的实例，在<strong>操作</strong>列中，单击**<strong>更多</strong> &gt; <strong>实例状态</strong> &gt; <strong>停止</strong><strong>，并按页面提示停止实例。<br /></strong>说明<strong> 对于按量付费的VPC类型实例而言，停机不收费模式下，更换系统盘后可能无法成功启动实例。建议您停止实例时关闭</strong>停机不收费**。具体操作，请参见<a href="https://help.aliyun.com/document_detail/63353.html#concept-js1-1fd-5db">按量付费实例停机不收费</a>。<br /></li>
+<li>找到需要更换系统盘的实例，在<strong>操作</strong>列中，单击**<strong>更多</strong> &gt; <strong>实例状态</strong> &gt; <strong>停止</strong>**，并按页面提示停止实例。</li>
+</ol>
+
+<p><strong>说明</strong> 对于按量付费的VPC类型实例而言，停机不收费模式下，更换系统盘后可能无法成功启动实例。建议您停止实例时关闭<strong>停机不收费</strong>。具体操作，请参见<a href="https://help.aliyun.com/document_detail/63353.html#concept-js1-1fd-5db">按量付费实例停机不收费</a>。</p>
+
+<ol>
 <li>实例停止后，在<strong>操作</strong>列中，单击**<strong>更多</strong> &gt; <strong>磁盘和镜像</strong> &gt; <strong>更换系统盘</strong>**。</li>
 <li>在弹出的对话框里，仔细阅读更换系统盘注意事项后，单击<strong>确定，更换系统盘</strong>。</li>
 <li>在<strong>更换系统盘</strong>页面上，配置以下参数。
 
 <ul>
-<li><strong>镜像类型</strong>：选择<strong>公共镜像</strong>，并选择需要的镜像版本。<br /><strong>说明</strong> 如果您需要使用其他镜像，请参见<a href="https://help.aliyun.com/document_detail/25448.html#concept-vbb-ckj-ydb">更换系统盘（非公共镜像）</a>。</li>
-<li><strong>系统盘</strong>：不能更换系统盘的云盘类型，但是您能根据业务需求和新镜像的需求扩容系统盘，最大容量为500 GiB。扩容时能设置的最小容量与系统盘当前容量有关，如下表所示。</li>
-<li><strong>安全设置。</strong></li>
-<li>确认<strong>配置费用</strong>：目前中国站所有公共镜像都不收费，这里的配置费用指系统盘的费用。系统盘价格，请参见<a href="https://www.aliyun.com/price/product#/ecs/detail">云产品价格页</a>。</li>
-<li>确认无误后，单击<strong>确定更换</strong>。</li>
+<li><strong>镜像类型</strong>：选择<strong>公共镜像</strong>，并选择需要的镜像版本。</li>
 </ul></li>
 </ol>
+
+<p><strong>说明</strong> 如果您需要使用其他镜像，请参见<a href="https://help.aliyun.com/document_detail/25448.html#concept-vbb-ckj-ydb">更换系统盘（非公共镜像）</a>。
+  - <strong>系统盘</strong>：不能更换系统盘的云盘类型，但是您能根据业务需求和新镜像的需求扩容系统盘，最大容量为500 GiB。扩容时能设置的最小容量与系统盘当前容量有关，如下表所示。
+  - <strong>安全设置。</strong>
+  - 确认<strong>配置费用</strong>：目前中国站所有公共镜像都不收费，这里的配置费用指系统盘的费用。系统盘价格，请参见<a href="https://www.aliyun.com/price/product#/ecs/detail">云产品价格页</a>。
+  - 确认无误后，单击<strong>确定更换</strong>。</p>
 
 <p><a name="h2-url-4"></a></p>
 
@@ -258,7 +265,7 @@
 <li>运行<code>mount</code>命令挂载分区。</li>
 <li>查看文件系统空间和使用情况：运行命令<code>df -h</code>。</li>
 </ol></li>
-<li>挂载操作完成后，不需要重启实例即可开始使用新的数据盘。<br /></li>
+<li>挂载操作完成后，不需要重启实例即可开始使用新的数据盘。</li>
 </ul>
 
 

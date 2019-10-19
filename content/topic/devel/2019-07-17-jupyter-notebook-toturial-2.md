@@ -80,7 +80,9 @@ $ jupyter notebook --ip=0.0.0.0 --port=9000
 
 ```
 
-如果在启动过程中出现：OSError: [Errno 99] Cannot assign requested address，请参考下面的方法解决。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563351248558-4c343f89-968f-4a50-aade-c227b3f70b77.png#align=left&display=inline&height=322&originHeight=322&originWidth=937&size=0&status=done&width=937)
+如果在启动过程中出现：OSError: [Errno 99] Cannot assign requested address，请参考下面的方法解决。
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563351248558-4c343f89-968f-4a50-aade-c227b3f70b77.png#align=left&display=inline&height=322&originHeight=322&originWidth=937&size=0&status=done&width=937)
 
 **解决：**运行 Jupyter 时增加 `--ip=0.0.0.0` 参数。
 ```

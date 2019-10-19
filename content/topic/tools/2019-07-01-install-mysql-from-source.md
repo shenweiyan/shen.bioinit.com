@@ -23,13 +23,21 @@ From：[Blast2GO Command Line User Manual](https://www.blast2go.com/images/b2g_p
 
 MySQL 的官网下载地址 [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/) 的界面会有几个版本的选择，这几个版本的区别如下。
 
-- Oracle MySQL Cloud Service (commercial)。<br />基于 MySQL 企业版构建的  Oracle MySQL 云服务，由 Oracle Cloud 提供技术支持，提供企业级的 MySQL 数据库服务，需付费。
+- Oracle MySQL Cloud Service (commercial)。
 
-- MySQL Enterprise Edition (commercial)。<br />MySQL 企业版本，包含了最全面的 MySQL 高级特性和管理工具。需付费，可以试用30天。
+基于 MySQL 企业版构建的  Oracle MySQL 云服务，由 Oracle Cloud 提供技术支持，提供企业级的 MySQL 数据库服务，需付费。
 
-- MySQL Cluster CGE (commercial)。<br />MySQL 高级集群版，是一个实时开源事务数据库，专为在高吞吐量条件下快速，永久地访问数据而设计。需付费。
+- MySQL Enterprise Edition (commercial)。
 
-- MySQL Community Edition (GPL)。<br />MySQL 社区版本，开源免费，但不提供官方技术支持。
+MySQL 企业版本，包含了最全面的 MySQL 高级特性和管理工具。需付费，可以试用30天。
+
+- MySQL Cluster CGE (commercial)。
+
+MySQL 高级集群版，是一个实时开源事务数据库，专为在高吞吐量条件下快速，永久地访问数据而设计。需付费。
+
+- MySQL Community Edition (GPL)。
+
+MySQL 社区版本，开源免费，但不提供官方技术支持。
 
 
 MySQL Community Edition(社区免费版，[https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/)) 又分为 MySQL Community Server、MySQL Cluster、MySQL Router、MySQL Shell、MySQL Workbench、MySQL on Windows、...、MySQL SUSE Repository 等根据不同的操作系统平台细分为多个版本。其中 MySQL Community Server 是开源免费的，这也是我们通常用的 MySQL 的版本。
@@ -37,7 +45,11 @@ MySQL Community Edition(社区免费版，[https://dev.mysql.com/downloads/](htt
 
 # 二、MySQL 免安装版
 
-MySQL 提供了 rpm、源码、免安装等多种安装方式，其中通过源码编译安装是比较耗时，过程相对复杂的一个过程。对于不想使用源码编译安装的童鞋，MySQL 提供了免安装直接解压可用的版本。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-archives-select.png#width=)<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-centos-7.png#width=)
+MySQL 提供了 rpm、源码、免安装等多种安装方式，其中通过源码编译安装是比较耗时，过程相对复杂的一个过程。对于不想使用源码编译安装的童鞋，MySQL 提供了免安装直接解压可用的版本。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-archives-select.png#width=)
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-centos-7.png#width=)
 
 ```bash
 wget https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.12-el7-x86_64.tar.gz
@@ -50,9 +62,13 @@ wget https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.12-el7-x86_64.tar.gz
 
 - Source Code：源代码下载
 
-- Generic Linux (Architecture Independent)：通用的 Linux（独立结构）。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018%2F09%2F18-Tue%2Fmysql-community-download.png#width=)
+- Generic Linux (Architecture Independent)：通用的 Linux（独立结构）。
 
-- 点击下载，需要注册 Oracle 账号，这里不细说。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018%2F09%2F18-Tue%2Foracle-web-account.png#width=)
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018%2F09%2F18-Tue%2Fmysql-community-download.png#width=)
+
+- 点击下载，需要注册 Oracle 账号，这里不细说。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018%2F09%2F18-Tue%2Foracle-web-account.png#width=)
 
 
 ```bash
@@ -62,7 +78,9 @@ $ wget https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-boost-8.0.12.tar.gz
 
 - 其他下载版本
 
-如果想要下载其他版本的 MySQL，可以在 [https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/) 选择符合自己服务器的版本进行下载。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-download-archives.png#width=)
+如果想要下载其他版本的 MySQL，可以在 [https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/) 选择符合自己服务器的版本进行下载。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-download-archives.png#width=)
 
 
 
@@ -264,7 +282,9 @@ From [4.3.2 mysqld_safe — MySQL Server Startup Script](https://dev.mysql.com/d
 $ /usr/local/software/mysql/bin/mysql -uroot
 ```
 
-MySQL 第一次安装完成后，是没有设置 root 密码的，直接回车 Enter 即可登陆：<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-root-login.png#width=)
+MySQL 第一次安装完成后，是没有设置 root 密码的，直接回车 Enter 即可登陆：
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/18-Tue/mysql-root-login.png#width=)
 
 
 ## 10. 数据库其他配置

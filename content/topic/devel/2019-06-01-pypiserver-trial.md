@@ -37,9 +37,13 @@ File "/data/galaxy-dist/anaconda2/envs/_galaxy_18.05/lib/python2.7/site-packages
 ReadTimeoutError: HTTPSConnectionPool(host='wheels.galaxyproject.org', port=443): Read timed out.
 ```
 
-原因在于：<br />第一，Galaxy 的初始化部署，其中有一步就是通过 pip 去在线下载位于 `https://wheels.galaxyproject.org/simple` 和 `https://pypi.python.org/simple` 这两个 PyPI 库的 requirements.txt 包，并执行安装。
+原因在于：
 
-第二，由于这两个 pypi 库位于国外，国内服务器想要下载里面的包可能会出现网络超时。<br />从 `https://wheels.galaxyproject.org/` 的首页介绍，可以知道这是 Galaxy 基于 pypiserver-1.2.1 搭建的一个 PyPI 源（This instance is running version 1.2.1 of the pypiserver software.）。为了解决文章开头的 ReadTimeoutError，我们借着这个机会来学习一下如何使用 pypiserver 快速搭建一个属于自己的离线 PyPI 仓库(本文章使用 pip==18.1)。
+第一，Galaxy 的初始化部署，其中有一步就是通过 pip 去在线下载位于 `https://wheels.galaxyproject.org/simple` 和 `https://pypi.python.org/simple` 这两个 PyPI 库的 requirements.txt 包，并执行安装。
+
+第二，由于这两个 pypi 库位于国外，国内服务器想要下载里面的包可能会出现网络超时。
+
+从 `https://wheels.galaxyproject.org/` 的首页介绍，可以知道这是 Galaxy 基于 pypiserver-1.2.1 搭建的一个 PyPI 源（This instance is running version 1.2.1 of the pypiserver software.）。为了解决文章开头的 ReadTimeoutError，我们借着这个机会来学习一下如何使用 pypiserver 快速搭建一个属于自己的离线 PyPI 仓库(本文章使用 pip==18.1)。
 
 
 ## PyPI 私有源
@@ -61,7 +65,9 @@ trusted-host= mirrors.aliyun.com
 EOF
 ```
 
-这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 [PyPiImplementations](http://wiki.python.org/moin/PyPiImplementations) 说明中列出了几个比较成熟的实现方案：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559372822643-02a74b05-1151-4f09-846d-7244b79a8a23.png#align=left&display=inline&height=423&originHeight=423&originWidth=525&size=0&status=done&width=525)##
+这里需要提到的是，有些是公司内部的项目，不方便放到外网上去，这个时候我们就要搭建自己的内网 PyPI 源服务器，需要安全并且拥有同样的舒适体验。关于 PyPI 私有源的实现，Python 官方的 [PyPiImplementations](http://wiki.python.org/moin/PyPiImplementations) 说明中列出了几个比较成熟的实现方案：
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1559372822643-02a74b05-1151-4f09-846d-7244b79a8a23.png#align=left&display=inline&height=423&originHeight=423&originWidth=525&size=0&status=done&width=525)##
 
 这里选择 pypiserver，除了 Galaxy 的原因外，最重要的是因为它最小而且使用简单。
 

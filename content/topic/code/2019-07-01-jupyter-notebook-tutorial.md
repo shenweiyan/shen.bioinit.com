@@ -23,19 +23,47 @@ ipython notebook 是一个基于浏览器的 python 数据分析工具，使用�
 > 1. 从各个角度看一个这个数据各个维度的分布情况 (Data Exploration)
 > 1. 根据自己的想法、要求，做具体的分析，计算
 > 1. 对计算结果做进一部分的分析
-> <br />
-这有点类似做应用题。而这是传统的 IDE (e.g. PyCharm) 没有办法做到的。假如全部都写脚本+输出，那么你 > **每张图可能都要保存下来，然后再单独点进去看**，很麻烦。而 Notebook 做这个要更方便，结果直接产生在 Cell 下面。> <br />
-> ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988187-ff34dded-af68-483e-80d7-791bc1eb7b86.jpg#align=left&display=inline&height=437&originHeight=437&originWidth=656&size=0&status=done&width=656)> <br />
-反言之，如果你不需要这种频繁的计算-画图的话，那么 notebook 可能还真没什么大不了.> <br />> <br />
-> **2、Hackable**> <br />> <br />
-和第一点对应，Notebook 的是计算+文档的混合体，而本身又是 web-based，因此非常好 hack, 比如我的 notebook 因为非常长，所以就加了个侧边栏目录：> <br />
-> <br />> <br />
-> ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988151-9c428da3-e053-4e43-9167-3e018510a8ac.jpg#align=left&display=inline&height=783&originHeight=783&originWidth=502&size=0&status=done&width=502)> <br />> <br />
-再比如，在分析电影数据的时候，我觉得用 card 来展示更方便一点，所以可以这样显示数据：> <br />
+> 
+
+
+这有点类似做应用题。而这是传统的 IDE (e.g. PyCharm) 没有办法做到的。假如全部都写脚本+输出，那么你 > **每张图可能都要保存下来，然后再单独点进去看**，很麻烦。而 Notebook 做这个要更方便，结果直接产生在 Cell 下面。> 
+
+
+> ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988187-ff34dded-af68-483e-80d7-791bc1eb7b86.jpg#align=left&display=inline&height=437&originHeight=437&originWidth=656&size=0&status=done&width=656)> 
+
+
+反言之，如果你不需要这种频繁的计算-画图的话，那么 notebook 可能还真没什么大不了.> 
+
+> 
+
+
+> **2、Hackable**> 
+
+> 
+
+
+和第一点对应，Notebook 的是计算+文档的混合体，而本身又是 web-based，因此非常好 hack, 比如我的 notebook 因为非常长，所以就加了个侧边栏目录：> 
+
+
+> 
+
+> 
+
+
+> ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988151-9c428da3-e053-4e43-9167-3e018510a8ac.jpg#align=left&display=inline&height=783&originHeight=783&originWidth=502&size=0&status=done&width=502)> 
+
+> 
+
+
+再比如，在分析电影数据的时候，我觉得用 card 来展示更方便一点，所以可以这样显示数据：> 
+
+
 > ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988154-c6eef11b-194e-42dc-ac99-e79bd98a2367.jpg#align=left&display=inline&height=387&originHeight=429&originWidth=805&size=0&status=done&width=726)
 > ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988154-c6eef11b-194e-42dc-ac99-e79bd98a2367.jpg#align=left&display=inline&height=387&originHeight=429&originWidth=805&size=0&status=done&width=726)
 > ![](https://qiniu.bioinit.com/yuque/0/2019/jpg/126032/1550819988154-c6eef11b-194e-42dc-ac99-e79bd98a2367.jpg#align=left&display=inline&height=387&originHeight=429&originWidth=805&size=0&status=done&width=726)
-> <br />
+> 
+
+
 参考链接： > [https://www.zhihu.com/question/37490497/answer/212044783]()
 
 
@@ -94,11 +122,15 @@ Known labextensions:
         http://localhost:8888/?token=120a457da88d214270e...22a376d3d4
 ```
 
-这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：[http://localhost:8888/?token=120a457da88d214270e...22a376d3d4](http://localhost:8888/?token=120a457da88d214270e...22a376d3d4)，即可进入登陆后的 Jupyter Notebook 页面：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490716-bc205590-2f06-4a0f-bf72-b355ca4b1cb8.png#align=left&display=inline&height=316&originHeight=342&originWidth=807&size=0&status=done&width=746)
+这时候，Jupyter 会自动生成一个用于登陆 jupyter Notebook 的 token，我们在浏览器打开 token 的链接：[http://localhost:8888/?token=120a457da88d214270e...22a376d3d4](http://localhost:8888/?token=120a457da88d214270e...22a376d3d4)，即可进入登陆后的 Jupyter Notebook 页面：
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490716-bc205590-2f06-4a0f-bf72-b355ca4b1cb8.png#align=left&display=inline&height=316&originHeight=342&originWidth=807&size=0&status=done&width=746)
 
 
 ## 3. 使用
-在 jupyter notebook web 页面，我们可以点击 " **New**" → "**Python2**" 创建 python2 笔记。我们可以在这两个笔记中使用 markdown 语法进行编辑，也可以交互执行 python 代码。<br />
+在 jupyter notebook web 页面，我们可以点击 " **New**" → "**Python2**" 创建 python2 笔记。我们可以在这两个笔记中使用 markdown 语法进行编辑，也可以交互执行 python 代码。
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550820490593-8a243554-28e0-4375-a740-fff312e641b3.png#align=left&display=inline&height=329&originHeight=356&originWidth=806&size=0&status=done&width=746)
 
 Jupyter Notebook web 登陆后，点击右上角 "**Logout**" 可退出；通过输入上面的 token 可重新登陆。或者我们可以通过 `jupyter notebook password` 命令设置密码进行登陆（如果忘记密码也可以通过该命令进行重置）。默认 jupyter notebook passwd 保存在 `~/.jupyter/jupyter_notebook_config.json` ，如下：
@@ -120,7 +152,9 @@ $ cat ~/.jupyter/jupyter_notebook_config.json
 
 ## 1. 配置基于 IP 访问
 
-Jupyter Notebook 可以通过命令行参数指定 IP，也可以通过配置文件实现基于服务器公网 IP 下的远程访问。<br />通过命令行实现基于服务器公网 IP 访问，只需要执行以下命令即可：
+Jupyter Notebook 可以通过命令行参数指定 IP，也可以通过配置文件实现基于服务器公网 IP 下的远程访问。
+
+通过命令行实现基于服务器公网 IP 访问，只需要执行以下命令即可：
 ```
 $ jupyter notebook --ip=0.0.0.0 --port=8080 
 ```
@@ -242,7 +276,9 @@ server{
 
 其中 fullchain.pem 与 privkey.pem 是你的网址的 SSL 证书，如果没有，可以参考 Letsencrypt 免费证书。
 
-至此，大功告成，打开你的网址 xxx.xxx.com 就可以看到熟悉的 Jupyter 了。<br />![jupyter_server.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550818784544-baff8855-ffb5-4efe-9bb7-081913177746.png#align=left&display=inline&height=519&name=jupyter_server.png&originHeight=577&originWidth=829&size=27393&status=done&width=746)
+至此，大功告成，打开你的网址 xxx.xxx.com 就可以看到熟悉的 Jupyter 了。
+
+![jupyter_server.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550818784544-baff8855-ffb5-4efe-9bb7-081913177746.png#align=left&display=inline&height=519&name=jupyter_server.png&originHeight=577&originWidth=829&size=27393&status=done&width=746)
 
 
 ## 3. 后台模式运行
@@ -295,7 +331,9 @@ ipython kernel install --user
 ```
 
 
-> Additionally you can pass the `--name` and `--display-name` options to ipython kernel install if you want to change the names of your kernels. See `ipython kernel install --help` for more informations.<br />
+> Additionally you can pass the `--name` and `--display-name` options to ipython kernel install if you want to change the names of your kernels. See `ipython kernel install --help` for more informations.
+
+
 
 
 总结起来就是：
@@ -304,7 +342,9 @@ ipython kernel install --user
 1. 手动为当前用户( `--user` )，或者指定路径( `--prefix` )安装 IPython kernel spec。其中 `--user` 与 `--prefix` 不能同时使用。
 1. 使用--user 时，IPython kernel spec 默认安装到当前用户 ~/.local/share/jupyter/kernels 或者 /home/shenweiyan/.ipython/kernels。
 1. 不加 --user 和 --prefix，IPython kernel spec 默认安装到 /usr/local/share/jupyter/kernels 或者 /usr/share/jupyter/kernels。
-1. IPython kernel spec 安装可以使用 python -m ipykernel install，也可以使用 ipython-kernel-install 命令，两者是一样的。<br />
+1. IPython kernel spec 安装可以使用 python -m ipykernel install，也可以使用 ipython-kernel-install 命令，两者是一样的。
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1550823171682-80206c72-17c9-4b35-91a0-205405db5f6a.png#align=left&display=inline&height=388&originHeight=388&originWidth=626&size=0&status=done&width=626)
 
 

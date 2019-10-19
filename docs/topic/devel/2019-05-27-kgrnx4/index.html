@@ -295,8 +295,6 @@ In doTryCatch(return(expr), name, parentenv, handler) :
 <li>调用一个可用的数据集，如 <code>iris</code>：</li>
 </ul>
 
-<p><br /></p>
-
 <pre><code>In [2]: iris
  
 Out[2]:
@@ -309,8 +307,6 @@ Out[2]:
 <ul>
 <li>计算物种的平均萼片宽度：</li>
 </ul>
-
-<p><br /></p>
 
 <pre><code>In [3]: iris %&gt;%
  group_by(Species) %&gt;%
@@ -328,16 +324,12 @@ Out [3]:
 <li>导入可视化 R 包 ggplot2：</li>
 </ul>
 
-<p><br /></p>
-
 <pre><code>In [4]: library(ggplot2)
 </code></pre>
 
 <ul>
 <li>绘图 Sepal.Width vs. Sepal.Length：</li>
 </ul>
-
-<p><br /></p>
 
 <pre><code>In [5]: ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point(size=3)
 </code></pre>
@@ -348,9 +340,13 @@ Out [3]:
 
 <p>Jupyter 可以把笔记转换为在线幻灯片，供讲座和教程使用。</p>
 
-<p>要将笔记本转换为 <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> 演示文稿，请将 &ldquo;单元格工具栏(Cell Toolbar)&rdquo; 设置为“幻灯片放映(Slideshow”)”：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805325-42783b16-6352-4db7-86aa-3001185e4f23.png#align=left&amp;display=inline&amp;height=920&amp;originHeight=920&amp;originWidth=1920&amp;search=&amp;size=0&amp;status=done&amp;width=1920" alt="" /></p>
+<p>要将笔记本转换为 <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> 演示文稿，请将 &ldquo;单元格工具栏(Cell Toolbar)&rdquo; 设置为“幻灯片放映(Slideshow”)”：</p>
 
-<p>将单元格(cells)组织成幻灯片(slides)和副幻灯片(subslides)：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805323-5350a60a-2c11-4f42-aa34-c1d7fb3359db.png#align=left&amp;display=inline&amp;height=1013&amp;originHeight=1013&amp;originWidth=1920&amp;search=&amp;size=0&amp;status=done&amp;width=1920" alt="" /></p>
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805325-42783b16-6352-4db7-86aa-3001185e4f23.png#align=left&amp;display=inline&amp;height=920&amp;originHeight=920&amp;originWidth=1920&amp;search=&amp;size=0&amp;status=done&amp;width=1920" alt="" /></p>
+
+<p>将单元格(cells)组织成幻灯片(slides)和副幻灯片(subslides)：</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805323-5350a60a-2c11-4f42-aa34-c1d7fb3359db.png#align=left&amp;display=inline&amp;height=1013&amp;originHeight=1013&amp;originWidth=1920&amp;search=&amp;size=0&amp;status=done&amp;width=1920" alt="" /></p>
 
 <p>执行转化命令：</p>
 
@@ -363,7 +359,9 @@ Out [3]:
 
 <h2 id="3-常见问题与解决">3. 常见问题与解决</h2>
 
-<p>① jupyter notebook 中 R 画图，不显示文字、标签。<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805329-bb7033ad-aa24-4178-b488-1df27ad98684.png#align=left&amp;display=inline&amp;height=840&amp;originHeight=840&amp;originWidth=840&amp;search=&amp;size=0&amp;status=done&amp;width=840" alt="" /></p>
+<p>① jupyter notebook 中 R 画图，不显示文字、标签。</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558917805329-bb7033ad-aa24-4178-b488-1df27ad98684.png#align=left&amp;display=inline&amp;height=840&amp;originHeight=840&amp;originWidth=840&amp;search=&amp;size=0&amp;status=done&amp;width=840" alt="" /></p>
 
 <p>解决方法：</p>
 

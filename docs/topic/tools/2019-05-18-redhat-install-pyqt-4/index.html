@@ -301,7 +301,9 @@ the --verbose flag to see more detail about the problem.
 
 <h3 id="5-安装依赖二-qt">5、安装依赖二：QT</h3>
 
-<p>使用 conda 安装的 qt &gt;= 5.6.2：<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183262081-192b5c4b-7fb9-4dcd-b09d-d4ac540baaae.png#align=left&amp;display=inline&amp;height=330&amp;originHeight=330&amp;originWidth=674&amp;size=0&amp;status=done&amp;width=674" alt="" /></p>
+<p>使用 conda 安装的 qt &gt;= 5.6.2：</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183262081-192b5c4b-7fb9-4dcd-b09d-d4ac540baaae.png#align=left&amp;display=inline&amp;height=330&amp;originHeight=330&amp;originWidth=674&amp;size=0&amp;status=done&amp;width=674" alt="" /></p>
 
 <p>下面是通过源码安装 qt-4.8.x 的一些记录（使用 conda 应该也可以安装 qt-4.8.x，感兴趣的童鞋可以尝试一下）：</p>
 
@@ -344,7 +346,11 @@ Type 'no' to decline the terms of the license.
 Do you accept the terms of the license? yes
 </code></pre>
 
-<p><strong>注意：</strong><br />1、在 configure 的时候，指定了 qmake 的路径。<br />2、成功之后，然后再执行：</p>
+<p><strong>注意：</strong></p>
+
+<p>1、在 configure 的时候，指定了 qmake 的路径。</p>
+
+<p>2、成功之后，然后再执行：</p>
 
 <pre><code>make (要等一段时间)
 make install
@@ -360,7 +366,13 @@ make install
 
 <p>PyQt4 在 Linux 下安装，尤其是源码编译安装，需要特别注意：</p>
 
-<p>1、要解决 <code>xcb*</code>、<code>libxcb</code>必须库依赖。<br />2、确保满足 sip 依赖。<br />3、确保 QT 安装，QT 安装过程中确保 phonon 库被编译安装。<br />4、PyQt4 在执行 configure 过程中可以通过指定 qmake，从而选择 Qt 版本。</p>
+<p>1、要解决 <code>xcb*</code>、<code>libxcb</code>必须库依赖。</p>
+
+<p>2、确保满足 sip 依赖。</p>
+
+<p>3、确保 QT 安装，QT 安装过程中确保 phonon 库被编译安装。</p>
+
+<p>4、PyQt4 在执行 configure 过程中可以通过指定 qmake，从而选择 Qt 版本。</p>
 
 <h2 id="参考资料">参考资料</h2>
 

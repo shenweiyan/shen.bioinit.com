@@ -7,7 +7,11 @@ category: 编程
 published: true
 ---
 
-作者： Deepanshu Bhalla     <br />编译： Steven Shen      <br />标题： [A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
+作者： Deepanshu Bhalla     
+
+编译： Steven Shen      
+
+标题： [A Complete Guide to Date and Time Functions](https://www.listendata.com/2019/07/how-to-use-datetime-in-python.html)
 
 ---
 
@@ -103,9 +107,23 @@ datetime.date(2019, 9, 10)
 '20-10-2019'
 ```
 
-`%d` 指的是一个月中的某一天。在 `20-10-2019` 中， `%d`  返回 20。<br />`%m` 指的是一年中的某个月。在 `20-10-2019` 中， `%m` 返回 10。<br />`%Y` 指的是年。字母 **'Y'** 是大写的。在 `20-10-2019` 中，`%Y` 返回 2019 年。<br />`%y` 指的是两位数格式的年份。在 `20-10-2019` 中，`%y` 返回 19。
+`%d` 指的是一个月中的某一天。在 `20-10-2019` 中， `%d`  返回 20。
 
-**其他流行的格式代码：**<br />`%a` 返回工作日的前三个字母，如 `Sun` ；<br />`%A` 返回工作日的完整名称，如 `Sunday`；<br />`%b` 返回月份的前三个字母，如 `Oct` ；<br />`%B` 返回月份的完整名称，如 `October` ；
+`%m` 指的是一年中的某个月。在 `20-10-2019` 中， `%m` 返回 10。
+
+`%Y` 指的是年。字母 **'Y'** 是大写的。在 `20-10-2019` 中，`%Y` 返回 2019 年。
+
+`%y` 指的是两位数格式的年份。在 `20-10-2019` 中，`%y` 返回 19。
+
+**其他流行的格式代码：**
+
+`%a` 返回工作日的前三个字母，如 `Sun` ；
+
+`%A` 返回工作日的完整名称，如 `Sunday`；
+
+`%b` 返回月份的前三个字母，如 `Oct` ；
+
+`%B` 返回月份的完整名称，如 `October` ；
 
 ```python
 >>> dt = datetime.date(2019, 10, 20)
@@ -132,7 +150,9 @@ datetime.date(2019, 9, 10)
 
 ### 3. Time
 
-时间值使用 `datetime.time` 类定义。它遵循如下所示的语法：<br />`_datetime.time(hour, minute, second, microseconds)_` 
+时间值使用 `datetime.time` 类定义。它遵循如下所示的语法：
+
+`_datetime.time(hour, minute, second, microseconds)_` 
 
 ```python
 >>> t = datetime.time(21, 2, 3)
@@ -207,7 +227,9 @@ datetime.date(2019, 9, 10)
 
 #### 4.1 创建 datetime 对象
 
-`datetime` 类的语法如下：<br />`_datetime(year, month, day, hour, minute, second, microsecond)_` 
+`datetime` 类的语法如下：
+
+`_datetime(year, month, day, hour, minute, second, microsecond)_` 
 
 ```python
 >>> dt = datetime.datetime(2019, 7, 20, 10, 51, 0)
@@ -325,7 +347,9 @@ from dateutil.relativedelta import *
 
 
 #### 7.1 考虑闰年
-<br />来自 `dateutil` 包的 `relativedelta` 方法在计算未来或过去日期时会同时考虑闰年的情况。2000 年是闰年，所以 2 月份有 29 天；但明年 2 月只有 28 天。
+
+
+来自 `dateutil` 包的 `relativedelta` 方法在计算未来或过去日期时会同时考虑闰年的情况。2000 年是闰年，所以 2 月份有 29 天；但明年 2 月只有 28 天。
 
 ```python
 >>> print(datetime.date(2000, 2, 29)+ relativedelta(years=+1))
@@ -351,7 +375,9 @@ from dateutil.relativedelta import *
 
 #### 8.1 如何计算两个日期之间的月数
 
-一种方法是计算天数，然后除以 30 得到月数。但它并不总是正确的，因为有些月份有 31 天。<br />![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568085011856-f1944dbf-86b7-46f2-8b07-e25101a3e496.png#align=left&display=inline&height=175&name=image.png&originHeight=175&originWidth=857&search=&size=11214&status=done&width=857)
+一种方法是计算天数，然后除以 30 得到月数。但它并不总是正确的，因为有些月份有 31 天。
+
+![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568085011856-f1944dbf-86b7-46f2-8b07-e25101a3e496.png#align=left&display=inline&height=175&name=image.png&originHeight=175&originWidth=857&search=&size=11214&status=done&width=857)
 
 **它是怎么起作用的呢？**
 
@@ -359,7 +385,9 @@ from dateutil.relativedelta import *
 - 12*(date1.year - date2.year) returns 12
 - -2 + 12 = 10
 
-**注意：** <br />假设您要计算 31/10/2018 和 01/11/2018 之间的月数，上面建议的方法将返回 1，因为两个日期位于月差异中。您可能会发现它不正确，因为两个日期之间的天数是1。您是否知道 SAS 软件中的 INTCK 功能（默认设置）也会返回1？ 返回 1 的用法是什么？ 当您需要将时间序列数据排序到箱中时，它非常有用。例如，每日数据可以累积到月度数据，以作为月度系列进行处理。如果您希望 0 作为月数，则可以使用上面“_Not full-proof Solution_”下面显示的代码。
+**注意：** 
+
+假设您要计算 31/10/2018 和 01/11/2018 之间的月数，上面建议的方法将返回 1，因为两个日期位于月差异中。您可能会发现它不正确，因为两个日期之间的天数是1。您是否知道 SAS 软件中的 INTCK 功能（默认设置）也会返回1？ 返回 1 的用法是什么？ 当您需要将时间序列数据排序到箱中时，它非常有用。例如，每日数据可以累积到月度数据，以作为月度系列进行处理。如果您希望 0 作为月数，则可以使用上面“_Not full-proof Solution_”下面显示的代码。
 
 
 

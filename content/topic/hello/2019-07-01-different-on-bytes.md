@@ -23,7 +23,9 @@ GB(Gigabyte)：吉字节，是一种**十进制**的信息计量单位。Gibibyt
 > —— 维基百科 - Gibibyte，[https://zh.wikipedia.org/wiki/Gibibyte](https://zh.wikipedia.org/wiki/Gibibyte)
 
 
-K、M、G 都是 KB、MB、GB 的简称。由于混淆已经普遍化，Gigabyte 往往是指 Gibibyte，所以平时我们说的 1 兆存储就是1M（MB），1G 存储就是 1GB）。我们的照片一般是 104KB、209KB、1.45MB、2.45MB、3.32MB 等等。<br />
+K、M、G 都是 KB、MB、GB 的简称。由于混淆已经普遍化，Gigabyte 往往是指 Gibibyte，所以平时我们说的 1 兆存储就是1M（MB），1G 存储就是 1GB）。我们的照片一般是 104KB、209KB、1.45MB、2.45MB、3.32MB 等等。
+
+
 
 在说明其他储存单位的换算前，我们来看看两个标准：SI、IEC。
 
@@ -41,7 +43,9 @@ IEC 的宗旨是，促进电气、电子工程领域中标准化及有关问题�
 
 目前 IEC 的工作领域已由单纯研究电气设备、电机的名词术语和功率等问题扩展到电子、电力、微电子及其应用、通讯、视听、机器人、信息技术、新型医疗器械和核仪表等电工技术的各个方面。IEC标准的权威性是世界公认的，截止到2008年12月底，IEC 已制定了 5425 个国际标准。
 
-不同标准下储存单位的次方单位( ![](https://qiniu.bioinit.com/yuque/__latex/d97d16fbb399fa909887f8349724a08a.svg#align=left&card=math&code=2%5E%7B10%7D%20%3D%201024&height=24&width=76))：<br />
+不同标准下储存单位的次方单位( ![](https://qiniu.bioinit.com/yuque/__latex/d97d16fbb399fa909887f8349724a08a.svg#align=left&card=math&code=2%5E%7B10%7D%20%3D%201024&height=24&width=76))：
+
+
 ![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/10/16-Tue/byte.png#width=)
 
 ---

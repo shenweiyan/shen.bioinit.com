@@ -50,13 +50,25 @@ Linux 上的很多命令都是依赖 libc.so.6 的动态链接库，如果您不
 
 首先，要下载 rhel-server-6.5-x86_64 镜像。
 
-- rhel-server-6.5-x86_64-boot.iso（U盘安装需要此镜像）<br />
-MD5: 004a37b1b0269992a3b341b8f7c3a579<br />
-SHA-256: 31116987fb9f5161cd7a7c907d9acc57f832135faf55bb328d032fa6574e3f93<br />
+- rhel-server-6.5-x86_64-boot.iso（U盘安装需要此镜像）
+
+
+MD5: 004a37b1b0269992a3b341b8f7c3a579
+
+
+SHA-256: 31116987fb9f5161cd7a7c907d9acc57f832135faf55bb328d032fa6574e3f93
+
+
 文件大小：255 MB
-- rhel-server-6.5-x86_64-dvd.iso（系统安装介质）<br />
-MD5: a84d4d9eddb36fb417832166cd10a4c2<br />
-SHA-256: a51b90f3dd4585781293ea08adde60eeb9cfa94670943bd99e9c07f13a259539<br />
+- rhel-server-6.5-x86_64-dvd.iso（系统安装介质）
+
+
+MD5: a84d4d9eddb36fb417832166cd10a4c2
+
+
+SHA-256: a51b90f3dd4585781293ea08adde60eeb9cfa94670943bd99e9c07f13a259539
+
+
 文件大小：3,675 MB
 
 其次，将启动文件写入 u 盘。以 UltraISO 软碟通为例，打开 UltraISO 软件，菜单 “文件” 打开 rhel-server-6.5-x86_64-boot.iso ，菜单 “启动” ==> “写入硬盘映像”，弹出对话框，点击 “格式化”，格式化完成点击 “写入”。
@@ -72,33 +84,49 @@ SHA-256: a51b90f3dd4585781293ea08adde60eeb9cfa94670943bd99e9c07f13a259539<br />
 
 Linux下用光盘进行 rescue 模式的方法，需要注意的是实体机跟虚拟机还是有很大差别的，在实体机中通过光盘启动，可能会自动进入到安装界面，所有我们需要在进入安装界面前（会提示 press any key 之类）快速按键盘上的按键（只有三秒钟需要关注。）
 
-如果不理会就会进入以下界面：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531584-74fee520-6c7c-4783-9f32-32ccdcb40295.png#align=left&display=inline&height=591&originHeight=591&originWidth=794&search=&size=0&status=done&width=794)
+如果不理会就会进入以下界面：
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531584-74fee520-6c7c-4783-9f32-32ccdcb40295.png#align=left&display=inline&height=591&originHeight=591&originWidth=794&search=&size=0&status=done&width=794)
 
 
 
 ### 2.2. rescue 模式步骤
 
-① 选择 rescue 模式<br />
+① 选择 rescue 模式
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531556-9cf2b06c-5166-40b0-92aa-de59e70ff603.png#align=left&display=inline&height=356&originHeight=474&originWidth=634&search=&size=0&status=done&width=476)
 
-② 选择语言<br />
+② 选择语言
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531590-28af51c6-044c-4a07-a38d-a824fcd4af4b.png#align=left&display=inline&height=302&originHeight=402&originWidth=720&search=&size=0&status=done&width=540)
 
-③ 选择键盘<br />
+③ 选择键盘
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531542-39f10346-41f6-4784-9fc4-76f311ae7da4.png#align=left&display=inline&height=302&originHeight=403&originWidth=723&search=&size=0&status=done&width=542)
 
-④ 我们选择不启用网络，因为启用也没用。<br />
+④ 我们选择不启用网络，因为启用也没用。
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531568-4a080c21-88ed-428d-9012-94ffef2de3f8.png#align=left&display=inline&height=303&originHeight=404&originWidth=722&search=&size=0&status=done&width=542)
 
-⑤ 选择继续（continue）<br />
+⑤ 选择继续（continue）
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531588-436dee73-dacb-4a83-9420-e42340208097.png#align=left&display=inline&height=303&originHeight=404&originWidth=717&search=&size=0&status=done&width=538)
 
-⑥ 选择 OK<br />
+⑥ 选择 OK
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531583-cc3a57b3-2f00-429d-8032-a6cf6b042845.png#align=left&display=inline&height=300&originHeight=400&originWidth=721&search=&size=0&status=done&width=541)
 
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531581-6f39a1c6-a252-4163-aee7-043f51f01098.png#align=left&display=inline&height=305&originHeight=406&originWidth=719&search=&size=0&status=done&width=539)
 
-⑦ 选择回车键，打开 shell<br />
+⑦ 选择回车键，打开 shell
+
+
 ![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531728-197a6422-10a4-4760-8f46-65892f6395b9.png#align=left&display=inline&height=309&originHeight=412&originWidth=724&search=&size=0&status=done&width=543)
 
 ⑧ 进入模式后，我们就可以进行命令行操作了，此时会把硬盘的文件系统挂载在 `/mnt/sysimage` 目录下，如果未挂载使用如下命令挂载:
@@ -106,9 +134,13 @@ Linux下用光盘进行 rescue 模式的方法，需要注意的是实体机跟�
 chroot /mnt/sysimage
 ```
 
-此时我们进入到 `/mnt/sysimage`，这里其实就是原系统的根目录，我们进行一些补救操作即可。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531590-f69460d9-bdd6-4c02-a7a0-84f9729077b2.png#align=left&display=inline&height=279&originHeight=279&originWidth=768&search=&size=0&status=done&width=768)
+此时我们进入到 `/mnt/sysimage`，这里其实就是原系统的根目录，我们进行一些补救操作即可。
 
-⑨ 重启后重新进入系统一切正常。<br />⑩ 作为集群，需要重新执行一些必须的挂载、开启必要服务，在这里不详述。
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562972531590-f69460d9-bdd6-4c02-a7a0-84f9729077b2.png#align=left&display=inline&height=279&originHeight=279&originWidth=768&search=&size=0&status=done&width=768)
+
+⑨ 重启后重新进入系统一切正常。
+
+⑩ 作为集群，需要重新执行一些必须的挂载、开启必要服务，在这里不详述。
 
 
 

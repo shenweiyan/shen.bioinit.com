@@ -214,9 +214,13 @@ install.packages("vioplot")
 
 # 5. 是否有用于安装包的用户界面
 
-如果您更喜欢图形用户界面来安装包，则 RStudio 和 RGui 都包含它们。 在 RStudio 中，您可以在"工具" -> "安装包"中找到它，然后您将在弹出窗口中键入要安装的包：<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rstudio1.png/bioinit#width=)
+如果您更喜欢图形用户界面来安装包，则 RStudio 和 RGui 都包含它们。 在 RStudio 中，您可以在"工具" -> "安装包"中找到它，然后您将在弹出窗口中键入要安装的包：
 
-在 RGui 中，您将在"包（Packages）"菜单下找到实用程序。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rgui1.png/bioinit#width=)
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rstudio1.png/bioinit#width=)
+
+在 RGui 中，您将在"包（Packages）"菜单下找到实用程序。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/content_rgui1.png/bioinit#width=)
 
 
 # 6. 如何加载程序包
@@ -374,17 +378,23 @@ vignette("ggplot2-specs")
 
 由于 CRAN 具有任务视图，一种替代方案可以是浏览 CRAN 包的类别。 那就对了！ CRAN 官方存储库，还为您提供浏览包的选项。 任务视图基本上是基于其功能对包进行分组的主题或类别。
 
-如您所见，所有与遗传有关的包都将在 "遗传学（Genetics）" 任务视图中进行分类：<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/cran_task_views.png/bioinit#width=)
+如您所见，所有与遗传有关的包都将在 "遗传学（Genetics）" 任务视图中进行分类：
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/cran_task_views.png/bioinit#width=)
 
 以韩语文本为例，您可以通过导航到自然语言处理任务视图轻松找到所需的包。 在那里，您可以阅读文本以查找可以处理文本的包，或者您可以执行简单的 `CTRL + F` 并键入您要查找的关键字。保证，您可以立即获得正确的包！
 
 查找软件包的另一种方法可以是 RDocumentation，它是来自 CRAN，BioConductor 和 GitHub 的 R 软件包的帮助文档聚合器，它直接在主页面上为我们提供了搜索框。
 
-你可能还不知道这第二种选择，所以让我们深入挖掘一下！让我们从韩语文本开始，RDocumentation 的一个有趣特性是快速搜索，所以当你输入一点点关键字时会就出现第一与之匹配的结果：<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation.png/bioinit#width=)
+你可能还不知道这第二种选择，所以让我们深入挖掘一下！让我们从韩语文本开始，RDocumentation 的一个有趣特性是快速搜索，所以当你输入一点点关键字时会就出现第一与之匹配的结果：
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation.png/bioinit#width=)
 
 但是，如果您输入关键词 "korean" 并单击"搜索"，我们将进行完整搜索，您将获得两列结果：左侧的包，右侧的功能。
 
-关注 packages 列，我们可以在每个结果中获取到包的名称，包含更详细信息的链接，作者姓名，也可链接以查看来自同一作者的其他包，以及带有搜索关键字高亮显示的包的一些描述，以及有关包的流行度的信息。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation_korean.png/bioinit#width=)
+关注 packages 列，我们可以在每个结果中获取到包的名称，包含更详细信息的链接，作者姓名，也可链接以查看来自同一作者的其他包，以及带有搜索关键字高亮显示的包的一些描述，以及有关包的流行度的信息。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation_korean.png/bioinit#width=)
 
 谈到流行度，这是紧密相关的，因为搜索将首先对下载次数最多的包进行排名，以提高结果的准确性。 如果您想了解有关 RDocumentatio n的搜索实现的更多详细信息，在 [此处](https://www.datacamp.com/community/blog/rdocumentation-ranking-scoring) 提供了非常详细的帖子。
 
@@ -407,7 +417,9 @@ RDocumentation 不仅是一个搜索引擎，它还为您提供了一些更好�
 
 - 就像 CRAN 任务视图一样，RDocumentation 也提供了 [任务视图](https://www.rdocumentation.org/taskviews#Bayesian)：正如你上面读到的那样，它是按主题探索 R 包的另一种方式。 例如，您可以获得与 Graphics，Finance 或 Time Series 相关的包列表。
 
-- [排行榜（Leaderboard）](https://www.rdocumentation.org/trends)。此模式提供关于以下内容的一个概览：最受欢迎的软件包和开发人员，最新的软件包和更新，以及关于下载分布（Downloads distribution）、最常用关键词（Most used keywords）、Top packages dependency graph 相关的 3 个图形，您可以在其中查看最受欢迎的软件包相互之间的关联性，你也可以找到不同分组的包（用不同的颜色标识）。<br />![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation_trends.png/bioinit#width=)
+- [排行榜（Leaderboard）](https://www.rdocumentation.org/trends)。此模式提供关于以下内容的一个概览：最受欢迎的软件包和开发人员，最新的软件包和更新，以及关于下载分布（Downloads distribution）、最常用关键词（Most used keywords）、Top packages dependency graph 相关的 3 个图形，您可以在其中查看最受欢迎的软件包相互之间的关联性，你也可以找到不同分组的包（用不同的颜色标识）。
+
+![](https://note-db.oss-cn-shenzhen.aliyuncs.com/2018/09/29-Sat/rdocumentation_trends.png/bioinit#width=)
 
 - [RDocumentation package](https://github.com/datacamp/Rdocumentation)。 `RDocumentation` 不仅是一个网站，也是一个 R 包。 它会覆盖帮助功能，因此您可以将 `RDocumentation` 的功能整合到您的工作流程中。 加载此包后，`help()` 函数将打开一个浏览器窗口或带有 `RDocumentation` 访问权限的 RStudio 帮助面板。
 
@@ -457,4 +469,6 @@ help(vioplot)
 
 ---
 
-英文原文：[https://www.datacamp.com/community/tutorials/r-packages-guide](https://www.datacamp.com/community/tutorials/r-packages-guide)<br />作者：Adolfo Álvarez
+英文原文：[https://www.datacamp.com/community/tutorials/r-packages-guide](https://www.datacamp.com/community/tutorials/r-packages-guide)
+
+作者：Adolfo Álvarez

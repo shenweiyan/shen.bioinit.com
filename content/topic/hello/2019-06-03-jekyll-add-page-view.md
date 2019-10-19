@@ -76,4 +76,6 @@ galite('send', 'pageview');
 
 ## 不蒜子
 
-官网：[https://busuanzi.ibruce.info/](https://busuanzi.ibruce.info/)<br />网站流量统计分析：[https://www.wumz.me/2018/baidu-analysis.html](https://www.wumz.me/2018/baidu-analysis.html)
+官网：[https://busuanzi.ibruce.info/](https://busuanzi.ibruce.info/)
+
+网站流量统计分析：[https://www.wumz.me/2018/baidu-analysis.html](https://www.wumz.me/2018/baidu-analysis.html)

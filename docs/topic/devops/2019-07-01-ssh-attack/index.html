@@ -217,11 +217,17 @@
 
 <p><strong>/var/log/btmp</strong> 文件是记录错误登录的日志，就是说有很多人试图使用密码字典登录 ssh 服务，此日志需要使用 lastb 程序打开。</p>
 
-<p><code>lastb</code> 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；<br /><code>last</code> 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；<br /><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558494813715-1f830322-dafc-423d-9bf6-8c0c1923ddb3.png#align=left&amp;display=inline&amp;height=517&amp;name=image.png&amp;originHeight=517&amp;originWidth=706&amp;size=78294&amp;status=done&amp;width=706#align=left&amp;display=inline&amp;height=517&amp;originHeight=517&amp;originWidth=706&amp;search=&amp;status=done&amp;width=706" alt="image.png" /></p>
+<p><code>lastb</code> 查看的是 /var/log/btmp 中的内容，而 /var/log/btmp 是一个二进制的文件；</p>
+
+<p><code>last</code> 查看的是 /var/log/wtmp 中的内容，而  /var/log/wtmp 也是一个二进制的文件；</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558494813715-1f830322-dafc-423d-9bf6-8c0c1923ddb3.png#align=left&amp;display=inline&amp;height=517&amp;name=image.png&amp;originHeight=517&amp;originWidth=706&amp;size=78294&amp;status=done&amp;width=706#align=left&amp;display=inline&amp;height=517&amp;originHeight=517&amp;originWidth=706&amp;search=&amp;status=done&amp;width=706" alt="image.png" /></p>
 
 <p>东北大学收集的发动 SSH 攻击的 IP 地址列表：<a href="http://antivirus.neu.edu.cn/scan/ssh.php">http://antivirus.neu.edu.cn/scan/ssh.php</a></p>
 
-<p>我们可以简单统计 ip 出现的次数，然后针对这些 ip 进行处理：<br /><code>blastb | awk '{print $3}' |sort |uniq -c |sort -k 1 -n -r |head -20</code></p>
+<p>我们可以简单统计 ip 出现的次数，然后针对这些 ip 进行处理：</p>
+
+<p><code>blastb | awk '{print $3}' |sort |uniq -c |sort -k 1 -n -r |head -20</code></p>
 
 <h1 id="二-处理-var-log-secure">二、处理 /var/log/secure</h1>
 
@@ -248,7 +254,9 @@
 <li><strong>/etc/hosts.deny</strong>，这个文件存放的是不允许访问服务器的 IP 内容，简单理解为黑名单。</li>
 </ul>
 
-<p>① 创建存放实施攻击的 ip 的文本，命名为：denyhosts.txt（<code>/root/denyhosts/denyhosts.txt</code>）。<br />② 创建定时脚本文件，命名为：denyhosts.sh（<code>/root/denyhosts/denyhosts.sh</code>）。</p>
+<p>① 创建存放实施攻击的 ip 的文本，命名为：denyhosts.txt（<code>/root/denyhosts/denyhosts.txt</code>）。</p>
+
+<p>② 创建定时脚本文件，命名为：denyhosts.sh（<code>/root/denyhosts/denyhosts.sh</code>）。</p>
 
 <pre><code class="language-bash">#!/bin/bash
 
@@ -269,7 +277,9 @@ do
 done
 </code></pre>
 
-<p>③ 脚本创建好之后，将脚本的权限更改为可执行权限： <code>chmod a+x denyhosts.sh</code> 。<br />④ SSH 攻击是每时每刻都在发动攻击的，所以我们需要将脚本添加到定时任务中，定时的执行：</p>
+<p>③ 脚本创建好之后，将脚本的权限更改为可执行权限： <code>chmod a+x denyhosts.sh</code> 。</p>
+
+<p>④ SSH 攻击是每时每刻都在发动攻击的，所以我们需要将脚本添加到定时任务中，定时的执行：</p>
 
 <pre><code class="language-bash">cat /etc/crontab # 这个文本是存放定时脚本的文本
 </code></pre>

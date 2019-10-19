@@ -7,7 +7,9 @@ category: 工具
 published: true
 ---
 
-调查统计机构 NetMarketShare 发布最新的 7 月份报告，在全球浏览器市场，谷歌浏览器以 61.64% 的市场占有率继续成为世界上排名第一的桌面浏览器，IE 以 12.06% 紧随其后，Firefox 则以 11.15% 排在第三位。<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558182611078-9f867c81-07f5-4371-aa58-71fa4a55b533.png#align=left&display=inline&height=782&originHeight=782&originWidth=776&size=0&status=done&width=776)
+调查统计机构 NetMarketShare 发布最新的 7 月份报告，在全球浏览器市场，谷歌浏览器以 61.64% 的市场占有率继续成为世界上排名第一的桌面浏览器，IE 以 12.06% 紧随其后，Firefox 则以 11.15% 排在第三位。
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558182611078-9f867c81-07f5-4371-aa58-71fa4a55b533.png#align=left&display=inline&height=782&originHeight=782&originWidth=776&size=0&status=done&width=776)
 
 作为一个有追求的生信人，秉着对科研执着严谨的态度，一款专业而强大的浏览器我们怎么能错过呢！今天我们把从卡饭论坛 Chrome 浏览器专区搜集的一些 Google Chrome 使用教程分享给大家，希望能对喜欢 Chrome 的童鞋有帮助。
 
@@ -42,10 +44,16 @@ published: true
   - [Chrome应用&扩展&脚本集合](http://bbs.kafan.cn/thread-1040672-1-1.html)
   - [分享一个最小化chrome到托盘的扩展](http://bbs.kafan.cn/thread-1084630-1-1.html)
 - 资源收集：**插件篇**
-  - 网页解除限制。<br />
-国内很多文档网站，像，都打着支持产权的旗号，要求你有会员才能服战。其实很多时候就只想引用其中的一两句话，为了这付个几十块钱会员费不是说给不起，是咽不下这口气。<br />
+  - 网页解除限制。
+
+
+国内很多文档网站，像，都打着支持产权的旗号，要求你有会员才能服战。其实很多时候就只想引用其中的一两句话，为了这付个几十块钱会员费不是说给不起，是咽不下这口气。
+
+
 国产良心插件——网页解除限制，就可以完美跳过这些恶心的设定，通杀绝大部分网站，自由选文本、复制，想怎么来就怎么来。
-  - LastPass<br />
+  - LastPass
+
+
 密码管理软件。可将你所有的密码信息保存起来，你再也无需记住复杂繁多的密码了，只需登录到lastpass，然后保存你的密码，lastpass会自动帮你完成登录，不需要输入密码。它还允许你从任何主流的密码存储器导入和导出密码，捕获其它管理器无法捕获的密码包括很多 AJAX 表单。也可轻松地创建强大的密码。敏感信息在上传之前已在本地计算机上加密，因此就算是LastPass的员工也无法得到密码信息。更妙de在于，lastpass支持的不仅仅是Chrome，还有Firefox、opera，甚至IE；当然如果你有一套完善便捷的密码方案，可忽略之。
 - [快捷键](http://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=984403&pid=19195849&fromuid=487958)
 - [常见基于chromium开源版本的第三方浏览器介绍](http://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=984403&pid=19195861&fromuid=487958)

@@ -75,7 +75,9 @@ $ hugo server --baseUrl=120.77.xx.xx --bind=0.0.0.0		# 启动本地预览服务
 
 ### 一些问题
 
-**问题：**<br />hugo-ivy 主题在 0.55 后版本的 Hugo 中 RSS 无法使用，并且在编译时会有如下警告：
+**问题：**
+
+hugo-ivy 主题在 0.55 后版本的 Hugo 中 RSS 无法使用，并且在编译时会有如下警告：
 
 ```bash
 Building sites … 

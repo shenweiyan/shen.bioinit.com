@@ -21,9 +21,13 @@ published: true
 1. 将本地仓库的更改内容推送 push 到个人 github 远程仓库；
 1. 创建 pull 请求，既可以把 fork 原始项目中别人的更新同步到自己的 github 仓库中，也可以提交个人更新的内容到 fork 的原始项目。
 
-我 fork 的 [galaxyproject/galaxy](https://github.com/galaxyproject/galaxy) 项目如下：<br />![1-shen-galaxy-master.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568266738223-082c5553-2559-4263-b288-ba2a131468b1.png#align=left&display=inline&height=599&name=1-shen-galaxy-master.png&originHeight=599&originWidth=900&size=80217&status=done&width=900)
+我 fork 的 [galaxyproject/galaxy](https://github.com/galaxyproject/galaxy) 项目如下：
 
-[galaxyproject/galaxy](https://github.com/galaxyproject/galaxy) 项目 master 版本最新进展如下，可以看到已经有了很大新的代码提交：<br />![2-galaxyproject-master.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568266793800-04ac5f39-8799-4aa4-9147-b400fb32c785.png#align=left&display=inline&height=579&name=2-galaxyproject-master.png&originHeight=579&originWidth=914&size=73717&status=done&width=914)
+![1-shen-galaxy-master.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568266738223-082c5553-2559-4263-b288-ba2a131468b1.png#align=left&display=inline&height=599&name=1-shen-galaxy-master.png&originHeight=599&originWidth=900&size=80217&status=done&width=900)
+
+[galaxyproject/galaxy](https://github.com/galaxyproject/galaxy) 项目 master 版本最新进展如下，可以看到已经有了很大新的代码提交：
+
+![2-galaxyproject-master.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568266793800-04ac5f39-8799-4aa4-9147-b400fb32c785.png#align=left&display=inline&height=579&name=2-galaxyproject-master.png&originHeight=579&originWidth=914&size=73717&status=done&width=914)
 
 下面我们简单介绍一下，如何同被 fork 的项目保持同步更新，将以 galaxyproject/galaxy 项目为例。
 

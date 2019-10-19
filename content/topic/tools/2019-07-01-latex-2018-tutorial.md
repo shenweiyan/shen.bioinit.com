@@ -9,8 +9,12 @@ published: true
 
 
 # 一、背景
-前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：<br />
-![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1548653466526-645be58b-5a23-43d2-b82a-895bc7500d15.png#align=left&display=inline&height=685&originHeight=709&originWidth=772&size=0&width=746)<br />500 : Internal Server Error 如下：
+前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：
+
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1548653466526-645be58b-5a23-43d2-b82a-895bc7500d15.png#align=left&display=inline&height=685&originHeight=709&originWidth=772&size=0&width=746)
+
+500 : Internal Server Error 如下：
 ```
 nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
 ```
@@ -39,7 +43,11 @@ TEXLive 是 Tex 的一种比较流行的发行版，它是由 TUG（TEX User Gro
 |  | ConTeXt | 和 LaTeX 相比，它更加灵活和自由。 |
 |  | ctex | 小写的 ctex 是可以很好支持中文的宏包。 |
 |  | ...... | ...... |
-| <br /><br />发行版 | **TeX Live** | 国际 TeX 用户组织 TUG 开发，支持不同的操作系统。 |
+| 
+
+
+
+发行版 | **TeX Live** | 国际 TeX 用户组织 TUG 开发，支持不同的操作系统。 |
 |  | MiKTeX | Windows 下广泛使用的一个 TeX 发行版。 |
 |  | ConTeXt Minimals | 它包含了最新版本的 ConTeXt。 |
 |  | teTeX | 一个 Unix 下的 TeX 发行版，现在已经停止更新且并入 TeXLive。 |
@@ -56,8 +64,12 @@ TEXLive 常用有两种安装方式：从 TEXLive 光盘进行安装和从网络
 
 ## 1. 镜像文件下载
 
-TexLive 历史版本下载地址：[ftp://tug.org/historic/systems/texlive/]()<br />
-TexLive 的镜像文件下载推荐使用 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)，国内下载速度极快。<br />[https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso)
+TexLive 历史版本下载地址：[ftp://tug.org/historic/systems/texlive/]()
+
+
+TexLive 的镜像文件下载推荐使用 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)，国内下载速度极快。
+
+[https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso)
 
 
 ## 2. 镜像挂载
@@ -68,7 +80,9 @@ $ sudo mount -o loop texlive2018.iso /mnt/textlive
 mount: /dev/loop0 is write-protected, mounting read-only
 ```
 
-注意：<br />使用 mount 挂载出现以上提示 `mount: /dev/loop0 is write-protected, mounting read-only`。这是因为 mount 命令默认以读写方式挂载一个设备，而光盘是只读的，所以在挂载光盘这个块设备时会出现上述从读写方式切换为以只读方式挂载光盘的提示。我们可以忽视不必管它。
+注意：
+
+使用 mount 挂载出现以上提示 `mount: /dev/loop0 is write-protected, mounting read-only`。这是因为 mount 命令默认以读写方式挂载一个设备，而光盘是只读的，所以在挂载光盘这个块设备时会出现上述从读写方式切换为以只读方式挂载光盘的提示。我们可以忽视不必管它。
 
 如果不想看到这个提示，就请在 mount 命令后面添加参数,指定以只读方式来挂载设备。
 ```bash
@@ -300,4 +314,6 @@ $ tlmgr install pkgname
 - Jiedong Hao，jdhao blog，[LaTeX 中如何使用中文](https://jdhao.github.io/2018/03/29/latex-chinese.zh/)
 
 
-<br />
+
+
+

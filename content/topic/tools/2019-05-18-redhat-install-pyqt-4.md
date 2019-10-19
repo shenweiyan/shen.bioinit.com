@@ -113,7 +113,9 @@ the --verbose flag to see more detail about the problem.
 
 ### 5、安装依赖二：QT
 
-使用 conda 安装的 qt >= 5.6.2：<br />![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183262081-192b5c4b-7fb9-4dcd-b09d-d4ac540baaae.png#align=left&display=inline&height=330&originHeight=330&originWidth=674&size=0&status=done&width=674)
+使用 conda 安装的 qt >= 5.6.2：
+
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1558183262081-192b5c4b-7fb9-4dcd-b09d-d4ac540baaae.png#align=left&display=inline&height=330&originHeight=330&originWidth=674&size=0&status=done&width=674)
 
 下面是通过源码安装 qt-4.8.x 的一些记录（使用 conda 应该也可以安装 qt-4.8.x，感兴趣的童鞋可以尝试一下）：
 ```
@@ -160,7 +162,11 @@ Type 'no' to decline the terms of the license.
 Do you accept the terms of the license? yes
 ```
 
-**注意：**<br />1、在 configure 的时候，指定了 qmake 的路径。<br />2、成功之后，然后再执行：
+**注意：**
+
+1、在 configure 的时候，指定了 qmake 的路径。
+
+2、成功之后，然后再执行：
 
 ```
 make (要等一段时间)
@@ -178,7 +184,13 @@ Qt 是一个跨平台的 C++ 图形用户界面应用程序框架。它提供给
 
 PyQt4 在 Linux 下安装，尤其是源码编译安装，需要特别注意：
 
-1、要解决 `xcb*`、`libxcb`必须库依赖。<br />2、确保满足 sip 依赖。<br />3、确保 QT 安装，QT 安装过程中确保 phonon 库被编译安装。<br />4、PyQt4 在执行 configure 过程中可以通过指定 qmake，从而选择 Qt 版本。
+1、要解决 `xcb*`、`libxcb`必须库依赖。
+
+2、确保满足 sip 依赖。
+
+3、确保 QT 安装，QT 安装过程中确保 phonon 库被编译安装。
+
+4、PyQt4 在执行 configure 过程中可以通过指定 qmake，从而选择 Qt 版本。
 
 
 ## 参考资料

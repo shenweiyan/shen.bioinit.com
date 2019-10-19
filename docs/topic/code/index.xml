@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>R 语言中的高级图像处理包</title>
+      <link>https://shen.bioinit.com/topic/code/2019-10-19-uoepud/</link>
+      <pubDate>Sat, 19 Oct 2019 02:39:42 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/code/2019-10-19-uoepud/</guid>
+      <description>最新的 magick 包是为能够在 R 中更现代化、简单化高质量图像处理而进行的一次努力。该包封装了目前最强大的开源图片处理库 ImageMagick STL 。 ImageMagick 库具有大量功能。当前版本</description>
+    </item>
+    
+    <item>
       <title>Python 日期和时间函数使用指南</title>
       <link>https://shen.bioinit.com/topic/code/2019-09-20-how-to-use-datetime-in-python/</link>
       <pubDate>Fri, 20 Sep 2019 23:20:19 +0000</pubDate>

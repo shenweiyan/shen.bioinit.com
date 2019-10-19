@@ -211,8 +211,11 @@
 
 <h1 id="一-背景">一、背景</h1>
 
-<p>前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：<br />
-<img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1548653466526-645be58b-5a23-43d2-b82a-895bc7500d15.png#align=left&amp;display=inline&amp;height=685&amp;originHeight=709&amp;originWidth=772&amp;size=0&amp;width=746" alt="" /><br />500 : Internal Server Error 如下：</p>
+<p>前两天在自己的 Jupyter 服务器上想要把 notebook(.ipynb) 导出为 pdf 时发现 xelatex 没有安装：</p>
+
+<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1548653466526-645be58b-5a23-43d2-b82a-895bc7500d15.png#align=left&amp;display=inline&amp;height=685&amp;originHeight=709&amp;originWidth=772&amp;size=0&amp;width=746" alt="" /></p>
+
+<p>500 : Internal Server Error 如下：</p>
 
 <pre><code>nbconvert failed: xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.
 </code></pre>
@@ -304,48 +307,20 @@
 </tr>
 
 <tr>
-<td align="center"><br /><br />发行版</td>
-<td><strong>TeX Live</strong></td>
-<td>国际 TeX 用户组织 TUG 开发，支持不同的操作系统。</td>
-</tr>
-
-<tr>
 <td align="center"></td>
-<td>MiKTeX</td>
-<td>Windows 下广泛使用的一个 TeX 发行版。</td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td>ConTeXt Minimals</td>
-<td>它包含了最新版本的 ConTeXt。</td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td>teTeX</td>
-<td>一个 Unix 下的 TeX 发行版，现在已经停止更新且并入 TeXLive。</td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td>fpTeX</td>
-<td>一个 Windows 的 TeX 发行版，已不再更新。</td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td>CTeX</td>
-<td><a href="http://www.ctex.org/CTeX">CTeX</a> 是基于 Windows 下的 <a href="http://www.ctex.org/MiKTeX">MiKTeX</a> 系统的一个中文套装（ctex 是可以很好支持中文的宏包）。</td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td>&hellip;&hellip;</td>
-<td>&hellip;&hellip;</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+
+<p>发行版 | <strong>TeX Live</strong> | 国际 TeX 用户组织 TUG 开发，支持不同的操作系统。 |
+|  | MiKTeX | Windows 下广泛使用的一个 TeX 发行版。 |
+|  | ConTeXt Minimals | 它包含了最新版本的 ConTeXt。 |
+|  | teTeX | 一个 Unix 下的 TeX 发行版，现在已经停止更新且并入 TeXLive。 |
+|  | fpTeX | 一个 Windows 的 TeX 发行版，已不再更新。 |
+|  | CTeX | <a href="http://www.ctex.org/CTeX">CTeX</a> 是基于 Windows 下的 <a href="http://www.ctex.org/MiKTeX">MiKTeX</a> 系统的一个中文套装（ctex 是可以很好支持中文的宏包）。 |
+|  | &hellip;&hellip; | &hellip;&hellip; |</p>
 
 <p><a href="http://www.ctex.org/CTeX">CTeX</a> 中文套装是基于 Windows 下的 <a href="http://www.ctex.org/MiKTeX">MiKTeX</a> 系统，集成了编辑器 <a href="http://www.ctex.org/WinEdt">WinEdt</a> 和 <a href="http://www.ctex.org/PostScript/edit">PostScript</a> 处理软件 Ghostscript 和 GSview 等主要工具。 <a href="http://www.ctex.org/CTeX">CTeX</a> 中文套装在 <a href="http://www.ctex.org/MiKTeX">MiKTeX</a> 的基础上增加了对中文的完整支持。 <a href="http://www.ctex.org/CTeX">CTeX</a> 中文套装支持 CJK, xeCJK, CCT, TY 等多种中文 <a href="http://www.ctex.org/TeX">TeX</a> 处理方式。</p>
 
@@ -355,8 +330,11 @@
 
 <h2 id="1-镜像文件下载">1. 镜像文件下载</h2>
 
-<p>TexLive 历史版本下载地址：[<a href="ftp://tug.org/historic/systems/texlive/](">ftp://tug.org/historic/systems/texlive/](</a>)<br />
-TexLive 的镜像文件下载推荐使用 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">清华大学开源软件镜像站</a>，国内下载速度极快。<br /><a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso</a></p>
+<p>TexLive 历史版本下载地址：[<a href="ftp://tug.org/historic/systems/texlive/](">ftp://tug.org/historic/systems/texlive/](</a>)</p>
+
+<p>TexLive 的镜像文件下载推荐使用 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/">清华大学开源软件镜像站</a>，国内下载速度极快。</p>
+
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso">https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso</a></p>
 
 <h2 id="2-镜像挂载">2. 镜像挂载</h2>
 
@@ -367,7 +345,9 @@ $ sudo mount -o loop texlive2018.iso /mnt/textlive
 mount: /dev/loop0 is write-protected, mounting read-only
 </code></pre>
 
-<p>注意：<br />使用 mount 挂载出现以上提示 <code>mount: /dev/loop0 is write-protected, mounting read-only</code>。这是因为 mount 命令默认以读写方式挂载一个设备，而光盘是只读的，所以在挂载光盘这个块设备时会出现上述从读写方式切换为以只读方式挂载光盘的提示。我们可以忽视不必管它。</p>
+<p>注意：</p>
+
+<p>使用 mount 挂载出现以上提示 <code>mount: /dev/loop0 is write-protected, mounting read-only</code>。这是因为 mount 命令默认以读写方式挂载一个设备，而光盘是只读的，所以在挂载光盘这个块设备时会出现上述从读写方式切换为以只读方式挂载光盘的提示。我们可以忽视不必管它。</p>
 
 <p>如果不想看到这个提示，就请在 mount 命令后面添加参数,指定以只读方式来挂载设备。</p>
 
@@ -597,8 +577,6 @@ $ tlmgr install pkgname
 <li>CTAN，<a href="https://ctan.org/pkg/xecjk">xecjk – Support for CJK documents in XELATEX</a></li>
 <li>Jiedong Hao，jdhao blog，<a href="https://jdhao.github.io/2018/03/29/latex-chinese.zh/">LaTeX 中如何使用中文</a></li>
 </ul>
-
-<p><br /></p>
 
 
   <footer>

@@ -209,11 +209,15 @@
 
 
 
-<p><strong>作者：</strong>谷珊，帅炜，陈志阳<br /><strong>来源：</strong>IBM Developer </p>
+<p><strong>作者：</strong>谷珊，帅炜，陈志阳</p>
+
+<p><strong>来源：</strong>IBM Developer </p>
 
 <h2 id="gpfs-的概述">GPFS 的概述</h2>
 
-<p>GPFS 是 IBM 公司提供的一个共享文件系统，它允许所有的集群节点可以并行访问整个文件系统。GPFS 允许客户共享文件，这些文件分布在不同节点的不同硬盘上，GPFS 还提供了 UNIX 文件系统接口并且支持 UNIX 文件系统的工具，用户可以在 Linux 集群中像使用普通文件系统一样使用 GPFS 文件系统，能够很好地应用在 Linux/UNIX 集群中。<br />在 GPFS 的长期运行中可能会出现一些问题，本文主要针对在使用 GPFS 中常见问题的一些诊断方法进行探讨。</p>
+<p>GPFS 是 IBM 公司提供的一个共享文件系统，它允许所有的集群节点可以并行访问整个文件系统。GPFS 允许客户共享文件，这些文件分布在不同节点的不同硬盘上，GPFS 还提供了 UNIX 文件系统接口并且支持 UNIX 文件系统的工具，用户可以在 Linux 集群中像使用普通文件系统一样使用 GPFS 文件系统，能够很好地应用在 Linux/UNIX 集群中。</p>
+
+<p>在 GPFS 的长期运行中可能会出现一些问题，本文主要针对在使用 GPFS 中常见问题的一些诊断方法进行探讨。</p>
 
 <h2 id="问题诊断步骤与方法">问题诊断步骤与方法</h2>
 
@@ -225,7 +229,9 @@
 
 <p><strong>1. 首先检查该问题仅仅出现在一个节点还是多个节点上并明确问题节点 :</strong></p>
 
-<p>通常判断某节点是否有问题的方法如下：<br />在 GPFS 集群中的某个可访问节点上运行 <code>mmgetstate -a</code> ，该命令可以显示集群中所有节点的状态，只要不是 &ldquo;active&rdquo; 状态的节点，都不是健康的节点。如下例所示，可见节点 node2 和 node3 都出现了问题：</p>
+<p>通常判断某节点是否有问题的方法如下：</p>
+
+<p>在 GPFS 集群中的某个可访问节点上运行 <code>mmgetstate -a</code> ，该命令可以显示集群中所有节点的状态，只要不是 &ldquo;active&rdquo; 状态的节点，都不是健康的节点。如下例所示，可见节点 node2 和 node3 都出现了问题：</p>
 
 <pre><code class="language-bash">node1:~ # mmgetstate -a 
  
@@ -322,18 +328,26 @@ lrwxrwxrwx 1 root root   36 Nov 12 03:43 mmfs.log.previous -&gt; mmfs.log.2009.1
 
 <p>在众多的跟踪属性中，我们究竟要修改哪些默认值是要根据实际情况决定的。对于不同的问题，会需要不同方面的属性。</p>
 
-<p><strong>使修改生效的方法：</strong><br />1. 在修改属性命令后增加 <code>-i</code> 参数，意思是马上生效。如：</p>
+<p><strong>使修改生效的方法：</strong></p>
+
+<ol>
+<li><p>在修改属性命令后增加 <code>-i</code> 参数，意思是马上生效。如：</p>
 
 <pre><code class="language-bash">mmtracectl --set --trace=&quot;tm 2 thread 1 vnode 5&quot; -i
 </code></pre>
 
-<p> <br />2. 重启整个 GPFS：</p>
+<p> </p></li>
+
+<li><p>重启整个 GPFS：</p>
 
 <pre><code class="language-bash">mmshutdown – a 
 mmstartup -a
-</code></pre>
+</code></pre></li>
+</ol>
 
-<p><strong>查看当前跟踪属性的设置：</strong><br />通过 <code>mmfsadm showtrace</code>  或者 <code>mmlsconfig</code> 命令，可以查看当前跟踪属性的设置情况。例如：运行上面的修改跟踪属性的命令后，可以通过 <code>mmfsadm showtrace</code> 或者 <code>mmlsconfig</code> 命令进行确认，看相应属性的修改是否生效。</p>
+<p><strong>查看当前跟踪属性的设置：</strong></p>
+
+<p>通过 <code>mmfsadm showtrace</code>  或者 <code>mmlsconfig</code> 命令，可以查看当前跟踪属性的设置情况。例如：运行上面的修改跟踪属性的命令后，可以通过 <code>mmfsadm showtrace</code> 或者 <code>mmlsconfig</code> 命令进行确认，看相应属性的修改是否生效。</p>
 
 <pre><code class="language-bash">node1:~ # mmlsconfig 
 Configuration data for cluster node1: 
@@ -384,7 +398,9 @@ node1:~ # mmchconfig trace=DEFAULT -i
         mmchconfig: Command successfully completed
 </code></pre>
 
-<p><strong>默认的跟踪文件保存路径：</strong><br />如果没有特别的指定，默认的跟踪文件被保存在 /tmp/mmfs 目录下。例如：</p>
+<p><strong>默认的跟踪文件保存路径：</strong></p>
+
+<p>如果没有特别的指定，默认的跟踪文件被保存在 /tmp/mmfs 目录下。例如：</p>
 
 <pre><code class="language-bash">node1:/tmp/mmfs # ls -al trc* 
 -rw-r--r-- 1 root root  406110912 Jan 19 14:52 trcfile.100119.14.52.05.node1 
@@ -402,11 +418,19 @@ node1:~ # mmchconfig trace=DEFAULT -i
 
 <p>下面介绍 <code>mmtrace</code> 的使用方法。</p>
 
-<p><strong>在单一节点上简单的启动跟踪功能：</strong><br />命令： <code>mmtrace start</code> <br />该命令在哪个节点上运行，就在哪个节点上生效。需要注意的是，这种启动方法在节点被重启后，会失效。</p>
+<p><strong>在单一节点上简单的启动跟踪功能：</strong></p>
 
-<p><strong>使用 mmtracectl 命令进行跟踪：</strong><br /><code>mmtracectl</code> 命令与 <code>mmtrace</code> 的不同之处在于它只需要在集群中的某个节点上运行，便可在集群范围内所有节点生效。这种跟踪启动方法在节点被重启后还会继续生效。</p>
+<p>命令： <code>mmtrace start</code> </p>
 
-<p><strong>查看跟踪进程：</strong><br />通过查看是否有 <code>lxtrace</code> 进程，可以知道跟踪进程的状态。</p>
+<p>该命令在哪个节点上运行，就在哪个节点上生效。需要注意的是，这种启动方法在节点被重启后，会失效。</p>
+
+<p><strong>使用 mmtracectl 命令进行跟踪：</strong></p>
+
+<p><code>mmtracectl</code> 命令与 <code>mmtrace</code> 的不同之处在于它只需要在集群中的某个节点上运行，便可在集群范围内所有节点生效。这种跟踪启动方法在节点被重启后还会继续生效。</p>
+
+<p><strong>查看跟踪进程：</strong></p>
+
+<p>通过查看是否有 <code>lxtrace</code> 进程，可以知道跟踪进程的状态。</p>
 
 <p><a name="minor2.4"></a></p>
 
