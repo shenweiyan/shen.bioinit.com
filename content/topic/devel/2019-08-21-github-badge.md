@@ -11,7 +11,7 @@ GitHub 项目的 README.md 中可以添加徽章（Badge）对项目进行标记
 
 GitHub 徽标的官方网站是 [http://shields.io/](http://shields.io/)，我们可以在官网预览绝大部分的徽标样式，然后选择自己喜欢的（当然首先需要适用于自己的目标项目）徽标，添加到自己的项目文档中去。
 
-![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566372610540-403c6104-d739-4a28-9141-5ead8d8fed77.png#align=left&display=inline&height=99&name=image.png&originHeight=99&originWidth=679&size=4679&status=done&width=679)
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566372610540-403c6104-d739-4a28-9141-5ead8d8fed77.png#align=left&display=inline&height=99&name=image.png&originHeight=99&originWidth=679&size=4679&status=done&width=679)
 
 ### 生成已有的标签
 
@@ -27,7 +27,7 @@ GitHub 徽标的官方网站是 [http://shields.io/](http://shields.io/)，我�
 
 - 一些常见比较好玩的 Badges
 
-![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566354267965-1cce470f-faf8-48c0-a3db-361da2dae48e.png#align=left&display=inline&height=551&name=image.png&originHeight=551&originWidth=675&size=34739&status=done&width=675)
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1566354267965-1cce470f-faf8-48c0-a3db-361da2dae48e.png#align=left&display=inline&height=551&name=image.png&originHeight=551&originWidth=675&size=34739&status=done&width=675)
 
 ### 生成自定义徽章标签
 

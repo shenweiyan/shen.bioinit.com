@@ -12,7 +12,7 @@ published: true
 
 在 Github 上有很多优秀的开源项目，相信每一位热衷于技术的朋友都会在 Github 上 Fork 一些感兴趣的项目，然后在本地修改并提交。本文以 Galaxy Project 下的 galaxy 仓库为例，在 Github 上 Fork 该项目，更新提交的一个完整过程如下图所示：
 
-![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568270123365-5627fbdf-c9a2-4633-91d8-33cdde542656.png#align=left&display=inline&height=336&name=image.png&originHeight=336&originWidth=678&size=25435&status=done&width=678)
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1568270123365-5627fbdf-c9a2-4633-91d8-33cdde542656.png#align=left&display=inline&height=336&name=image.png&originHeight=336&originWidth=678&size=25435&status=done&width=678)
 
 1. fork 一个项目，比如 galaxy，该操作会复制该项目的所有历史提交内容到个人仓库中，并生成一个相同的项目；
 1. clone 之前 fork 的项目到本地计算机中；

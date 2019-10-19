@@ -9,12 +9,12 @@ published: true
 
 今天，又重新安装了一下 Firefox Quantum-68.0 (64 位)，不同的是这一次安装的是国际中文版，而不是北京谋智火狐的版本。
 
-![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562971605832-a24038e6-1bcd-49ae-900a-5a2f3d1f133e.png#align=left&display=inline&height=337&name=image.png&originHeight=421&originWidth=775&size=97090&status=done&width=620)
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562971605832-a24038e6-1bcd-49ae-900a-5a2f3d1f133e.png#align=left&display=inline&height=337&name=image.png&originHeight=421&originWidth=775&size=97090&status=done&width=620)
 
 
 
 
-![image.png](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562971800315-42037b34-39fd-40cf-9357-ad1e08966bc2.png#align=left&display=inline&height=337&name=image.png&originHeight=421&originWidth=775&size=87032&status=done&width=620)
+![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1562971800315-42037b34-39fd-40cf-9357-ad1e08966bc2.png#align=left&display=inline&height=337&name=image.png&originHeight=421&originWidth=775&size=87032&status=done&width=620)
 
 
 总的来说，有几点体验：
