@@ -6,10 +6,19 @@
     <description>Recent content in 乱弹 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Fri, 06 Sep 2019 03:16:17 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 03:45:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/tags/%E4%B9%B1%E5%BC%B9/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>写作</title>
+      <link>https://shen.bioinit.com/topic/hello/2019-11-06-writing/</link>
+      <pubDate>Wed, 06 Nov 2019 03:45:00 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/hello/2019-11-06-writing/</guid>
+      <description>关于写作原本的想法，只是想写点自己在学习、工作、生活上的一些心得和体会，把一些知识点记录下来。 留言的初衷是，希望自己写下来的东西能够有人一起</description>
+    </item>
     
     <item>
       <title>Gitbook 安装与使用笔记</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://shen.bioinit.com/topic/hello/2019-11-06-writing/</loc>
+    <lastmod>2019-11-06T03:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shen.bioinit.com/topic/code/2019-10-19-uoepud/</loc>
     <lastmod>2019-10-19T02:39:42+00:00</lastmod>
   </url>
@@ -503,7 +508,7 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/tools/2019-05-18-clumpify-1714585/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</loc>
     <lastmod>2019-05-18T12:26:17+00:00</lastmod>
   </url>
   
@@ -661,7 +666,7 @@
   
   <url>
     <loc>https://shen.bioinit.com/tags/others/</loc>
-    <lastmod>2019-10-19T02:39:42+00:00</lastmod>
+    <lastmod>2019-11-06T03:45:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -726,7 +731,13 @@
   
   <url>
     <loc>https://shen.bioinit.com/tags/%E4%B9%B1%E5%BC%B9/</loc>
-    <lastmod>2019-09-06T03:16:17+00:00</lastmod>
+    <lastmod>2019-11-06T03:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/tags/%E5%85%B6%E4%BB%96/</loc>
+    <lastmod>2019-05-18T12:26:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
