@@ -1,9 +1,9 @@
 ---
 title: 联通宽带
 type: post
-tags: ["others", "生活"]
+tags: ["others", "乱弹"]
 date: 2019-07-08T01:51:47.000Z
-category: 生活
+category: 乱弹
 published: true
 ---
 

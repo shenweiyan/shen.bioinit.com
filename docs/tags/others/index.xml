@@ -31,11 +31,20 @@
     
     <item>
       <title>输入法</title>
-      <link>https://shen.bioinit.com/topic/life/2019-10-16-input/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-10-16-input/</link>
       <pubDate>Wed, 16 Oct 2019 02:39:15 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-10-16-input/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-10-16-input/</guid>
       <description>现在移动端电脑端的输入法有很多。但有一个问题：安卓手机上哪个输入法可以左右滑动键盘来移动光标？ 我用的是华为手机，经测试目前搜狗输入法是可以的</description>
+    </item>
+    
+    <item>
+      <title>Cool New Features in Python 3.8</title>
+      <link>https://shen.bioinit.com/topic/code/2019-10-16-pcfnsd/</link>
+      <pubDate>Wed, 16 Oct 2019 02:26:33 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/code/2019-10-16-pcfnsd/</guid>
+      <description>原文：https://realpython.com/python38-new-features/</description>
     </item>
     
     <item>
@@ -94,10 +103,10 @@
     
     <item>
       <title>修养</title>
-      <link>https://shen.bioinit.com/topic/life/2019-09-04-marriage-art/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-09-04-marriage-art/</link>
       <pubDate>Wed, 04 Sep 2019 01:30:05 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-09-04-marriage-art/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-09-04-marriage-art/</guid>
       <description>婚姻是一门学问，摘取某博主的一篇关于婚姻修养的文章，且行且珍惜，给大家共勉。 婚姻是一种修行，体现了个人的素质和修养；婚姻是否平静、长久，取决</description>
     </item>
     
@@ -112,10 +121,10 @@
     
     <item>
       <title>一个纯粹的人</title>
-      <link>https://shen.bioinit.com/topic/life/2019-08-26-a-real-man/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-08-26-a-real-man/</link>
       <pubDate>Mon, 26 Aug 2019 05:55:38 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-08-26-a-real-man/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-08-26-a-real-man/</guid>
       <description>我和白求恩同志只见过一面。后来他给我来过许多信。可是因为忙，仅回过他一封信，还不知他收到没有。对于他的死，我是很悲痛的。现在大家纪念他，可见</description>
     </item>
     
@@ -130,10 +139,10 @@
     
     <item>
       <title>沉默的大多数</title>
-      <link>https://shen.bioinit.com/topic/life/2019-08-19-moc049/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-08-19-moc049/</link>
       <pubDate>Mon, 19 Aug 2019 02:57:02 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-08-19-moc049/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-08-19-moc049/</guid>
       <description>表达一个人要有自己独立的思想，任何想将个人的思想凌驾于大众或迫使大众去遵从的都是不对的。 拿破仑说：一头狮子带领的一群羊可以打败一只羊带领的一</description>
     </item>
     
@@ -247,19 +256,19 @@
     
     <item>
       <title>联通宽带</title>
-      <link>https://shen.bioinit.com/topic/life/2019-07-08-unicom-broadband/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-07-08-unicom-broadband/</link>
       <pubDate>Mon, 08 Jul 2019 01:51:47 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-07-08-unicom-broadband/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-07-08-unicom-broadband/</guid>
       <description>从星期四起，家里用了两年的联通宽带网络到期，断了。 没有任何提前的信息提示，也不能在线充值续费； 去营业厅办理续费必须要身份证，居住证、驾驶证、</description>
     </item>
     
     <item>
       <title>你若安好便是晴天</title>
-      <link>https://shen.bioinit.com/topic/life/2019-07-08-to-be-good/</link>
+      <link>https://shen.bioinit.com/topic/hello/2019-07-08-to-be-good/</link>
       <pubDate>Mon, 08 Jul 2019 01:07:48 +0000</pubDate>
       
-      <guid>https://shen.bioinit.com/topic/life/2019-07-08-to-be-good/</guid>
+      <guid>https://shen.bioinit.com/topic/hello/2019-07-08-to-be-good/</guid>
       <description>昨天，7月7日，挺顺口的一个日子。公司体检和家里小孩子咳嗽感冒撞到了一起。 关于体检 从早 7 点开始，从公司集合到体检地点，从领号、报到取表、开始</description>
     </item>
     
@@ -558,15 +567,6 @@
       
       <guid>https://shen.bioinit.com/topic/tools/2019-05-18-kefse-install/</guid>
       <description>问题 源码下载的 LEfSe，或者使用 conda install -c bioconda lefse 安装完成后，执行分析出现报错： $ lefse-format_input.py hmp_aerobiosis_small.txt hmp_aerobiosis_small.in -c 1 -s 2 -u 3 -o 1000000 $ run_lefse.py hmp_aerobiosis_small.in hmp_aerobiosis_small.res Number of significantly discriminative features: 51 ( 131 ) before internal wilcoxon Number of discriminative features with</description>
-    </item>
-    
-    <item>
-      <title>Clumpify：能使 Fastq 压缩文件再缩小 30% 并加速后续分析流程</title>
-      <link>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</link>
-      <pubDate>Sat, 18 May 2019 12:26:17 +0000</pubDate>
-      
-      <guid>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</guid>
-      <description>Clumpify 是 BBMap 工具包中的一个组件，它与其他工具略有不同的是 Clumpify 不会实际更改你的数据，只是重新排序以最大化 gzip 压缩。因此，输出文件仍然是完全兼容的 gzipped fastq 文件</description>
     </item>
     
     <item>

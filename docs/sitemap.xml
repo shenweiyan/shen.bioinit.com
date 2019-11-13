@@ -13,8 +13,13 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-10-16-input/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-10-16-input/</loc>
     <lastmod>2019-10-16T02:39:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/code/2019-10-16-pcfnsd/</loc>
+    <lastmod>2019-10-16T02:26:33+00:00</lastmod>
   </url>
   
   <url>
@@ -63,7 +68,7 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-09-04-marriage-art/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-09-04-marriage-art/</loc>
     <lastmod>2019-09-04T01:30:05+00:00</lastmod>
   </url>
   
@@ -78,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-08-26-a-real-man/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-08-26-a-real-man/</loc>
     <lastmod>2019-08-26T05:55:38+00:00</lastmod>
   </url>
   
@@ -93,7 +98,7 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-08-19-moc049/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-08-19-moc049/</loc>
     <lastmod>2019-08-19T02:57:02+00:00</lastmod>
   </url>
   
@@ -198,12 +203,12 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-07-08-unicom-broadband/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-07-08-unicom-broadband/</loc>
     <lastmod>2019-07-08T01:51:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/life/2019-07-08-to-be-good/</loc>
+    <loc>https://shen.bioinit.com/topic/hello/2019-07-08-to-be-good/</loc>
     <lastmod>2019-07-08T01:07:48+00:00</lastmod>
   </url>
   
@@ -508,11 +513,6 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/topic/hello/2019-05-18-clumpify-1714585/</loc>
-    <lastmod>2019-05-18T12:26:17+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/topic/tools/2019-05-18-pyclone-install-1714572/</loc>
     <lastmod>2019-05-18T12:21:13+00:00</lastmod>
   </url>
@@ -736,12 +736,6 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/tags/%E5%85%B6%E4%BB%96/</loc>
-    <lastmod>2019-05-18T12:26:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2019-07-15T09:24:35+00:00</lastmod>
     <priority>0</priority>
@@ -760,12 +754,6 @@
   <url>
     <loc>https://shen.bioinit.com/tags/%E7%94%9F%E4%BF%A1/</loc>
     <lastmod>2019-10-12T06:33:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shen.bioinit.com/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2019-10-16T02:39:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   

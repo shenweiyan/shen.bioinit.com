@@ -14,8 +14,8 @@
     
     
     
-    <title>发现了阿里云 APP 的一个小 BUG - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="发现了阿里云 APP 的一个小 BUG - Steven Shen | 沈维燕">
+    <title>你若安好便是晴天 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="你若安好便是晴天 - Steven Shen | 沈维燕">
     
 
     
@@ -175,7 +175,7 @@
 
 
 
-<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-07-17-bugs-of-aliyun-app.md" target="_blank">编辑</a></li>
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/hello/2019-07-08-to-be-good.md" target="_blank">编辑</a></li>
 
 
 <li class="pattern"><a href="../../../topic/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
@@ -192,12 +192,12 @@
       <header class="title">
         
 
-<h1>发现了阿里云 APP 的一个小 BUG</h1>
+<h1>你若安好便是晴天</h1>
 
 
 
 <h3>
-2019-07-17</h3> 
+2019-07-08</h3> 
 
 
    
@@ -207,49 +207,28 @@
       </header>
 
 
-<p>前几天在华为手机上使用阿里云 APP，从 oss bucket 中下载了一张图片，想要通过微信把它发给一个朋友时，发现在打开微信选择照片时却无法找到新下载的图片。同样在打开的 Android 系统相册中也完全找不到这个照片，虽然这个图片确确实实已经下载到了手机上。</p>
+
+
+<p>昨天，7月7日，挺顺口的一个日子。公司体检和家里小孩子咳嗽感冒撞到了一起。</p>
+
+<h2 id="关于体检">关于体检</h2>
+
+<p>从早 7 点开始，从公司集合到体检地点，从领号、报到取表、开始体检到体检结束，3个半小时的折腾好不容易把今年的这一次身体小检查给完成了。总结起来就是：</p>
 
 <ul>
-<li>手机系统：EMUI 8.0.0</li>
-<li>阿里云 APP：V4.11.0</li>
+<li>人多。从早八点半到爱康国宾（广州天河体检分院），再到拿到号，前面已经熙熙攘攘排了 100 多号人，而窗口叫号取体检表的人工服务通道就只有 3 个。</li>
+<li>服务一般。窗口叫号取表和自助机刷身份证取表都是一样的，但是在服务指引上，工作人员的答复只有：等叫号办理取表。</li>
 </ul>
 
-<p>后来谷歌了一下，最后找出问题所在：</p>
+<h2 id="关于感冒">关于感冒</h2>
 
-<p>Android 只会在每次启动的时候扫描系统相册，并将扫描到的信息存储在数据库（MediaStore）。然后系统相册将直接调用数据库中的数据，所以当新的图片存到相册后，并没有将数据写入到数据库，所以在微信扫描里面自然就找不到这张图片了，所以解决的办法就是更新这个数据库。</p>
+<p>儿科医生不足，在现在各大医院都很常见。在广州绝大部分的医院，不管是三甲还是二甲，基本上都要提前预约，或者预约当天号。</p>
 
-<p>为了验证问题，我在手机的文件管理中找到了这张图片所在的目录，进去重新刷新该文件夹，然后打开系统相册，果然就可以看到这张下载的图片了。</p>
+<p>关于周末就医，还有一个问题就是很多医院，不管是三甲还是二甲，周末都不上班！例如距离我们家里最近的岭南医院（三甲）周六下午、周日都是不上班的。</p>
 
-<p>后来，向阿里云反馈也的确证实了该问题：</p>
+<p>这是我们第一次试图通过微信公众号预约广州医科大学第五附属医院，有很大的一个体验就是在 <strong>&ldquo;广医五院&rdquo; </strong>的微信公众号进行预约时 <strong>&ldquo;必须要先去医院办理诊疗卡，使用诊疗卡号才能在线预约&rdquo;</strong>。这对于第一次想预约看病的人而言，体验很不友好！</p>
 
-<p><img src="https://qiniu.bioinit.com/yuque/0/2019/png/126032/1563344876240-5828f914-7c3b-47b0-8a98-ee866bdfc41c.png#align=left&amp;display=inline&amp;height=220&amp;originHeight=220&amp;originWidth=721&amp;size=0&amp;status=done&amp;width=721" alt="" /></p>
-
-<p>虽然本人对 Android 开发完全不懂， 但也想了解一下，在 Android 手机中下载图片怎么样才能实时刷新系统相册呢？</p>
-
-<p>首先，是在 Adnroid 中保存图片。这里面会涉及到是否能指定路径保存和名称，方法可能有如下两种：</p>
-
-<ul>
-<li>一，自己写方法。</li>
-<li>二，调用系统提供的插入图库的方法保存图片。</li>
-</ul>
-
-<p>其次，是更新系统图库。这里有三种策略：</p>
-
-<ul>
-<li>重新扫描整个存储空间，将数据库更新。扫描整个 sd 卡的广播，如果 sd 卡里面东西多会扫描很久，用户体验差。</li>
-<li>将新的数据加到数据库。样操作对数据的安全性要求很高。</li>
-<li>直接扫描新添加的文件（或者是该文件所在的文件夹）。</li>
-</ul>
-
-<p>关于在代码层面刷新系统 Media，网络上面主要几种方法：</p>
-
-<ul>
-<li>通过操作 MediaStore 类。</li>
-<li>发送广播更新 MediaStore。</li>
-<li>通过操作 MediaScannerConnection 类。</li>
-</ul>
-
-<p>当然或许会有更多的解决方法，小编作为一个 Adnroid 的小白，就不在这里啰嗦了。</p>
+<p>从出生起，这一次也算是家里小孩第一次感冒的经历，在医院候诊遇到的各个奶爸宝妈、各种囧事锁事也算是另外一种体验吧！</p>
 
 
   <footer>
@@ -257,13 +236,13 @@
 <nav class="post-nav">
   <span class="nav-prev">
       
-      <a href="../../../topic/hello/2019-07-08-unicom-broadband/">联通宽带</a>
+      <a href="../../../topic/hello/2019-07-01-focus-on-writing/">只要能坚持下来就是好博客</a>
       <br/>&larr;&nbsp;
       
   </span>
   <span class="nav-next">
       
-      <a href="../../../topic/hello/2019-07-23-coding-cancel-account/">不提供账号注销等于耍流氓</a>
+      <a href="../../../topic/hello/2019-07-08-unicom-broadband/">联通宽带</a>
       <br/>&nbsp;&rarr;
       
   </span>
@@ -274,11 +253,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
-    url = '\/topic\/hello\/2019-07-08-unicom-broadband\/';
+    url = '\/topic\/hello\/2019-07-01-focus-on-writing\/';
     
   } else if (e.which == 39) {  
     
-    url = '\/topic\/hello\/2019-07-23-coding-cancel-account\/';
+    url = '\/topic\/hello\/2019-07-08-unicom-broadband\/';
     
   }
   if (url) window.location = url;

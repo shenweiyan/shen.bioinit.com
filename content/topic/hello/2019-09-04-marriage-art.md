@@ -1,9 +1,9 @@
 ---
 title: 修养
 type: post
-tags: ["others", "生活"]
+tags: ["others", "乱弹"]
 date: 2019-09-04T01:30:05.000Z
-category: 生活
+category: 乱弹
 published: true
 ---
 
