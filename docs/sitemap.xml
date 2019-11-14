@@ -443,7 +443,7 @@
   </url>
   
   <url>
-    <loc>https://shen.bioinit.com/resume/shenweiyan/</loc>
+    <loc>https://shen.bioinit.com/topic/resume/shenweiyan/</loc>
     <lastmod>2019-08-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -671,12 +671,6 @@
   <url>
     <loc>https://shen.bioinit.com/tags/redhat/</loc>
     <lastmod>2019-07-25T01:29:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shen.bioinit.com/resume/</loc>
-    <lastmod>2019-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
