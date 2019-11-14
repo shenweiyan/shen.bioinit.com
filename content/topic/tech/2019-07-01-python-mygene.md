@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 中的 mygene 模块进行 ID 匹配
 type: post
-"blog/tags": ["Python", "生信"]
+topic/tags: ["Python", "生信"]
 date: 2019-07-01T03:50:35.000Z
 category: 生信
 published: true

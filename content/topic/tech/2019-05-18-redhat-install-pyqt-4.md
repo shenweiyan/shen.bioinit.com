@@ -1,7 +1,7 @@
 ---
 title: RedHat 6.5 下安装 PyQt4 详细步骤
 type: post
-"blog/tags": ["RedHat", "工具"]
+topic/tags: ["RedHat", "工具"]
 date: 2019-05-18T12:39:52.000Z
 category: 工具
 published: true

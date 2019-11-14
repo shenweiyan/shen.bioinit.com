@@ -1,7 +1,7 @@
 ---
 title: hugo 博客添加 disqus 评论系统
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-08-28T08:30:50.000Z
 category: 乱弹
 published: true

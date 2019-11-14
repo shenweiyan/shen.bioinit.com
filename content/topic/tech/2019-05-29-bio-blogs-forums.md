@@ -1,7 +1,7 @@
 ---
 title: 生物信息学博客与论坛
 type: post
-"blog/tags": ["others", "生信"]
+topic/tags: ["others", "生信"]
 date: 2019-05-29T06:12:49.000Z
 category: 生信
 published: true

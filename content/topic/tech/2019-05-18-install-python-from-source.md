@@ -1,7 +1,7 @@
 ---
 title: 生物信息学 Python 入门之源码安装
 type: post
-"blog/tags": ["Python", "工具"]
+topic/tags: ["Python", "工具"]
 date: 2019-05-18T12:10:10.000Z
 category: 工具
 published: true

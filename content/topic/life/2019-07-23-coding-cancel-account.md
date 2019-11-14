@@ -1,7 +1,7 @@
 ---
 title: 不提供账号注销等于耍流氓
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-07-23T03:19:17.000Z
 category: 乱弹
 published: true

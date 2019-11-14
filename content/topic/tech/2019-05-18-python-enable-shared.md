@@ -1,7 +1,7 @@
 ---
 title: 聊一聊 Python 安装中的 --enable-shared
 type: post
-"blog/tags": ["Python", "工具"]
+topic/tags: ["Python", "工具"]
 date: 2019-05-18T12:17:49.000Z
 category: 工具
 published: true

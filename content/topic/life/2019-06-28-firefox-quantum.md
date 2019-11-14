@@ -1,7 +1,7 @@
 ---
 title: Firefox Quantum 向左，Google Chrome 向右
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-06-28T08:23:08.000Z
 category: 乱弹
 published: true

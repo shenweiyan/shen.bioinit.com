@@ -1,7 +1,7 @@
 ---
 title: R 包初学者指南
 type: post
-"blog/tags": ["R", "编程"]
+topic/tags: ["R", "编程"]
 date: 2019-07-01T03:50:35.000Z
 category: 编程
 published: true

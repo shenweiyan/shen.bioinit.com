@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook 教程(三)：多语言编程环境配置
 type: post
-"blog/tags": ["Jupyter", "开发"]
+topic/tags: ["Jupyter", "开发"]
 date: 2019-07-17T08:25:34.000Z
 category: 开发
 published: true

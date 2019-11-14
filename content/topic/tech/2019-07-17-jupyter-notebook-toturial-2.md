@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook 教程(二)：服务器搭建
 type: post
-"blog/tags": ["Jupyter", "开发"]
+topic/tags: ["Jupyter", "开发"]
 date: 2019-07-17T07:48:42.000Z
 category: 开发
 published: true

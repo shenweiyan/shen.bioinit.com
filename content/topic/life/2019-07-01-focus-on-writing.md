@@ -1,7 +1,7 @@
 ---
 title: 只要能坚持下来就是好博客
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-07-01T03:55:23.000Z
 category: 乱弹
 published: true

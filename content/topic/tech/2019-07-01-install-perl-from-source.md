@@ -1,7 +1,7 @@
 ---
 title: 各个平台下 Perl 源码安装教程
 type: post
-"blog/tags": ["Perl", "工具"]
+topic/tags: ["Perl", "工具"]
 date: 2019-07-01T03:50:35.000Z
 category: 工具
 published: true

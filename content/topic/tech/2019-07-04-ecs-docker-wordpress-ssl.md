@@ -1,7 +1,7 @@
 ---
 title: 阿里云 ECS+Docker+WordPress 搭建个人博客
 type: post
-"blog/tags": ["others", "开发"]
+topic/tags: ["others", "开发"]
 date: 2019-07-04T06:16:29.000Z
 category: 开发
 published: true

@@ -1,7 +1,7 @@
 ---
 title: 语雀图片与七牛云之间的迁移同步
 type: post
-"blog/tags": ["others", "开发"]
+topic/tags: ["others", "开发"]
 date: 2019-08-08T03:44:11.000Z
 category: 开发
 published: true

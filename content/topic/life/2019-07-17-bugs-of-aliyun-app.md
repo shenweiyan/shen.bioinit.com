@@ -1,7 +1,7 @@
 ---
 title: 发现了阿里云 APP 的一个小 BUG
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-07-17T06:26:57.000Z
 category: 乱弹
 published: true

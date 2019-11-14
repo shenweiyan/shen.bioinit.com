@@ -33,7 +33,6 @@ publishDir = "docs"
     url = "https://www.yuque.com/shenweiyan"
     weight = 7
 
-
 [[menu.topic]]
     name = "首页"
     url = "/"

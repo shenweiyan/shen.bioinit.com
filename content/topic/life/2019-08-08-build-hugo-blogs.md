@@ -1,7 +1,7 @@
 ---
 title: Hugo 博客折腾的一些记录
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-08-08T09:05:21.000Z
 category: 乱弹
 published: true

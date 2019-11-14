@@ -1,7 +1,7 @@
 ---
 title: 利用 python 的 sorted 函数对字典按 key 排序和按 value 排序
 type: post
-"blog/tags": ["Python", "编程"]
+topic/tags: ["Python", "编程"]
 date: 2019-05-18T12:50:51.000Z
 category: 编程
 published: true

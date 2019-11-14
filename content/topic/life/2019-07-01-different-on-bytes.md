@@ -1,7 +1,7 @@
 ---
 title: 兆碱基中关于Kb、KB、Bps、bps的区别
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-07-01T03:50:35.000Z
 category: 乱弹
 published: true

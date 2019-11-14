@@ -1,7 +1,7 @@
 ---
 title: 一些好玩的命名风格
 type: post
-tags: ["others", "乱弹"]
+topic/tags: ["others", "乱弹"]
 date: 2019-04-29T00:41:03.000Z
 category: 乱弹
 published: true
