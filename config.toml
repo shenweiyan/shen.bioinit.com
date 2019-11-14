@@ -25,7 +25,7 @@ publishDir = "docs"
     url = "/topic/"
     weight = 3
 [[menu.main]]
-    name = ""
+    name = "----"
     url = "#"
     weight = 4
 [[menu.main]]
