@@ -25,13 +25,17 @@ publishDir = "docs"
     url = "/topic/"
     weight = 3
 [[menu.main]]
+    name = ""
+    url = ""
+    weight = 4
+[[menu.main]]
     name = "公众号"
     url = "https://apps-db.oss-cn-shenzhen.aliyuncs.com/bioinit/qrcode-bioinit.png"
-    weight = 4
+    weight = 6
 [[menu.main]]
     name = "知识库"
     url = "https://www.yuque.com/shenweiyan"
-    weight = 5
+    weight = 7
 
 
 [[menu.topic]]
