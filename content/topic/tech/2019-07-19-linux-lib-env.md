@@ -1,7 +1,7 @@
 ---
 title: Linux 下的动态库、静态库与环境变量
 type: post
-tags: ["Linux", "运维"]
+"blog/tags": ["Linux", "运维"]
 date: 2019-07-19T02:22:00.000Z
 category: 运维
 published: true

@@ -64,11 +64,11 @@ publishDir = "docs"
     weight = 7
 [[menu.topic]]
     name = "标签"
-    url = "/tags/"
+    url = "/topic/tags/"
     weight = 8
 [[menu.topic]]
     name = "归档"
-    url = "/archives/"
+    url = "/topic/archives/"
     weight = 9
 
 
@@ -106,6 +106,6 @@ publishDir = "docs"
     cn = "订阅"
 
 [taxonomies]
-    tag = "tags"
-    series = "series"
-    category = "categories"
+    tag = "topic/tags"
+    series = "topic/series"
+    category = "topic/categories"

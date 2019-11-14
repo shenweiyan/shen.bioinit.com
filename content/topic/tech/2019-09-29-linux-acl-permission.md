@@ -1,7 +1,7 @@
 ---
 title: 在 Linux 上给用户赋予指定目录的读写权限
 type: post
-tags: ["Linux", "运维"]
+"blog/tags": ["Linux", "运维"]
 date: 2019-09-29T08:28:52.000Z
 category: 运维
 published: true

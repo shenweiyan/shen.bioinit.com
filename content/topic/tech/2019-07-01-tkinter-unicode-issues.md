@@ -1,7 +1,7 @@
 ---
 title: Python 中 tkinter 中文乱码
 type: post
-tags: ["others", "工具"]
+"blog/tags": ["others", "工具"]
 date: 2019-07-01T03:50:35.000Z
 category: 工具
 published: true

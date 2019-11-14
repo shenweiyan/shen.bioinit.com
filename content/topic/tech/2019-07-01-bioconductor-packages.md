@@ -1,7 +1,7 @@
 ---
 title: Bioconductor 中的 R 包安装方法总结
 type: post
-tags: ["others", "工具"]
+"blog/tags": ["others", "工具"]
 date: 2019-07-01T03:50:35.000Z
 category: 工具
 published: true

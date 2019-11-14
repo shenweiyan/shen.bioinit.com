@@ -1,7 +1,7 @@
 ---
 title: 一次"胆战心惊"的真实集群运维经历
 type: post
-tags: ["others", "运维"]
+"blog/tags": ["others", "运维"]
 date: 2019-07-12T23:02:05.000Z
 category: 运维
 published: true

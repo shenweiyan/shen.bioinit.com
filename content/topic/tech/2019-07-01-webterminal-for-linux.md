@@ -1,7 +1,7 @@
 ---
 title: 基于 Web 的 Linux 终端 WebTerminal
 type: post
-tags: ["Linux", "工具"]
+"blog/tags": ["Linux", "工具"]
 date: 2019-07-01T03:50:35.000Z
 category: 工具
 published: true

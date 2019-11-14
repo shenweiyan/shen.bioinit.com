@@ -1,7 +1,7 @@
 ---
 title: CentOS 7 防火墙开启常见端口命令
 type: post
-tags: ["CentOS", "运维"]
+"blog/tags": ["CentOS", "运维"]
 date: 2019-07-01T03:50:35.000Z
 category: 运维
 published: true

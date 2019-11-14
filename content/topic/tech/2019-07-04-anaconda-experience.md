@@ -1,7 +1,7 @@
 ---
 title: Anaconda 使用的一些体验与困惑
 type: post
-tags: ["Anaconda", "工具"]
+"blog/tags": ["Anaconda", "工具"]
 date: 2019-07-04T06:20:26.000Z
 category: 工具
 published: true

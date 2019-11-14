@@ -1,7 +1,7 @@
 ---
 title: 基于 ggplot2 的解剖图和组织模块可视化
 type: post
-tags: ["R", "生信"]
+"blog/tags": ["R", "生信"]
 date: 2019-07-01T03:50:35.000Z
 category: 生信
 published: true

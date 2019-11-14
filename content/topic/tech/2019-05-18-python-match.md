@@ -1,7 +1,7 @@
 ---
 title: Python 正则匹配总结
 type: post
-tags: ["Python", "编程"]
+"blog/tags": ["Python", "编程"]
 date: 2019-05-18T12:48:56.000Z
 category: 编程
 published: true

@@ -1,7 +1,7 @@
 ---
 title: Python 文件与目录操作方法总结
 type: post
-tags: ["Python", "编程"]
+"blog/tags": ["Python", "编程"]
 date: 2019-07-01T03:50:35.000Z
 category: 编程
 published: true

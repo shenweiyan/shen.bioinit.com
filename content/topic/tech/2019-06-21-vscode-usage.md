@@ -1,7 +1,7 @@
 ---
 title: VS Code 常见配置与使用技巧总结
 type: post
-tags: ["vscode", "工具"]
+"blog/tags": ["vscode", "工具"]
 date: 2019-06-21T03:58:08.000Z
 category: 工具
 published: true

@@ -1,7 +1,7 @@
 ---
 title: 阿里云 ECS 更换操作系统
 type: post
-tags: ["others", "运维"]
+"blog/tags": ["others", "运维"]
 date: 2019-09-23T07:04:36.000Z
 category: 运维
 published: true

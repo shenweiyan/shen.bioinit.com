@@ -20,5 +20,14 @@
       <description>沈维燕 联系方式 地址：广州市黄埔区科学城科学大道182号创新大厦 邮箱：ishenwieyan@qq.com 网站：https://blog.bi</description>
     </item>
     
+    <item>
+      <title>归档</title>
+      <link>https://shen.bioinit.com/topic/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/archives/</guid>
+      <description>本页面为本站点所有分类历史文章归档。具体每一个分类的文章请移步导航栏的 &amp;ldquo;文章&amp;rdquo; 页面阅读。</description>
+    </item>
+    
   </channel>
 </rss>

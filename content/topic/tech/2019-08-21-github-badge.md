@@ -1,7 +1,7 @@
 ---
 title: GitHub 的项目徽章
 type: post
-tags: ["GitHub", "开发"]
+"blog/tags": ["GitHub", "开发"]
 date: 2019-08-21T01:54:31.000Z
 category: 开发
 published: true

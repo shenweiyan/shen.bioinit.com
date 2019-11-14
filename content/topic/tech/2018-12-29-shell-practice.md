@@ -1,7 +1,7 @@
 ---
 title: shell 命令实战合集
 type: post
-tags: ["Shell", "编程"]
+"blog/tags": ["Shell", "编程"]
 date: 2018-12-29T09:21:11.000Z
 category: 编程
 published: true

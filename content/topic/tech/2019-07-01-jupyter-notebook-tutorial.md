@@ -1,7 +1,7 @@
 ---
 title: 数据科学工具 Jupyter Notebook 教程
 type: post
-tags: ["Jupyter", "编程"]
+"blog/tags": ["Jupyter", "编程"]
 date: 2019-07-01T03:50:35.000Z
 category: 编程
 published: true

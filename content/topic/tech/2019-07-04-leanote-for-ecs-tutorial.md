@@ -1,7 +1,7 @@
 ---
 title: 使用阿里云 ECS 搭建自己的 Leanote 云笔记服务
 type: post
-tags: ["others", "开发"]
+"blog/tags": ["others", "开发"]
 date: 2019-07-04T06:03:23.000Z
 category: 开发
 published: true
