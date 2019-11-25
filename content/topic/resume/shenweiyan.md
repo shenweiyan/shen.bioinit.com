@@ -2,21 +2,6 @@
 title: "简历"
 disable_comments: yes
 date: '2019-05-30'
-lastmod: "`r Sys.Date()`"
-output:
-  pdf_document:
-    includes:
-      in_header: cv-cn-header.tex
-    latex_engine: xelatex
-    md_extensions: -autolink_bare_uris+hard_line_breaks
-    template: cv-cn-template.latex
-  html_document:
-    df_print: paged
-geometry: margin=1in
-pdf: ../xxx.pdf
-type: cv
-urlcolor: blue
-fontsize: 10pt
 ---
 
 # 沈维燕
