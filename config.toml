@@ -50,10 +50,6 @@ publishDir = "docs"
     url = "/topic/read/"
     weight = 5
 [[menu.topic]]
-    name = "简历"
-    url = "/topic/resume/shenweiyan"
-    weight = 5
-[[menu.topic]]
     name = "语雀"
     url = "https://www.yuque.com/shenweiyan"
     weight = 6
