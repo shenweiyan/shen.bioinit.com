@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shen.bioinit.com/topic/archives/</loc>
-    <lastmod>2019-11-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shen.bioinit.com/topic/tech/2019-11-13-obs/</loc>
     <lastmod>2019-11-13T07:02:53+00:00</lastmod>
   </url>
@@ -723,6 +718,10 @@
     <loc>https://shen.bioinit.com/topic/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2019-09-12T02:05:22+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shen.bioinit.com/topic/archives/</loc>
   </url>
   
   <url>
