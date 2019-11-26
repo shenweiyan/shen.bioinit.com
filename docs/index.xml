@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Centos 7 下编译安装 Nginx</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-11-18-aq99si/</link>
+      <pubDate>Mon, 18 Nov 2019 02:39:59 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-11-18-aq99si/</guid>
+      <description>一、准备工作 为了编译 Nginx 源代码，需要标准的 GCC 编译器。GCC 的全称为 GNU Compiler Collection，其由 GNU 开发，并以 GPL 及 LGPL 许可证发行，是自由的类 UNIX 即苹</description>
+    </item>
+    
+    <item>
       <title>OBS 录屏的一些配置与使用</title>
       <link>https://shen.bioinit.com/topic/tech/2019-11-13-obs/</link>
       <pubDate>Wed, 13 Nov 2019 07:02:53 +0000</pubDate>
