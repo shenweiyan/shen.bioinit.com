@@ -28,3 +28,9 @@ END=$(date);echo "End: $END" >>/data/database/onekp/nucl-v2/memo/log
 sed '/关键字/,+1d' file >file2
 ```
 
+- 把 1.xtx，2.txt，...，26.txt 分别重命名为 a.txt，b.txt，...，z.txt
+
+```bash
+n=1;for i in {a..z}.txt;do echo mv ${n}.txt $i.txt;n=$((n+1));done
+```
+

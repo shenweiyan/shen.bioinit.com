@@ -207,6 +207,13 @@ END=$(date);echo &quot;End: $END&quot; &gt;&gt;/data/database/onekp/nucl-v2/memo
 <pre><code class="language-shell">sed '/关键字/,+1d' file &gt;file2
 </code></pre>
 
+<ul>
+<li>把 1.xtx，2.txt，&hellip;，26.txt 分别重命名为 a.txt，b.txt，&hellip;，z.txt</li>
+</ul>
+
+<pre><code class="language-bash">n=1;for i in {a..z}.txt;do echo mv ${n}.txt $i.txt;n=$((n+1));done
+</code></pre>
+
 
   <footer>
   
