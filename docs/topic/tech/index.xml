@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Linux 服务器更换主板后，网卡识别失败的处理方法</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-03-zks7y7/</link>
+      <pubDate>Tue, 03 Dec 2019 02:23:01 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-03-zks7y7/</guid>
+      <description>上周日，由于断电，公司所在的集群服务器在关机断电重启后，发现唯一的一个登陆节点主板出现了故障，以致于 log 节点的 Red Hat Enterprise 6 系统无法启动。 由于集群是</description>
+    </item>
+    
+    <item>
+      <title>为什么 Biopython 的在线 BLAST 这么慢？</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-03-ygnigy/</link>
+      <pubDate>Tue, 03 Dec 2019 02:23:01 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-03-ygnigy/</guid>
+      <description>用过网页版本 BLAST 的童鞋都会发现，提交的序列比对往往在几分钟，甚至几十秒就可以得到比对的结果；而通过调用 API 却要花费几十分钟或者更长的时间！这到底</description>
+    </item>
+    
+    <item>
       <title>Centos 7 下编译安装 Nginx</title>
       <link>https://shen.bioinit.com/topic/tech/2019-11-18-aq99si/</link>
       <pubDate>Mon, 18 Nov 2019 02:39:59 +0000</pubDate>

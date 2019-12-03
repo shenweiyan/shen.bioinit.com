@@ -6,10 +6,19 @@
     <description>Recent content in 生信 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Sat, 12 Oct 2019 06:33:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2019 02:23:01 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/topic/tags/%E7%94%9F%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为什么 Biopython 的在线 BLAST 这么慢？</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-03-ygnigy/</link>
+      <pubDate>Tue, 03 Dec 2019 02:23:01 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-03-ygnigy/</guid>
+      <description>用过网页版本 BLAST 的童鞋都会发现，提交的序列比对往往在几分钟，甚至几十秒就可以得到比对的结果；而通过调用 API 却要花费几十分钟或者更长的时间！这到底</description>
+    </item>
     
     <item>
       <title>基于 Dash Bio 的生物信息学数据可视化</title>
