@@ -6,10 +6,19 @@
     <description>Recent content in 开发 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Thu, 12 Sep 2019 02:05:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 06:16:59 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/topic/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CODING 静态网站</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-04-coding-pages/</link>
+      <pubDate>Wed, 04 Dec 2019 06:16:59 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-04-coding-pages/</guid>
+      <description>在 cong.net 部署静态博客，跟 github 是不一样的，这里简单记录一下。以谢益辉的 hugo-xmag 博客主题为例。 1. 创建项目，进入代码浏览 2. 在服务器中生成网站，并推送 shenweiyan@ecs-steven 14:25:22 /home/shenweiyan $ mkdir</description>
+    </item>
     
     <item>
       <title>如何同步更新 Github 上 Fork 的项目？</title>
