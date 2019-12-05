@@ -6,10 +6,19 @@
     <description>Recent content in 编程 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Sat, 19 Oct 2019 02:39:42 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 08:58:14 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/topic/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R 常用函数汇总</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-lwsgg0/</link>
+      <pubDate>Thu, 05 Dec 2019 08:58:14 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-lwsgg0/</guid>
+      <description>怎样显示R软件中某个包中包含的全部数据集？ &amp;gt; library(MASS) &amp;gt; data() &amp;gt; data(package=&amp;quot;MASS&amp;quot;) 查看包加载的路径 system.file(package = &#39;ggplot2&#39;) find.package(&amp;quot;ggplot2&amp;quot;) 查看包的安装目录： .libPaths() 查看该包里面所有的函数： ls(&#39;package:ggplot2&#39;) 查看已经安装的包</description>
+    </item>
     
     <item>
       <title>R 语言中的高级图像处理包</title>

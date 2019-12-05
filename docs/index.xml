@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>GO 功能富集分析结果绘图 R 代码</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-nvi8vg/</link>
+      <pubDate>Thu, 05 Dec 2019 09:04:38 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-nvi8vg/</guid>
+      <description>前言 基因本体论 ( Gene Ontology, GO ) 是一个被广泛使用的生物学数据库，它由两个方面组成：其一为本体自身，即由生物学家定义好的词条以及它们之间的结构化关系；</description>
+    </item>
+    
+    <item>
+      <title>富集分析的几个区别</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-uhunvv/</link>
+      <pubDate>Thu, 05 Dec 2019 09:02:46 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-uhunvv/</guid>
+      <description>名词解释 GO GO 是 Gene Ontology 的缩写，是基因功能国际标准分类体系。它旨在建立一个适用于各种物种的，对基因和蛋白质功能进行限定和描述的，并能随着研究不断深</description>
+    </item>
+    
+    <item>
+      <title>R 常用函数汇总</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-lwsgg0/</link>
+      <pubDate>Thu, 05 Dec 2019 08:58:14 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-lwsgg0/</guid>
+      <description>怎样显示R软件中某个包中包含的全部数据集？ &amp;gt; library(MASS) &amp;gt; data() &amp;gt; data(package=&amp;quot;MASS&amp;quot;) 查看包加载的路径 system.file(package = &#39;ggplot2&#39;) find.package(&amp;quot;ggplot2&amp;quot;) 查看包的安装目录： .libPaths() 查看该包里面所有的函数： ls(&#39;package:ggplot2&#39;) 查看已经安装的包</description>
+    </item>
+    
+    <item>
       <title>CODING 静态网站</title>
       <link>https://shen.bioinit.com/topic/tech/2019-12-04-coding-pages/</link>
       <pubDate>Wed, 04 Dec 2019 06:16:59 +0000</pubDate>

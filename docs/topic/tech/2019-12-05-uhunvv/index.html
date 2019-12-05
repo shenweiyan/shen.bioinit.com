@@ -14,8 +14,8 @@
     
     
     
-    <title>生信 - Steven Shen | 沈维燕</title> 
-    <meta property="og:title" content="生信 - Steven Shen | 沈维燕">
+    <title>富集分析的几个区别 - Steven Shen | 沈维燕</title> 
+    <meta property="og:title" content="富集分析的几个区别 - Steven Shen | 沈维燕">
     
 
     
@@ -24,8 +24,6 @@
 
     
 
-    
-    <link href="../../../topic/tags/%E7%94%9F%E4%BF%A1/index.xml" rel="alternate" type="application/rss+xml" title="生信" />
     
   
     <link rel="stylesheet" href="https://shen.bioinit.com/css/style.css"/>
@@ -143,6 +141,18 @@
           
           
 
+<li class="pattern">&nbsp;&nbsp;</li>
+
+
+
+<li class="pattern"><a href="https://github.com/shenweiyan/shen.bioinit.com/edit/master/content/topic/tech/2019-12-05-uhunvv.md" target="_blank">编辑</a></li>
+
+
+<li class="pattern"><a href="../../../topic/index.xml" type="application/rss+xml" title="RSS feed">订阅</a></li>
+
+<li class="pattern"><a href="../../../declare/" title="声明">声明</a></li>
+
+
         </ul>
       </nav>
     </div>
@@ -155,10 +165,15 @@
 
 
 
+<h1>富集分析的几个区别</h1>
 
 
-<h1>Tags 标签</h1>
 
+
+
+
+<h3>
+2019-12-05</h3> 
 
 
    
@@ -171,94 +186,36 @@
 
 
 
+<h1 id="名词解释">名词解释</h1>
 
+<p><strong>GO</strong></p>
 
+<p>GO 是 Gene Ontology 的缩写，是基因功能国际标准分类体系。它旨在建立一个适用于各种物种的，对基因和蛋白质功能进行限定和描述的，并能随着研究不断深入而更新的语言词汇标准。GO 数据库分别从<strong>分子功能（Molecular Function）</strong>、<strong>生物过程（Biological Process）</strong>及<strong>细胞组成（Cellular Component）</strong>对基因产物进行了标准化描述，即对基因产物进行了简单注释。</p>
 
+<p>通过 <strong>GO 富集分析</strong>可以粗略了解差异基因富集在哪些生物学功能、途径或者细胞定位。</p>
 
-<div class="archive">
-  
-  <h2 class="archive-title">2019</h2>
-  
-  
-  <ul>
-    <li>
-      <span>2019/12/05</span>
-      <a href="../../../topic/tech/2019-12-05-nvi8vg/">GO 功能富集分析结果绘图 R 代码</a>
-    </li>
-  </ul>
-  
-  <ul>
-    <li>
-      <span>2019/12/05</span>
-      <a href="../../../topic/tech/2019-12-05-uhunvv/">富集分析的几个区别</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/12/03</span>
-      <a href="../../../topic/tech/2019-12-03-ygnigy/">为什么 Biopython 的在线 BLAST 这么慢？</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/10/12</span>
-      <a href="../../../topic/tech/2019-10-12-tp85x1/">基于 Dash Bio 的生物信息学数据可视化</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/08/05</span>
-      <a href="../../../topic/tech/2019-08-05-bioconductor-orgdb/">Bioconductor org.Xx.eg.db 系列包</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/07/04</span>
-      <a href="../../../topic/tech/2019-07-04-clumpify/">一款能使压缩 fq 再缩小 30% 并加速后续分析的软件</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/07/01</span>
-      <a href="../../../topic/tech/2019-07-01-python-mygene/">使用 Python 中的 mygene 模块进行 ID 匹配</a>
-    </li>
-  </ul>
-  
-  <ul>
-    <li>
-      <span>2019/07/01</span>
-      <a href="../../../topic/tech/2019-07-01-r-gganatogram/">基于 ggplot2 的解剖图和组织模块可视化</a>
-    </li>
-  </ul>
-  
-  
-  
-  <ul>
-    <li>
-      <span>2019/05/29</span>
-      <a href="../../../topic/tech/2019-05-29-bio-blogs-forums/">生物信息学博客与论坛</a>
-    </li>
-  </ul>
-  
-  
-  
-</div>
+<p><strong>Pathway</strong></p>
 
+<p>Pathway 指代谢通路，对差异基因进行 pathway 分析，可以<strong>了解实验条件下显著改变的代谢通路</strong>，在机制研究中显得尤为重要。</p>
+
+<p>GO 分析好比是将基因分门别类放入一个个功能类群，而 pathway 则是将基因一个个具体放到代谢网络中的指定位置。</p>
+
+<h1 id="1-什么是富集分析">1. 什么是富集分析</h1>
+
+<p>基因富集分析是分析基因表达信息的一种方法，富集是指将基因按照先验知识，也就是基因组注释信息进行分类。</p>
+
+<h1 id="2-富集分析原理是什么">2. 富集分析原理是什么</h1>
+
+<h1 id="3-怎么做富集分析">3. 怎么做富集分析</h1>
+
+<p>基因富集分析需要我们提供某一类功能基因的集合用于背景，常用的注释数据库如：</p>
+
+<ul>
+<li>The Gene Ontology Consortium: 描述基因的层级关系</li>
+<li>Kyoto Encyclopedia of Genes and Genomes: 提供了 pathway 的数据库。</li>
+</ul>
+
+<p>未完，待续&hellip;.</p>
 
 
   <footer>
@@ -266,8 +223,14 @@
 <nav class="post-nav">
   <span class="nav-prev">
       
+      <a href="../../../topic/tech/2019-12-05-lwsgg0/">R 常用函数汇总</a>
+      <br/>&larr;&nbsp;
+      
   </span>
   <span class="nav-next">
+      
+      <a href="../../../topic/tech/2019-12-05-nvi8vg/">GO 功能富集分析结果绘图 R 代码</a>
+      <br/>&nbsp;&rarr;
       
   </span>
 </nav>
@@ -277,7 +240,11 @@ document.addEventListener('keyup', function(e) {
   var url = false;
   if (e.which == 37) {  
     
+    url = '\/topic\/tech\/2019-12-05-lwsgg0\/';
+    
   } else if (e.which == 39) {  
+    
+    url = '\/topic\/tech\/2019-12-05-nvi8vg\/';
     
   }
   if (url) window.location = url;
@@ -285,6 +252,53 @@ document.addEventListener('keyup', function(e) {
 </script>
 
 
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script src="../../../js/disqusloader.min.js"></script>
+  <script>
+  var disqus_config = function () {
+  
+    this.page.url = "https:\/\/shenweiyan.github.io\/shen.bioinit.com\/" + location.pathname;
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//shen-bioinit.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var b = false, l = function() {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+    }
+    var t = d.getElementById('disqus_thread');
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = '非常抱歉, 本页面您可能需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment/)) return l();
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 
 

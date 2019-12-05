@@ -6,10 +6,28 @@
     <description>Recent content in 生信 on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Tue, 03 Dec 2019 02:23:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 09:04:38 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/topic/tags/%E7%94%9F%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GO 功能富集分析结果绘图 R 代码</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-nvi8vg/</link>
+      <pubDate>Thu, 05 Dec 2019 09:04:38 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-nvi8vg/</guid>
+      <description>前言 基因本体论 ( Gene Ontology, GO ) 是一个被广泛使用的生物学数据库，它由两个方面组成：其一为本体自身，即由生物学家定义好的词条以及它们之间的结构化关系；</description>
+    </item>
+    
+    <item>
+      <title>富集分析的几个区别</title>
+      <link>https://shen.bioinit.com/topic/tech/2019-12-05-uhunvv/</link>
+      <pubDate>Thu, 05 Dec 2019 09:02:46 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/tech/2019-12-05-uhunvv/</guid>
+      <description>名词解释 GO GO 是 Gene Ontology 的缩写，是基因功能国际标准分类体系。它旨在建立一个适用于各种物种的，对基因和蛋白质功能进行限定和描述的，并能随着研究不断深</description>
+    </item>
     
     <item>
       <title>为什么 Biopython 的在线 BLAST 这么慢？</title>
