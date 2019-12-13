@@ -6,10 +6,19 @@
     <description>Recent content in Others on Steven Shen | 沈维燕</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
-    <lastBuildDate>Thu, 05 Dec 2019 09:04:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 02:48:35 +0000</lastBuildDate>
     
 	<atom:link href="https://shen.bioinit.com/topic/tags/others/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>动了谁的奶酪</title>
+      <link>https://shen.bioinit.com/topic/life/2019-12-13-kblu4x/</link>
+      <pubDate>Fri, 13 Dec 2019 02:48:35 +0000</pubDate>
+      
+      <guid>https://shen.bioinit.com/topic/life/2019-12-13-kblu4x/</guid>
+      <description>活在自媒体时代，每个人都在利用各种平台打造个人品牌，几乎每个人都在会选择微信公众号。流量为王的今天，粉丝就是一切，是动不得的奶酪。 个人觉得，</description>
+    </item>
     
     <item>
       <title>GO 功能富集分析结果绘图 R 代码</title>
