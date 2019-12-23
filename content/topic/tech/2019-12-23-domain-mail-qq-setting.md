@@ -9,7 +9,6 @@ published: true
 
 **首先理解一下，qq 邮箱设置域名邮箱，其实就是给你的 qq 邮箱起个别名而已，可以用自定义邮箱去收发邮件，但是邮件还是在 qq 邮箱里。**
 
-**
 
 ## 1. 创建域名邮箱
 
@@ -97,8 +96,6 @@ QQ 邮箱默认是以 xxx.qq.com 作为你的发信账号和主显账号，如�
 通过 QQ 邮箱的"**设置 → 账户 → 账号管理 → 默认发信账号**"，选择你想要的邮箱。
 
 **![](https://qiniu.bioinit.com/yuque/0/2019/png/126032/1577085995742-5adbbfed-49ea-4c60-b1d8-57ac82628638.png#align=left&display=inline&height=345&name=image.png&originHeight=345&originWidth=481&size=22174&status=done&style=none&width=481)**
-
-**
 
 **"保存更改"** 后，你就可以看到自己的默认 QQ 邮箱已经变成了你所设置的域名邮箱。
 
